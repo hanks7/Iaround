@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:background="@color/bg_color">
+
+    <ImageView
+        android:layout_width="@dimen/x48"
+        android:layout_height="@dimen/y33"
+        android:layout_marginLeft="@dimen/x48"
+        android:layout_marginRight="@dimen/x42"
+        android:src="@drawable/dynamic_details_love"/>
+
+    <LinearLayout
+        android:id="@+id/ly_dynamic_love"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y36"
+        android:layout_marginBottom="@dimen/y36"
+        android:orientation="horizontal"/>
+
+</LinearLayout>

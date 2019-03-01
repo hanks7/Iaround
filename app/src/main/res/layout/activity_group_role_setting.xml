@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/userFragment_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/activity_title"
+        layout="@layout/title_bar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:background="@color/chat_update_divider_of_messageItem"/>
+    <RelativeLayout
+        android:id="@+id/talk_setting_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/y120"
+        android:layout_marginTop="@dimen/y36"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/talk_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x48"
+            android:singleLine="true"
+            android:text="@string/group_talk_role"
+            android:textColor="@color/chat_update_edit_user_value"
+            android:textSize="@dimen/y42" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="@dimen/x48"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+            <TextView
+                android:id="@+id/talk_role"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/x30"
+                android:text="所有成员"
+                android:textColor="@color/chat_update_gray_text_color"
+                android:textSize="@dimen/y42" />
+            <ImageView
+                android:id="@+id/talk_arraw"
+                android:layout_width="@dimen/x24"
+                android:layout_height="@dimen/y42"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/arraw_turn" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_marginLeft="@dimen/x48"
+        android:background="@color/chat_update_login_btn_select" />
+
+    <RelativeLayout
+        android:id="@+id/topic_setting_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/y120"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/topic_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x48"
+            android:singleLine="true"
+            android:text="@string/group_topic_role"
+            android:textColor="@color/chat_update_edit_user_value"
+            android:textSize="@dimen/y42"  />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x48"
+            android:layout_centerVertical="true">
+            <TextView
+                android:id="@+id/topic_role"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/x30"
+                android:text="所有成员"
+                android:textColor="@color/chat_update_gray_text_color"
+                android:textSize="@dimen/y42" />
+            <ImageView
+                android:id="@+id/topic_arraw"
+                android:layout_width="@dimen/x24"
+                android:layout_height="@dimen/y42"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/arraw_turn"  />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

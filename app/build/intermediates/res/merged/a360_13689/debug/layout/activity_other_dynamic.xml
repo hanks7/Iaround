@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color">
+
+    <!--<include layout="@layout/tabar_actionbar_layout"/>-->
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title_bar"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_below="@+id/title_bar"
+        android:background="@color/chat_update_divider_of_toolMenu"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/divider">
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/pull_near_dynamic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_color"
+            android:layout_below="@+id/divider"
+            android:cacheColorHint="@color/bg_color"
+            android:divider="@color/bg_color"
+            android:fadingEdge="none"
+            android:listSelector="@color/bg_color" />
+        <LinearLayout
+            android:id="@+id/empty_friend"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingTop="@dimen/y132"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y436"
+                android:src="@drawable/have_no_friend_dynamic"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y70"
+                android:gravity="center"
+                android:text="@string/friends_dynamic_msg" />
+        </LinearLayout>
+        <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+            android:id="@+id/empty"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_below="@+id/divider" >
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:paddingTop="@dimen/y132"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y436"
+                    android:src="@drawable/have_no_friend_dynamic"/>
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y70"
+                    android:gravity="center"
+                    android:text="@string/friends_dynamic_msg" />
+            </LinearLayout>
+
+        </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+    </FrameLayout>
+    <ImageView
+        android:id="@+id/ivPublish"
+        android:layout_width="@dimen/x170"
+        android:layout_height="@dimen/y170"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/y210"
+        android:layout_marginRight="@dimen/x48"
+        android:src="@drawable/near_dynamic_publish_floatbtn" />
+</RelativeLayout>

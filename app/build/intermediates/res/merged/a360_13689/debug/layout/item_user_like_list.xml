@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_item_bg_selector">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/x30"
+        android:paddingRight="@dimen/x30"
+        android:paddingTop="@dimen/y20"
+        android:paddingBottom="@dimen/y20"
+        android:orientation="horizontal">
+
+        <net.iaround.ui.view.HeadPhotoView
+            android:id="@+id/user_icon"
+            android:layout_width="@dimen/x200"
+            android:layout_height="@dimen/y200"
+            android:layout_marginRight="@dimen/x30"/>
+
+        <LinearLayout
+            android:id="@+id/ly_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/user_icon"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="#FF222222"
+                android:textSize="@dimen/y42" />
+
+            <TextView
+                android:id="@+id/user_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray_text_color"
+                android:textSize="@dimen/y36"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly_user_age_left"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y42"
+            android:layout_marginTop="@dimen/y16"
+            android:layout_toLeftOf="@id/user_icon"
+            android:layout_below="@id/ly_name"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_user_sex_left"
+                android:layout_width="@dimen/x30"
+                android:layout_height="@dimen/y30"/>
+
+            <TextView
+                android:id="@+id/tv_user_age_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/x6"
+                android:paddingRight="@dimen/x10"
+                android:textSize="@dimen/y24"
+                android:textColor="@color/common_white"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y2"
+        android:layout_marginLeft="@dimen/x214"
+        android:background="@color/line"/>
+
+</LinearLayout>

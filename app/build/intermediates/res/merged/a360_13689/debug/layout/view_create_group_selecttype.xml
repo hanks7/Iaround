@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/activity_basic_style"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="320dip"
+            android:layout_height="186dip"
+            android:layout_gravity="center"
+            android:src="@drawable/cat_set_goup_type"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/create_group_tv_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y60"
+            android:text="@string/create_group_select_type"
+            android:textColor="@color/chat_update_gray_text_color"
+            android:textSize="@dimen/y36" />
+
+        <net.iaround.ui.seach.GridViewInScrollView
+            android:id="@+id/group_type_grid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/create_group_tv_hint"
+            android:layout_marginTop="@dimen/y60"
+            android:layout_marginLeft="@dimen/x132"
+            android:layout_marginRight="@dimen/x132"
+            android:horizontalSpacing="@dimen/x72"
+            android:listSelector="@color/gridview_item_bg"
+            android:numColumns="4" />
+    </RelativeLayout>
+
+</ScrollView>

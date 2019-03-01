@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rlContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <net.iaround.ui.view.HeadPhotoView
+            android:id="@+id/friend_icon"
+            android:layout_width="@dimen/x150"
+            android:layout_height="@dimen/y150"
+            android:layout_marginLeft="@dimen/x36"
+            android:layout_marginTop="@dimen/y36"
+            android:layout_marginRight="@dimen/x18"
+            android:src="@drawable/default_avatar_round_light" />
+
+        <!--动态内容-->
+        <FrameLayout
+            android:id="@+id/flContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/dynamic_icon"
+                android:layout_width="@dimen/x162"
+                android:layout_height="@dimen/y162"
+                android:layout_marginRight="@dimen/x33"
+                android:scaleType="fitStart"
+                android:src="@drawable/default_pitcure_small" />
+
+            <TextView
+                android:id="@+id/dynamic_content"
+                android:layout_width="@dimen/x132"
+                android:layout_height="@dimen/y184"
+                android:layout_marginRight="@dimen/x33"
+                android:ellipsize="end"
+                android:maxLines="4"
+                android:singleLine="false"
+                android:textColor="#4A4A4A"
+                android:textSize="@dimen/y33" />
+        </FrameLayout>
+
+        <!--评论区域-->
+        <RelativeLayout
+            android:id="@+id/rlComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/flContent"
+            android:layout_toRightOf="@id/friend_icon" >
+
+            <LinearLayout
+                android:id="@+id/ll_userInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y54"
+                android:orientation="horizontal">
+                <!--昵称-->
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/chat_update_edit_user_value"
+                    android:textSize="@dimen/y42" />
+                <!--性别-->
+                <RelativeLayout
+                    android:id="@+id/rlAgeSex"
+                    android:layout_width="@dimen/x90"
+                    android:layout_height="@dimen/y42"
+                    android:layout_marginLeft="@dimen/x12"
+                    android:background="@drawable/group_member_age_girl_bg">
+                    <ImageView
+                        android:id="@+id/ivSex"
+                        android:layout_width="@dimen/x34"
+                        android:layout_height="@dimen/y42"
+                        android:layout_marginLeft="@dimen/x8"
+                        android:layout_centerVertical="true" />
+                    <TextView
+                        android:id="@+id/tvAgeSex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x2"
+                        android:layout_toRightOf="@+id/ivSex"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/y30" />
+                </RelativeLayout>
+            </LinearLayout>
+            <FrameLayout
+                android:id="@+id/fl_greet_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_userInfo">
+                <ImageView
+                    android:id="@+id/ivThumbs"
+                    android:layout_width="@dimen/x48"
+                    android:layout_height="@dimen/y33"
+                    android:layout_marginTop="@dimen/y25"
+                    android:layout_marginBottom="@dimen/y30"
+                    android:src="@drawable/dynamic_like_normal"
+                    android:visibility="gone"/>
+                <TextView
+                    android:id="@+id/tvContent"
+                    android:layout_width="@dimen/y385"
+                    android:layout_height="wrap_content"
+                    android:singleLine="false"
+                    android:maxLines="4"
+                    android:layout_marginTop="@dimen/y25"
+                    android:layout_marginBottom="@dimen/y33"
+                    android:textColor="@color/chat_update_edit_user_value"
+                    android:textSize="@dimen/y39" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fl_greet_content"
+                android:layout_marginBottom="@dimen/y36"
+                android:text="12分钟前"
+                android:textColor="@color/chat_update_gray_text_color"
+                android:textSize="@dimen/y33" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <View
+        android:id="@+id/vSplite"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_marginLeft="@dimen/x36"
+        android:layout_alignParentBottom="true"
+        android:background="@color/chat_update_divider_of_toolMenu" />
+
+</RelativeLayout>

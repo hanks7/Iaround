@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/mipmap-mdpi-v4/icon.png",
+        "source": "/Users/zhangsen/iaround/iaround-android-online/app/src/main/res/mipmap-mdpi/icon.png"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/mipmap-mdpi-v4/ic_launcher.png",
+        "source": "/Users/zhangsen/iaround/iaround-android-online/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    }
+]

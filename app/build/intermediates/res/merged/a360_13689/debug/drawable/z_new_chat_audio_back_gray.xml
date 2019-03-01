@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <gradient android:startColor="@color/chat_update_background_of_sendVoice"
+        android:endColor="@color/chat_update_background_of_sendVoice"/>
+    <solid android:color="@color/chat_update_background_of_sendVoice"/>
+</shape>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp" >
+
+    <RelativeLayout
+        android:id="@+id/llFlag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/ivTimePoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/gray_point" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/ivTimePoint"
+            android:text="08/02 11:32" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/llContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llFlag"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp" >
+
+        <FrameLayout
+            android:id="@+id/flContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp" >
+
+            <ImageView
+                android:id="@+id/ivImage"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:gravity="center_vertical"
+                android:scaleType="fitXY"
+                android:src="@drawable/video_item_default_left_icon" />
+
+            <ImageView
+                android:id="@+id/ivPlay"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:src="@drawable/iaround_chat_record_play_video" />
+        </FrameLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     >
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_centerVertical="true"
+        android:button="@drawable/nearby_filter_checkbox_selector"
+        android:visibility="gone" />
+
+    <net.iaround.ui.view.HeadPhotoView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/x120"
+        android:layout_height="@dimen/y120"
+        android:layout_toRightOf="@+id/checkbox"
+        android:layout_marginTop="@dimen/y48"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x24"
+        />
+
+    <LinearLayout
+        android:id="@+id/content_userinfo_ly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/icon"
+        android:orientation="vertical" >
+
+        <include layout="@layout/iaround_chat_userinfo_view" />
+
+        <!--android:gravity="center_vertical"-->
+        <!--android:maxWidth="200dp"-->
+        <!--android:minHeight="48dp"-->
+        <!--android:orientation="vertical"-->
+        <RelativeLayout
+            android:id="@+id/content"
+            android:layout_width="@dimen/x680"
+            android:layout_height="@dimen/y360"
+            android:background="@drawable/chat_new_record_friend_bg"
+            >
+            <!--android:maxWidth="121dp"-->
+            <!--android:paddingRight="2dp"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:maxLines="5"-->
+            <TextView
+                android:id="@+id/content_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:layout_marginTop="@dimen/y36"
+                android:layout_marginLeft="@dimen/x45"
+                android:layout_marginRight="@dimen/x47"
+                android:textColor="@color/chat_update_edit_user_value"
+                android:textSize="@dimen/y42" />
+            <ImageView
+                android:id="@+id/content_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y249"
+                android:layout_below="@+id/content_text"
+                android:layout_marginTop="@dimen/y33"
+                android:scaleType="centerCrop"
+                android:src="@drawable/chat_media_record_map_logo" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

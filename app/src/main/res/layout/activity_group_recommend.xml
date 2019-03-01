@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/activity_basic_style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/activity_title"
+        layout="@layout/title_bar" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:background="@color/group_recommend_divider"/>
+    <RelativeLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y240"
+        android:background="@color/white" >
+        <!--圈子头像-->
+        <ImageView
+            android:id="@+id/group_img"
+            android:layout_width="@dimen/x180"
+            android:layout_height="@dimen/y180"
+            android:layout_marginTop="@dimen/y30"
+            android:layout_marginBottom="@dimen/y30"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x24"
+            android:src="@drawable/nearby_focus_default_1" />
+        <!--距离-->
+        <TextView
+            android:id="@+id/group_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/y42"
+            android:layout_marginRight="@dimen/x48"
+            android:text="100m"
+            android:textSize="@dimen/y36"
+            android:textColor="@color/chat_update_gray_text_color"
+            />
+        <RelativeLayout
+            android:id="@+id/group_name_part"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/group_img"
+            android:layout_centerVertical="true"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/group_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/y42"
+                    android:textColor="@color/chat_update_edit_user_value"
+                    />
+                <RelativeLayout
+                    android:id="@+id/group_number_part"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/y10"
+                    android:layout_below="@id/group_name">
+                    <ImageView
+                        android:id="@+id/group_num_icon"
+                        android:layout_width="@dimen/x30"
+                        android:layout_height="@dimen/y30"
+                        android:layout_marginTop="@dimen/y10"
+                        android:src="@drawable/group_num_small_round"
+                        />
+                    <TextView
+                        android:id="@+id/group_current_members"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x12"
+                        android:layout_toRightOf="@id/group_num_icon"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="@color/chat_update_gray_text_color"
+                        android:textSize="@dimen/y36"/>
+                    <TextView
+                        android:id="@+id/group_category"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x40"
+                        android:layout_toRightOf="@id/group_current_members"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="@color/chat_update_gray_text_color"
+                        android:textSize="@dimen/y36"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/group_desc_part"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/group_number_part"
+                    android:layout_marginTop="@dimen/y10"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:id="@+id/ll_group_owner"
+                        android:layout_width="@dimen/x102"
+                        android:layout_height="@dimen/y42"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/group_recommend_owner_bg"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="@dimen/x30"
+                            android:layout_height="@dimen/y30"
+                            android:layout_marginLeft="@dimen/x3"
+                            android:layout_marginTop="@dimen/y3"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/group_owner_vip"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:singleLine="true"
+                            android:text="@string/group_owner"
+                            android:textColor="@color/common_white"
+                            android:textSize="@dimen/y27"
+                            />
+                    </LinearLayout>
+                    <!--<Button-->
+                    <!--android:id="@+id/group_desc_owner"-->
+                    <!--android:layout_width="@dimen/x102"-->
+                    <!--android:layout_height="@dimen/y42"-->
+
+                    <!--android:background="@drawable/group_desc_bg"-->
+                    <!--android:text="@string/group_category_text"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:paddingLeft="@dimen/x18"-->
+                    <!--android:textSize="@dimen/y30"-->
+                    <!--android:textColor="@color/white"/>-->
+                    <TextView
+                        android:id="@+id/group_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/x12"
+                        android:layout_marginRight="@dimen/x77"
+                        android:layout_toRightOf="@+id/ll_group_owner"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="@color/chat_update_gray_text_color"
+                        android:textSize="@dimen/y36"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/group_recommend_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y108"
+        android:layout_marginBottom="@dimen/y96"
+        android:layout_marginLeft="@dimen/x141"
+        android:layout_marginRight="@dimen/x141"
+        android:gravity="center"
+        android:text="@string/group_recommend_hint"
+        android:textSize="@dimen/y42"
+        android:textColor="@color/chat_update_gray_text_color"/>
+    <LinearLayout
+        android:id="@+id/button_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_recommend_group1"
+            android:layout_width="@dimen/x980"
+            android:layout_height="@dimen/y124"
+            android:layout_marginBottom="@dimen/y38"
+            android:layout_marginLeft="@dimen/x50"
+            android:layout_marginRight="@dimen/x50"
+            android:background="@drawable/group_recommend_btn1_bg"
+            android:gravity="center"
+            android:text="6小时 (200金币)"
+            android:textColor="@color/white"
+            android:textSize="@dimen/y42" />
+
+        <Button
+            android:id="@+id/btn_recommend_group2"
+            android:layout_width="@dimen/x980"
+            android:layout_height="@dimen/y124"
+            android:layout_marginBottom="@dimen/y38"
+            android:layout_marginLeft="@dimen/x50"
+            android:layout_marginRight="@dimen/x50"
+            android:background="@drawable/group_recommend_btn2_bg"
+            android:gravity="center"
+            android:text="6小时 (200金币)"
+            android:textColor="@color/white"
+            android:textSize="@dimen/y42"/>
+
+        <Button
+            android:id="@+id/btn_recommend_group3"
+            android:layout_width="@dimen/x980"
+            android:layout_height="@dimen/y124"
+            android:layout_marginLeft="@dimen/x50"
+            android:layout_marginRight="@dimen/x50"
+            android:background="@drawable/group_recommend_btn3_bg"
+            android:gravity="center"
+            android:text="6小时 (200金币)"
+            android:textColor="@color/white"
+            android:textSize="@dimen/y42" />
+    </LinearLayout>
+    
+
+</LinearLayout>

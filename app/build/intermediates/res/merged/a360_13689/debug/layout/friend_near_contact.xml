@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_white">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title_bar" />
+
+    <!--<View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_below="@+id/title_bar"
+        android:background="@color/chat_update_divider_of_messageItem" />-->
+
+    <TextView
+        android:id="@+id/network_fail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y96"
+        android:layout_below="@id/title_bar"
+        android:layout_centerInParent="true"
+        android:background="@color/login_btn"
+        android:gravity="center_vertical"
+        android:text="@string/network_error_please_check"
+        android:textColor="@color/white"
+        android:textSize="@dimen/y40" />
+
+    <!--<net.iaround.ui.chatbar.SearchListView
+        android:id="@+id/near_contact_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/network_fail"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/white"
+        android:cacheColorHint="#00000000"
+        android:drawSelectorOnTop="false"
+        android:listSelector="@android:color/white">
+
+
+    </net.iaround.ui.chatbar.SearchListView>
+        -->
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/near_contact_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/network_fail"
+            android:cacheColorHint="#00000000"
+            android:background="@color/userFragment_bg"
+            android:divider="@null"
+            android:fadingEdge="none"
+            ptr:ptrAnimationStyle="heart"
+            ptr:ptrMode="both" />
+
+    <View
+        android:id="@+id/mask_layer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_bar"
+        android:alpha="0"
+        android:background="#FFFFFF" />
+
+</RelativeLayout>

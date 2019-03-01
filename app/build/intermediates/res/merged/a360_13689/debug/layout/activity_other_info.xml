@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/userFragment_bg">
+
+
+    <!--android:background="@drawable/mask_front"-->
+    <net.iaround.ui.view.user.YusScrollView
+        android:id="@+id/sv_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/y300"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y1080"
+                    android:visibility="visible">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/vp_header"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y1080" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/other_info_chat_bar_status"
+                        android:clickable="false" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_gravity="bottom">
+
+                        <include layout="@layout/actvity_other_info_chat_bar_show" />
+                    </RelativeLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom">
+
+                        <net.iaround.ui.view.encounter.UnderlinePageIndicator
+                            android:id="@+id/magic_indicator"
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:layout_gravity="bottom" />
+
+                        <TextView
+                            android:id="@+id/tv_other_info_more_pic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|right"
+                            android:layout_marginRight="@dimen/y36"
+                            android:layout_marginBottom="@dimen/y30"
+                            android:drawableLeft="@drawable/other_info_pic_more"
+                            android:drawablePadding="@dimen/y18"
+                            android:text="@string/other_info_pic_more"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/y30"
+                            android:visibility="gone" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/x30"
+                            android:layout_marginTop="@dimen/y187"
+                            android:background="@drawable/other_info_pic_count_bg"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/x36"
+                                android:layout_height="@dimen/y36"
+                                android:layout_marginLeft="@dimen/x8"
+                                android:background="@drawable/other_info_pic_count" />
+
+                            <TextView
+                                android:id="@+id/tv_other_info_pic_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/x8"
+                                android:gravity="center_vertical|end"
+                                android:paddingRight="@dimen/x20"
+                                android:textColor="@color/white" />
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+
+                    <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="bottom"-->
+                    <!--android:layout_marginBottom="60dp">-->
+
+                    <!--<include layout="@layout/actvity_other_info_skill"/>-->
+                    <!--</RelativeLayout>-->
+
+                </FrameLayout>
+
+                <include layout="@layout/actvity_other_info_skill" />
+
+                <include layout="@layout/activity_userinfo_base_info" />
+
+                <net.iaround.ui.view.face.MyGridView
+                    android:id="@+id/mgv_game_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:divider="@null"
+                    android:fadingEdge="none"
+                    android:listSelector="#00000000"
+                    android:numColumns="1"
+                    android:scrollbars="none"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_action_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x36"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:textColor="#9B9B9B"
+                    android:textSize="@dimen/y36" />
+
+                <include layout="@layout/activity_userinfo_action" />
+
+                <TextView
+                    android:id="@+id/tv_account_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x36"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/userinfo_account_info"
+                    android:textColor="#9B9B9B"
+                    android:textSize="@dimen/y36" />
+
+                <include layout="@layout/activity_userinof_account_info" />
+
+                <TextView
+                    android:id="@+id/tv_person_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x36"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/userinfo_document"
+                    android:textColor="#9B9B9B"
+                    android:textSize="@dimen/y36" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/main_bg_color"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/activity_otherinfo_data_gift" />
+
+                    <include layout="@layout/activity_userinfo_data_hobby" />
+
+                    <include layout="@layout/activity_userinfo_data_about" />
+
+                    <include layout="@layout/activity_userinfo_data_secret" />
+
+                    <include layout="@layout/activity_userinfo_data_authen_info" />
+
+                    <include layout="@layout/activity_userinfo_data_last_local" />
+
+                    <include layout="@layout/activity_userinfo_data_phone" />
+
+                </LinearLayout><!--资料介绍-->
+
+            </LinearLayout>
+        </FrameLayout>
+
+    </net.iaround.ui.view.user.YusScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rl_other_info_video"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/other_info_video_ivon_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/iv_other_info_video_ivon"
+            android:layout_width="14dp"
+            android:layout_height="16dp"
+            android:src="@drawable/other_info_video_icon" />
+
+        <TextView
+            android:id="@+id/tv_other_info_video_minute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/iv_other_info_video_ivon"
+            android:text="@string/video_details_video_chat"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|center_horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/c_ffffff"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/rl_chat_attention"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/iv_chat_attention"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/btn_encounter_header_like_selector_new" />
+
+                <TextView
+                    android:id="@+id/tv_chat_attention"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv_chat_attention"
+                    android:gravity="center_vertical"
+                    android:text="@string/following"
+                    android:textColor="@color/title_text_color"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/other_info_stroke_background" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_chat_chat"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/iv_chat_chat"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/btn_other_per_chat_default" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/iv_chat_chat"
+                    android:gravity="center_vertical"
+                    android:text="@string/private_chat"
+                    android:textColor="@color/title_text_color"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/other_info_stroke_background" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_chat_gift"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/iv_chat_gift"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/btn_other_send_gift_default" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/iv_chat_gift"
+                    android:gravity="center_vertical"
+                    android:text="@string/sendgift"
+                    android:textColor="@color/title_text_color"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/other_info_stroke_background" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_chat_skill"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/iv_chat_skill"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/btn_other_skill_default" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/iv_chat_skill"
+                    android:gravity="center_vertical"
+                    android:text="@string/user_fragment_skill_action"
+                    android:textColor="@color/title_text_color"
+                    android:textSize="14sp" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <!--按钮的布局-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@drawable/mask_front"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_chat"
+                android:layout_width="@dimen/y192"
+                android:layout_height="@dimen/y192"
+                android:layout_marginRight="@dimen/x65"
+                android:background="@drawable/btn_other_info_chat" />
+
+            <ImageView
+                android:id="@+id/iv_like"
+                android:layout_width="@dimen/y192"
+                android:layout_height="@dimen/y192"
+                android:layout_marginLeft="@dimen/x65"
+                android:layout_toRightOf="@id/iv_chat"
+                android:background="@drawable/btn_encounter_header_like_selector" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_make_order"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/btn_order"
+        android:gravity="center"
+        android:paddingLeft="12dp"
+        android:paddingRight="4dp"
+        android:paddingBottom="2dp"
+        android:text="@string/make_order"
+        android:textColor="@color/common_white"
+        android:visibility="gone" />
+    <!--始终在最底部-->
+    <include layout="@layout/title_bar" />
+
+
+</FrameLayout>

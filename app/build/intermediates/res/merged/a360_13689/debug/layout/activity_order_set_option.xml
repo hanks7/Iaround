@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/margin_right"
+    android:paddingRight="@dimen/margin_left"
+    android:paddingTop="15dp"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="15dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_discount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/order_to_set_discount"
+                    android:textColor="@color/common_black"
+                    android:textSize="16sp" />
+
+                <net.iaround.ui.view.FlagImageView
+                    android:id="@+id/fiv_btn_discount"
+                    android:layout_width="@dimen/x126"
+                    android:layout_height="@dimen/y72" />
+
+            </LinearLayout>
+
+            <net.iaround.ui.view.face.MyGridView
+                android:id="@+id/mgv_discount"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:divider="@null"
+                android:fadingEdge="none"
+                android:listSelector="#00000000"
+                android:verticalSpacing="10dp"
+                android:horizontalSpacing="20dp"
+                android:numColumns="4"
+                android:scrollbars="none" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/order_to_set_price"
+                android:textColor="@color/common_black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <net.iaround.ui.view.face.MyGridView
+            android:id="@+id/mgv_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:listSelector="#00000000"
+            android:numColumns="1"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+</ScrollView>

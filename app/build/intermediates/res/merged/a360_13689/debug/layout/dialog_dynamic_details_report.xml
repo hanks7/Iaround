@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llBackground"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/userFragment_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y138"
+            android:gravity="center_horizontal"
+            android:paddingTop="@dimen/y54"
+            android:textSize="@dimen/y36"
+            android:textColor="@color/chat_update_gray_text_color"
+            android:visibility="gone"
+            android:background="@color/common_white"/>
+        <View
+            android:id="@+id/customDialog_divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y1"
+            android:background="@color/chat_update_divider_of_toolMenu"
+            android:visibility="gone"/>
+        <LinearLayout
+            android:id="@+id/llContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:orientation="vertical" />
+
+        <TextView
+            android:id="@+id/tv_pop_dynamic_details_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y138"
+            android:layout_marginTop="@dimen/y30"
+            android:gravity="center"
+            android:textColor="@color/title_text"
+            android:background="@drawable/list_item_bg_selector"
+            android:textSize="@dimen/y42"
+            android:text="@string/dynamic_details_pop_cancel"/>
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:oneshot="false">
+    <item android:drawable="@drawable/cycle_frame_1" android:duration="@integer/cycle_animation_frame_duration" />
+	<item android:drawable="@drawable/cycle_frame_2" android:duration="@integer/cycle_animation_frame_duration" />
+	<item android:drawable="@drawable/cycle_frame_3" android:duration="@integer/cycle_animation_frame_duration" />
+	<item android:drawable="@drawable/cycle_frame_4" android:duration="@integer/cycle_animation_frame_duration" />
+	<item android:drawable="@drawable/cycle_frame_5" android:duration="@integer/cycle_animation_frame_duration" />
+	<item android:drawable="@drawable/cycle_frame_6" android:duration="@integer/cycle_animation_frame_duration" />
+	<item android:drawable="@drawable/cycle_frame_7" android:duration="@integer/cycle_animation_frame_duration" />
+	<item android:drawable="@drawable/cycle_frame_8" android:duration="@integer/cycle_animation_frame_duration" />
+	<item android:drawable="@drawable/cycle_frame_9" android:duration="@integer/cycle_animation_frame_duration" />
+	<item android:drawable="@drawable/cycle_frame_10" android:duration="@integer/cycle_animation_frame_duration" />
+	<item android:drawable="@drawable/cycle_frame_11" android:duration="@integer/cycle_animation_frame_duration" />
+	<item android:drawable="@drawable/cycle_frame_12" android:duration="@integer/cycle_animation_frame_duration" />
+	<item android:drawable="@drawable/cycle_frame_13" android:duration="@integer/cycle_animation_frame_duration" />
+	<item android:drawable="@drawable/cycle_frame_14" android:duration="@integer/cycle_animation_frame_duration" />
+	<item android:drawable="@drawable/cycle_frame_15" android:duration="@integer/cycle_animation_frame_duration" />
+	<item android:drawable="@drawable/cycle_frame_16" android:duration="@integer/cycle_animation_frame_duration" />
+	<item android:drawable="@drawable/cycle_frame_17" android:duration="@integer/cycle_animation_frame_duration" />
+	<item android:drawable="@drawable/cycle_frame_18" android:duration="@integer/cycle_animation_frame_duration" />
+	<item android:drawable="@drawable/cycle_frame_19" android:duration="@integer/cycle_animation_frame_duration" />
+	<item android:drawable="@drawable/cycle_frame_20" android:duration="@integer/cycle_animation_frame_duration" />
+	<item android:drawable="@drawable/cycle_frame_21" android:duration="@integer/cycle_animation_frame_duration" />
+	<item android:drawable="@drawable/cycle_frame_22" android:duration="@integer/cycle_animation_frame_duration" />
+	<item android:drawable="@drawable/cycle_frame_23" android:duration="@integer/cycle_animation_frame_duration" />
+</animation-list>

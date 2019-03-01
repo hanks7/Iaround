@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/common_white"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--android:background="@drawable/listview_item_divider"-->
+
+
+    <RelativeLayout
+        android:id="@+id/layout_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_white"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <net.iaround.ui.view.HeadPhotoView
+            android:id="@+id/friend_icon"
+            android:layout_width="@dimen/x180"
+            android:layout_height="@dimen/y180"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x30"
+            android:layout_marginTop="@dimen/y21"
+            android:layout_marginBottom="@dimen/y24"
+            />
+        <!--右侧时间-->
+        <TextView
+            android:id="@+id/onlineTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x48"
+            android:layout_marginTop="@dimen/y50"
+            android:singleLine="true"
+            android:textColor="@color/gray_text_color"
+            android:textSize="@dimen/y33" />
+        <!--用户名-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/friend_icon"
+            android:orientation="vertical"
+            android:layout_centerVertical="true">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxEms="11"
+                    android:singleLine="true"
+                    android:textColor="@color/edit_user_value"
+                    android:textSize="@dimen/y42" />
+                <TextView
+                    android:id="@+id/tv_chatbar_bg"
+                    android:layout_width="30dp"
+                    android:layout_height="14dp"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="center"
+                    tools:text="聊吧"
+                    android:textColor="@color/common_white"
+                    android:textSize="10sp"
+                    android:text="@string/user_fragment_circle"
+                    android:background="@drawable/msg_chatbar_bg"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/tv_anchor_bg"
+                    android:layout_width="30dp"
+                    android:layout_height="14dp"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="center"
+                    tools:text="@string/item_anchor_mark"
+                    android:textColor="@color/common_white"
+                    android:textSize="10sp"
+                    android:text="@string/item_anchor_mark"
+                    android:background="@drawable/msg_chat_user_anchor"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userName"
+                android:layout_marginTop="@dimen/y30"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/chat_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/message_send_arri"
+                    android:gravity="center"
+                    android:textSize="9dp"
+                    android:textColor="@color/white"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/tv_notice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:maxEms="15"
+                    android:textSize="@dimen/y36"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/gray_text_color" />
+            </LinearLayout>
+        </LinearLayout>
+        <!--android:maxWidth="@dimen/x90"-->
+        <net.iaround.ui.view.DragPointView
+            android:id="@+id/chat_num_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/onlineTag"
+            android:layout_marginRight="@dimen/x45"
+            android:layout_marginTop="@dimen/y30"
+            android:gravity="center"
+            android:textSize="@dimen/y33"
+            android:textColor="@color/white" />
+        <View
+            android:id="@+id/divider_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/x240"
+            android:background="@color/chat_update_divider_of_messageItem"
+            />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:button="@drawable/nearby_filter_checkbox_selector"
+        android:visibility="gone" />
+
+    <net.iaround.ui.view.HeadPhotoView
+        android:id="@+id/icon"
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginLeft="11dp"/>
+
+    <LinearLayout
+        android:id="@+id/content_userinfo_ly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/icon"
+        android:orientation="vertical" >
+
+        <include layout="@layout/iaround_chat_userinfo_view" />
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="196dp"
+            android:layout_height="132dp"
+            android:background="@drawable/chat_new_record_friend_bg"
+            android:gravity="center_vertical"
+            android:minHeight="48dp" >
+
+            <ImageView
+                android:id="@+id/content_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/iaround_default_img" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/userFragment_bg"
+    android:orientation="vertical"
+    android:visibility="visible">
+    
+    <net.iaround.ui.group.SyncInfoItemView
+        android:id="@+id/llShareBar"
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+    </net.iaround.ui.group.SyncInfoItemView>
+    
+    <RelativeLayout 
+        android:id="@+id/rlContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!--评论标识-->
+    <TextView
+        android:id="@+id/tvCommentFlag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/comment_flag_bg"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp"
+        android:text="@string/review"
+        android:textColor="@color/white"
+        android:visibility="gone"/>
+
+</LinearLayout>

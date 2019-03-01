@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/main_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent">
+
+    <LinearLayout
+            android:id="@+id/share_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+        <RelativeLayout
+                android:id="@+id/top_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="22dp"
+                android:layout_marginTop="14dp"
+                android:visibility="gone">
+
+            <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text=""
+                    android:textColor="@color/c_999999"
+                    android:textSize="18sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/share_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+
+            <android.support.v4.view.ViewPager
+                    android:id="@+id/share_viewpager"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:scrollbars="none">
+
+            </android.support.v4.view.ViewPager>
+
+            <net.iaround.ui.view.dynamic.CirclePageIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    app:fillColor="#b1b1b1"
+                    app:strokeColor="#b1b1b1"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+            android:id="@+id/outside_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/share_layout"
+            android:background="@color/transparent"/>
+
+</RelativeLayout>

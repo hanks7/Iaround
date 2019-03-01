@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/mipmap-xhdpi-v4/icon.png",
+        "source": "/Users/zhangsen/iaround/iaround-android-online/app/src/main/res/mipmap-xhdpi/icon.png"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/mipmap-xhdpi-v4/gt3logogray.png",
+        "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/geetest_testbutton_android_v3.4.9.aar/de7250a011dee01691b50ea881d2cf01/res/mipmap-xhdpi-v4/gt3logogray.png"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/mipmap-xhdpi-v4/gt3logogreen.png",
+        "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/geetest_testbutton_android_v3.4.9.aar/de7250a011dee01691b50ea881d2cf01/res/mipmap-xhdpi-v4/gt3logogreen.png"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/mipmap-xhdpi-v4/gt3logored.png",
+        "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/geetest_testbutton_android_v3.4.9.aar/de7250a011dee01691b50ea881d2cf01/res/mipmap-xhdpi-v4/gt3logored.png"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/mipmap-xhdpi-v4/ic_launcher.png",
+        "source": "/Users/zhangsen/iaround/iaround-android-online/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    }
+]

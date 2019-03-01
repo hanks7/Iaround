@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/wfill_hwrap"
+    android:orientation="vertical">
+
+    <!--用户是游戏主播提示布局-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:background="@color/chat_update_divider_of_messageItem" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y147"
+        android:background="@color/common_white"
+        android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center_vertical">
+                <TextView
+                    android:id="@+id/user_game_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="left"
+                    android:ellipsize="end"
+                    android:textColor="@color/common_black"
+                    android:textSize="14sp"
+                    android:visibility="visible" />
+                <TextView
+                    android:id="@+id/tv_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/tv_sex"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/user_game_name"
+                    android:background="@drawable/home_page_game_rank_shape"
+                    android:textColor="@color/common_white"
+                    android:layout_marginTop="1dp"
+                    android:visibility="visible"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/chat_user_game_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_below="@id/user_game_name"
+                    android:gravity="left"
+                    android:textColor="@color/c_999999"
+                    android:textSize="12sp"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_make_order"
+                android:layout_width="50dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center"
+                android:layout_toLeftOf="@+id/user_group_hint_close"
+                android:layout_marginRight="24dp"
+                android:visibility="visible"
+                android:background="@drawable/selector_round_rectangle_bg"
+                android:gravity="center"
+                android:text="@string/make_order"
+                android:textColor="@drawable/selector_text_red_white_bg"
+                android:textSize="12sp"/>
+
+            <Button
+                android:id="@+id/user_game_hint_close"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/icon_close_skill"
+                android:visibility="visible" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

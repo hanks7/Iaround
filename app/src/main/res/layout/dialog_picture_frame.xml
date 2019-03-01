@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ly_picture_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:background="@color/bg_color">
+
+        <TextView
+            android:id="@+id/tv_pop_picture_frame_modify_head"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y138"
+            android:gravity="center"
+            android:textColor="@drawable/txt_picture_frame_selector"
+            android:background="@drawable/list_item_bg_selector"
+            android:textSize="@dimen/y42"
+            android:visibility="gone"
+            android:text="@string/space_modify_head_view"/>
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y1"
+            android:visibility="gone"
+            android:background="@color/encounter_base_info_line"/>
+
+
+        <TextView
+            android:id="@+id/tv_pop_picture_frame_review_big"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y138"
+            android:gravity="center"
+            android:textColor="@drawable/txt_picture_frame_selector"
+            android:background="@drawable/list_item_bg_selector"
+            android:textSize="@dimen/y42"
+            android:visibility="gone"
+            android:text="@string/space_modify_review_big_phtoo"/>
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y1"
+            android:background="@color/encounter_base_info_line"/>
+
+        <TextView
+            android:id="@+id/tv_pop_picture_frame_delete"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y138"
+            android:gravity="center"
+            android:textColor="@drawable/txt_picture_frame_selector"
+            android:background="@drawable/list_item_bg_selector"
+            android:textSize="@dimen/y42"
+            android:visibility="gone"
+            android:text="@string/del_photo"/>
+
+
+
+        <TextView
+            android:id="@+id/tv_pop_picture_frame_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y138"
+            android:layout_marginTop="@dimen/y30"
+            android:gravity="center"
+            android:textColor="@color/title_text"
+            android:background="@drawable/list_item_bg_selector"
+            android:textSize="@dimen/y45"
+            android:text="@string/dynamic_details_pop_cancel"/>
+
+        </LinearLayout>
+
+</FrameLayout>

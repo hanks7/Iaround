@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y168"
+        android:background="@color/common_white"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/fl_detailed_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_detailed_left"
+                android:layout_width="@dimen/x28"
+                android:layout_height="@dimen/y50"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/x64"
+                android:layout_marginRight="@dimen/x68"
+                android:src="@drawable/title_back" />
+        </FrameLayout>
+
+        <net.lucode.hackware.magicindicator.MagicIndicator
+            android:id="@+id/tb_detailed_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal" />
+
+    </FrameLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y2"
+        android:layout_below="@id/linearLayout"
+        android:background="@color/encounter_base_info_line" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_detailed_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/line" />
+
+</RelativeLayout>

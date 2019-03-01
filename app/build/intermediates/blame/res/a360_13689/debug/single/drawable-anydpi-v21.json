@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/drawable-anydpi-v21/design_ic_visibility.xml",
+        "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/1993906930ebe08a7f98d1cabfb917e4/res/drawable-anydpi-v21/design_ic_visibility.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/drawable-anydpi-v21/design_ic_visibility_off.xml",
+        "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/1993906930ebe08a7f98d1cabfb917e4/res/drawable-anydpi-v21/design_ic_visibility_off.xml"
+    }
+]

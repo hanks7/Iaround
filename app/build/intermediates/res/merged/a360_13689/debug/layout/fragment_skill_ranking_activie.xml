@@ -1,0 +1,411 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/ll_userInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/fragmet_skill_activie_round_background"
+
+      >
+
+
+        <RelativeLayout
+            android:id="@+id/rl_skill_fragment_active_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <include layout="@layout/fragment_skill_item_larger"></include>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="15dp">
+                <RelativeLayout
+                    android:id="@+id/rl_fragment_skill_photo_one"
+                    android:layout_width="57dp"
+                    android:layout_height="57dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_centerVertical="true">
+                    <ImageView
+                        android:id="@+id/iv_fragment_skill_photo_one"
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:layout_centerInParent="true"
+                    />
+
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/tv_fragment_skill_name_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="大嬷嬷"
+                    android:layout_centerVertical="true"
+                    android:textSize="14sp"
+                    android:textColor="@color/edit_user_value"
+                    android:layout_toRightOf="@+id/rl_fragment_skill_photo_one"/>
+                <LinearLayout
+                    android:id="@+id/ll_fragment_skill_one_member"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true">
+                    <net.iaround.ui.view.HeadPhotoView
+                        android:id="@+id/fragment_skill_one_member_fist"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="3dp"/>
+                    <net.iaround.ui.view.HeadPhotoView
+                        android:id="@+id/fragment_skill_one_member_second"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="3dp"/>
+
+                    <net.iaround.ui.view.HeadPhotoView
+                        android:id="@+id/fragment_skill_one_member_third"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="9dp"/>
+                    <ImageView
+                        android:id="@+id/fragment_skill_member_one_enter"
+                        android:layout_width="9dp"
+                        android:layout_height="9dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/user_detail"/>
+
+
+
+                </LinearLayout>
+                <!--分割线-->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y1"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/chat_update_divider_of_messageItem" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_skill_fragment_active_two"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_below="@+id/rl_skill_fragment_active_one"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+            <RelativeLayout
+                android:id="@+id/rl_fragment_skill_photo_two"
+                android:layout_width="57dp"
+                android:layout_height="57dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true">
+                <ImageView
+                    android:id="@+id/iv_fragment_skill_photo_two"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:layout_centerInParent="true"
+                />
+
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_fragment_skill_name_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="大嬷嬷"
+                android:textSize="14sp"
+                android:textColor="@color/edit_user_value"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/rl_fragment_skill_photo_two"/>
+            <LinearLayout
+                android:id="@+id/ll_fragment_skill_two_member"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+                <net.iaround.ui.view.HeadPhotoView
+                    android:id="@+id/fragment_skill_two_member_fist"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="3dp"/>
+                <net.iaround.ui.view.HeadPhotoView
+                    android:id="@+id/fragment_skill_two_member_second"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="3dp"/>
+
+                <net.iaround.ui.view.HeadPhotoView
+                    android:id="@+id/fragment_skill_two_member_third"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="9dp"/>
+                <ImageView
+                    android:id="@+id/fragment_skill_member_two_enter"
+                    android:layout_width="9dp"
+                    android:layout_height="9dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/user_detail"/>
+
+
+
+            </LinearLayout>
+            <!--分割线-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y1"
+                android:layout_alignParentBottom="true"
+                android:background="@color/chat_update_divider_of_messageItem" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_skill_fragment_active_three"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_below="@+id/rl_skill_fragment_active_two"
+            >
+            <RelativeLayout
+                android:id="@+id/rl_fragment_skill_photo_three"
+                android:layout_width="57dp"
+                android:layout_height="57dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true">
+                <ImageView
+                    android:id="@+id/iv_fragment_skill_photo_three"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:layout_centerInParent="true"
+                    />
+
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_fragment_skill_name_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="大嬷嬷"
+                android:textSize="14sp"
+                android:textColor="@color/edit_user_value"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/rl_fragment_skill_photo_three"/>
+            <LinearLayout
+                android:id="@+id/ll_fragment_skill_three_member"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+                <net.iaround.ui.view.HeadPhotoView
+                    android:id="@+id/fragment_skill_three_member_fist"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="3dp"/>
+                <net.iaround.ui.view.HeadPhotoView
+                    android:id="@+id/fragment_skill_three_member_second"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="3dp"/>
+
+                <net.iaround.ui.view.HeadPhotoView
+                    android:id="@+id/fragment_skill_three_member_third"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="9dp"/>
+                <ImageView
+                    android:id="@+id/fragment_skill_member_three_enter"
+                    android:layout_width="9dp"
+                    android:layout_height="9dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/user_detail"/>
+
+
+
+            </LinearLayout>
+            <!--分割线-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y1"
+                android:layout_alignParentBottom="true"
+                android:background="@color/chat_update_divider_of_messageItem" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_skill_fragment_active_four"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_below="@+id/rl_skill_fragment_active_three"
+            >
+            <RelativeLayout
+                android:id="@+id/rl_fragment_skill_photo_four"
+                android:layout_width="57dp"
+                android:layout_height="57dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true">
+                <ImageView
+                    android:id="@+id/iv_fragment_skill_photo_four"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:layout_centerInParent="true"
+                    />
+
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_fragment_skill_name_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="大嬷嬷"
+                android:textSize="14sp"
+                android:textColor="@color/edit_user_value"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/rl_fragment_skill_photo_four"/>
+            <LinearLayout
+                android:id="@+id/ll_fragment_skill_four_member"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+                <net.iaround.ui.view.HeadPhotoView
+                    android:id="@+id/fragment_skill_four_member_fist"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="3dp"/>
+                <net.iaround.ui.view.HeadPhotoView
+                    android:id="@+id/fragment_skill_four_member_second"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="3dp"/>
+
+                <net.iaround.ui.view.HeadPhotoView
+                    android:id="@+id/fragment_skill_four_member_third"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="9dp"/>
+                <ImageView
+                    android:id="@+id/fragment_skill_member_four_enter"
+                    android:layout_width="9dp"
+                    android:layout_height="9dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/user_detail"/>
+
+
+
+            </LinearLayout>
+            <!--分割线-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y1"
+                android:layout_alignParentBottom="true"
+                android:background="@color/chat_update_divider_of_messageItem" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_skill_fragment_active_five"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_below="@+id/rl_skill_fragment_active_four"
+            >
+            <RelativeLayout
+                android:id="@+id/rl_fragment_skill_photo_five"
+                android:layout_width="57dp"
+                android:layout_height="57dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true">
+                <ImageView
+                    android:id="@+id/iv_fragment_skill_photo_five"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:layout_centerInParent="true"
+                    />
+
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_fragment_skill_name_five"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="大嬷嬷"
+                android:textSize="14sp"
+                android:textColor="@color/edit_user_value"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/rl_fragment_skill_photo_five"/>
+            <LinearLayout
+                android:id="@+id/ll_fragment_skill_five_member"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+                <net.iaround.ui.view.HeadPhotoView
+                    android:id="@+id/fragment_skill_five_member_fist"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="3dp"/>
+                <net.iaround.ui.view.HeadPhotoView
+                    android:id="@+id/fragment_skill_five_member_second"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="3dp"/>
+
+                <net.iaround.ui.view.HeadPhotoView
+                    android:id="@+id/fragment_skill_five_member_third"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="9dp"/>
+                <ImageView
+                    android:id="@+id/fragment_skill_member_five_enter"
+                    android:layout_width="9dp"
+                    android:layout_height="9dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/user_detail"/>
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="28dp"
+            android:background="@drawable/ranking_skill_active_head"
+            android:layout_centerHorizontal="true"
+            android:text="@string/rank_skill_name_active"
+            android:gravity="center"
+            android:textColor="@color/rank_skill_active_yellow"
+            android:layout_marginTop="6dp"
+            />
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

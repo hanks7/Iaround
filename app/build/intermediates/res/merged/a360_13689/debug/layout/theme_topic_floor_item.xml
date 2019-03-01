@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/common_white">
+
+    <net.iaround.ui.view.HeadPhotoView
+        android:id="@+id/topic_reviewer_icon"
+        android:layout_width="@dimen/x150"
+        android:layout_height="@dimen/y150"
+        android:layout_marginTop="@dimen/y36"
+        android:layout_marginBottom="@dimen/y30"
+        android:layout_marginLeft="@dimen/x36"
+        android:layout_marginRight="@dimen/x24"
+        android:scaleType="centerCrop"
+        android:src="@drawable/iaround_default_img"/>
+
+    <!--评论楼层和时间-->
+    <LinearLayout
+        android:id="@+id/topic_review_extra_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="17dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/topic_review_floor_num_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:textColor="@color/chat_update_gray_text_color"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/topic_review_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/chat_update_gray_text_color"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <!--评论者信息 和评论内容-->
+    <RelativeLayout
+        android:id="@+id/topic_reviewer_info_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/topic_reviewer_icon">
+
+        <!--评论者名字-->
+        <TextView
+            android:id="@+id/topic_reviewer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="20dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/chat_update_edit_user_value"
+            android:textSize="14dp" />
+
+        <!--评论者性别年龄-->
+        <LinearLayout
+            android:id="@+id/llReviewInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:layout_toRightOf="@+id/topic_reviewer_name"
+            android:orientation="horizontal" >
+            <RelativeLayout
+                android:id="@+id/rlAgeSex"
+                android:layout_width="30dp"
+                android:layout_height="14dp"
+                android:background="@drawable/group_member_age_man_bg">
+                <ImageView
+                    android:id="@+id/ivSex"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/thread_register_man_select"/>
+                <TextView
+                    android:id="@+id/topic_reviewer_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/ivSex"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="23"
+                    android:textColor="@color/common_white"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+            <ImageView
+                android:id="@+id/topic_reviewer_svip_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:visibility="gone"
+                android:src="@drawable/z_common_svip_icon" />
+
+            <TextView
+                android:id="@+id/topic_publisher_flag"
+                android:layout_width="30dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="4dp"
+                android:background="@drawable/flag_louzhu"
+                android:gravity="center"
+                android:text="@string/group_topic_owner"
+                android:textColor="@color/common_white"
+                android:textSize="10dp"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/topic_review_main_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/topic_reviewer_name"
+            android:layout_marginTop="11dp"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/topic_review_target_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/common_white" >
+
+                <!--回复**楼-->
+                <TextView
+                    android:id="@+id/topic_review_target_floor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="27dp"
+                    android:textColor="@color/chat_update_gray_text_color"
+                    android:textSize="13sp"
+                    android:visibility="gone"/>
+
+                <!--回复谁的评论-->
+                <TextView
+                    android:id="@+id/topic_review_target_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/topic_review_target_floor"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/chat_update_gray_text_color"
+                    android:textSize="13sp"
+                    android:visibility="gone"/>
+
+                <View
+                    android:id="@+id/topic_review_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@id/topic_review_target_name"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#DEDDDC"
+                    android:visibility="gone"/>
+
+                <!--评论内容-->
+                <TextView
+                    android:id="@+id/topic_review_target_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/topic_review_divider"
+                    android:textColor="@color/chat_update_gray_text_color"
+                    android:textSize="13sp" />
+
+                <View
+                    android:id="@+id/topic_review_space"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_below="@id/topic_review_target_content"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/topic_first_review_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/topic_review_target_view"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="27.7dp"
+                android:visibility="visible">
+                <LinearLayout
+                    android:id="@+id/llReviewContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/reviewCommentName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:textColor="@color/chat_update_gray_text_color"/>
+                    <TextView
+                        android:id="@+id/topic_review_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:textColor="@color/chat_update_gray_text_color"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <include
+                    android:id="@+id/review_location_info"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/llReviewContent"
+                    android:layout_marginTop="5dp"
+                    layout="@layout/location_info_view"
+                    android:visibility="gone" />
+
+                <View
+                    android:id="@+id/topic_review_space2"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@id/review_location_info" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

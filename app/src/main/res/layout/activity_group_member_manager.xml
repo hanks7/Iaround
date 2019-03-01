@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/userFragment_bg">
+
+    <include
+        android:id="@+id/manager_title"
+        layout="@layout/title_bar" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshPinnedSectionListView
+        android:id="@+id/member_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/y138"
+        android:layout_below="@+id/manager_title"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:overScrollMode="never" />
+
+    <LinearLayout
+        android:id="@+id/member_operate_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y138"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/btn_set_manager"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/group_set_manager"
+            android:textColor="@color/chat_update_message_count"
+            android:textSize="@dimen/y42" />
+        <View
+            android:layout_width="@dimen/x1"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/y48"
+            android:layout_marginBottom="@dimen/y48"
+            android:background="@color/line"/>
+        <TextView
+            android:id="@+id/btn_cancel_manager"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/group_cancel_manager"
+            android:textColor="@color/chat_update_message_count"
+            android:textSize="@dimen/y42"/>
+
+        <View
+            android:layout_width="@dimen/x1"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/y48"
+            android:layout_marginBottom="@dimen/y48"
+            android:background="@color/line"/>
+
+        <TextView
+            android:id="@+id/btn_kickoff_group"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/kick_off_group"
+            android:textColor="@color/chat_update_message_count"
+            android:textSize="@dimen/y42"/>
+    </LinearLayout>
+
+</RelativeLayout>

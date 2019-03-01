@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:background="@color/chat_bg"
+    android:orientation="vertical">
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/message_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:fadingEdge="none"
+        android:scrollbars="none" >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+    <RelativeLayout
+        android:id="@+id/rl_btnSoundSwithcher"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/common_white">
+        <ImageView
+            android:id="@+id/flag_barrage"
+            android:layout_width="42dp"
+            android:layout_height="24dp"
+            android:background="@drawable/barrage_open"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:visibility="visible" />
+
+        <EditText
+            android:layout_toEndOf="@+id/flag_barrage"
+            android:id="@+id/editContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:layout_marginStart="11dp"
+            android:hint="发全国消息需要消耗50钻石"
+            android:paddingEnd="55dp"
+            android:maxLength="140"
+            android:inputType="textMultiLine"
+            android:singleLine="false"
+            android:textColor="@color/edit_user_value"
+            android:textColorHint="@color/chat_update_chatInput_hintTextColor"
+            android:textCursorDrawable="@color/login_btn"
+            android:textSize="15sp"
+            android:visibility="visible"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:id="@+id/btnSend"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="9.7dp"
+            android:layout_marginBottom="9.3dp"
+            android:text="@string/chat_sendText"
+            android:gravity="center"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:textColor="@color/white"
+            android:layout_alignParentEnd="true"
+            android:textSize="14sp"
+            android:background="@drawable/chat_update_background_of_send"/>
+    </RelativeLayout>
+
+</LinearLayout>

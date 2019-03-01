@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/activity_basic_style"
+    android:orientation="vertical"
+	android:background="@color/userFragment_bg">
+    <include layout="@layout/title_bar"/>
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/y1"
+		android:background="@color/chat_update_divider_of_toolMenu"/>
+	<RelativeLayout
+		android:layout_height="wrap_content"
+	    android:layout_width="fill_parent">
+	    <ImageView
+			android:id="@+id/img"
+	        android:layout_width="166dip"
+            android:layout_height="166dip"
+            android:layout_marginTop="8dip"
+            android:src="@drawable/cat_group_use_info"
+            android:visibility="gone"/>
+	    <TextView
+			android:id="@+id/tv_user_hint"
+			android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="@dimen/y48"
+			android:layout_marginLeft="@dimen/x48"
+			android:layout_marginRight="@dimen/x48"
+	        android:textSize="@dimen/y36"
+	        android:textColor="@color/chat_update_gray_text_color"
+	        android:text="@string/group_use_info"
+	        />
+	    <Button
+			android:id="@+id/btn_to_group_chat"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/y124"
+			android:layout_marginLeft="@dimen/x50"
+			android:layout_marginRight="@dimen/x50"
+			android:layout_marginTop="@dimen/y43"
+			android:background="@drawable/btn_takepic_selector"
+			android:textSize="@dimen/y42"
+			android:layout_below="@id/tv_user_hint"
+	        android:text="@string/group_create_i_know"
+	        android:gravity="center"
+	        android:textColor="@color/white"
+	        />
+
+	</RelativeLayout>
+
+
+</LinearLayout>

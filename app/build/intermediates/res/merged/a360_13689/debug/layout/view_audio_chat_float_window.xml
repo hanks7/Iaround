@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<net.iaround.floatwindow.FloatWindowView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:floatWindowHeight="83dp"
+    app:floatWindowWidth="75dp"
+    app:screenBottom="80dp"
+    app:screenRight="3dp">
+
+    <LinearLayout
+        android:layout_width="75dp"
+        android:layout_height="83dp"
+        android:background="@drawable/frame"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/icon_phone" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/common_white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+</net.iaround.floatwindow.FloatWindowView>

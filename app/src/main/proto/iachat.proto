@@ -1,0 +1,135 @@
+syntax = "proto2";
+
+package net.iaround.im.proto;
+
+enum CmdID {
+    CMD_ID_LOGIN = 1001;
+    CMD_ID_LOGOUT = 1003;
+    CMD_ID_SEND_MSG = 1011;
+    CMD_ID_SET_BACKGROUND = 1015;
+    CMD_ID_INVITE_VIDEO_CHAT = 1101;
+    CMD_ID_CONFIRM_VIDEO_CHAT = 1103;
+    CMD_ID_BLUR_VIDEO_CHAT =  1105;
+    CMD_ID_START_VIDEO_CHAT = 1109;
+    CMD_ID_CLOSE_VIDEO_CHAT = 1111;
+    CMD_ID_PAY = 1113;
+    CMD_ID_PAY_VERIFY = 1115;
+    CMD_ID_CANCEL_VIDEO_CHAT = 1121;
+    CMD_ID_REJECT_VIDEO_CHAT = 1123;
+    CMD_ID_PUSH_INVITE_VIDEO = 1135;
+    CMD_ID_PUSH_START_VIDEO = 1137;
+    CMD_ID_PUSH_CLOSE_VIDEO = 1139;
+    CMD_ID_PUSH_PAY_VIDEO = 1141;
+    CMD_ID_PUSH_BLUR_VIDEO = 1143;
+    CMD_ID_PUSH_FINISH_VIDEO = 1145;
+    CMD_ID_PUSH_LOGIN_VIDEO = 1005;
+    CMD_ID_PUSH_MESSAGE = 1009;
+}
+
+/*
+RET:
+ 0      OK
+-101    login failed
+-103    send msg failed
+-151    invit video failed
+-152    user busy
+-153    no response
+-154    timeout
+-161    payment failed
+-162    balance is not enough
+*/
+
+enum ErrorCode {
+    ERR_SUCCESS = 0;
+    ERR_PARAMS_ERROR = -1;
+    ERR_LOGIN_FAIL = -101;
+    ERR_SEND_MSG_FAIL = -103;
+    ERR_INVITE_VIDEO_FAIL = -151;
+    ERR_USER_BUSY = -152;
+    ERR_NO_RESPONSE = -153;
+    ERR_TIMEOUT = -154;
+    ERR_VIDEO_CHAT_CLOSED = -155;
+    ERR_PAYMENT_FAIL = -161;
+    ERR_BALANCE_NOT_ENOUGH = -162;
+    ERR_ERROR = -169;
+}
+
+enum AuthType {
+    AUTH_ACCOUNT = 0;
+    AUTH_MOBILE = 1;
+    AUTH_TOKEN = 2;
+    AUTH_WECHAT = 3;
+    AUTH_QQ = 4;
+    AUTH_WEIBO = 5;
+    AUTH_FACEBOOK = 6;
+    AUTH_TWITTER = 7;
+}
+
+enum MsgType {
+    MSG_DEFAULT = 0;
+    MSG_GIFT = 1;
+    MSG_WARN_ANCHOR = 2;
+}
+
+
+message LoginReq
+{
+    required AuthType   auth_type = 1;
+    required string     auth_token = 2;
+    required int64      uid = 3;
+    required string     username = 4;
+    required string     password = 5;
+    required int64      timestamp = 6;
+}
+
+
+message LoginRsp
+{
+    required ErrorCode  err_code = 1;
+    required string     err_msg = 2;
+    optional string     auth_token = 3;
+}
+
+message LogoutReq
+{
+    required string  auth_token = 1;
+    required int64   uid = 2;
+}
+
+message LogoutRsp
+{
+    required ErrorCode  err_code = 1;
+    required string     err_msg = 2;
+}
+
+message SendMsgReq {
+    required MsgType    msg_type = 1;
+    required int64      from = 2;
+    required int64      to = 3;
+    required string     text = 4;
+}
+
+message SendMsgRsp {
+    required ErrorCode  err_code = 1;
+    required string     err_msg = 2;
+}
+
+
+message SetBgReq {
+    required int32  state  = 1;
+}
+
+message SetBgRsp {
+    required ErrorCode  err_code = 1;
+    required string     err_msg = 2;
+}
+
+message PushLogin {
+}
+
+message PushMsg {
+    required MsgType    msg_type = 1;
+    required int64      from = 2;
+    required int64      to = 3;
+    required string     text = 4;
+}

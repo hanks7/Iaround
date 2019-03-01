@@ -1,0 +1,318 @@
+apply plugin: 'com.android.application'
+apply plugin: 'bugly'
+apply plugin: 'com.google.protobuf'
+apply plugin: 'cleanad'
+apply from: 'tinkerpatch.gradle'
+
+bugly {
+    appId = '900001692' // 注册时分配的App ID
+    appKey = 'cLkpETJheYILJN79' // 注册时分配的App Key
+    debug = false
+}
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+    defaultConfig {
+        applicationId "net.iaround"
+
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+
+        ndk {
+            abiFilters "armeabi"
+        }
+
+        renderscriptTargetApi 17
+        renderscriptSupportModeEnabled true
+        multiDexEnabled true //突破应用方法数65535的一个限制
+        multiDexKeepProguard file("tinkerMultidexKeep.pro")
+        //keep specific classes using proguard syntax
+        manifestPlaceholders = [UMENG_CHANNEL_VALUE: "yujian_guanwang_13636"] //默认名称
+
+        flavorDimensions "default"
+    }
+
+    useLibrary 'org.apache.http.legacy'
+
+    signingConfigs {
+        release {
+            storeFile file('iaround.keystore')
+            storePassword "iaroundlinyg"
+            keyAlias "iaround"
+            keyPassword "iaroundlinyg"
+        }
+        debug {
+            storeFile file('debug.keystore')
+        }
+    }
+
+    dexOptions {
+        jumboMode true
+        javaMaxHeapSize "4g"
+        preDexLibraries = false
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    sourceSets {
+        main {
+            aidl.srcDirs = ['src/main/aidl']
+            proto.srcDirs = ['src/main/proto']
+            java.srcDirs = ['src/main/java']
+            res.srcDirs = ['src/main/res']
+            jniLibs.srcDirs = ['src/main/jniLibs']
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        //执行这段代码是去掉广告
+        //exclude 'assets/gdt_plugin/gdtadv2.jar'
+    }
+    buildTypes {
+
+        debug {
+            debuggable true
+            //混淆
+            minifyEnabled false
+            multiDexEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard.cfg'
+            signingConfig signingConfigs.debug
+        }
+        release {
+            minifyEnabled true
+            multiDexEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard.cfg'
+            shrinkResources true
+            signingConfig signingConfigs.release
+        }
+
+    }
+
+    productFlavors {
+        anzhi_13677 {
+            dimension "default"
+            buildConfigField "String", "packageID", '"13677"'
+            buildConfigField "Boolean", "showAdvert", 'true'
+        }
+        sougou_13678 {
+            dimension "default"
+            buildConfigField "String", "packageID", '"13678"'
+            buildConfigField "Boolean", "showAdvert", 'true'
+        }
+        ali_13679 {
+            dimension "default"
+            buildConfigField "String", "packageID", '"13679"'
+            buildConfigField "Boolean", "showAdvert", 'true'
+        }
+        meizu_13680 {
+            dimension "default"
+            buildConfigField "String", "packageID", '"13680"'
+            buildConfigField "Boolean", "showAdvert", 'true'
+        }
+        wandoujia_13681 {
+            dimension "default"
+            buildConfigField "String", "packageID", '"13681"'
+            buildConfigField "Boolean", "showAdvert", 'true'
+        }
+        vivo_13682 {
+            dimension "default"
+            buildConfigField "String", "packageID", '"13682"'
+            buildConfigField "Boolean", "showAdvert", 'true'
+        }
+        //手动去广告
+        oppo_13683 {
+            dimension "default"
+            buildConfigField "String", "packageID", '"13683"'
+            buildConfigField "Boolean", "showAdvert", 'false'
+        }
+        chuizi_13684 {
+            dimension "default"
+            buildConfigField "String", "packageID", '"13684"'
+            buildConfigField "Boolean", "showAdvert", 'true'
+        }
+        lenovo_13685 {
+            dimension "default"
+            buildConfigField "String", "packageID", '"13685"'
+            buildConfigField "Boolean", "showAdvert", 'true'
+        }
+        samsung_13686 {
+            dimension "default"
+            buildConfigField "String", "packageID", '"13686"'
+            buildConfigField "Boolean", "showAdvert", 'true'
+        }
+        //手动去广告
+        jinli_13687 {
+            dimension "default"
+            buildConfigField "String", "packageID", '"13687"'
+            buildConfigField "Boolean", "showAdvert", 'false'
+        }
+        xiaomi_13688 {
+            dimension "default"
+            buildConfigField "String", "packageID", '"13688"'
+            buildConfigField "Boolean", "showAdvert", 'true'
+        }
+        a360_13689 {
+            dimension "default"
+            buildConfigField "String", "packageID", '"13689"'
+            buildConfigField "Boolean", "showAdvert", 'true'
+        }
+        baidu_13690 {
+            dimension "default"
+            buildConfigField "String", "packageID", '"13690"'
+            buildConfigField "Boolean", "showAdvert", 'true'
+        }
+        tencent_13691 {
+            dimension "default"
+            buildConfigField "String", "packageID", '"13691"'
+            buildConfigField "Boolean", "showAdvert", 'true'
+        }
+        huawei_13692 {
+            dimension "default"
+            buildConfigField "String", "packageID", '"13692"'
+            buildConfigField "Boolean", "showAdvert", 'true'
+        }
+        yujian_guanwang_13693 {
+            dimension "default"
+            buildConfigField "String", "packageID", '"13693"'
+            buildConfigField "Boolean", "showAdvert", 'true'
+        }
+        //自动去广告，由 Config 开关控制
+        google_13694 {
+            dimension "default"
+            buildConfigField "String", "packageID", '"13694"'
+            buildConfigField "Boolean", "showAdvert", 'false'
+        }
+        yingyonghui_13658 {
+            dimension "default"
+            buildConfigField "String", "packageID", '"13658"'
+            buildConfigField "Boolean", "showAdvert", 'true'
+        }
+
+    }
+    productFlavors.all { flavor ->
+        flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+    }
+
+    //指定apk名字输出格式
+//    applicationVariants.all { variant ->
+//        variant.outputs.each { output ->
+//            output.outputFile = new File(
+//                    output.outputFile.parent,
+//                    "${variant.productFlavors[0].name}.apk")
+//        }
+//    }
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            outputFileName = "${variant.productFlavors[0].name}.apk"
+        }
+    }
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+            jcenter()
+        }
+    }
+
+}
+
+protobuf {
+    protoc {
+        artifact = 'com.google.protobuf:protoc:3.0.0-alpha-3'
+    }
+    generateProtoTasks {
+        all().each { task ->
+            task.builtins {
+                javanano {}
+            }
+        }
+    }
+}
+
+cleanad {
+    showad true   //只有去除广告时候才为 false
+    classname "net.iaround.ui.activity.SplashActivity:net.iaround.ui.adapter.DynamicAdapterNew:net.iaround.ui.fragment.DynamicCenterFragment:net.iaround.ui.fragment.Near1Fragment:net.iaround.ui.activity.NearActivity"
+    deleteclass "/net/iaround/ui/dynamic/thirdadvert/ThridAdServiceCenter.class:/net/iaround/ui/dynamic/view/DynamicThridGdtAdView.class:/net/iaround/ui/dynamic/view/DynamicThridGdtAdView\$1.class:/net/iaround/ui/dynamic/view/DynamicThridGdtAdView\$2.class:/net/iaround/ui/dynamic/view/DynamicThridGdtAdView\$3.class:/net/iaround/ui/dynamic/view/DynamicThridGdtAdView\$4.class:/net/iaround/ui/dynamic/view/DynamicThridGdtAdView\$5.class:/net/iaround/ui/view/near/NearThridGdtAdView.class:/net/iaround/ui/view/near/NearThridGdtAdView\$1.class:/net/iaround/ui/view/near/NearThridGdtAdView\$2.class:/net/iaround/ui/view/near/NearThridGdtAdView\$3.class:/net/iaround/ui/view/near/NearThridGdtAdView\$4.class:/net/iaround/ui/view/near/NearThridGdtAdView\$5.class:/net/iaround/ui/view/near/NearThridGdtAdView\$6.class"
+    deletelib "GDTUnionSDK.4.11.552.min.jar:InMobi-7.2.1.jar"
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation rootProject.ext.dependencies.supportV4
+    implementation rootProject.ext.dependencies.appcompatV7
+    implementation rootProject.ext.dependencies.recyclerview
+    implementation project(':FacebookSDK')
+    implementation project(':stikkyheader')
+    implementation project(':PullToRefreshLibrary')
+//    implementation project(':googleplayservices_lib')
+    implementation project(':pickerview')
+    implementation(name: 'geetest_testbutton_android_v3.4.9', ext: 'aar')
+    implementation files('libs/alipaysdk.jar')
+    implementation files('libs/TenpayServiceSDK.jar')
+    implementation project(path: ':ShortcutBadger')
+    implementation project(':galleryfinal')
+    implementation rootProject.ext.dependencies.cardview
+    //热门聊吧圆角图片
+    implementation 'com.google.code.gson:gson:1.7.1'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.0.0-RC0'
+    implementation 'com.alibaba:fastjson:1.2.8'
+    implementation rootProject.ext.dependencies.design
+    implementation 'com.facebook.stetho:stetho:1.5.0'
+    implementation 'org.greenrobot:eventbus:3.0.0'
+    implementation rootProject.ext.dependencies.multidex
+    implementation 'com.tencent.bugly:crashreport:latest.release'
+    implementation 'com.tencent.bugly:nativecrashreport:latest.release'
+    implementation 'com.facebook.fresco:fresco:1.3.0'
+    implementation 'com.facebook.fresco:animated-webp:1.3.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.6.0'
+    implementation rootProject.ext.dependencies.constraint
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    implementation 'com.zhy:percent-support-extends:1.1.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5'
+    debugImplementation 'com.github.markzhai:blockcanary-android:1.5.0'
+    implementation project(':LuBan')
+    implementation project(':one-push-huawei-hms')
+    implementation project(':one-push-xiaomi')
+    implementation project(':one-push-core')
+    implementation project(':one-push-meizu')
+    implementation project(':one-push-getui')
+    implementation 'com.google.protobuf.nano:protobuf-javanano:3.0.0-alpha-4'
+    implementation 'com.tencent.mars:mars-core:1.2.1'
+    testImplementation 'junit:junit:4.12'
+    implementation project(':videoplay')
+    implementation project(':videoreportor')
+    compileOnly files('runtime/MiguSDK3.0_401.jar')
+    implementation project(':mypicker')
+    //友盟统计
+    implementation 'com.umeng.sdk:common:1.5.0'
+    implementation 'com.umeng.sdk:analytics:7.5.0'
+    //若使用annotation需要单独引用,对于tinker的其他库都无需再引用
+    annotationProcessor("com.tinkerpatch.tinker:tinker-android-anno:${TINKER_VERSION}") {
+        changing = true
+    }
+    compileOnly("com.tinkerpatch.tinker:tinker-android-anno:${TINKER_VERSION}") { changing = true }
+    implementation("com.tinkerpatch.sdk:tinkerpatch-android-sdk:${TINKERPATCH_VERSION}") {
+        changing = true
+    }
+    //通用的viewpager指示器
+    implementation project(':magicindicator')
+
+    implementation 'com.google.android.gms:play-services-base:8.4.0'
+    implementation 'com.google.android.gms:play-services-basement:8.4.0'
+    implementation 'com.google.android.gms:play-services-ads:8.4.0'
+    implementation 'com.google.android.gms:play-services-location:8.4.0'
+    implementation 'com.google.android.gms:play-services-plus:8.4.0'
+    implementation 'com.google.android.gms:play-services-gcm:8.4.0'
+    implementation 'com.google.android.gms:play-services-maps:8.4.0'
+    implementation 'com.google.android.gms:play-services-games:8.4.0'
+
+}

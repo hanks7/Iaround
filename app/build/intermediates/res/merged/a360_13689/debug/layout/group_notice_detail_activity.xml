@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/userFragment_bg">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title_bar" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:background="@color/chat_update_divider_of_toolMenu"/>
+    <RelativeLayout
+        android:id="@+id/target_card"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y232"
+        android:layout_below="@id/title_bar"
+        android:background="@color/white" >
+
+        <net.iaround.ui.view.HeadPhotoView
+            android:id="@+id/friend_icon"
+            android:layout_width="@dimen/x200"
+            android:layout_height="@dimen/y200"
+            android:layout_marginBottom="@dimen/y12"
+            android:layout_marginLeft="@dimen/x29"
+            android:layout_marginRight="@dimen/x24"
+            android:layout_marginTop="@dimen/y20">
+        </net.iaround.ui.view.HeadPhotoView>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/friend_icon">
+            <TextView
+                android:id="@+id/friend_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/y18"
+                android:singleLine="true"
+                android:textColor="@color/chat_update_edit_user_value"
+                android:textSize="@dimen/y42" />
+            <RelativeLayout
+                android:id="@+id/rlAgeSex"
+                android:layout_width="@dimen/x90"
+                android:layout_height="@dimen/y42"
+                android:layout_below="@id/friend_name"
+                android:background="@drawable/group_member_age_girl_bg">
+                
+                <ImageView
+                    android:id="@+id/ivSex"
+                    android:layout_width="@dimen/x30"
+                    android:layout_height="@dimen/y30"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x8"
+                    android:layout_marginRight="@dimen/x5"
+                    android:src="@drawable/thread_register_man_new_select"/>
+                <TextView
+                    android:id="@+id/tvAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/ivSex"
+                    android:layout_centerVertical="true"
+                    android:maxLines="1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/y30" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="@dimen/x24"
+            android:layout_height="@dimen/y42"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x48"
+            android:background="@drawable/pointer"
+            android:visibility="gone"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y1"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/listview_item_divider" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/group_card"
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:layout_below="@id/target_card"
+        android:background="@color/common_white" >
+
+        <net.iaround.ui.view.HeadPhotoView
+            android:id="@+id/group_icon"
+            android:layout_width="69dp"
+            android:layout_height="69dp"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginRight="11dp"
+            android:layout_marginTop="12dp" >
+        </net.iaround.ui.view.HeadPhotoView>
+
+        <TextView
+            android:id="@+id/group_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/group_icon"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="17dp"
+            android:layout_toRightOf="@+id/group_icon"
+            android:singleLine="true"
+            android:textColor="@color/c_323232"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/group_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/group_name"
+            android:layout_toRightOf="@id/group_icon"
+            android:textColor="@color/c_999999"
+            android:textSize="12dp"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/ImageView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/pointer" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.66dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/listview_item_divider" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/status_card"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/group_card"
+        android:background="@drawable/info_bg_center_selector" >
+
+        <LinearLayout
+            android:id="@+id/notice_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="80dp" >
+
+            <TextView
+                android:id="@+id/notice_content1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="8dp"
+                android:singleLine="true"
+                android:textColor="@color/c_999999"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/notice_content2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/c_ef555e"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notice_content"
+            android:layout_marginRight="20dp" >
+
+            <TextView
+                android:id="@+id/notice_dealer1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="6dp"
+                android:singleLine="true"
+                android:textColor="@color/c_999999"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/notice_dealer2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:singleLine="true"
+                android:textColor="@color/c_ef555e"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/notice_dealer3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:singleLine="true"
+                android:textColor="@color/c_999999"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/notice_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="11dp"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/c_999999"
+            android:textSize="11dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/allow_button"
+        android:layout_width="@dimen/x150"
+        android:layout_height="@dimen/y72"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/status_card"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/z_fans_btn_red_new"
+        android:gravity="center"
+        android:textSize="@dimen/y36"
+        android:text="@string/agree"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/reject_button"
+        android:layout_width="@dimen/x150"
+        android:layout_height="@dimen/y72"
+        android:layout_alignTop="@id/allow_button"
+        android:layout_below="@id/status_card"
+        android:layout_marginRight="19dp"
+        android:layout_toLeftOf="@id/allow_button"
+        android:background="@drawable/z_fans_btn_white_new"
+        android:gravity="center"
+        android:textSize="@dimen/y36"
+        android:text="@string/refuse"
+        android:textColor="@color/gray_text_color" />
+
+    <TextView
+        android:id="@+id/join_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/status_card"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/c_999999"
+        android:textSize="15dp" />
+
+</RelativeLayout>

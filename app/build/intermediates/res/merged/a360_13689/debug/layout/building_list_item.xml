@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y120"
+    >
+    <!--@drawable/info_bg_center_selector-->
+    <ImageView
+        android:id="@+id/item_arraw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/arraw_turn"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/building_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/x48"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textSize="@dimen/y42"
+        android:textColor="@color/chat_update_edit_user_value"
+        android:text="发光源" />
+
+
+    <View
+        android:id="@+id/create_group_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_marginTop="@dimen/y39"
+        android:layout_below="@id/building_name"
+        android:background="@color/chat_update_login_btn_select"
+        android:layout_marginLeft="@dimen/x45"/>
+</RelativeLayout>

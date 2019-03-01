@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:id="@+id/root_ll"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_rank"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/place_competition"
+        android:textColor="@color/light_black"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_gold"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/gold_rank"
+        android:textColor="@color/light_black"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_charm"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/charm_rank"
+        android:textColor="@color/light_black"
+        android:textSize="12sp" />
+
+</LinearLayout>

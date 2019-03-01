@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/chatbar_gift_bg">
+
+        <include
+            android:id="@+id/sendGift_info"
+            layout="@layout/chatbar_gift_headview" />
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/sendGift_info"
+            android:background="@color/chatbar_gift_divider"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:id="@+id/ll_gift_layout"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:layout_below="@+id/divider1"
+            android:background="@color/chatbar_gift_layout_bg"
+            android:orientation="vertical">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_gift"
+                android:layout_width="match_parent"
+                android:layout_height="195dp"></android.support.v4.view.ViewPager>
+
+            <net.iaround.ui.chat.view.ChatFacePointView
+                android:id="@+id/chatface_point"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vp_gift"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:paddingTop="2dp"
+                android:paddingRight="6dp"
+                app:fillColor="#ECECEC"
+                app:strokeColor="#858484" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_below="@+id/ll_gift_layout"
+            android:background="#cc241A1F"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/btn_store"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/chatbar_gift_store"
+                    android:textColor="@color/login_btn"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="12dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginBottom="18dp"
+                    android:background="#9E96A1" />
+
+                <Button
+                    android:id="@+id/btn_bag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="@string/chatbar_gift_bag"
+                    android:textColor="@color/chatbar_gift_bag"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <!--赠送礼物数量-->
+            <LinearLayout
+                android:id="@+id/ll_sendgift_amout"
+                android:layout_width="130dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_select_amound"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1"
+                    android:background="@drawable/sendgift_amout_bg"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="12dp"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="20dp"
+                        android:layout_height="20dp">
+
+                        <ImageView
+                            android:id="@+id/iv_group_send_gift_up"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:src="@drawable/chatbar_gift_array_icon" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_chat_bar_gift_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="1"
+                        android:textColor="@color/login_btn"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_select_amound_no"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1"
+                    android:background="@drawable/sendgift_amout_bg_no"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="12dp"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/chatbar_gift_array_icon_no" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:textColor="#7B5E63"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_send_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+                    android:background="@drawable/chatbar_gift_send_gift_no"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/btn_send"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/chat_image_preview_send"
+                        android:textColor="@color/common_white"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/bt_send"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/chat_bar_send_gift_selector"
+                        android:enabled="false"
+                        android:text="@string/chat_image_preview_send"
+                        android:textColor="@color/common_white"
+                        android:textSize="12sp"
+                        android:visibility="visible" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_time"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/chatbar_gift_time_task_bg"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_time_task"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/chatbar_gift_time_task_bg"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="30"
+            android:textColor="#553317"
+            android:textSize="30sp" />
+    </RelativeLayout>
+</FrameLayout>

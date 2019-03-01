@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/rlUserInfo"
+        layout="@layout/accost_user_info" />
+
+    <View
+        android:id="@+id/vSp"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#EBEBEB" />
+
+     
+     <FrameLayout
+        android:id="@+id/flContent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+         android:background="@color/common_white">
+
+       <View
+            android:id="@+id/ivTimeLine"
+            android:layout_width="@dimen/y1"
+            android:layout_height="fill_parent"
+            android:background="#EBEBEB" />
+        
+        <ListView
+                android:id="@+id/chatRecordList"	
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="@drawable/listview_divider_transparent"
+                android:dividerHeight="10dp"
+                android:fadingEdge="none"
+                android:footerDividersEnabled="true"
+                android:headerDividersEnabled="true"
+                android:listSelector="@drawable/chat_room_record_list_item_bg"
+                android:scrollbars="none" />
+    </FrameLayout>
+
+</LinearLayout>

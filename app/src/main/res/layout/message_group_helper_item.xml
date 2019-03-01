@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/common_white">
+
+    <RelativeLayout
+        android:id="@+id/layout_content"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:background="@color/common_white"
+        android:orientation="horizontal">
+
+        <net.iaround.ui.comon.NetImageView
+            android:id="@+id/friend_icon"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="12dp"/>
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/friend_icon"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/friend_icon"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxEms="11"
+            android:singleLine="true"
+            android:text="adfadfadfasdfasdfasdfasdfasdfasdf"
+            android:textColor="@color/c_333333"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/onlineTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="22dp"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="12:12"
+            android:textColor="@color/c_999999"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/chat_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userName"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/friend_icon"
+            android:background="@drawable/message_send_arri"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="9dp" />
+
+        <TextView
+            android:id="@+id/tv_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userName"
+            android:layout_marginRight="50dp"
+            android:layout_toRightOf="@id/chat_status"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:singleLine="true"
+            android:textColor="@color/chat_update_gray_text_color" />
+
+        <TextView
+            android:id="@+id/chat_num_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/onlineTag"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/chat_update_bg_of_chat_num_gray"
+            android:gravity="center"
+            android:maxWidth="50dp"
+            android:textColor="@color/white"
+            android:textSize="9dp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_marginLeft="@dimen/x150"
+        android:layout_alignBottom="@id/layout_content"
+        android:background="@color/chat_update_divider_of_messageItem"/>
+
+</RelativeLayout>

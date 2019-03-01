@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/activity_basic_style"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/map_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y509"
+        android:orientation="vertical" />
+
+    <RadioGroup
+        android:id="@+id/category_group"
+        android:layout_width="@dimen/x930"
+        android:layout_height="@dimen/y90"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y30"
+        android:layout_marginBottom="@dimen/y30"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/category_community"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/create_group_select_center_bg1"
+            android:button="@null"
+            android:gravity="center"
+            android:checked="false"
+            android:text="@string/category_community"
+            android:textColor="@drawable/create_group_select_center_text_color"
+            android:textSize="@dimen/y36" />
+
+        <RadioButton
+            android:id="@+id/category_business"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/create_group_select_center_bg2"
+            android:button="@null"
+            android:gravity="center"
+            android:checked="false"
+            android:text="@string/category_business"
+            android:textColor="@drawable/create_group_select_center_text_color"
+            android:textSize="@dimen/y36" />
+
+        <RadioButton
+            android:id="@+id/category_school"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/create_group_select_center_bg3"
+            android:button="@null"
+            android:gravity="center"
+            android:checked="false"
+            android:text="@string/category_school"
+            android:textColor="@drawable/create_group_select_center_text_color"
+            android:textSize="@dimen/y36" />
+
+        <RadioButton
+            android:id="@+id/category_all"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/create_group_select_center_bg4"
+            android:button="@null"
+            android:gravity="center"
+            android:checked="true"
+            android:text="@string/category_all"
+            android:textColor="@drawable/create_group_select_center_text_color"
+            android:textSize="@dimen/y36" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/dianping_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/data_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="15dp"
+            android:drawableRight="@drawable/dianping_logo"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/dynamic_publish_add_data_source"
+            android:textColor="#999999"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/data_source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/dynamic_publish_add_source"
+            android:textColor="#999999"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <!--android:cacheColorHint="#00000000"-->
+    <!--android:footerDividersEnabled="false"-->
+    <!--hearderDividersEnabled = "false"-->
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/group_center_listview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1027"
+        android:divider="@color/gridview_item_bg"
+        android:dividerPadding="0dp"
+        android:dividerHeight="0dp"
+        android:cacheColorHint="@color/common_white"
+        android:background="@color/common_white"
+        />
+
+</LinearLayout>

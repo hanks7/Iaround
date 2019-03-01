@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="284dp"
+    android:layout_height="284dp"
+    >
+    <!--android:background="@drawable/iaround_store_main_pay_gift_bg"-->
+
+
+   
+
+    <net.iaround.ui.common.NetImageView
+        android:id="@+id/store_pay_gift_icon"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="51dp"
+        android:layout_marginTop="108dp"
+        
+         />
+
+    <TextView
+        android:id="@+id/store_pay_gift_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/iaround_store_main_pay_gift_btn"
+        android:gravity="center"
+        android:text="@string/pay"
+        android:textColor="@color/white"
+        android:textSize="13dp" />
+
+    <ImageButton
+        android:id="@+id/store_pay_gift_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/store_pay_dialog_exit" />
+    
+     <LinearLayout
+        android:id="@+id/store_pay_gift_uplayout"
+        android:layout_toRightOf="@id/store_pay_gift_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="110dp"
+       
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/store_pay_gift_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#654e3f"
+           
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/store_pay_gift_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:textColor="#906C45"
+            
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/store_pay_gift_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="1dp"
+            android:textColor="#906C45"
+           
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/store_pay_gift_charm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="1dp"
+            android:textColor="#906C45"
+           
+            android:textSize="12dp" />
+    </LinearLayout>
+
+</RelativeLayout>

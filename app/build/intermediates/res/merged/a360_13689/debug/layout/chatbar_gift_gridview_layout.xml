@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<GridView xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:id="@+id/gv_send_gift"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:verticalSpacing="8dp"-->
+    <!--android:horizontalSpacing="0dp"-->
+    <!--android:padding="5dp"-->
+    <!--android:scrollIndicators="none"-->
+    <!--android:scrollbars="none"-->
+    <!--android:numColumns="4"/>-->
+<!--<RelativeLayout-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/gv_send_gift"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:scrollIndicators="none"-->
+        <!--android:scrollbars="none"-->
+        <!--/>-->
+    <!--<LinearLayout-->
+        <!--android:id="@+id/ll_empty_layout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:orientation="vertical"-->
+        <!--android:visibility="gone">-->
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="80dp"-->
+            <!--android:src="@drawable/chatbar_gift_empty_layout"/>-->
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="18dp"-->
+            <!--android:text="@string/chatbar_gift_empty_layout_hint"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:textSize="12sp"-->
+            <!--android:textColor="@color/common_white"/>-->
+    <!--</LinearLayout>-->
+<!--</RelativeLayout>-->
+<android.support.v7.widget.RecyclerView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gv_send_gift"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollIndicators="none"
+    android:scrollbars="none"
+    />

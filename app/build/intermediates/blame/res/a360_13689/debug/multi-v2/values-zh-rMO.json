@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/incremental/mergeA360_13689DebugResources/merged.dir/values-zh-rMO/values-zh-rMO.xml",
+            "map": [
+                {
+                    "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/geetest_testbutton_android_v3.4.9.aar/de7250a011dee01691b50ea881d2cf01/res/values-zh-rMO/values-zh-rMO.xml",
+                    "from": {
+                        "startLines": "2,5,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,184,350,406,461,524,578,629,687,745,801,854,908,961,1018,1075",
+                        "endLines": "4,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
+                        "endColumns": "24,24,55,54,62,53,50,57,57,55,52,53,52,56,56,68",
+                        "endOffsets": "179,345,401,456,519,573,624,682,740,796,849,903,956,1013,1070,1139"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/values-zh-rMO/values-zh-rMO.xml",
+            "map": [
+                {
+                    "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/geetest_testbutton_android_v3.4.9.aar/de7250a011dee01691b50ea881d2cf01/res/values-zh-rMO/values-zh-rMO.xml",
+                    "from": {
+                        "startLines": "2,5,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,184,350,406,461,524,578,629,687,745,801,854,908,961,1018,1075",
+                        "endLines": "4,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
+                        "endColumns": "24,24,55,54,62,53,50,57,57,55,52,53,52,56,56,68",
+                        "endOffsets": "179,345,401,456,519,573,624,682,740,796,849,903,956,1013,1070,1139"
+                    }
+                }
+            ]
+        }
+    ]
+}

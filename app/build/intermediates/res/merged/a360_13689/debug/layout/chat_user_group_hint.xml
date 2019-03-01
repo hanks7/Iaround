@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/wfill_hwrap"
+    android:orientation="vertical">
+
+    <!--用户正在的进入的聊吧或所在聊吧提示布局-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:background="@color/chat_update_divider_of_messageItem" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y147"
+        android:background="@color/common_white"
+        android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp">
+                <net.iaround.ui.comon.RichTextView
+                    android:id="@+id/user_group_hint_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="left|center_vertical"
+                    android:text="我正在 当我遇上你 玩\n点击进入聊吧，和他一起玩！"
+                    android:ellipsize="end"
+                    android:textColor="@color/text_gray1"
+                    android:textSize="12sp"
+                    android:lines="2"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/user_group_hint_join"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_toLeftOf="@+id/user_group_hint_close"
+                android:layout_marginRight="5dp"
+                android:text="@string/sync_share_title_bar_link_context"
+                android:background="@drawable/btn_gray_boder_white_bg"
+                android:textSize="12sp"
+                android:textColor="@color/text_gray1"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/user_group_hint_close"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/icon_close_skill"
+                android:visibility="visible" />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

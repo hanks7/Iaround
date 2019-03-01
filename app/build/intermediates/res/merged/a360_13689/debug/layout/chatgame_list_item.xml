@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="72dp"
+    android:layout_height="76dp"
+    android:layout_gravity="center"
+    android:background="@color/c_e3e3e3"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="72dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="9dp"        
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/focus_user_bg"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:src="@drawable/default_avatar_round_light" />
+
+        <net.iaround.ui.view.HeadPhotoView
+            android:id="@+id/friend_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" >
+        </net.iaround.ui.view.HeadPhotoView>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/chatgame_user_sel"
+        android:layout_width="14dp"
+        android:layout_height="9dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="bottom|center_horizontal"        
+      	
+        android:layout_marginTop="2dp"
+        android:background="@drawable/chatgame_select"
+        android:visibility="visible" />
+
+</LinearLayout>

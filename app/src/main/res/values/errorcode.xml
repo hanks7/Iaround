@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+	<!-- 错误码 -->
+	<string-array name="ErrorCode">
+		<item>1@Error</item>
+		<item>2@(Error Code:%s)</item>
+		<item>100@No Available Network, Please Makre Sure Your Network and Try Again</item>
+		<item>101@Connection Error, Please Makre Sure Your Network and Try Again</item>
+		<item>102@Sending Failed, Please Try Again</item>
+		<item>103@Network Connection Failed, Please Try Again</item>
+		<item>104@Request Failed, Please Try Again</item>
+		<item>105@Room Connection Failed, Please Try Again</item>
+		<item>106@Session Connection Failed, Please Try Again</item>
+		<item>107@Signal Problem, Please Try Again</item>
+		<item>1000@Detecting Error, Please Try Again</item>
+		<item>2000@This Client Maybe is Pirated, as soon as possible to Uninstall and Download Through Official Channels.</item>
+		<item>4000@No Enough Coins</item>
+		<item>4001@The Parameter Null</item>
+		<item>4002@The Parameter Incorrect</item>
+		<item>4003@The Parameter Longer or Short Than Default</item>
+		<item>4004@Upload failed.</item>
+		<item>4100@Network Connection Failed, Please Try Again</item>
+		<item>4101@The Username or Password is Incorrect</item>
+		<item>4102@You Violated Rules by Using, This Account Rejectd to Login. \nService Email: cs@iaround.com</item>
+		<item>4103@System Busy, Please Try Again Later</item>
+		<item>4104@User Not Found</item>
+		<item>4105@The Private Data Not Found</item>
+		<item>4106@Token Not Found</item>
+		<item>4201@ID Registered, Please Try Other One</item>
+		<item>4202@Birthday Setting is Not Correct</item>
+		<item>4203@Registration Failed</item>
+		<item>4204@Please Enter Correct Email Format</item>
+		<item>4205@Email Address Registered</item>
+		<item>4206@Please Enter Email Address or iAround ID</item>
+		<item>4207@Incorrect Account or Password</item>
+		<item>4208@Login Failed</item>
+		<item>4209@Account not Found</item>
+		<item>4210@Send Email Failed, Please Try Again</item>
+		<item>4211@Password Incorrect</item>
+		<item>4212@This Account Registered and Verification.</item>
+		<item>4213@The Account not Found</item>
+		<item>4215@The Phone Number Registered</item>
+		<item>4301@The user has been added into contacts</item>
+		<item>4302@The user is in Block List</item>
+		<item>4303@You can\'t add yourself into contacts</item>
+		<item>4304@Friendship is not found</item>
+		<item>4305@You are in the Block List.Adding request is failed</item>
+		<item>4306@You are in the Block List.You can\'t say hi</item>
+		<item>4307@You are in the Block List.You can\'t send massages</item>
+		<item>4308@The number of friends has reached 500,you can\'t add any friends.</item>
+		<item>4309@The number of friends exceeds 500,you can\'t add friends.</item>
+		<item>4401@The education is null</item>
+		<item>4402@User is not found with that education</item>
+		<item>4403@Education of specified ID is not found</item>
+		<item>4404@ Error when deleting Education</item>
+		<item>4501@The job is null</item>
+		<item>4502@User is not found with that job</item>
+		<item>4503@Job of specified ID is not found</item>
+		<item>4504@Error when deleting job</item>
+		<item>4601@The Interest is null</item>
+		<item>4602@Interest of specified ID is not found</item>
+		<item>4701@The Block List is null</item>
+		<item>4702@User is not found with that Block List</item>
+		<item>4703@The Block List is existed</item>
+		<item>4704@Error when deleting Block List</item>
+		<item>4801@The Microblog is null</item>
+		<item>4802@Microblog is not found</item>
+		<item>4803@Error when deleting the binding Microblog</item>
+		<item>4901@Notification is not found</item>
+		<item>4902@Messages is not found</item>
+		<item>5000@System Error, Please Try Again</item>
+		<item>5101@User is not found with that photo</item>
+		<item>5102@Error when deleting photo</item>
+		<item>5103@Photo tag is not found</item>
+		<item>5104@User already clicked LIKE to the photo</item>
+		<item>5105@Photo is not found</item>
+		<item>5106@User is not found with that photo</item>
+		<item>5107@User hasn\'t clicked LIKE to the photo</item>
+		<item>5108@You Can Upload 10 Photos Everyday</item>
+		<item>5201@Photo is not found</item>
+		<item>5202@Comments is not found</item>
+		<item>5203@Comments quoted is not found</item>
+		<item>5204@Comments has been deleted</item>
+		<item>5205@Please Use 15sec.Gap，Each Comments</item>
+		<item>5206@You are in User Block List</item>
+		<item>5207@You Can\'t Send the Comments to Your Block List User</item>
+		<item>5401@The user reported is not found</item>
+		<item>5402@The target reported is not found</item>
+		<item>5403@Report in Process, Thank You!</item>
+		<item>5404@You Have Reported, Thank You!</item>
+		<item>5405@This is the System Account</item>
+		<item>5406@Can\'t Report by Disabled Users</item>
+		<item>5407@The reported goal has been reported by someone</item>
+		<item>5501@User is not found with that privacy</item>
+		<item>5601@The invited user is not found</item>
+		<item>5602@The ID has been invited</item>
+		<item>5603@Incorrect Code</item>
+		<item>5604@Sorry，Access Code Sending is Failed</item>
+		<item>5605@This Phone Number Registered</item>
+		<item>5606@Over Default Time of Registered </item>
+		<item>5607@Sorry, It Coming Soon</item>
+		<item>5608@The Phone Number Could be Verifiable</item>
+		<item>5609@Phone Number InCorrect</item>
+		<item>5610@Send Requests Verification too Much Time</item>
+		<item>5611@Phone Number InCorrect</item>
+		<item>5612@Change Phone Number Each Time Per Month</item>
+		<item>5613@Get verification code too frequent, try again after 12 hous</item>
+		<item>5614@Get verification code too frequent, try again after 5 minutes</item>
+		<item>5615@The Phone Number Registered</item>
+		<item>5701@Have Followed</item>
+		<item>5702@Un-Follow Yet</item>
+		<item>5703@Follows Reached Maximum</item>
+		<item>5801@Presents not Found</item>
+		<item>5802@No Selling Price Setting</item>
+		<item>5803@Can Not Get Presents From the Same ID to Send</item>
+		<item>5804@Send Present Failed</item>
+		<item>5805@This Category Empty</item>
+		<item>5806@This User don\'t have Present Yet</item>
+		<item>5807@You can\'t see the sending gift list of others</item>
+		<item>5808@You Can\'t Send the Present Without VIP Qualified</item>
+		<item>5809@Wallpaper not Found</item>
+		<item>5810@Purchased</item>
+		<item>5901@Can Not Create the Order Number</item>
+		<item>5902@Order Number not Found</item>
+		<item>5903@The Current User Don\'t Match in This Order</item>
+		<item>5904@Validation Declined for Order</item>
+		<item>5905@Invalid Payment</item>
+		<item>5906@This Item not Found</item>
+		<item>5907@You Have Received</item>
+		<item>5908@This Order Repeat Submitted</item>
+		<item>5909@This order has been Done to Paid.</item>
+		<item>5910@Receive Coins Failed</item>
+		<item>5930@Not Enough Diamonds</item>
+		<item>5931@Submit orders again</item>
+		<item>5950@You Have VIP Qualified</item>
+		<item>6001@Use not Found in Group</item>
+		<item>6002@Group Not Found</item>
+		<item>6003@Cannot Leave the Group By Creator</item>
+		<item>6004@Delete the Group Only By Creator</item>
+		<item>6005@No Enough Coints</item>
+		<item>6006@Limit reached of Group Members</item>
+		<item>6007@Only be Join to 10 Group, Please Arrage Your Group, and Try Again.</item>
+		<item>6008@You can\'t join in the circle within 48 hours after being kicked out</item>
+		<item>6009@The number of chat room created reaches the limit</item>
+		<item>6010@Enter Circle Failed.</item>
+		<item>6011@An unknown error occurred.</item>
+		<item>6012@An unknown error occurred.</item>
+		<item>6013@Administrators Reached Maximum.</item>
+		<item>6014@You Leave This Group, Unable to Join In 2 Hours.</item>
+		<item>6015@You Leave This Group by Administrator, Unable to Join In 8 Hours.</item>
+		<item>6016@Can\'t Gag the Owner in This Group</item>
+		<item>6017@Topic not Found</item>
+		<item>6018@This topic has been liked!</item>
+		<item>6019@This topic has not been liked!</item>
+		<item>6020@The comments of this topic does not exist</item>
+		<item>6021@This user has been banned.</item>
+		<item>6022@This user can not be cancel being banned.</item>
+		<item>6023@Only master or administrator can ban others.</item>
+		<item>6024@Only master or administrator can release others.</item>
+		<item>6025@Only master or administrator can place topic to top.</item>
+		<item>6026@Only master or administrator can cancel top topic</item>
+		<item>6027@Only master or administrator can delete topic</item>
+		<item>6028@Master or administrator can not be banned</item>
+		<item>6029@Sorry! You Can\'t Send Topic in Gag Time</item>
+		<item>6030@Sorry! You Can\'t Send Messages in Gag Time</item>
+		<item>6031@You Joined in This Group</item>
+		<item>6032@Your Joined Group Over Default</item>
+		<item>6033@The Group Joined</item>
+		<item>6034@Group is Full，Can\'t Join Now.</item>
+		<item>6035@Administrator only</item>
+		<item>6036@The Request Disposed</item>
+		<item>6037@Request Gone Out</item>
+		<item>6038@Members is Full Now</item>
+		<item>6039@Only Owner Could be Handle</item>
+		<item>6040@Only Owner Could be Change</item>
+		<item>6041@該圈子需要審核，不能直接加入</item>
+		<item>6042@圈子權限設置不能發表話題</item>
+		<item>6043@The Request Have Been Send</item>
+		<item>6044@已經被踢，不能再次被踢</item>
+		<item>6045@話題評論頻繁，請30秒之後再評論</item>
+		<item>6046@其他管理員已同意</item>
+		<item>6047@其他管理員已拒絕</item>
+		<item>6048@You Can\'t Join the Group Within 48 hours Please wait</item>
+		<item>6049@圈子類型不是大圈子</item>
+		<item>6050@不是圈主不能查看年費服務頁面</item>
+		<item>6051@創建圈子需要先綁定手機</item>
+		<item>6052@非圈成員不可查看圈話題</item>
+
+		<item>6101@Send message failed.</item>
+		<item>6102@Sorry! Not Found</item>
+		<item>6103@Exceed Limit of Accost Messages</item>
+		<item>6201@You Can Meet 50 Friends Everyday, \r\n See You Tomorrow!</item>
+		<item>6301@If You Want to Send the Same Messages, Please Wait for 5 minutes!</item>
+		<item>6400@Turn on Location Service</item>
+		<item>6053@The Club that this Group belongs to</item>
+		<item>6054@This doesn\'t exist.</item>
+		<item>6055@Party limit reached</item>
+		<item>6056@Only administrator or initiator can edit it</item>
+		<item>6057@Already signed up</item>
+		<item>6058@Already recommended it </item>
+		<item>6059@Only Group owner can perform this operation </item>
+		<item>6060@Transfering </item>
+		<item>6061@Edit chances have reached its limit this month</item>
+		<item>6062@Group Party has been cancelled</item>
+		<item>6063@Group Party is expired</item>
+		<item>6064@Transfering times reached its limit</item>
+		<item>6065@This user is </item>
+		<item>6066@He/she did not link Phone Number</item>
+		<item>6067@Group numbers that he/she could own reached it limit</item>
+		<item>6068@Attendance Limit reached</item>
+		<item>6070@You are allowed to remove 10 group members most. Pls contact Group owner or other administrators.</item>
+		<item>7001@The Game Can\'t Install Now</item>
+		<item>7002@The Game Can\'t Install Now</item>
+		<item>7003@APPID Not Found</item>
+		<item>7004@The Game Can\'t Install Now</item>
+		<item>7101@Can\'t Invite With the Your ID</item>
+		<item>8000@New Version Availabe, please update.</item>
+		<item>9200@The question doesn\'t exist.</item>
+		<item>9201@The number of questions exceeds the limit.</item>
+		<item>9202@The question replied by non_word can not share.</item>
+		<item>9300@This doesn\'t exist or has been deleted</item>
+		<item>9301@Already liked the Update</item>
+		<item>9302@Not your Update or comment</item>
+		<item>9303@Recommended numbers Limit reached</item>
+		<item>9304@Can\'t anwser yourself</item>
+		<item>9305@Publishing Update frequently, please try again later</item>
+		<item>9400@Stealth number Limit reached</item>
+		<item>9410@This doesn\'t exist.</item>
+		<item>9411@You are already the member of this Club</item>
+		<item>9412@You have already signed up</item>
+		<item>9413@This doesn\'t exist.</item>
+		<item>9414@You have already liked this</item>
+		<item>9415@This doesn\'t exist.</item>
+		<item>9416@Only the owner or administrator can delete topic</item>
+		<item>9417@Group numbers that you could follow has reached its limit</item>
+		<item>9418@You are already the administrator</item>
+		<item>9419@You are not the adminisrator</item>
+		<item>9420@Still can not meet the qualifications by far</item>
+		<item>9421@Under review</item>
+		<item>9422@The number of administrators has reached its limit</item>
+		<item>9423@Once removed it, you are not allowed to apply for administrator within a month</item>
+		<item>9424@Please remove your administrators first</item>
+		<item>9425@This topic is blocked. You are not allowed to like or comment</item>
+		<item>9426@Insufficient administrator Permissions</item>
+		<item>9450@当天已签到领取奖励</item>
+		<item>9451@用户未完成任务</item>
+		<item>9452@用户已领取任务奖励</item>
+
+		<!--   6.4  -->
+		<item>9500@It doesn’t exist.</item>
+		<item>9501@Only owner or administrators have the right to set.</item>
+		<item>9502@Only owner or administrators have the right to set.</item>
+		<item>9503@Members amount has reached its limit.</item>
+		<item>9504@You are already joined this.</item>
+		<item>9505@Members amount has reached its limit.</item>
+		<item>9506@Application has expired.</item>
+		<item>9507@This application has been accepted by other administrators.</item>
+		<item>9508@This application has been rejected by other administrators.</item>
+		<item>9509@Not member</item>
+		<item>9510@Administrators amount has reached its limit. </item>
+		<item>9511@You have joined a chatting room before.</item>
+		<item>9512@Dealer: Owner</item>
+		<item>9513@You have joined a chatting room before.</item>
+		<item>9514@One could not trick himself.</item>
+		<item>9515@Coins is not enough to distribute on average.</item>
+		<item>9516@10% Distribution coins is not allowed to be more than 10% o</item>
+		<item>9517@One Chatting room is allowed to have one Tutor.</item>
+		<item>9518@One Tutor is allowed to be in two Chatting Room.</item>
+		<item>9519@Not Tutor</item>
+		<item>9520@Not Tutor</item>
+		<item>9521@He already is Tutor.</item>
+		<item>9522@He already is Host.</item>
+		<item>9523@There is no Tutor online.</item>
+		<item>9524@There is no Host online.</item>
+		<item>9525@The Host is offline.</item>
+		<item>9526@The Tutor is offline.</item>
+		<item>9527@Delegation mission stopped.</item>
+		<item>9528@One user is allowed to set one chatting room.</item>
+		<item>9529@You have joined a chatting room before.</item>
+		<item>9530@Owner is not allowed to be Host of his own chatting room. </item>
+		<item>9531@Owner is not allowed to be Tutor of his own chatting room.</item>
+		<item>9532@His balance is not enough to be deducted.</item>
+		<item>9533@This skill has not been activated.</item>
+		<item>9534@This skill doesn’t exist.</item>
+		<item>9535@Fail to receive. Lasting time of voice message today is less than 3 mins.</item>
+		<item>9536@already a member.</item>
+		<item>9537@This has been dealt with.</item>
+		<item>9538@人家是官方賬號，免疫壹切技能啦~</item>
+		<item>9539@壹個用戶不能同時屬於兩個聊吧</item>
+		<item>9540@關註的聊吧達到上限，不能關註更多聊吧</item>
+		<item>9542@Such a poor guy. Just give him a break today</item>
+		<item>9543@Using frequency of this skill has reached its limit today</item>
+
+
+		<item>593000@出價低于最低限制</item>
+		<item>593040@出價鑽石數錯誤</item>
+		<item>593025@兩次出價時間間隔太短</item>
+		<item>593050@扣除鑽石數錯誤</item>
+
+		<item>4218@Sign Up with Facebook/Wechat</item>
+		<item>4219@Sign Up with Facebook/Wechat</item>
+		<item>4220@Sign Up with Facebook/Wechat</item>
+		<item>4217@Captcha Error</item>
+		<item>5208@To report the user has been closure</item>
+		<item>4221@Invalid characters entered.Edit and try again.</item>
+		<item>4705@Follow fail,because the blacklist.</item>
+
+	</string-array>
+
+</resources>

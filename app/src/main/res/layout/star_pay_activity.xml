@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_star_balance"
+            android:orientation="vertical"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/user_wallet_diamond_star"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/star_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/vip_select_package"
+            android:textColor="@color/c_333333"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="16dp" />
+
+        <net.iaround.ui.view.face.MyGridView
+            android:id="@+id/gv_star"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:horizontalSpacing="20dp"
+            android:listSelector="#00000000"
+            android:numColumns="1"
+            android:scrollbars="none"
+            android:verticalSpacing="10dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/pay_mode"
+            android:textColor="@color/c_333333"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="16dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_webchat_pay"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/shape_rounded_edges_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_left"
+            android:paddingRight="@dimen/margin_right"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/z_pay_wechat_icon" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/wechatpay"
+                android:textColor="@color/common_black"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/iv_selected_wechat"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:background="@drawable/star_pay_selector" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_ali_pay"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/shape_rounded_edges_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_left"
+            android:paddingRight="@dimen/margin_right"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/z_pay_alipay_logo" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:layout_weight="1"
+                android:text="@string/alipay"
+                android:textColor="@color/common_black"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/iv_selected_alipay"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:background="@drawable/star_pay_selector" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_pay_google"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/shape_rounded_edges_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_left"
+            android:paddingRight="@dimen/margin_right"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/z_pay_googleplay_icon" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:layout_weight="1"
+                android:text="@string/google_pay"
+                android:textColor="@color/common_black"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/iv_selected_google"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:background="@drawable/star_pay_selector" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_pay_submit"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_bg"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"/>
+
+        <include layout="@layout/help" />
+
+    </LinearLayout>
+
+</ScrollView>

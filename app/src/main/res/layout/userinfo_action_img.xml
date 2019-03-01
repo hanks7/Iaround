@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_pic"
+        android:layout_width="@dimen/x170"
+        android:layout_height="@dimen/x170"
+        android:src="@drawable/gift_default"
+        android:background="@color/c_b4b4b4"
+        />
+
+</LinearLayout>

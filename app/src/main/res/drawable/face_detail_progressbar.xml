@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@android:id/background">
+        <clip>
+            <nine-patch android:src="@drawable/face_detail_progress_bg_bm" />
+        </clip>
+    </item>
+    
+    <item android:id="@android:id/progress">
+        <clip>
+            <nine-patch android:src="@drawable/face_detail_progress_bg_bm_2" />
+        </clip>
+    </item>
+
+</layer-list>

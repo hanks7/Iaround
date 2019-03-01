@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x36"
+        android:layout_marginTop="@dimen/y30"
+        android:text="@string/user_vip_open_choice_pack"
+        android:textColor="#9B9B9B"
+        android:textSize="@dimen/y36" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y15">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y24"
+            android:background="@color/common_white"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/x60"
+            android:paddingRight="@dimen/x60">
+
+            <LinearLayout
+                android:id="@+id/ll_open_vip_six_month"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/y456"
+                android:layout_weight="1"
+                android:background="@drawable/frame_blue_selector"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_package_six_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y87"
+                    android:text="@string/user_vip_open_zero_month"
+                    android:textColor="#4A4A4A"
+                    android:textSize="@dimen/y48" />
+
+                <TextView
+                    android:id="@+id/tv_package_six_dollar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y24"
+                    android:text="@string/user_vip_open_zero_dollar"
+                    android:textColor="#9B9B9B"
+                    android:textSize="@dimen/y36" />
+
+                <ImageView
+                    android:layout_width="@dimen/y60"
+                    android:layout_height="@dimen/y60"
+                    android:layout_marginTop="@dimen/y30"
+                    android:src="@drawable/user_vip_on_new" />
+
+                <TextView
+                    android:id="@+id/tv_package_six_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y24"
+                    android:text="@string/user_vip_open_zero_save"
+                    android:textColor="#9B9B9B"
+                    android:textSize="@dimen/y36" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_open_vip_twelve_month"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/y456"
+                android:layout_marginLeft="@dimen/x6"
+                android:layout_weight="1"
+                android:background="@drawable/frame_yellow_selector"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_package_twelve_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y87"
+                    android:text="@string/user_vip_open_zero_month"
+                    android:textColor="#4A4A4A"
+                    android:textSize="@dimen/y48" />
+
+                <TextView
+                    android:id="@+id/tv_package_twelve_dollar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y24"
+                    android:text="@string/user_vip_open_zero_dollar"
+                    android:textColor="#9B9B9B"
+                    android:textSize="@dimen/y36" />
+
+                <ImageView
+                    android:layout_width="@dimen/y60"
+                    android:layout_height="@dimen/y60"
+                    android:layout_marginTop="@dimen/y30"
+                    android:src="@drawable/user_vip_on_new" />
+
+                <TextView
+                    android:id="@+id/tv_package_twelve_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y24"
+                    android:text="@string/user_vip_open_zero_save"
+                    android:textColor="#9B9B9B"
+                    android:textSize="@dimen/y36" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/x126"
+            android:layout_height="@dimen/y48"
+            android:layout_marginLeft="@dimen/x239"
+            android:src="@drawable/user_vip_open_recom" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y3"
+        android:background="@color/common_white"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/x60"
+        android:paddingRight="@dimen/x60">
+
+        <LinearLayout
+            android:id="@+id/ll_open_vip_three_month"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/y456"
+            android:layout_weight="1"
+            android:background="@drawable/frame_yellow_selector"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_package_three_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y87"
+                android:text="@string/user_vip_open_zero_month"
+                android:textColor="#4A4A4A"
+                android:textSize="@dimen/y48" />
+
+            <TextView
+                android:id="@+id/tv_package_three_dollar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y24"
+                android:text="@string/user_vip_open_zero_dollar"
+                android:textColor="#9B9B9B"
+                android:textSize="@dimen/y36" />
+
+            <ImageView
+                android:layout_width="@dimen/y60"
+                android:layout_height="@dimen/y60"
+                android:layout_marginTop="@dimen/y30"
+                android:src="@drawable/user_vip_on_new" />
+
+            <TextView
+                android:id="@+id/tv_package_three_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y24"
+                android:text="@string/user_vip_open_zero_save"
+                android:textColor="#9B9B9B"
+                android:textSize="@dimen/y36" />
+        </LinearLayout>
+
+        <!--一个月会员-->
+        <LinearLayout
+            android:id="@+id/ll_open_vip_one_month"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/y456"
+            android:layout_marginLeft="@dimen/x6"
+            android:layout_weight="1"
+            android:background="@drawable/frame_yellow_selector"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_package_one_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y87"
+                android:text="@string/user_vip_open_zero_month"
+                android:textColor="#4A4A4A"
+                android:textSize="@dimen/y48" />
+
+            <TextView
+                android:id="@+id/tv_package_one_dollar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y24"
+                android:text="@string/user_vip_open_zero_dollar"
+                android:textColor="#9B9B9B"
+                android:textSize="@dimen/y36" />
+
+            <ImageView
+                android:layout_width="@dimen/y60"
+                android:layout_height="@dimen/y60"
+                android:layout_marginTop="@dimen/y30"
+                android:src="@drawable/user_vip_on_new" />
+
+            <TextView
+                android:id="@+id/tv_package_one_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y24"
+                android:text="@string/user_vip_open_zero_save"
+                android:textColor="#9B9B9B"
+                android:textSize="@dimen/y36" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--遇见会员协议-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/y102"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x72"
+            android:text="@string/user_vip_open_agreen"
+            android:textColor="#4A4A4A"
+            android:textSize="@dimen/y33" />
+
+        <TextView
+            android:id="@+id/tv_iaround_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user_vip_open_protocol"
+            android:textColor="#FF4064"
+            android:textSize="@dimen/y33" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_pay_vip_order_new"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y124"
+        android:layout_marginTop="@dimen/y124"
+        android:layout_marginLeft="@dimen/x50"
+        android:layout_marginRight="@dimen/x50"
+        android:gravity="center"
+        android:background="@drawable/vip_pay_open_vip_bg"
+        android:textColor="@color/login_btn"
+        android:visibility="gone"
+        android:textSize="@dimen/y42"
+        android:text="@string/vip_buy_order_new"/>
+
+</LinearLayout>

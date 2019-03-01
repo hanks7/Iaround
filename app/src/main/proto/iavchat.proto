@@ -1,0 +1,230 @@
+syntax = "proto2";
+import "iachat.proto";
+
+package net.iaround.im.proto;
+
+//视频会话历史记录里的会话状态
+enum ChatState {
+    STATE_NONE = 0;
+    STATE_INVITE = 1;
+    STATE_CONFIRM = 2;
+    STATE_READY1 = 3;
+    STATE_READY2 = 4;
+    STATE_CHAT = 5;
+    STATE_CANCEL = 7;
+    STATE_REJECT = 8;
+    STATE_TIMEOUT = 9;
+    STATE_USER_BUSY = 10;
+    STATE_CALLER_CLOSE = 11;
+    STATE_CALLEE_CLOSE = 12;
+    STATE_PAYMENT_FAIL = 13;
+    STATE_BALANCE_NOT_ENOUGH = 14;
+    STATE_CLOSE_BY_ADMIN = 15;
+}
+
+//关闭视频会话的原因,后台加日志
+enum CloseState {
+    CLOSE_STATE_NONE = 0;
+    //视频会话业务
+    CLOSE_STATE_CLOSE_NORMAL = 1;     //通话中用户点击关闭视频按钮（观众和主播）
+    CLOSE_STATE_VIDEO_ERROR = 2 ;     //即构SDK推流失败或者拉流失败（观众和主播）
+    CLOSE_STATE_REFUSE_PERMISSION = 3;   //拒绝摄像头麦克风权限（观众和主播）
+    CLOSE_STATE_HANG_UP = 4;        //来电话时摘机（观众和主播）
+    CLOSE_STATE_NO_PAY_NOTIFY = 5;      //没收到扣费通知消息（主播）
+    CLOSE_STATE_LEFT_TIME_FIRE = 6;     //爱心不足倒计时时间到（观众）
+    CLOSE_STATE_USER_BUSY = 7;      //主播当前忙（主播）
+    CLOSE_STATE_NO_START_VIDEO = 13;      //同意视频会话后未收到开始推拉流消息（主播）
+    //任务发送失败
+    CLOSE_STATE_SEND_TASK_FAIL = 8;   //发送任务失败（邀请会话，同意会话，推拉流结果上报，扣费上报）
+    //任务响应错误
+    CLOSE_STATE_PARAMS_ERROR = 9;     //发出的任务参数错误（观众和主播）
+    CLOSE_STATE_PAYMENT_FAIL = 10;     //扣费上报消息后台处理时出现异常（观众）
+    //推送消息
+    CLOSE_STATE_PUSH_MSG_FORMAT_ERROR = 11;  //收到的推送消息格式错误
+    //客户端代码异常
+    CLOSE_STATE_APP_ERROR = 12;         //客户端代码处理异常
+}
+
+message InviteVideoChatReq
+{
+    required string  auth_token = 1;
+    required int64   from = 2;
+    required int64   to = 3;
+    optional int32   follow = 4;
+    optional string  data = 5;
+}
+
+message InviteVideoChatRsp
+{
+    required ErrorCode   err_code = 1;
+    required string      err_msg = 2;
+    optional int64       roomid = 3;
+}
+
+message CancelVideoChatReq
+{
+    required string  auth_token = 1;
+    required int64   roomid = 2;
+    optional int32   flag = 3;
+}
+
+message CancelVideoChatRsp
+{
+    required ErrorCode   err_code = 1;
+    required string      err_msg = 2;
+}
+
+message ConfirmVideoChatReq
+{
+    required string  auth_token = 1;
+    required int64   roomid = 2;
+}
+
+message ConfirmVideoChatRsp
+{
+    required ErrorCode   err_code = 1;
+    required string  err_msg = 2;
+    required int64   roomid = 3;
+}
+
+message RejectVideoChatReq
+{
+    required string  auth_token = 1;
+    required int64   roomid = 2;
+}
+
+message RejectVideoChatRsp
+{
+    required ErrorCode   err_code = 1;
+    required string      err_msg = 2;
+}
+
+message StartVideoChatReq
+{
+    required string  auth_token = 1;
+    required int64   roomid = 2;
+    required int32   ready = 3;
+    required int64   ts =4;
+}
+
+message StartVideoChatRsp
+{
+    required ErrorCode   err_code = 1;
+    required string      err_msg = 2;
+}
+
+message CloseVideoChatReq
+{
+    required string  auth_token = 1;
+    required int64   roomid = 2;
+    optional int32   close_state = 3;
+}
+
+message CloseVideoChatRsp
+{
+    required ErrorCode   err_code = 1;
+    required string      err_msg = 2;
+}
+
+message PayReq
+{
+    required string  auth_token = 1;
+    required int64   roomid = 2;
+}
+
+message PayRsp
+{
+    required ErrorCode   err_code = 1;
+    required string      err_msg = 2;
+    optional int32       seconds = 3;
+    optional int64       ts = 4;
+}
+
+message PayVerifyReq
+{
+    required string     auth_token = 1;
+    required int64      roomid = 2;
+    optional int32      seconds = 3;
+    optional int64      ts = 4;
+}
+
+message PayVerifyRsp
+{
+    required ErrorCode   err_code = 1;
+    required string      err_msg = 2;
+}
+
+message PushInviteVideo
+{
+    required int64   roomid = 1;
+    required int64   from = 2;
+    required int64   to = 3;
+    required string  name = 4;
+    required string  icon = 5;
+    required int32   vip = 6;
+    required int32   svip = 7;
+    required string  city = 8;
+    required int32   follow = 9;
+}
+
+message PushStartVideo
+{
+    required int64   roomid = 1;
+}
+
+message PushCloseVideo
+{
+    required int64   roomid = 1;
+    required ChatState state = 2;
+}
+
+message PushPayVideo
+{
+    required int64   roomid = 1;
+    required int32   seconds = 2;
+    required int64   ts = 3;
+    optional int64   love = 4;
+}
+
+message BluerReq
+{
+    required string  auth_token = 1;
+    required int64   roomid = 2;
+    required int64     open = 3;
+}
+
+message BluerRsp
+{
+    required ErrorCode   err_code = 1;
+    required string      err_msg = 2;
+}
+
+message PushBlurVideo
+{
+    required int64      roomid = 1;
+    required int64      open = 2;
+}
+
+
+message PushVideoFinish
+{
+    required int64          roomid = 1;
+    required int64          from = 2;
+    required string         from_name = 3;
+    required string         from_icon = 4;
+    required int32          from_vip = 5;
+    required int32          from_svip = 6;
+    required int32          from_anchor = 7;
+    required int64          to = 8;
+    required string         to_name = 9;
+    required string         to_icon = 10;
+    required int32          to_vip = 11;
+    required int32          to_svip = 12;
+    required int32          to_anchor = 13;
+    required int32          seconds = 14;
+    required int64          started = 15;
+    required int64          ended = 16;
+    required int32          sum = 17;
+    required int32          gift = 18;
+    required ChatState      state = 19;
+}

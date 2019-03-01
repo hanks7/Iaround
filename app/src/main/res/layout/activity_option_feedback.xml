@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/userFragment_bg">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:background="@color/chat_update_divider_of_toolMenu"/>
+    <EditText
+        android:id="@+id/et_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_white"
+        android:gravity="top"
+        android:hint="@string/setting_feedback_text_tips"
+        android:lines="10"
+        android:paddingLeft="@dimen/x48"
+        android:paddingTop="@dimen/y39"
+        android:textColorHint="#BBBBBB"
+        android:textSize="@dimen/y42" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/y96"
+        android:layout_marginLeft="@dimen/x48"
+        android:gravity="center"
+        android:text="@string/setting_feedback_type_tips"
+        android:textColor="#9B9B9B"
+        android:textSize="@dimen/y36" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/common_white">
+
+        <LinearLayout
+            android:id="@+id/ll_consult"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y120"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x48"
+                android:layout_weight="1"
+                android:text="@string/setting_feedback_type_consult"
+                android:textColor="#222222"
+                android:textSize="@dimen/y42" />
+
+            <ImageView
+                android:id="@+id/iv_consult"
+                android:layout_width="@dimen/y54"
+                android:layout_height="@dimen/y54"
+                android:layout_marginRight="@dimen/x48"
+                android:background="@drawable/feedback_selector" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y1"
+            android:layout_marginLeft="@dimen/x45"
+            android:background="#EBEBEB" />
+
+        <LinearLayout
+            android:id="@+id/ll_complaint"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y120"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x48"
+                android:layout_weight="1"
+                android:text="@string/setting_feedback_type_complaint"
+                android:textColor="#222222"
+                android:textSize="@dimen/y42" />
+
+            <ImageView
+                android:id="@+id/iv_complaint"
+                android:layout_width="@dimen/y54"
+                android:layout_height="@dimen/y54"
+                android:layout_marginRight="@dimen/x48"
+                android:background="@drawable/feedback_selector" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y1"
+            android:layout_marginLeft="@dimen/x45"
+            android:background="#EBEBEB" />
+
+        <LinearLayout
+            android:id="@+id/ll_suggest"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y120"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x48"
+                android:layout_weight="1"
+                android:text="@string/setting_feedback_type_suggest"
+                android:textColor="#222222"
+                android:textSize="@dimen/y42" />
+
+            <ImageView
+                android:id="@+id/iv_suggest"
+                android:layout_width="@dimen/y54"
+                android:layout_height="@dimen/y54"
+                android:layout_marginRight="@dimen/x48"
+                android:background="@drawable/feedback_selector" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

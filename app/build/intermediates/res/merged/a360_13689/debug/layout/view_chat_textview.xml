@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/chat_bg">
+
+    <TextView
+        android:id="@+id/tv_chat_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_black"
+        android:textSize="@dimen/y36"
+        android:paddingTop="@dimen/y30"
+        android:paddingBottom="@dimen/y30"
+        android:paddingLeft="@dimen/y30"
+        android:paddingRight="@dimen/y30"
+        android:minLines="1"
+        android:singleLine="true"/>
+
+</LinearLayout>

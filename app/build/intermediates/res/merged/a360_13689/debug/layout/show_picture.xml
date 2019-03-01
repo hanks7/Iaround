@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<net.iaround.ui.comon.ChatPictureView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/c_0d0f11">
+
+    <net.iaround.tools.picture.ScaledImageView
+        android:id="@+id/imageView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="top|left"
+        android:maxHeight="1000dip"
+		android:maxWidth="1000dip"
+		android:layerType="software"
+        android:scaleType="matrix" />
+
+    <LinearLayout
+        android:id="@+id/show_picture_filter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#ff615955" />
+
+        <TextView
+            android:id="@+id/show_picture_save"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/gray_trains_pressed_black"
+            android:gravity="center"
+            android:text="@string/save_photo"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#ff615955" />
+
+        <TextView
+            android:id="@+id/show_picture_clane"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/gray_trains_pressed_black"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/show_picture_precent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0%"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/show_picture_bg"
+                android:layout_width="192dp"
+                android:layout_height="3dp"
+                android:background="@color/c_6b6b6b" />
+
+            <TextView
+                android:id="@+id/show_picture_loaded"
+                android:layout_width="0dp"
+                android:layout_height="3dp"
+                android:background="@color/c_0099cc" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</net.iaround.ui.comon.ChatPictureView>

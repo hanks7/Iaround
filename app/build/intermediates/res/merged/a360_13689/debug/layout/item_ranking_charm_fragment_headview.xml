@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_rank_height"
+        android:layout_width="match_parent"
+        android:layout_height="184dp"
+        android:background="@drawable/ranking_three_level_select">
+
+        <LinearLayout
+            android:id="@+id/rl_headview_ranking_second"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/fl_headview_ranking_person_info_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="71dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="34dp"
+                    android:orientation="vertical"
+                    android:layout_alignParentTop="true">
+
+
+                    <net.iaround.ui.view.HeadPhotoView
+                        android:id="@+id/iv_headview_charm_second"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentBottom="true"
+                        android:src="@drawable/iaround_default_img" />
+
+                    <ImageView
+                        android:id="@+id/iv_headview_crown_second"
+                        android:layout_width="32dp"
+                        android:layout_height="26dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="45dp"
+                        android:src="@drawable/ranking_level_second" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_ranking_second"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="110dp"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="5dp">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="7dp">
+                        <TextView
+                            android:id="@+id/tv_headview_person_second"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:maxLength="14"
+                            android:maxEms="5"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="Graceless"
+                            android:textColor="@color/edit_user_value"
+                            android:textSize="12sp"
+                            android:layout_marginRight="5dp"
+                            android:layout_centerVertical="true"/>
+                        <LinearLayout
+                            android:id="@+id/ly_user_age_second"
+                            android:layout_width="36dp"
+                            android:layout_height="14dp"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/tv_headview_person_second">
+
+                            <ImageView
+                                android:id="@+id/iv_user_sex_second"
+                                android:layout_width="12dp"
+                                android:layout_height="12dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="1dp" />
+
+                            <TextView
+                                android:id="@+id/tv_user_age_second"
+                                android:layout_width="13dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:textColor="@color/common_white"
+                                android:textSize="@dimen/y30" />
+
+                        </LinearLayout>
+
+
+
+                    </RelativeLayout>
+                    <net.iaround.ui.view.pipeline.UserTitleView
+                        android:id="@+id/rank_user_title_second"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="10dp">
+
+                    </net.iaround.ui.view.pipeline.UserTitleView>
+
+                   <TextView
+                       android:id="@+id/iv_ranking_second_title"
+                       android:layout_width="70dp"
+                       android:layout_height="22dp"
+                       android:layout_gravity="center_horizontal"
+                       android:textSize="12sp"
+                       android:paddingLeft="15dp"
+                       android:textColor="@color/c_ffffff"
+                       android:gravity="center"
+                       android:layout_marginBottom="10dp"
+                       android:visibility="gone"
+                   />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/tv_charm_num_text_second"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/item_lv_charm_fragment_charm"
+                                android:textColor="@color/login_btn"
+                                android:textSize="10sp"
+                                android:textStyle="bold"
+                                android:ellipsize="end"
+                                android:singleLine="true"/>
+
+                            <TextView
+                                android:id="@+id/tv_charm_num_second"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dp"
+                                android:text="356"
+                                android:textColor="@color/login_btn"
+                                android:textSize="10sp"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_headview_ranking_first"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/fl_headview_ranking_person_info_first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="82dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="17dp"
+                    android:layout_alignParentTop="true"
+                    android:orientation="vertical">
+
+
+                    <net.iaround.ui.view.HeadPhotoView
+                        android:id="@+id/iv_headview_charm_first"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentBottom="true"
+                        android:src="@drawable/iaround_default_img" />
+
+                    <ImageView
+                        android:id="@+id/iv_headview_crown_first"
+                        android:layout_width="32dp"
+                        android:layout_height="26dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="56dp"
+                        android:src="@drawable/ranking_level_first" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_ranking_first"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="104dp"
+                    android:layout_marginBottom="13dp"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_gravity="center_horizontal">
+                        <TextView
+                            android:id="@+id/tv_headview_person_first"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLength="14"
+                            android:maxEms="5"
+                            android:layout_gravity="center_horizontal"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="Graceless"
+                            android:textColor="@color/edit_user_value"
+                            android:textSize="12sp"
+                            android:layout_marginRight="5dp"
+                            android:layout_centerVertical="true"/>
+
+                        <LinearLayout
+                            android:id="@+id/ly_user_age_first"
+                            android:layout_width="36dp"
+                            android:layout_height="14dp"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal"
+                            android:layout_toRightOf="@+id/tv_headview_person_first"
+                            android:layout_centerVertical="true">
+
+                            <ImageView
+                                android:id="@+id/iv_user_sex_first"
+                                android:layout_width="12dp"
+                                android:layout_height="12dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="1dp" />
+
+                            <TextView
+                                android:id="@+id/tv_user_age_first"
+                                android:layout_width="13dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:textColor="@color/common_white"
+                                android:textSize="@dimen/y30" />
+
+                        </LinearLayout>
+
+
+
+                    </RelativeLayout>
+                    <net.iaround.ui.view.pipeline.UserTitleView
+                        android:id="@+id/rank_user_title_first"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="10dp">
+
+                    </net.iaround.ui.view.pipeline.UserTitleView>
+                    <TextView
+                        android:id="@+id/iv_ranking_first_title"
+                        android:layout_width="70dp"
+                        android:layout_height="22dp"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="12sp"
+                        android:paddingLeft="15dp"
+                        android:textColor="@color/c_ffffff"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="10dp"
+                        android:visibility="gone"
+                        />
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/tv_charm_num_text_first"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/item_lv_charm_fragment_charm"
+                                android:textColor="@color/login_btn"
+                                android:textSize="10sp"
+                                android:textStyle="bold"
+                                android:ellipsize="end"
+                                android:singleLine="true"/>
+
+                            <TextView
+                                android:id="@+id/tv_charm_num_first"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dp"
+                                android:text="356"
+                                android:textColor="@color/login_btn"
+                                android:textSize="10sp"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_headview_ranking_third"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/fl_headview_ranking_person_info_third"
+                    android:layout_width="wrap_content"
+                    android:layout_height="71dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="34dp"
+                    android:orientation="vertical">
+
+
+                    <net.iaround.ui.view.HeadPhotoView
+                        android:id="@+id/iv_headview_charm_third"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentBottom="true"
+                        android:src="@drawable/iaround_default_img" />
+
+                    <ImageView
+                        android:id="@+id/iv_headview_crown_third"
+                        android:layout_width="32dp"
+                        android:layout_height="26dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="45dp"
+                        android:src="@drawable/ranking_level_third" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_ranking_third"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="110dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="7dp">
+
+                        <TextView
+                            android:id="@+id/tv_headview_person_third"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLength="14"
+                            android:maxEms="5"
+                            android:layout_marginRight="5dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_centerVertical="true"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="Graceless"
+                            android:textColor="@color/edit_user_value"
+                            android:textSize="12sp" />
+
+                        <LinearLayout
+                            android:id="@+id/ly_user_age_third"
+                            android:layout_width="36dp"
+                            android:layout_height="14dp"
+                            android:layout_toRightOf="@+id/tv_headview_person_third"
+                            android:layout_gravity="center_vertical"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/iv_user_sex_third"
+                                android:layout_width="12dp"
+                                android:layout_height="12dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="1dp" />
+
+                            <TextView
+                                android:id="@+id/tv_user_age_third"
+                                android:layout_width="13dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:textColor="@color/common_white"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+                    <net.iaround.ui.view.pipeline.UserTitleView
+                        android:id="@+id/rank_user_title_third"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginBottom="10dp">
+
+                    </net.iaround.ui.view.pipeline.UserTitleView>
+
+                    <TextView
+                        android:id="@+id/iv_ranking_third_title"
+                        android:layout_width="75dp"
+                        android:layout_height="22dp"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="12sp"
+                        android:paddingLeft="18dp"
+                        android:textColor="@color/c_ffffff"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="10dp"
+                        android:visibility="gone"
+                      />
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/tv_charm_num_text_third"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/item_lv_charm_fragment_charm"
+                                android:textColor="@color/login_btn"
+                                android:textSize="10sp"
+                                android:textStyle="bold"
+                                android:ellipsize="end"
+                                android:singleLine="true"/>
+
+                            <TextView
+                                android:id="@+id/tv_charm_num_third"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dp"
+                                android:text="356"
+                                android:textColor="@color/login_btn"
+                                android:textSize="10sp"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

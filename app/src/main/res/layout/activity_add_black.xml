@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_black_list_tips"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="@dimen/y96"
+        android:layout_marginLeft="@dimen/x48"
+        android:textColor="#9B9B9B"
+        android:textSize="@dimen/y30" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_black_list_friends"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y120"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x48"
+                android:layout_weight="1"
+                android:text="@string/setting_relative_type_friends"
+                android:textColor="#222222" />
+
+            <ImageView
+                android:layout_width="@dimen/x24"
+                android:layout_height="@dimen/y42"
+                android:layout_marginRight="@dimen/x48"
+                android:src="@drawable/user_detail" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y3"
+            android:layout_marginLeft="@dimen/x45"
+            android:background="#EBEBEB" />
+
+        <LinearLayout
+            android:id="@+id/ll_black_list_focus"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y120"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x48"
+                android:layout_weight="1"
+                android:text="@string/setting_relative_type_focus"
+                android:textColor="#222222" />
+
+            <ImageView
+                android:layout_width="@dimen/x24"
+                android:layout_height="@dimen/y42"
+                android:layout_marginRight="@dimen/x48"
+                android:src="@drawable/user_detail" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y3"
+            android:layout_marginLeft="@dimen/x45"
+            android:background="#EBEBEB" />
+
+        <LinearLayout
+            android:id="@+id/ll_black_list_fans"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y120"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x48"
+                android:layout_weight="1"
+                android:text="@string/setting_relative_type_fans"
+                android:textColor="#222222" />
+
+            <ImageView
+                android:layout_width="@dimen/x24"
+                android:layout_height="@dimen/y42"
+                android:layout_marginRight="@dimen/x48"
+                android:src="@drawable/user_detail" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

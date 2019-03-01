@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/activity_basic_style"
+    android:orientation="vertical" >
+	<ImageView
+            android:layout_width="320dip"
+            android:layout_height="186dip"
+            android:layout_gravity="center"
+            android:src="@drawable/cat_set_join_group" />
+    
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="13sp"
+        android:layout_marginLeft="25dip"
+        android:layout_marginRight="25dip"
+        android:textColor="@color/c_b28850"
+        android:text="@string/create_group_join_rang" />
+
+    <RelativeLayout
+        android:id="@+id/set_distance_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dip"
+        android:layout_marginLeft="25dip"
+        android:layout_marginRight="25dip"
+        android:background="@drawable/info_bg"
+        android:padding="13dip" >
+
+        <ImageView
+            android:id="@+id/img_arraw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arraw_turn" />
+
+        <TextView
+            style="@style/list_item_title_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/group_join_rang" />
+
+        <TextView android:id="@+id/group_distance"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="13dip"
+            android:layout_toLeftOf="@+id/img_arraw"
+            style="@style/list_item_subtitle_style"
+            android:text="5km" />
+    </RelativeLayout>
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="37dip"
+        android:layout_marginRight="37dip"
+        android:layout_marginTop="7dip"
+        android:orientation="horizontal">
+		<TextView android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"
+		    style="@style/text_gray_small"
+		    android:text="@string/group_rang_need_gold"/>
+		<TextView android:id="@+id/create_group_coins"
+		    android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"
+		    android:textColor="@color/c_d63231"
+		    android:textSize="13dip"
+		    android:text=" 250 "/>
+		<TextView android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"
+		    style="@style/text_gray_small"
+		    android:text="@string/pay_gold"/>
+
+    </LinearLayout>
+
+    <Button android:id="@+id/btn_complete"
+	    android:layout_height="40dip"
+	    android:layout_width="fill_parent"
+	    android:layout_marginTop="23dip"
+	    android:layout_marginLeft="25dip"
+	    android:layout_marginRight="25dip"
+	    style="@style/btn_blue"
+	    android:text="@string/complete"/>
+
+</LinearLayout>

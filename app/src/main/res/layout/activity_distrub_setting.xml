@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color">
+
+    <include layout="@layout/tabar_actionbar_layout"/>
+
+
+    <LinearLayout
+        android:id="@+id/ly_notification_setting_open"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y120"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x48"
+            android:text="@string/setting_notice_receive_new_msg_open"
+            android:layout_weight="1"
+            android:textColor="#222222"
+            android:textSize="@dimen/y42" />
+
+        <ImageView
+            android:id="@+id/iv_notification_setting_open"
+            android:layout_width="@dimen/y42"
+            android:layout_height="@dimen/y42"
+            android:src="@drawable/edit_selected"
+            android:layout_marginRight="@dimen/x48"/>
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/view_setting_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_marginLeft="@dimen/x135"
+        android:background="#E6E6E6" />
+
+    <LinearLayout
+        android:id="@+id/ly_notification_setting_close"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y120"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x48"
+            android:text="@string/setting_notice_receive_new_msg_close"
+            android:layout_weight="1"
+            android:textColor="#222222"
+            android:textSize="@dimen/y42" />
+
+        <ImageView
+            android:id="@+id/iv_notification_setting_close"
+            android:layout_width="@dimen/y42"
+            android:layout_height="@dimen/y42"
+            android:src="@drawable/white"
+            android:layout_marginRight="@dimen/x48"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:layout_marginLeft="17dp"
+        android:textSize="12sp"
+        android:textColor="@color/gray_text_color"
+        android:text="@string/notification_setting_info"/>
+
+
+</LinearLayout>

@@ -1,0 +1,218 @@
+[
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/anim/gf_flip_horizontal_out.xml",
+        "source": "/Users/zhangsen/iaround/iaround-android-online/galleryfinal/build/intermediates/packaged_res/debug/anim/gf_flip_horizontal_out.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/anim/z_dynamic_click_notice_in.xml",
+        "source": "/Users/zhangsen/iaround/iaround-android-online/app/src/main/res/anim/z_dynamic_click_notice_in.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/anim/dialog_enter.xml",
+        "source": "/Users/zhangsen/iaround/iaround-android-online/app/src/main/res/anim/dialog_enter.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/anim/user_nearby_filter_show.xml",
+        "source": "/Users/zhangsen/iaround/iaround-android-online/app/src/main/res/anim/user_nearby_filter_show.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/anim/umeng_socialize_slide_out_from_bottom.xml",
+        "source": "/Users/zhangsen/iaround/iaround-android-online/app/src/main/res/anim/umeng_socialize_slide_out_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/anim/dialog_enter_top.xml",
+        "source": "/Users/zhangsen/iaround/iaround-android-online/app/src/main/res/anim/dialog_enter_top.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/anim/in.xml",
+        "source": "/Users/zhangsen/iaround/iaround-android-online/app/src/main/res/anim/in.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/anim/up_in.xml",
+        "source": "/Users/zhangsen/iaround/iaround-android-online/galleryfinal/build/intermediates/packaged_res/debug/anim/up_in.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/anim/slide_out_bottom.xml",
+        "source": "/Users/zhangsen/iaround/iaround-android-online/pickerview/build/intermediates/packaged_res/debug/anim/slide_out_bottom.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/anim/normal_dialog_enter.xml",
+        "source": "/Users/zhangsen/iaround/iaround-android-online/app/src/main/res/anim/normal_dialog_enter.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/anim/picture_filter_dismiss.xml",
+        "source": "/Users/zhangsen/iaround/iaround-android-online/app/src/main/res/anim/picture_filter_dismiss.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/anim/dialog_exit_top.xml",
+        "source": "/Users/zhangsen/iaround/iaround-android-online/app/src/main/res/anim/dialog_exit_top.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/anim/design_snackbar_out.xml",
+        "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/1993906930ebe08a7f98d1cabfb917e4/res/anim/design_snackbar_out.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/anim/abc_slide_out_bottom.xml",
+        "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/43bd9c050b31741f3a212b9e535f7af3/res/anim/abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/anim/slide_in_bottom.xml",
+        "source": "/Users/zhangsen/iaround/iaround-android-online/pickerview/build/intermediates/packaged_res/debug/anim/slide_in_bottom.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/anim/group_chat_bar_gift_array.xml",
+        "source": "/Users/zhangsen/iaround/iaround-android-online/app/src/main/res/anim/group_chat_bar_gift_array.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/anim/abc_grow_fade_in_from_bottom.xml",
+        "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/43bd9c050b31741f3a212b9e535f7af3/res/anim/abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/anim/right_in.xml",
+        "source": "/Users/zhangsen/iaround/iaround-android-online/app/src/main/res/anim/right_in.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/anim/picture_filter_show.xml",
+        "source": "/Users/zhangsen/iaround/iaround-android-online/app/src/main/res/anim/picture_filter_show.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/anim/design_bottom_sheet_slide_out.xml",
+        "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/1993906930ebe08a7f98d1cabfb917e4/res/anim/design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/anim/slide_out_to_bottom.xml",
+        "source": "/Users/zhangsen/iaround/iaround-android-online/PullToRefreshLibrary/build/intermediates/packaged_res/debug/anim/slide_out_to_bottom.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/anim/gf_flip_horizontal_in.xml",
+        "source": "/Users/zhangsen/iaround/iaround-android-online/galleryfinal/build/intermediates/packaged_res/debug/anim/gf_flip_horizontal_in.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/anim/abc_popup_exit.xml",
+        "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/43bd9c050b31741f3a212b9e535f7af3/res/anim/abc_popup_exit.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/anim/design_bottom_sheet_slide_in.xml",
+        "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/1993906930ebe08a7f98d1cabfb917e4/res/anim/design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/anim/dialog_exit_right.xml",
+        "source": "/Users/zhangsen/iaround/iaround-android-online/app/src/main/res/anim/dialog_exit_right.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/anim/loading.xml",
+        "source": "/Users/zhangsen/iaround/iaround-android-online/app/src/main/res/anim/loading.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/anim/in_animation.xml",
+        "source": "/Users/zhangsen/iaround/iaround-android-online/PullToRefreshLibrary/build/intermediates/packaged_res/debug/anim/in_animation.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/anim/normal_dialog_exit.xml",
+        "source": "/Users/zhangsen/iaround/iaround-android-online/app/src/main/res/anim/normal_dialog_exit.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/anim/left_out.xml",
+        "source": "/Users/zhangsen/iaround/iaround-android-online/app/src/main/res/anim/left_out.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/anim/dynamic_love.xml",
+        "source": "/Users/zhangsen/iaround/iaround-android-online/app/src/main/res/anim/dynamic_love.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/anim/slide_in_from_top.xml",
+        "source": "/Users/zhangsen/iaround/iaround-android-online/PullToRefreshLibrary/build/intermediates/packaged_res/debug/anim/slide_in_from_top.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/anim/design_snackbar_in.xml",
+        "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/1993906930ebe08a7f98d1cabfb917e4/res/anim/design_snackbar_in.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/anim/abc_slide_out_top.xml",
+        "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/43bd9c050b31741f3a212b9e535f7af3/res/anim/abc_slide_out_top.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/anim/z_dynamic_click_notice_out.xml",
+        "source": "/Users/zhangsen/iaround/iaround-android-online/app/src/main/res/anim/z_dynamic_click_notice_out.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/anim/slide_in_from_bottom.xml",
+        "source": "/Users/zhangsen/iaround/iaround-android-online/PullToRefreshLibrary/build/intermediates/packaged_res/debug/anim/slide_in_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/anim/abc_slide_in_bottom.xml",
+        "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/43bd9c050b31741f3a212b9e535f7af3/res/anim/abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/anim/dialog_enter_right.xml",
+        "source": "/Users/zhangsen/iaround/iaround-android-online/app/src/main/res/anim/dialog_enter_right.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/anim/out_animation.xml",
+        "source": "/Users/zhangsen/iaround/iaround-android-online/PullToRefreshLibrary/build/intermediates/packaged_res/debug/anim/out_animation.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/anim/user_nearby_filter_dismiss.xml",
+        "source": "/Users/zhangsen/iaround/iaround-android-online/app/src/main/res/anim/user_nearby_filter_dismiss.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/anim/umeng_socialize_slide_in_from_bottom.xml",
+        "source": "/Users/zhangsen/iaround/iaround-android-online/app/src/main/res/anim/umeng_socialize_slide_in_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/anim/button_shake_interpolator.xml",
+        "source": "/Users/zhangsen/iaround/iaround-android-online/app/src/main/res/anim/button_shake_interpolator.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/anim/down_out.xml",
+        "source": "/Users/zhangsen/iaround/iaround-android-online/galleryfinal/build/intermediates/packaged_res/debug/anim/down_out.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/anim/zoomin.xml",
+        "source": "/Users/zhangsen/iaround/iaround-android-online/app/src/main/res/anim/zoomin.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/anim/abc_popup_enter.xml",
+        "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/43bd9c050b31741f3a212b9e535f7af3/res/anim/abc_popup_enter.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/anim/out.xml",
+        "source": "/Users/zhangsen/iaround/iaround-android-online/app/src/main/res/anim/out.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/anim/abc_fade_in.xml",
+        "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/43bd9c050b31741f3a212b9e535f7af3/res/anim/abc_fade_in.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/anim/abc_slide_in_top.xml",
+        "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/43bd9c050b31741f3a212b9e535f7af3/res/anim/abc_slide_in_top.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/anim/z_accost_audio_play_right.xml",
+        "source": "/Users/zhangsen/iaround/iaround-android-online/app/src/main/res/anim/z_accost_audio_play_right.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/anim/button_shake.xml",
+        "source": "/Users/zhangsen/iaround/iaround-android-online/app/src/main/res/anim/button_shake.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/anim/abc_fade_out.xml",
+        "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/43bd9c050b31741f3a212b9e535f7af3/res/anim/abc_fade_out.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/anim/dialog_exit.xml",
+        "source": "/Users/zhangsen/iaround/iaround-android-online/app/src/main/res/anim/dialog_exit.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/anim/abc_shrink_fade_out_from_bottom.xml",
+        "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/43bd9c050b31741f3a212b9e535f7af3/res/anim/abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/anim/audio_play_left.xml",
+        "source": "/Users/zhangsen/iaround/iaround-android-online/app/src/main/res/anim/audio_play_left.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/anim/slide_out_to_top.xml",
+        "source": "/Users/zhangsen/iaround/iaround-android-online/PullToRefreshLibrary/build/intermediates/packaged_res/debug/anim/slide_out_to_top.xml"
+    }
+]

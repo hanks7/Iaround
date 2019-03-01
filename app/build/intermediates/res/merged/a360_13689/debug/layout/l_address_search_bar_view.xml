@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+    
+    <RelativeLayout 
+        android:id="@+id/rlSearchBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_address_search_bar_heigh"
+        android:background="@drawable/z_common_bg_white_round">
+        
+        <EditText 
+            android:id="@+id/etSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:hint="@string/address_search_hint"
+            android:textSize="15dp"
+            android:drawableLeft="@drawable/group_search_icon"
+            android:drawablePadding="@dimen/dp_1"
+            android:background="@color/transparent"
+            android:textColor="@color/c_999999"/>
+        
+    </RelativeLayout>
+
+</RelativeLayout>

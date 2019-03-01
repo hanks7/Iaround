@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlAD"
+    style="@style/wfill_hwrap">
+
+    <ImageView
+        android:id="@+id/chat_ad_im"
+        android:layout_width="fill_parent"
+        android:layout_height="110dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/z_common_bg_white_round"
+        android:scaleType="fitXY" />
+
+    <Button
+        android:id="@+id/chat_ad_btn"
+        style="@style/double_wrap"
+        android:layout_alignRight="@id/chat_ad_im"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/close"
+        android:visibility="gone" />
+    
+    <View
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y1"
+    android:layout_alignParentBottom="true"
+    android:background="@color/chat_update_divider_of_messageItem"/>
+
+</RelativeLayout>

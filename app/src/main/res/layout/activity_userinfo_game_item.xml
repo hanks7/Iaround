@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/common_white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+    <ImageView
+        android:id="@+id/iv_game_head"
+        android:layout_width="110dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_avatar_rect_light" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:id="@+id/tv_game_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="王者荣耀"
+            android:textColor="@color/common_black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_game_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_game_name"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="2dp"
+            android:layout_toRightOf="@id/tv_game_name"
+            android:background="@drawable/home_page_game_rank_shape"
+            android:text="秩序白银"
+            android:textColor="@color/common_white"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_game_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_game_name"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/home_page_text_color"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_game_tip"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <RatingBar
+                android:id="@+id/rb_star"
+                style="@style/StarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:isIndicator="true"
+                android:numStars="5" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10元/小时"
+                android:textColor="@color/common_iaround_red"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

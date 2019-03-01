@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:padding="10dp">
+
+	<RelativeLayout
+		android:id="@+id/llFlag"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+
+		<ImageView
+			android:id="@+id/ivTimePoint"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:src="@drawable/gray_point"/>
+
+		<TextView
+			android:id="@+id/tvTime"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="30dp"
+			android:layout_toRightOf="@id/ivTimePoint"
+			android:text="08/02 11:32"/>
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:id="@+id/rlContent"
+		android:layout_width="200dp"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/llFlag"
+		android:layout_marginLeft="30dp"
+		android:layout_marginTop="5dp"
+		android:background="@drawable/chat_new_record_friend_bg"
+		android:orientation="horizontal"
+		android:paddingBottom="5dp"
+		android:paddingLeft="15dp"
+		android:paddingRight="5dp"
+		android:paddingTop="5dp">
+
+		<RelativeLayout
+			android:id="@+id/icon_layout"
+			android:layout_width="64dp"
+			android:layout_height="64dp"
+			android:layout_margin="8dp">
+
+			<ImageView
+				android:id="@+id/img"
+				android:layout_width="64dp"
+				android:layout_height="64dp"/>
+
+		</RelativeLayout>
+
+		<TextView
+			android:id="@+id/name"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+			android:layout_toRightOf="@id/icon_layout"
+			android:ellipsize="end"
+			android:gravity="center_vertical"
+			android:singleLine="true"
+			android:text="游轮游轮游轮游轮游轮"
+			android:textColor="@color/c_ffffff"
+			android:textSize="16dp"/>
+
+		<TextView
+			android:id="@+id/price"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/name"
+			android:layout_marginTop="6dp"
+			android:layout_toRightOf="@id/icon_layout"
+			android:ellipsize="end"
+			android:gravity="center_vertical"
+			android:singleLine="true"
+			android:text="金币:10000000000"
+			android:textColor="@color/c_999999"
+			android:textSize="13dp"/>
+
+		<TextView
+			android:id="@+id/charisma"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/price"
+			android:layout_marginTop="4dp"
+			android:layout_toRightOf="@id/icon_layout"
+			android:ellipsize="end"
+			android:gravity="center_vertical"
+			android:singleLine="true"
+			android:text="金币:10000000000"
+			android:textColor="@color/c_999999"
+			android:textSize="13dp"/>
+
+		<TextView
+			android:id="@+id/exp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/charisma"
+			android:layout_toRightOf="@id/icon_layout"
+			android:ellipsize="end"
+			android:gravity="center_vertical"
+			android:singleLine="true"
+			android:text="金币:10000000000"
+			android:textColor="@color/c_999999"
+			android:textSize="13dp"/>
+
+		<TextView
+			android:id="@+id/send_back"
+			android:layout_width="94dp"
+			android:layout_height="28dp"
+			android:layout_below="@id/icon_layout"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="12dp"
+			android:background="@drawable/btn_chat_gift_send_back_selector"
+			android:gravity="center"
+			android:text="@string/chat_gift_thx_send_back"
+			android:textColor="#ef555e"/>
+
+		<ImageView
+			android:id="@+id/count_img"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_below="@id/send_back"
+			android:src="@drawable/chatbar_gift_num_10"/>
+	</RelativeLayout>
+	<!--android:background="@drawable/z_chat_gift_send_back_btn_bg"-->
+</RelativeLayout>

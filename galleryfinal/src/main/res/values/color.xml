@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="preview_normal">#666666</color>
+    <color name="preview_pressed">#000000</color>
+    <color name="ok_pressed">#ef555e</color>
+    <color name="ok_normal">#FF4064</color>
+    <color name="select_normal">#EBEBEB</color>
+    <color name="color_fa">#FAFAFA</color>
+    <color name="transparent_white">#F0FFFFFF</color>
+    <color name="transparent_db">#E0DBDBDB</color>
+    <color name="color_53">#53575e</color>
+    <color name="line_color1">#EEEEEE</color>
+    <color name="black1">#000000</color>
+
+
+</resources>

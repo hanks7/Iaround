@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fl_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_white"/>
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/rl_default_progress_dialog"-->
+        <!--android:layout_width="72dp"-->
+        <!--android:layout_height="72dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:background="@drawable/z_common_progressdialog_bg"-->
+        <!--android:gravity="center">-->
+
+        <!--<ProgressBar-->
+            <!--android:id="@+id/pb_loading_icon"-->
+            <!--android:layout_width="24dp"-->
+            <!--android:layout_height="24dp"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:indeterminate="false"-->
+            <!--android:indeterminateDrawable="@drawable/z_common_loaddialog_pb"-->
+            <!--android:indeterminateDuration="1200" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_loading_content"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/pb_loading_icon"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:text="@string/please_wait"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:textSize="12dp" />-->
+    <!--</RelativeLayout>-->
+
+    <include
+        android:id="@+id/ll_load_failed"
+        layout="@layout/no_data_view"
+        android:visibility="gone"/>
+
+</FrameLayout>

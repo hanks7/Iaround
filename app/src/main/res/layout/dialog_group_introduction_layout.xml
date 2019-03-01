@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical" >
+	<TextView android:id="@+id/dialog_title"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:layout_gravity="center_horizontal"
+	   	style="@style/dialog_title"
+	   	android:layout_margin="15dip"
+	    android:text="标题"/>
+	<ImageView android:layout_width="fill_parent"
+	    android:layout_height="0dip"
+	    android:background="@drawable/dialog_divider"
+	    android:layout_marginLeft="15dip"
+	    android:layout_marginRight="15dip" />
+
+	<TextView
+	    android:id="@+id/dialog_content"
+	    style="@style/dialog_content"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="fill_horizontal"
+	    android:layout_marginBottom="20dip"
+	    android:layout_marginLeft="15dip"
+	    android:layout_marginRight="15dip"
+	    android:layout_marginTop="5dip"
+	    android:gravity="left"
+	    android:text="这里是dialog的文本内容" />
+
+	<ImageView android:layout_width="fill_parent"
+	    android:layout_height="1dip"
+	    android:background="@drawable/dialog_divider" />
+	<LinearLayout android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    <TextView android:id="@+id/dialog_positive"
+	        android:layout_height="wrap_content"
+	        android:layout_width="0dip"
+	        android:layout_weight="1"
+	        style="@style/dialog_button"
+	        android:text="确定"/>
+	    <ImageView
+	        android:id="@+id/dialog_btn_devider"
+	        android:layout_width="1dip"
+		    android:layout_height="fill_parent"
+		    android:background="@drawable/dialog_divider" />
+	    <TextView android:id="@+id/dialog_negative"
+	        android:layout_height="wrap_content"
+	        android:layout_width="0dip"
+	        android:layout_weight="1"
+	      
+	        style="@style/dialog_button"
+	        android:text="取消"/>
+	     <!--  android:textStyle="bold"去掉粗体显示2014/4/27 -->
+	</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color">
+
+    <!--<include layout="@layout/tabar_actionbar_layout"/>-->
+    <include layout="@layout/title_bar"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:background="@color/chat_update_divider_of_messageItem"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray_text_color"
+        android:layout_marginTop="@dimen/y120"
+        android:textSize="@dimen/y36"
+        android:gravity="center"
+        android:text="@string/encounter_filter_sex"/>
+
+    <!--性别筛选-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y42"
+        android:layout_marginLeft="@dimen/x99"
+        android:layout_marginRight="@dimen/x99"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_filter_woman"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/encounter_filter_sex_selcet"
+            android:background="@drawable/btn_encounter_filter_sex_unbg"
+            android:text="@string/encounter_filter_woman" />
+
+        <TextView
+            android:id="@+id/tv_filter_man"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/x36"
+            android:gravity="center"
+            android:textColor="@color/encounter_filter_sex_selcet"
+            android:background="@drawable/btn_encounter_filter_sex_unbg"
+            android:text="@string/encounter_filter_man" />
+
+        <TextView
+            android:id="@+id/tv_filter_all"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/x36"
+            android:gravity="center"
+            android:textColor="@color/common_white"
+            android:background="@drawable/btn_encounter_filter_sex_bg"
+            android:text="@string/encounter_filter_all"/>
+        
+    </LinearLayout>
+
+    <!--活跃时间-->
+    <LinearLayout
+        android:id="@+id/ly_filter_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_text_color"
+            android:layout_marginTop="@dimen/y90"
+            android:textSize="@dimen/y36"
+            android:gravity="center"
+            android:text="@string/filter_timer"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y42"
+            android:layout_marginLeft="@dimen/x99"
+            android:layout_marginRight="@dimen/x99"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_filter_minute"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/encounter_filter_sex_selcet"
+                android:background="@drawable/btn_encounter_filter_sex_unbg"
+                android:text="@string/filter_minute"/>
+
+            <TextView
+                android:id="@+id/tv_filter_hours"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/x15"
+                android:gravity="center"
+                android:textColor="@color/encounter_filter_sex_selcet"
+                android:background="@drawable/btn_encounter_filter_sex_unbg"
+                android:text="@string/filter_hours"/>
+
+            <TextView
+                android:id="@+id/tv_filter_day"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/x15"
+                android:gravity="center"
+                android:textColor="@color/encounter_filter_sex_selcet"
+                android:background="@drawable/btn_encounter_filter_sex_unbg"
+                android:text="@string/filter_day"/>
+
+            <TextView
+                android:id="@+id/tv_filter_3day"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/x15"
+                android:gravity="center"
+                android:textColor="@color/common_white"
+                android:background="@drawable/btn_encounter_filter_sex_bg"
+                android:text="@string/filter_3day"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--按条件筛选(会员可用)-->
+    <LinearLayout
+        android:id="@+id/ly_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y183"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="@dimen/x318"
+            android:layout_height="@dimen/y1"
+            android:background="@color/chat_update_divider_of_toolMenu"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/x30"
+            android:layout_marginLeft="@dimen/x30"
+            android:text="@string/filter_vip_choice"
+            android:textSize="@dimen/y36"
+            android:textColor="@color/gray_text_color" />
+
+        <View
+            android:layout_width="@dimen/x318"
+            android:layout_height="@dimen/y1"
+            android:background="@color/chat_update_divider_of_toolMenu" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_filter_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray_text_color"
+        android:textSize="@dimen/y36"
+        android:layout_marginTop="@dimen/y80"
+        android:gravity="center"
+        android:text="@string/encounter_filter_age"
+        android:visibility="gone"/>
+
+    <net.iaround.ui.view.encounter.RangeSeekBar
+        android:id="@+id/rs_filter_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y42"
+        android:layout_marginLeft="@dimen/x103"
+        android:layout_marginRight="@dimen/x92"
+        android:visibility="gone"/>
+
+    <!--星座筛选-->
+    <RelativeLayout
+        android:id="@+id/rl_constellation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y120"
+        android:visibility="gone">
+
+        <!--星座-->
+        <TextView
+            android:id="@+id/dynamic_constellation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x36"
+            android:layout_marginBottom="@dimen/y16"
+            android:gravity="center"
+            android:textColor="@color/encounter_filter_sex_selcet"
+            android:text="@string/dynamic_filte_constellation"
+            android:visibility="gone"/>
+
+        <View
+            android:id="@+id/encounter_base_info_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y1"
+            android:layout_below="@id/dynamic_constellation"
+            android:layout_marginLeft="@dimen/x39"
+            android:layout_marginBottom="@dimen/y42"
+            android:background="@color/encounter_base_info_line"/>
+
+        <LinearLayout
+            android:id="@+id/ly_constellation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/encounter_base_info_line"
+            android:layout_marginLeft="@dimen/x60"
+            android:layout_marginRight="@dimen/x48"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dynamic_filte_constellation"
+                android:layout_marginRight="@dimen/x23"
+                android:textSize="@dimen/y42"
+                android:textColor="@color/encounter_filter_sex_selcet"/>
+
+            <TextView
+                android:id="@+id/tv_constellation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/y42"
+                android:textColor="@color/encounter_filter_sex_selcet"/>
+
+            <ImageView
+                android:layout_width="@dimen/x24"
+                android:layout_height="@dimen/y42"
+                android:background="@drawable/user_detail"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y1"
+            android:layout_below="@id/ly_constellation"
+            android:layout_marginTop="@dimen/y44"
+            android:layout_marginLeft="@dimen/x39"
+            android:background="@color/encounter_base_info_line"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <drawable name="black">#000</drawable>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="navigation_bar_bg">#E3E3E3</color>
+
+    <!-- 默认色值 -->
+    <color name="main_bg_color">#FFFFFF</color>
+    <color name="splash_bg_color">#231F20</color>
+    <color name="default_title">#2B2B2B</color>
+    <color name="default_content">#717171</color>
+    <color name="half_transparent">#40000000</color>
+    <color name="half_transparent2">#20000000</color>
+    <color name="half_transparent3">#30000000</color>
+    <color name="half_transparent1">#90000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="title_font_color">#FFFFFF</color>
+    <color name="common_black">#333333</color>
+    <color name="common_white">#FFFFFF</color>
+    <color name="common_grey">#666666</color>
+    <color name="common_orange">#F4842D</color>
+    <color name="common_blue">#3F9FE0</color>
+    <color name="common_red">#FF0000</color>
+    <color name="common_hint">#CCCCCC</color>
+    <color name="bg_color">#FAFAFA</color>
+    <color name="action_title_color">#4A4A4A</color>
+    <color name="transparent_dialog">#FF43434E</color>
+    <color name="chat_bg">#F6F6F6</color>
+    <color name="black">#333333</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#FF0000</color>
+
+    <!--公共-->
+    <color name="z_common_female_color">#FFB9BA</color>
+    <color name="z_common_male_color">#6DD1FD</color>
+    <color name="z_common_pic_color">#B0000000</color>
+    <color name="hint_text_color">#BBBBBB</color>
+    <color name="gray_text_color">#9B9B9B</color>
+    <color name="title_text_color">#4A4A4A</color>
+
+    <!--启动-->
+    <color name="splash_login">#EBEBEB</color>
+
+    <!--注册-->
+    <color name="c_ff8c8c8c">#ff8c8c8c</color>
+    <color name="c_ff000000">#ff000000</color>
+    <color name="c_888888">#888888</color>
+    <color name="c_157efb">#157efb</color>
+    <color name="c_999999">#999999</color>
+    <color name="c_ffc4c4c4">#ffc4c4c4</color>
+    <color name="c_ef555e">#ef555e</color>
+    <color name="login_btn">#FF4064</color>
+    <color name="login_btn_select">#EBEBEB</color>
+    <color name="login_edit">#F7F7F7</color>
+    <color name="country_group">#FF222222</color>
+    <color name="login_btn_wechat">#1ABD28</color>
+    <color name="login_btn_facebook">#4074FF</color>
+    <color name="login_btn_qq">#46BAFE</color>
+
+    <!--关于-->
+    <color name="c_ffababab">#ffababab</color>
+
+
+    <!--照片认证-->
+    <color name="take_pic_btn_normal">#FF4064</color>
+    <color name="take_pic_btn_selected">#FF0000</color>
+
+    <!--匹配-->
+    <color name="encounter_base_info_line">#E6E6E6</color>
+    <color name="encounter_base_info_gif">#FF4256</color>
+    <color name="encounter_filter_sex_selcet">#9B9B9B</color>
+    <color name="c_a4caff">#A4CAFF</color>
+
+    <!--标题-->
+    <color name="title_bar_bg">#FFFFFFFF</color>
+    <color name="title_text">#4A4A4A</color>
+
+    <!--谁看过我-->
+    <color name="title_right_text">#BBBBBB</color>
+
+    <!-- 动态-->
+    <color name="c_ccffffff">#ccffffff</color>
+    <color name="c_0d0d0d">#0D0D0D</color>
+    <color name="c_ef323232">#EF323232</color>
+    <color name="c_b5b5b5">#b5b5b5</color>
+    <color name="c_323232">#323232</color>
+    <color name="c_33000000">#33000000</color>
+    <color name="c_444444">#444444</color>
+    <color name="c_cdccd4">#CDCCD4</color>
+    <color name="c_cccccc">#cccccc</color>
+    <color name="ltgray">#FFCCCCCC</color>
+    <color name="c_dddddd">#dddddd</color>
+    <color name="c_666666">#666666</color>
+    <color name="c_bbbbbb">#bbbbbb</color>
+    <color name="c_e3e3e3">#E3E3E3</color>
+    <color name="c_333333">#333333</color>
+    <color name="c_ffb1b1b1">#ffb1b1b1</color>
+    <color name="c_ffffffff">#ffffffff</color>
+    <color name="c_e7e6ee">#E7E6EE</color>
+    <drawable name="tap_indicator_bg">#3d3d3d</drawable>
+    <color name="c_ecebf1">#ECEBF1</color>
+
+    <!--表情商店-->
+    <color name="c_b28850">#B28850</color>
+    <color name="c_000000">#000000</color>
+
+    <!--dialog-->
+    <color name="dialog_gray_color">#DCDCDC</color>
+    <color name="dialog_normal_color">#000000</color>
+
+
+    <!--lable-->
+    <color name="lable_sport_color">#FF41CBD8</color>
+    <color name="lable_travel_color">#FF4791FF</color>
+    <color name="lable_art_color">#FFA18EFF</color>
+    <color name="lable_food_color">#FFFFCB37</color>
+    <color name="lable_fun_color">#FFFF66A3</color>
+    <color name="lable_rest_color">#FF81CB51</color>
+    <color name="lable_mylable_color">#FF2CD18C</color>
+
+    <!--聊天-->
+    <color name="text_gray2">#767676</color>
+    <color name="text_gray1">#777777</color>
+    <color name="line">#DDDDDD</color>
+    <color name="background_gray1">#EBEBEB</color>
+    <color name="line_btn">#BBBBBB</color>
+    <color name="background_gray3">#D4D4D4</color>
+    <color name="c_ee4552">#EE4552</color>
+    <!--蒙版-->
+    <color name="colorMask">#66000000</color>
+    <color name="panel_black">#25272A</color>
+    <color name="text_blue1">#1173CB</color>
+    <!--userinfo edit-->
+    <color name="edit_user_tips">#FF4064</color>
+    <color name="edit_user_value">#222222</color>
+    <color name="edit_user_key">#9B9B9B</color>
+
+    <color name="chat_personal_head_text_color">#687c93</color>
+    <color name="c_dedede">#dedede</color>
+    <color name="c_efefef">#efefef</color>
+    <color name="c_ffa9a9a5">#ffa9a9a5</color>
+
+    <color name="chat_personal_msg_tag_text_send">#3399ff</color>
+    <color name="chat_personal_msg_tag_text_read">#999999</color>
+    <color name="chat_personal_msg_tag_text_fail">#d42f2b</color>
+    <color name="gray">#b0b0b0</color>
+    <color name="c_ffffff">#ffffff</color>
+    <color name="blue">#FF0000FF</color>
+    <color name="c_ffcccf">#FFCCCF</color>
+    <color name="c_d1d1d1">#d1d1d1</color>
+    <color name="c_ffc7c7">#FFC7C7</color>
+    <color name="chat_create_room_gray">#85857d</color>
+    <color name="c_9fcbff">#9fcbff</color>
+    <color name="c_8a8a8a">#8a8a8a</color>
+    <color name="c_6b6b6b">#6b6b6b</color>
+    <color name="c_0099cc">#0099cc</color>
+    <color name="c_0d0f11">#0d0f11</color>
+
+
+    <color name="c_f28381">#f28381</color>
+    <color name="c_d42f2b">#d42f2b</color>
+    <!--更新IM-->
+    <color name="chat_update_textColor_sendGift">#FFFFFF</color>
+    <color name="chat_update_textColor_sendGift_hintWords">#404040</color>
+    <color name="chat_update_background_openvip1">#66C7FE</color>
+    <color name="chat_update_background_openvip2">#2CD18C</color>
+    <color name="chat_update_background_openvip3">#A18EFF</color>
+    <color name="chat_update_background_openvip4">#FFCB37</color>
+    <color name="chat_update_background_openvip5">#4791FF</color>
+    <color name="chat_update_textColor">#DD4A4A4A</color>
+    <color name="chat_update_background_sendBtn">#FF4064</color>
+    <color name="chat_update_chatInput_hintTextColor">#BBBBBB</color>
+    <color name="chat_update_divider_of_toolMenu">#E6E6E6</color>
+    <color name="chat_update_background_of_sendVoice">#DD4A4A4A</color>
+    <color name="chat_update_background_of_map">#00FFFFFF</color>
+    <color name="chat_update_message_count">#FF4064</color>
+    <color name="chat_update_common_white">#FFFFFF</color>
+    <color name="chat_update_login_btn_select">#EBEBEB</color>
+    <color name="chat_update_common_black">#333333</color>
+    <color name="chat_update_gray_text_color">#9B9B9B</color>
+    <color name="chat_update_edit_user_value">#222222</color>
+    <color name="chat_update_line">#c8c7cc</color>
+    <color name="chat_update_transparent_dialog">#FF43434E</color>
+    <color name="chat_head_text_color">#404040</color>
+    <color name="chat_head_text_hobby">#41CBD8</color>
+    <color name="chat_update_divider_of_messageItem">#E7E7E7</color>
+    <color name="chat_update_color_of_sendText1">#FF9E4C</color>
+    <color name="c_232323">#232323</color>
+    <drawable name="white">#FFF</drawable>
+    <color name="c_d63231">#d63231</color>
+    <color name="c_3d9eff">#3D9EFF</color>
+    <color name="umeng_socialize_list_item_textcolor">#333333</color>
+    <color name="c_fdf8c1">#FDF8C1</color>
+    <color name="c_fecd44">#FECD44</color>
+    <color name="c_fff3d3">#FFF3D3</color>
+    <color name="c_e6f6ff">#E6F6FF</color>
+
+    <!--全局更新样式-->
+    <color name="userFragment_bg">#F6F6F6</color>
+    <color name="c_d4d4d4">#D4D4D4</color>
+
+    <!--动态标题背景-->
+    <color name="dynamic_headerTop_bg">#00000000</color>
+    <color name="c_727272">#727272</color>
+    <color name="c_996633">#996633</color>
+    <color name="c_d7d6dc">#D7D6DC</color>
+    <color name="c_f4ecd8">#F4ECD8</color>
+    <!--新版圈子-->
+    <color name="group_category_bg">#FF2CD18C</color>
+    <color name="group_desc_bg">#FFFF5A98</color>
+    <color name="group_recommend_btn1_bg">#65C7FE</color>
+    <color name="group_recommend_btn2_bg">#41CBD8</color>
+    <color name="group_recommend_btn3_bg">#4791FF</color>
+    <color name="group_recommend_divider">#E7E7E7</color>
+    <color name="group_create_bg">#4A4A4A</color>
+    <color name="c_cc0000">#cc0000</color>
+    <color name="c_cc13253">#E13253</color>
+    <color name="brill_red">#ef555e</color>
+    <color name="umeng_socialize_text_time">#999999</color>
+    <color name="line_color">#e3e3e3</color>
+    <color name="text_brill">#66d251</color>
+    <drawable name="trans_white">#aaffffff</drawable>
+    <color name="c_b4b4b4">#B4B4B4</color>
+    <color name="gridview_item_bg">#00FFFFFF</color>
+    <drawable name="text_select">#0270E9</drawable>
+    <color name="chat_face_bottombar_normal">#F0F0F0</color>
+
+    <color name="c_b2000000">#b2000000</color>
+    <color name="hot_list_city_cl">#9B9B9B</color>
+    <color name="my_income_tab_select">#2CD18C</color>
+
+    <color name="all_backgroud_color">#fff5f5f5</color>
+    <color name="glide_frame_yellow">#FFd62C</color>
+    <color name="user_vip_open_new_pay_divider">#D5D5D5</color>
+    <color name="skip_ad_bg">#cc222222</color>
+
+    <!--聊吧-->
+    <color name="chat_bar_empty_hint">#6A6969</color>
+    <color name="chat_bar_info_bg">#4443434E</color>
+    <color name="chat_bar_world_text_color">#FFE394</color>
+    <color name="chat_bar_name_color">#F5E518</color>
+
+    <color name="ranking_charm_order">#989898</color>
+    <color name="ranking_charm_charmnumber">#4289FF</color>
+    <color name="send_gift_gray_bg">#D8D8D8</color>
+    <color name="down_wheat">#FFA518</color>
+    <color name="chat_bar_family_push">#EEEEEE</color>
+    <!--礼物-->
+    <color name="chatbar_gift_bag">#9E96A1</color>
+    <color name="chatbar_gift_layout_bg">#B21D1419</color>
+    <color name="chatbar_gift_userinfo_name">#FFE269</color>
+    <color name="chatbar_gift_divider">#72686F</color>
+    <color name="chatbar_gift_price_color">#AB9AA3</color>
+    <color name="chatbar_gift_select_bg">#4c1D1419</color>
+    <color name="chatbar_gift_bg">#F2ffffff</color>
+    <color name="chatbar_gift_array">#AB9AA3</color>
+    <color name="chatbar_gift_array_line">#473B3B</color>
+    <color name="chatbar_gift_array_listview_background">#2B2525</color>
+    <color name="other_info_background">#80e0e0e0</color>
+    <color name="other_info_stroke_background">#ededed</color>
+    <color name="skill_yellow">#ffc100</color>
+    <color name="rank_skill_active_yellow">#ff9f00</color>
+    <color name="rank_skill_growing_green">#477f06</color>
+    <color name="chatperson_refuse_join">#558DFF</color>
+    <color name="chatperson_agree_join">#8aca4e</color>
+    <color name="chatperson_refuse_press">#D8D8D8</color>
+    <color name="light_purple">#a898e6</color>
+    <color name="light_black">#726d6d</color>
+    <color name="light_gray">#f8f8f8</color>
+    <color name="light_red">#fc2452</color>
+    <color name="skill_ranking_info_times">#ff8500</color>
+    <color name="recharge_upgrade">#61CDFF</color>
+    <color name="item_daily_detail_title_bg">#F4F4F4</color>
+    <color name="item_daily_detail_total">#333333</color>
+    <color name="item_daily_detail_datetime">#999999</color>
+
+    <color name="home_page_text_color">#ADADAD</color>
+    <!--游戏段位排行颜色-->
+    <color name="game_rank_text_color_one">#CCB1FF</color>
+    <color name="game_rank_text_color_two">#FDA988</color>
+    <color name="game_rank_text_color_three">#F8CC13</color>
+    <color name="game_rank_text_color_four">#6EC1FF</color>
+    <color name="game_rank_text_color_five">#45DEDA</color>
+    <color name="game_rank_text_color_six">#8C9FF3</color>
+    <color name="game_rank_text_color_seven">#2EE1A5</color>
+    <color name="game_rank_text_color_eight">#FF7B7B</color>
+
+    <color name="fragment_indicator_title_select">#FF4064</color>
+    <color name="fragment_indicator_title_unselected">#4A4A4A</color>
+
+    <color name="common_iaround_red">#FF4064</color>
+    <color name="common_popup_bg">#994E4C4C</color>
+    <color name="text_hint_color">#C5C5C5</color>
+    <color name="qualification_status_color">#FFF2F5</color>
+
+    <color name="sex_man">#58BBFE</color>
+    <color name="sex_girl">#FF499F</color>
+
+    <color name="money_color">#2DA6EB</color>
+
+    <color name="circle_normal">#FFE8E8E8</color>
+
+    <!--白色不透明度55%-->
+    <color name="white_opacity_55">#8CFFFFFF</color>
+    <!--黑色不透明度30%-->
+    <color name="black_transparent_30">#4D000000</color>
+    <!--黑色不透明度60%-->
+    <color name="black_opacity_60">#99000000</color>
+    <!--黑色半透明-->
+    <color name="black_transparent_50">#80000000</color>
+
+
+
+</resources>

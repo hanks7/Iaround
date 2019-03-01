@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/userFragment_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y421" >
+
+        <ImageView
+            android:id="@+id/group_icon"
+            android:layout_width="@dimen/x300"
+            android:layout_height="@dimen/y300"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/guide_page3_circle_point1_img" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y120"
+            android:background="@color/white">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x48"
+                android:singleLine="true"
+                android:text="@string/group_title"
+                android:textColor="@color/chat_update_gray_text_color"
+                android:textSize="@dimen/y42" />
+
+            <TextView
+                android:id="@+id/group_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/y48"
+                android:singleLine="true"
+                android:textColor="@color/chat_update_edit_user_value"
+                android:textSize="@dimen/y42" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y1"
+            android:background="@color/chat_update_login_btn_select"
+            android:layout_marginLeft="@dimen/x45"/>
+
+        <!--取消圈类型的展示-->
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/y120"
+            android:background="@color/white"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x48"
+                android:singleLine="true"
+                android:text="@string/group_type"
+                android:textColor="@color/chat_update_gray_text_color"
+                android:textSize="@dimen/y42" />
+
+            <TextView
+                android:id="@+id/group_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/y48"
+                android:singleLine="true"
+                android:textColor="@color/chat_update_edit_user_value"
+                android:textSize="@dimen/y42"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y1"
+            android:background="@color/chat_update_login_btn_select"
+            android:layout_marginLeft="@dimen/x45"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/y120"
+            android:background="@color/white" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x48"
+                android:singleLine="true"
+                android:text="@string/group_location"
+                android:textColor="@color/chat_update_gray_text_color"
+                android:textSize="@dimen/y42"  />
+
+            <TextView
+                android:id="@+id/group_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/y48"
+                android:singleLine="true"
+                android:textColor="@color/chat_update_edit_user_value"
+                android:textSize="@dimen/y42" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y1"
+            android:background="@color/chat_update_login_btn_select"
+            android:layout_marginLeft="@dimen/x45"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y249"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_group_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x48"
+                android:layout_marginTop="@dimen/y39"
+                android:singleLine="true"
+                android:text="@string/group_description"
+                android:textColor="@color/chat_update_gray_text_color"
+                android:textSize="@dimen/y42"  />
+
+            <TextView
+                android:id="@+id/group_introduction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_group_description"
+                android:layout_marginTop="@dimen/y39"
+                android:layout_marginRight="@dimen/y66"
+                android:layout_marginLeft="@dimen/x48"
+                android:textColor="@color/chat_update_edit_user_value"
+                android:textSize="@dimen/y42" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="@dimen/x980"
+        android:layout_height="@dimen/y124"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y90"
+        android:gravity="center"
+        android:textSize="@dimen/y42"
+        android:textColor="@color/white"
+        android:background="@drawable/create_group_submit_btn_bg"
+        android:text="@string/create_group_info_submit" />
+
+</LinearLayout>

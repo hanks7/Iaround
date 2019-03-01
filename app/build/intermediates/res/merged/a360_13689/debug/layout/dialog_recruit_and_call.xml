@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/transparent">
+
+    <include
+        layout="@layout/dialog_view_call_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_dialog_corners_bottom"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edt_dialog_recruit_and_call_content"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginRight="21dp"
+            android:gravity="top|left"
+            android:textSize="12sp"
+            android:textColor="@color/chat_update_edit_user_value"
+            android:background="@drawable/edit_dialog_recruit_and_call_bg"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_dialog_recruit_and_call_cancel"
+                android:layout_width="99dp"
+                android:layout_height="39dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/btn_dialog_recruit_and_call_cancel"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_dialog_recruit_and_call_sure"
+                android:layout_width="99dp"
+                android:layout_height="39dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:background="@drawable/btn_dialog_recruit_and_call_ok">
+                <TextView
+                    android:id="@+id/tv_dialog_recruit_and_call_sure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/ok"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_dialog_recruit_and_call_diamonds"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/tv_dialog_recruit_and_call_sure"
+                    android:text="@string/dialog_diamonds"
+                    android:visibility="visible"
+                    android:textColor="@color/white"
+                    android:textSize="9sp" />
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

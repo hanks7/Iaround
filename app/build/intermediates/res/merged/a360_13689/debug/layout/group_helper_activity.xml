@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/userFragment_bg">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title_bar" />
+
+    <TextView
+        android:id="@+id/top_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y96"
+        android:layout_below="@id/title"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/x30"
+        android:text="@string/this_not_notice"
+        android:textColor="@color/chat_update_gray_text_color"
+        android:textSize="@dimen/y36" />
+
+    <TextView
+        android:id="@+id/empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/chat_update_gray_text_color"
+        android:visibility="gone"
+        android:text="@string/now_no_new_msg"/>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_text"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/transparent" >
+    </ListView>
+
+</RelativeLayout>

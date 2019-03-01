@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="126dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_skill_attact"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:background="@drawable/view_skill_sttact_bg">
+
+
+        <net.iaround.ui.view.HeadPhotoView
+            android:id="@+id/skill_attact_user_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/iaround_default_img"/>
+
+        <TextView
+            android:id="@+id/skill_attact_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/skill_attact_user_icon"
+            android:layout_margin="3dp"
+            android:text="我也要开直播"
+            android:textSize="9sp"
+            android:textColor="#ffff1e"/>
+        
+        <ImageView
+            android:id="@+id/iv_skill_attact_right"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/skill_attact_right"/>
+
+        <TextView
+            android:id="@+id/skill_attact_user_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/skill_attact_user_name"
+            android:layout_toLeftOf="@id/iv_skill_attact_right"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:text="大师的空间按时打卡哈快速点击哈空间上都会看见爱上的空间按时打卡机哈师大看见好看教案上都会看见爱上大数据电话爱的就是科技爱好的空间哈三德科技安徽省肯德基哈"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="9sp"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

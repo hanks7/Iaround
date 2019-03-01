@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/game_center_buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/chat_secretary_push_bg"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <FrameLayout
+            android:id="@+id/img_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="11dp" >
+
+            <net.iaround.ui.common.NetImageView
+                android:id="@+id/game_center_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal" >
+            </net.iaround.ui.common.NetImageView>
+
+            <TextView
+                android:id="@+id/detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@drawable/game_center_text_bg"
+                android:gravity="left|center_vertical"
+                android:maxLines="2"
+                android:padding="7dp"
+                android:text="TextView"
+                android:textColor="@color/white" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/game_center_buttons_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/button_1"
+                android:layout_width="match_parent"
+                android:layout_height="67dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone" >
+
+                <View
+                    android:id="@+id/View03"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#e6e6e6" />
+
+                <net.iaround.ui.common.NetImageView
+                    android:id="@+id/btn_icon"
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:tag="btn_icon"
+                    android:gravity="center_horizontal" >
+                </net.iaround.ui.common.NetImageView>
+
+                <TextView
+                    android:id="@+id/btn_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/btn_icon"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:tag="btn_text"
+                    android:textColor="@color/black"
+                    android:textSize="17dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/button_2"
+                android:layout_width="match_parent"
+                android:layout_height="67dp"
+                android:visibility="gone" >
+
+                <View
+                    android:id="@+id/View01"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#e6e6e6" />
+
+                <net.iaround.ui.common.NetImageView
+                    android:id="@+id/btn_icon_2"
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:tag="btn_icon"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_horizontal" >
+                </net.iaround.ui.common.NetImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/btn_icon_2"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textColor="@color/black"
+                    android:textSize="17dp"
+                    android:tag="btn_text" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/button_3"
+                android:layout_width="match_parent"
+                android:layout_height="67dp"
+                android:visibility="gone" >
+
+                <View
+                    android:id="@+id/View02"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#e6e6e6" />
+
+                <net.iaround.ui.common.NetImageView
+                    android:id="@+id/btn_icon3"
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:tag="btn_icon"
+                    android:gravity="center_horizontal" >
+                </net.iaround.ui.common.NetImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/btn_icon3"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textColor="@color/black"
+                    android:tag="btn_text"
+                    android:textSize="17dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/game_center_pictext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/chat_secretary_push_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/pictext_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            android:layout_marginTop="11dp"
+            android:gravity="left|center_vertical"
+            android:maxLines="2"
+            android:text="TextView"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <FrameLayout
+            android:id="@+id/pictext_img_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp" >
+
+            <net.iaround.ui.common.NetImageView
+                android:id="@+id/pictext_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+            </net.iaround.ui.common.NetImageView>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/pictext_lab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:ellipsize="end"
+            android:gravity="left|center_vertical"
+            android:maxLines="2"
+            android:padding="7dp"
+            android:text="TextView"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+</LinearLayout>

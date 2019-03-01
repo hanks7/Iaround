@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="@dimen/y192"
+        android:layout_height="@dimen/y192"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y90"
+        android:src="@drawable/icon_new" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y42"
+        android:text="@string/app_name"
+        android:textColor="#222222"
+        android:textSize="@dimen/y42" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y90"
+        android:background="@color/common_white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_visit_website"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y120"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x48"
+                android:layout_weight="1"
+                android:text="@string/setting_contact_our_sit"
+                android:textColor="#222222"
+                android:textSize="@dimen/y42" />
+
+            <ImageView
+                android:layout_width="@dimen/x24"
+                android:layout_height="@dimen/y42"
+                android:layout_marginRight="@dimen/x48"
+                android:src="@drawable/user_detail" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y1"
+            android:layout_marginLeft="@dimen/x45"
+            android:background="#EBEBEB" />
+
+        <LinearLayout
+            android:id="@+id/ll_iaround_wechat"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y120"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x48"
+                android:layout_weight="1"
+                android:text="@string/setting_contact_our_wx"
+                android:textColor="#222222"
+                android:textSize="@dimen/y42" />
+
+            <ImageView
+                android:layout_width="@dimen/x24"
+                android:layout_height="@dimen/y42"
+                android:layout_marginRight="@dimen/x48"
+                android:src="@drawable/user_detail" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y1"
+            android:layout_marginLeft="@dimen/x45"
+            android:background="#EBEBEB"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/ll_service_email"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y120"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x48"
+                android:layout_weight="1"
+                android:text="@string/setting_contact_our_email"
+                android:textColor="#222222"
+                android:textSize="@dimen/y42" />
+
+            <ImageView
+                android:layout_width="@dimen/x24"
+                android:layout_height="@dimen/y42"
+                android:layout_marginRight="@dimen/x48"
+                android:src="@drawable/user_detail" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

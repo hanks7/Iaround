@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    <!--ios风格中多选删除按钮-->
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/nearby_filter_checkbox_selector"
+        android:layout_marginTop="9dp"
+        android:layout_marginLeft="16dp"
+        android:visibility="gone" />
+
+    <net.iaround.ui.view.HeadPhotoView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/x120"
+        android:layout_height="@dimen/y120"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="11dp"
+        android:layout_marginLeft="9dp" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/icon"
+        android:layout_toStartOf="@+id/icon">
+
+        <!--<View-->
+            <!--android:id="@+id/emptyView"-->
+            <!--android:layout_width="@dimen/x226"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentLeft="true"/>-->
+
+        <include
+            android:id="@+id/chat_status_of_sendMs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="@dimen/x12"
+            android:layout_toLeftOf="@id/content"
+            layout="@layout/chat_record_status"/>
+
+        <LinearLayout
+            android:id="@+id/content_userinfo_ly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/icon"
+            android:gravity="right"
+            android:orientation="vertical" >
+            <include
+                layout="@layout/iaround_chat_myself_view" />
+
+            <LinearLayout
+                android:id="@+id/ll_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:background="@drawable/chat_new_record_myself_bg">
+
+                <net.iaround.ui.comon.RichTextView
+                    android:id="@+id/content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="18dp"
+                    android:textColor="@color/c_ffffff"
+                    android:textSize="@dimen/y42" />
+
+                <ImageView
+                    android:id="@+id/iv_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/chat_record_video_chat_mine"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

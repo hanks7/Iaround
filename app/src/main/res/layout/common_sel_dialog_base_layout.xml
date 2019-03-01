@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/z_common_bg_white_round"
+    android:orientation="vertical"
+    android:paddingTop="11dp" >
+
+    <TextView
+        android:id="@+id/tvDialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="标题有很多个字"
+        android:textColor="@color/c_333333"
+        android:textSize="18dp" />
+
+    <RelativeLayout
+        android:id="@+id/rlContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" />
+
+    <View
+        android:id="@+id/vSpliteHor"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/c_e3e3e3" />
+
+    <LinearLayout
+        android:id="@+id/rlButtons"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnNegative"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:text="@string/cancel"
+            android:textColor="@drawable/z_selector_dynamic_filter_text"
+            android:textSize="16dp" />
+
+        <View
+            android:id="@+id/vSpliteVer"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/c_e3e3e3" />
+
+        <Button
+            android:id="@+id/btnPositive"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:text="@string/ok"
+            android:textColor="@drawable/z_selector_dynamic_filter_text"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+</LinearLayout>

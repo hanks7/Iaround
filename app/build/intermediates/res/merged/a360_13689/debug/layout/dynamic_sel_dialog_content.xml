@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="15dp"
+    android:layout_marginTop="17dp"
+    android:orientation="vertical"
+    android:paddingLeft="19dp"
+    android:paddingRight="19dp" >
+
+    <TextView
+        android:id="@+id/tvNormalTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:text="@string/dynamic_filter_general_filter_title"
+        android:textColor="@color/c_999999"
+        android:textSize="12dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="2dp"
+        android:background="@color/c_e3e3e3" />
+
+    <net.iaround.ui.comon.DrawableCenterCheckBox
+        android:id="@+id/cbAll"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/z_selector_dynamic_filter_button"
+        android:button="@null"
+        android:drawableLeft="@drawable/z_selector_dynamic_filter_flag_left_button"
+        android:drawablePadding="2dp"
+        android:gravity="center|fill_horizontal"
+        android:text="@string/dynamic_filter_all"
+        android:textColor="@color/dynamic_filter_dialog_text_selector"
+        android:textSize="14dp" />
+
+    <LinearLayout
+        android:id="@+id/llSingle"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal" >
+
+        <net.iaround.ui.comon.DrawableCenterCheckBox
+            android:id="@+id/cbFollow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5.5dp"
+            android:layout_weight="1"
+            android:background="@drawable/z_selector_dynamic_filter_button"
+            android:button="@null"
+            android:drawableLeft="@drawable/z_selector_dynamic_filter_flag_left_button"
+            android:drawablePadding="2dp"
+            android:gravity="center|fill_horizontal"
+            android:text="@string/dynamic_filter_follow"
+            android:textColor="@color/dynamic_filter_dialog_text_selector"
+            android:textSize="14dp" />
+
+        <net.iaround.ui.comon.DrawableCenterCheckBox
+            android:id="@+id/cbNear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/z_selector_dynamic_filter_button"
+            android:button="@null"
+            android:drawableLeft="@drawable/z_selector_dynamic_filter_flag_left_button"
+            android:drawablePadding="2dp"
+            android:gravity="center|fill_horizontal"
+            android:text="@string/dynamic_filter_near"
+            android:textColor="@color/dynamic_filter_dialog_text_selector"
+            android:textSize="14dp" />
+
+        <net.iaround.ui.comon.DrawableCenterCheckBox
+            android:id="@+id/cbHot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5.5dp"
+            android:layout_weight="1"
+            android:background="@drawable/z_selector_dynamic_filter_button"
+            android:button="@null"
+            android:drawableLeft="@drawable/z_selector_dynamic_filter_flag_left_button"
+            android:drawablePadding="2dp"
+            android:gravity="center|fill_horizontal"
+            android:text="@string/dynamic_filter_hot"
+            android:textColor="@color/dynamic_filter_dialog_text_selector"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvVipTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/dynamic_filter_vip_filter_title"
+        android:textColor="@color/c_999999"
+        android:textSize="12dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="2dp"
+        android:background="@color/c_e3e3e3" />
+
+    <LinearLayout
+        android:id="@+id/llVIPSingle"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal" >
+
+        <net.iaround.ui.comon.DrawableCenterCheckBox
+            android:id="@+id/cbMale"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/z_selector_dynamic_filter_button"
+            android:button="@null"
+            android:drawableLeft="@drawable/z_selector_dynamic_filter_flag_left_button"
+            android:drawablePadding="2dp"
+            android:gravity="center|fill_horizontal"
+            android:text="@string/man"
+            android:textColor="@color/dynamic_filter_dialog_text_selector"
+            android:textSize="14dp" />
+
+        <net.iaround.ui.comon.DrawableCenterCheckBox
+            android:id="@+id/cbFemale"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/z_selector_dynamic_filter_button"
+            android:button="@null"
+            android:checked="true"
+            android:drawableLeft="@drawable/z_selector_dynamic_filter_flag_left_button"
+            android:drawablePadding="2dp"
+            android:gravity="center|fill_horizontal"
+            android:text="@string/woman"
+            android:textColor="@color/dynamic_filter_dialog_text_selector"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+</LinearLayout>

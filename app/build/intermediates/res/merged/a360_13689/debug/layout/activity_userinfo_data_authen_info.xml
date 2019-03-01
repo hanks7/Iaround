@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y14"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/y53"
+            android:layout_height="@dimen/y53"
+            android:layout_marginLeft="@dimen/x34"
+            android:src="@drawable/user_info_authen_info" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x12"
+            android:text="@string/userinfo_authen_info"
+            android:textColor="#222222"
+            android:textSize="@dimen/y42" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x57"
+        android:layout_marginTop="@dimen/y18"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="@dimen/x2"
+            android:layout_height="match_parent"
+            android:background="#EBEBEB" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/y30"
+            android:layout_marginLeft="@dimen/x33"
+            android:layout_marginTop="@dimen/y30"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/y120"
+                    android:layout_height="@dimen/y120"
+                    android:src="@drawable/phone_authen" />
+
+                <LinearLayout
+                    android:id="@+id/ll_user_phone_authen"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y120"
+                    android:layout_marginLeft="@dimen/x36"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/userinfo_authen_phone"
+                        android:textColor="#222222"
+                        android:textSize="@dimen/y42" />
+
+                    <TextView
+                        android:id="@+id/tv_phone_authen_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/authen_status_no"
+                        android:textColor="#9B9B9B"
+                        android:textSize="@dimen/y42" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y54"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/y120"
+                    android:layout_height="@dimen/y120"
+                    android:src="@drawable/camera_authen" />
+
+                <LinearLayout
+                    android:id="@+id/ll_user_camera_authen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/y120"
+                    android:layout_marginLeft="@dimen/x36"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/userinfo_authen_pic"
+                        android:textColor="#222222"
+                        android:textSize="@dimen/y42" />
+
+                    <TextView
+                        android:id="@+id/tv_camera_authen_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/authen_status_no"
+                        android:textColor="#9B9B9B"
+                        android:textSize="@dimen/y42" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

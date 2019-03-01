@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_white"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/margin_left">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="vertical">
+
+            <net.iaround.ui.view.face.MyGridView
+                android:id="@+id/mgv_order_set"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:fadingEdge="none"
+                android:listSelector="#00000000"
+                android:numColumns="1"
+                android:scrollbars="none" />
+
+            <!--时间段-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="时间段"
+                    android:textColor="@color/common_black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_begin_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingRight="6dp"
+                    android:text="00:00"
+                    android:textColor="@color/common_iaround_red"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="至"
+                    android:textColor="@color/c_999999"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_end_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:text="00:00"
+                    android:textColor="@color/common_iaround_red"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="@dimen/x24"
+                    android:layout_height="@dimen/y42"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="@dimen/margin_right"
+                    android:src="@drawable/user_detail" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/line_color" />
+            <!--重复-->
+            <LinearLayout
+                android:id="@+id/ll_repeat"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="重复"
+                    android:textColor="@color/common_black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_repeat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="周六 周日"
+                    android:textColor="@color/c_999999"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="@dimen/x24"
+                    android:layout_height="@dimen/y42"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="@dimen/margin_right"
+                    android:src="@drawable/user_detail" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/line_color" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/order_set_tip"
+                android:textColor="@color/text_hint_color"
+                android:layout_marginRight="@dimen/margin_right"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tv_save"
+                android:layout_width="100dp"
+                android:layout_height="57dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/button_bg"
+                android:gravity="center"
+                android:text="@string/edit_save"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

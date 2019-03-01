@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/y36"
+    android:background="@color/common_white">
+
+    <LinearLayout
+        android:id="@+id/ly_dynamic_name"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <net.iaround.ui.view.HeadPhotoView
+            android:id="@+id/iv_dynamic_avatar"
+            android:layout_width="@dimen/x150"
+            android:layout_height="@dimen/y150"
+            android:layout_marginTop="@dimen/y36"
+            android:layout_marginLeft="@dimen/x36"
+            android:layout_marginRight="@dimen/x24"
+            android:scaleType="centerCrop"
+            android:src="@drawable/iaround_default_img"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/tv_dynamic_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y50"
+                android:textSize="@dimen/y42"
+                android:textColor="@color/common_red"
+                android:singleLine="true"/>
+
+            <LinearLayout
+                android:id="@+id/ly_dynamic_age"
+                android:layout_width="@dimen/x90"
+                android:layout_height="@dimen/y42"
+                android:layout_alignLeft="@+id/tv_dynamic_name"
+                android:layout_below="@id/tv_dynamic_name"
+                android:layout_marginTop="@dimen/y18"
+                android:layout_marginRight="@dimen/x6"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_dynamic_sex"
+                    android:layout_width="@dimen/x34"
+                    android:layout_height="@dimen/y42"
+                    android:layout_gravity="center_vertical"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_dynamic_age"
+                    android:layout_width="@dimen/x36"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="@dimen/x15"
+                    android:textSize="@dimen/y30"
+                    android:textColor="@color/common_white"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_dynamic_constellation"
+                android:layout_width="@dimen/x114"
+                android:layout_height="@dimen/y42"
+                android:layout_below="@id/tv_dynamic_name"
+                android:layout_toRightOf="@+id/ly_dynamic_age"
+                android:layout_marginTop="@dimen/y18"
+                android:textSize="@dimen/y30"
+                android:gravity="center"
+                android:background="@drawable/encounter_dynamic_constellation_circel_bg"
+                android:textColor="@color/common_white"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/tv_dynamic_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/y66"
+                android:layout_marginRight="@dimen/x48"
+                android:textSize="@dimen/y30"
+                android:textColor="@color/encounter_filter_sex_selcet"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_dynamic_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ly_dynamic_name"
+        android:layout_marginTop="@dimen/y30"
+        android:layout_marginLeft="@dimen/x36"
+        android:layout_marginRight="@dimen/x36"
+        android:textSize="@dimen/y42"
+        android:textColor="@color/action_title_color"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_dynamic_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y30"
+        android:visibility="gone"
+        android:layout_below="@id/tv_dynamic_content">
+
+        <LinearLayout
+            android:id="@+id/ly_dynamic_pic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+        <ImageView
+            android:id="@+id/iv_dynamic_anmation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:scaleType="centerCrop"
+            android:background="@drawable/dynamic_love_animation"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <!--android:layout_marginLeft="@dimen/x48"-->
+    <!--android:layout_marginTop="@dimen/y30"-->
+    <LinearLayout
+        android:id="@+id/ly_dynamic_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_dynamic_pic"
+        android:orientation="horizontal">
+
+        <!--android:layout_marginBottom="@dimen/y34"-->
+        <ImageView
+            android:id="@+id/iv_position"
+            android:layout_width="@dimen/x36"
+            android:layout_height="@dimen/y48"
+            android:layout_marginRight="@dimen/x12"
+            android:layout_marginLeft="@dimen/x48"
+            android:layout_marginTop="@dimen/y45"
+            android:background="@drawable/dynamic_new_address"/>
+
+        <!--android:layout_marginBottom="@dimen/y40"-->
+        <TextView
+            android:id="@+id/tv_dynamic_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y42"
+            android:textSize="@dimen/y42"
+            android:textColor="@color/common_grey"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/ly_dynamic_address"
+        android:orientation="horizontal">
+        <!--点赞-->
+        <LinearLayout
+            android:id="@+id/ly_dynamic_thumbs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--android:layout_marginTop="@dimen/y36"-->
+
+            <ImageView
+                android:id="@+id/iv_dynamic_thumbs"
+                android:layout_width="@dimen/x66"
+                android:layout_height="@dimen/y50"
+                android:layout_marginTop="@dimen/y35"
+                android:layout_marginBottom="@dimen/y33"
+                android:layout_marginRight="@dimen/x18"
+                android:src="@drawable/dynamic_like_normal"/>
+
+            <!--android:layout_marginTop="@dimen/y39"-->
+            <TextView
+                android:id="@+id/tv_dynamic_thumbs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y36"
+                android:layout_marginBottom="@dimen/y42"
+                android:textSize="@dimen/y36"
+                android:textColor="@color/common_grey"/>
+
+        </LinearLayout>
+        <!--评论-->
+        <LinearLayout
+            android:id="@+id/ly_dynamic_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x57"
+            android:layout_marginRight="@dimen/x48"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_dynamic_comment"
+                android:layout_width="@dimen/x66"
+                android:layout_height="@dimen/y50"
+                android:layout_marginTop="@dimen/y34"
+                android:layout_marginBottom="@dimen/y32"
+                android:src="@drawable/dynamic_new_comment"/>
+
+            <!--android:layout_marginTop="@dimen/y39"-->
+
+            <TextView
+                android:id="@+id/tv_dynamic_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y36"
+                android:layout_marginBottom="@dimen/y42"
+                android:layout_marginLeft="@dimen/x18"
+                android:textSize="@dimen/y36"
+                android:textColor="@color/common_grey"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

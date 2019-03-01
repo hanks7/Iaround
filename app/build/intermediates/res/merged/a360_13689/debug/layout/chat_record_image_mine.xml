@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/nearby_filter_checkbox_selector"
+        android:layout_marginTop="9dp"
+        android:layout_marginLeft="16dp"
+        android:visibility="gone" />
+
+    <net.iaround.ui.view.HeadPhotoView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/x120"
+        android:layout_height="@dimen/y120"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="11dp"
+        android:layout_marginLeft="9dp"
+        />
+
+    <FrameLayout
+        android:id="@+id/flContent"
+        android:layout_toLeftOf="@id/icon"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/content"
+            android:layout_width="@dimen/x360"
+            android:layout_height="@dimen/y360"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_face_small"
+            />
+        
+        <TextView 
+            android:id="@+id/tvProgress"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="24dp"
+            android:textColor="@color/c_ffffff"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/flContent"
+        layout="@layout/chat_record_status" />
+
+</RelativeLayout>

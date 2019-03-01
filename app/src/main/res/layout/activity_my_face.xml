@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+	android:background="@color/userFragment_bg">
+
+      <include
+        android:id="@+id/activity_title"
+        layout="@layout/title_bar" />
+    
+    <FrameLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        
+	    <com.handmark.pulltorefresh.library.PullToRefreshExpandableListView
+	        android:id="@+id/myface_listview"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+			android:divider="@color/gridview_item_bg"
+			android:showDividers="none"
+	        android:scrollbars="none"
+	        android:fadingEdge="none"
+	        android:cacheColorHint="#00000000"
+	        />
+    </FrameLayout>
+	
+</LinearLayout>

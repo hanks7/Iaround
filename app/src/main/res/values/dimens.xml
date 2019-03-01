@@ -1,0 +1,58 @@
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="actionbar_height">48dp</dimen>
+    <dimen name="height_btn">40dp</dimen>
+    <dimen name="dp_2">2dp</dimen>
+    <!-- sliding menu -->
+    <dimen name="slidingmenu_offset">120dp</dimen>
+    <dimen name="shadow_width">20dp</dimen>
+
+    <!-- for Zxing -->
+    <dimen name="dip_20">20dip</dimen>
+    <dimen name="dip_3">3dip</dimen>
+
+    <!-- common font size -->
+    <!--<dimen name="title_font_size">42px</dimen>
+    <dimen name="font_xlarge">55px</dimen>
+    <dimen name="font_large">50px</dimen>
+    <dimen name="font_normal">42px</dimen>
+    <dimen name="font_small">30px</dimen>-->
+
+    <dimen name="setting_item_height">46dip</dimen>
+
+    <dimen name="min_height_header">120dp</dimen>
+
+
+    <!--动态-->
+    <dimen name="face_height">16dp</dimen>
+    <dimen name="fourteen_dp">14dp</dimen>
+    <dimen name="face_world_message_height">10dp</dimen>
+    <dimen name="dp_1">1dp</dimen>
+
+    <dimen name="dp_address_search_bar_heigh">36dp</dimen>
+
+
+    <dimen name="gd_arrow_offset">5dp</dimen>
+    //图片大小
+    <dimen name="mis_folder_cover_size">72dp</dimen>
+
+    //更新IM
+    <dimen name="chat_update_space_of_horizontal">50px</dimen>
+
+    //联系人滚动条
+    <dimen name="contact_indicator_width">48px</dimen>
+
+    <!--圈子-->
+    <dimen name="group_info_more_divider">30px</dimen>
+    <dimen name="group_info_more_text_size">42px</dimen>
+    <dimen name="group_info_more_heigh_cancle">138px</dimen>
+
+    <dimen name="lottery_plate_size">340dp</dimen>
+    <dimen name="lottery_gif_size">40dp</dimen>
+    <dimen name="lottery_pointer_width">80dp</dimen>
+    <dimen name="lottery_pointer_height">200dp</dimen>
+
+    <dimen name="margin_left">16dp</dimen>
+    <dimen name="margin_right">16dp</dimen>
+</resources>

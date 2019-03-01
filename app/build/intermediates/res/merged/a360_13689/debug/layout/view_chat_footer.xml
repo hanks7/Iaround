@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:round_tv_attrs="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_gray1"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view_header"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/chat_vip_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x141"
+        android:layout_marginRight="@dimen/x141"
+        android:gravity="center"
+        android:textColor="#404040"
+        android:textSize="@dimen/y42"/>
+
+    <net.iaround.ui.view.RoundTextView
+        android:id="@+id/chat_vip_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chat_vip_info"
+        android:layout_marginTop="@dimen/y94"
+        android:layout_marginLeft="@dimen/x50"
+        android:layout_marginRight="@dimen/x50"
+        android:layout_marginBottom="@dimen/y180"
+        android:paddingTop="@dimen/y38"
+        android:paddingBottom="@dimen/y38"
+        android:gravity="center"
+        round_tv_attrs:round_tv_corner_size="@dimen/x84"
+        android:textColor="@color/common_white"
+        android:textSize="@dimen/y48"/>
+
+</LinearLayout>

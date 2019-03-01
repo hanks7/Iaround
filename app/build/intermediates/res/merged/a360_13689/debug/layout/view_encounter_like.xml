@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_encounter_like" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/y44"
+    android:paddingLeft="@dimen/y36"
+    android:paddingRight="@dimen/y36"
+    android:background="@color/common_white">
+    
+    <LinearLayout
+        android:id="@+id/ly_encounter_like_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <ImageView
+            android:layout_width="@dimen/x50"
+            android:layout_height="@dimen/y46"
+            android:layout_marginRight="@dimen/x14"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/encounter_base_info_love"/>
+
+        <TextView
+            android:id="@+id/tv_encounter_like_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/common_black"
+            android:textSize="@dimen/y42"
+            android:text="@string/encounter_base_info_like"/>
+    </LinearLayout>
+    
+    <View
+        android:id="@+id/line"
+        android:layout_width="@dimen/x6"
+        android:layout_height="@dimen/y393"
+        android:layout_marginLeft="@dimen/x26"
+        android:layout_marginTop="@dimen/y20"
+        android:layout_marginBottom="@dimen/y18"
+        android:layout_below="@id/ly_encounter_like_title"
+        android:background="@color/login_btn_select"/>
+
+    <net.iaround.ui.view.user.FlowLayout
+        android:id="@+id/fl_encounter_like"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y48"
+        android:layout_marginBottom="@dimen/y71"
+        android:layout_toRightOf="@id/line"
+        android:layout_below="@id/ly_encounter_like_title"
+        android:layout_marginLeft="@dimen/x36"/>
+
+</RelativeLayout>

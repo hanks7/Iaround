@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/userFragment_bg"
+    android:orientation="vertical" >
+
+    <!-- 点赞头像 -->
+
+    <RelativeLayout
+        android:id="@+id/rlGreetPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/llRow1"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:layout_weight="1"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <net.iaround.ui.view.HeadPhotoView
+                android:id="@+id/ivGreeter_r1c1"
+                android:layout_width="31dp"
+                android:layout_height="31dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="6dp"
+                android:contentDescription="@string/greet"
+                android:gravity="center"
+                android:src="@drawable/iaround_default_img" />
+
+            <net.iaround.ui.view.HeadPhotoView
+                android:id="@+id/ivGreeter_r1c2"
+                android:layout_width="31dp"
+                android:layout_height="31dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="6dp"
+                android:contentDescription="@string/greet"
+                android:src="@drawable/iaround_default_img" />
+
+            <net.iaround.ui.view.HeadPhotoView
+                android:id="@+id/ivGreeter_r1c3"
+                android:layout_width="31dp"
+                android:layout_height="31dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="6dp"
+                android:contentDescription="@string/greet"
+                android:src="@drawable/iaround_default_img" />
+
+            <net.iaround.ui.view.HeadPhotoView
+                android:id="@+id/ivGreeter_r1c4"
+                android:layout_width="31dp"
+                android:layout_height="31dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="6dp"
+                android:contentDescription="@string/greet"
+                android:src="@drawable/iaround_default_img" />
+
+            <net.iaround.ui.view.HeadPhotoView
+                android:id="@+id/ivGreeter_r1c5"
+                android:layout_width="31dp"
+                android:layout_height="31dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="6dp"
+                android:contentDescription="@string/greet"
+                android:src="@drawable/iaround_default_img" />
+
+            <net.iaround.ui.view.HeadPhotoView
+                android:id="@+id/ivGreeter_r1c6"
+                android:layout_width="31dp"
+                android:layout_height="31dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="6dp"
+                android:contentDescription="@string/greet"
+                android:src="@drawable/iaround_default_img" />
+
+            <net.iaround.ui.view.HeadPhotoView
+                android:id="@+id/ivGreeter_r1c7"
+                android:layout_width="31dp"
+                android:layout_height="31dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="6dp"
+                android:contentDescription="@string/greet"
+                android:src="@drawable/iaround_default_img"
+                android:visibility="gone"/>
+
+            <net.iaround.ui.view.HeadPhotoView
+                android:id="@+id/ivGreeter_r1c8"
+                android:layout_width="31dp"
+                android:layout_height="31dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="6dp"
+                android:contentDescription="@string/greet"
+                android:src="@drawable/iaround_default_img"
+                android:visibility="gone"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llRowPhoto1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+            <ImageView
+                android:layout_width="@dimen/x48"
+                android:layout_height="@dimen/y48"
+                android:layout_marginLeft="@dimen/x48"
+                android:layout_marginRight="@dimen/x42"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/dynamic_details_love"/>
+
+            <ImageView
+                android:layout_width="@dimen/x24"
+                android:layout_height="@dimen/y42"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="@dimen/x48"
+                android:src="@drawable/arraw_turn"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llRow2"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:layout_below="@id/llRow1"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:weightSum="8" >
+
+            <net.iaround.ui.view.HeadPhotoView
+                android:id="@+id/ivGreeter_r2c1"
+                android:layout_width="31dp"
+                android:layout_height="31dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="6dp"
+                android:contentDescription="@string/greet"
+                android:src="@drawable/iaround_default_img" />
+
+            <net.iaround.ui.view.HeadPhotoView
+                android:id="@+id/ivGreeter_r2c2"
+                android:layout_width="31dp"
+                android:layout_height="31dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="6dp"
+                android:contentDescription="@string/greet"
+                android:src="@drawable/iaround_default_img" />
+
+            <net.iaround.ui.view.HeadPhotoView
+                android:id="@+id/ivGreeter_r2c3"
+                android:layout_width="31dp"
+                android:layout_height="31dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="6dp"
+                android:contentDescription="@string/greet"
+                android:src="@drawable/iaround_default_img" />
+
+            <net.iaround.ui.view.HeadPhotoView
+                android:id="@+id/ivGreeter_r2c4"
+                android:layout_width="31dp"
+                android:layout_height="31dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="6dp"
+                android:contentDescription="@string/greet"
+                android:src="@drawable/iaround_default_img" />
+
+            <net.iaround.ui.view.HeadPhotoView
+                android:id="@+id/ivGreeter_r2c5"
+                android:layout_width="31dp"
+                android:layout_height="31dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="6dp"
+                android:contentDescription="@string/greet"
+                android:src="@drawable/iaround_default_img" />
+
+            <net.iaround.ui.view.HeadPhotoView
+                android:id="@+id/ivGreeter_r2c6"
+                android:layout_width="31dp"
+                android:layout_height="31dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="6dp"
+                android:contentDescription="@string/greet"
+                android:src="@drawable/iaround_default_img" />
+
+            <net.iaround.ui.view.HeadPhotoView
+                android:id="@+id/ivGreeter_r2c7"
+                android:layout_width="31dp"
+                android:layout_height="31dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="6dp"
+                android:contentDescription="@string/greet"
+                android:src="@drawable/iaround_default_img" />
+
+            <net.iaround.ui.view.HeadPhotoView
+                android:id="@+id/ivGreeter_r2c8"
+                android:layout_width="31dp"
+                android:layout_height="31dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="6dp"
+                android:contentDescription="@string/greet"
+                android:src="@drawable/iaround_default_img" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/vSplit"
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:background="@color/chat_update_divider_of_messageItem"
+        android:visibility="gone"/>
+</LinearLayout>

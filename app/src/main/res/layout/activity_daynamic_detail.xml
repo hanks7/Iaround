@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlDetail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_e7e6ee" >
+
+    <!--<include-->
+        <!--layout="@layout/tabar_actionbar_layout" />-->
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title_bar"/>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollBarListView
+        android:id="@+id/ptrslvDynamicContent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/bg_color"
+        android:cacheColorHint="@color/bg_color"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:layout_marginTop="@dimen/y168"
+        android:layout_above="@+id/chat_input_layout"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:scrollbars="none"
+        android:showDividers="none" />
+
+    <include
+        android:id="@+id/chat_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/chat_input_reply" />
+</RelativeLayout>

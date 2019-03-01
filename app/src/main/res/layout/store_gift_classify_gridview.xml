@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="12dp" >
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="8dp"
+        android:background="#e3e3e3"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/first"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view1"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="16dp" >
+
+        <RelativeLayout
+            android:layout_width="58dp"
+            android:layout_height="wrap_content" 
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/icon1"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:src="@drawable/z_msg_my_new_fans_icon" />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/icon1"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:singleLine="true"
+                android:text="全部"
+                android:textColor="#999999"
+                android:textSize="12dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+             >
+
+            <ImageView
+                android:id="@+id/icon2"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:src="@drawable/z_msg_my_new_fans_icon" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/icon2"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:singleLine="true"
+                android:text="全部"
+                android:textColor="#999999"
+                android:textSize="12dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:id="@+id/icon3"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:src="@drawable/z_msg_my_new_fans_icon" />
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/icon3"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:singleLine="true"
+                android:text="全部"
+                android:textColor="#999999"
+                android:textSize="12dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:id="@+id/icon4"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:src="@drawable/z_msg_my_new_fans_icon" />
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/icon4"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:singleLine="true"
+                android:text="全部"
+                android:textColor="#999999"
+                android:textSize="12dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/second"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/first"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="20dp" >
+
+        <RelativeLayout
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/icon5"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:src="@drawable/z_msg_my_new_fans_icon" />
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/icon5"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:singleLine="true"
+                android:text="全部"
+                android:textColor="#999999"
+                android:textSize="12dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="58dp"
+            android:layout_height="wrap_content" 
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/icon6"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:src="@drawable/z_msg_my_new_fans_icon" />
+
+            <TextView
+                android:id="@+id/text6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/icon6"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:singleLine="true"
+                android:text="全部"
+                android:textColor="#999999"
+                android:textSize="12dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/icon7"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:src="@drawable/z_msg_my_new_fans_icon" />
+
+            <TextView
+                android:id="@+id/text7"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/icon7"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:singleLine="true"
+                android:text="全部"
+                android:textColor="#999999"
+                android:textSize="12dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/icon8"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:src="@drawable/z_msg_my_new_fans_icon" />
+
+            <TextView
+                android:id="@+id/text8"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/icon8"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:singleLine="true"
+                android:text="全部"
+                android:textColor="#999999"
+                android:textSize="12dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

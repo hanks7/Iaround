@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/z_common_bg_white_round"
+    android:paddingTop="28dp"
+    android:paddingLeft="20dp"
+    android:paddingBottom="20dp"
+    android:paddingRight="20dp"
+    android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/email_retrieve_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/anti_harassment_tips"
+            android:textSize="15dp"
+            android:lineSpacingExtra="2dp"
+            android:textColor="@color/c_333333" />
+
+        <Button
+            android:id="@+id/btn_iknow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chat_person_background_of_sendgift"
+            android:layout_marginTop="15dp"
+            android:padding="12dp"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:text="@string/group_create_i_know" />
+
+</LinearLayout>

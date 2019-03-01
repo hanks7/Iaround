@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y232"
+    android:background="@color/userFragment_bg" >
+
+    <net.iaround.ui.view.HeadPhotoView
+        android:id="@+id/friend_icon"
+        android:layout_width="@dimen/x200"
+        android:layout_height="@dimen/y200"
+        android:layout_marginBottom="@dimen/y12"
+        android:layout_marginLeft="@dimen/x29"
+        android:layout_marginRight="@dimen/x24"
+        android:layout_marginTop="@dimen/y20" >
+    </net.iaround.ui.view.HeadPhotoView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/friend_icon"
+        android:layout_centerVertical="true">
+        <TextView
+            android:id="@+id/notice_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/chat_update_edit_user_value"
+            android:textSize="@dimen/y42" />
+
+        <TextView
+            android:id="@+id/notice_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notice_name"
+            android:layout_marginTop="@dimen/y10"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/chat_update_gray_text_color"
+            android:textSize="@dimen/y36" />
+
+        <TextView
+            android:id="@+id/notice_dealer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notice_content"
+            android:layout_marginTop="@dimen/y10"
+            android:singleLine="true"
+            android:textColor="@color/chat_update_gray_text_color"
+            android:textSize="@dimen/y36"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/notice_allow_reject"
+        android:layout_width="@dimen/x150"
+        android:layout_height="@dimen/y72"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/x48"
+        android:background="@drawable/z_fans_btn_red_new" >
+
+        <TextView
+            android:id="@+id/btn_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/agree"
+            android:textColor="@color/white"
+            android:textSize="@dimen/y36" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/x264"
+        android:background="@color/chat_update_divider_of_toolMenu" />
+</RelativeLayout>

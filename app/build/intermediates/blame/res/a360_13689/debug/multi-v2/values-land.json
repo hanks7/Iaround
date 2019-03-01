@@ -1,0 +1,106 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/values-land/values-land.xml",
+            "map": [
+                {
+                    "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/43bd9c050b31741f3a212b9e535f7af3/res/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,125,189,260",
+                        "endColumns": "69,63,70,67",
+                        "endOffsets": "120,184,255,323"
+                    }
+                },
+                {
+                    "source": "/Users/zhangsen/iaround/iaround-android-online/galleryfinal/build/intermediates/packaged_res/debug/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "50",
+                        "endOffsets": "101"
+                    },
+                    "to": {
+                        "startLines": "6",
+                        "startColumns": "4",
+                        "startOffsets": "328",
+                        "endColumns": "50",
+                        "endOffsets": "374"
+                    }
+                },
+                {
+                    "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/1993906930ebe08a7f98d1cabfb917e4/res/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "232"
+                    },
+                    "to": {
+                        "startLines": "7",
+                        "startColumns": "4",
+                        "startOffsets": "379",
+                        "endLines": "10",
+                        "endColumns": "12",
+                        "endOffsets": "556"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/incremental/mergeA360_13689DebugResources/merged.dir/values-land/values-land.xml",
+            "map": [
+                {
+                    "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/43bd9c050b31741f3a212b9e535f7af3/res/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,125,189,260",
+                        "endColumns": "69,63,70,67",
+                        "endOffsets": "120,184,255,323"
+                    }
+                },
+                {
+                    "source": "/Users/zhangsen/iaround/iaround-android-online/galleryfinal/build/intermediates/packaged_res/debug/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "50",
+                        "endOffsets": "101"
+                    },
+                    "to": {
+                        "startLines": "6",
+                        "startColumns": "4",
+                        "startOffsets": "328",
+                        "endColumns": "50",
+                        "endOffsets": "374"
+                    }
+                },
+                {
+                    "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/1993906930ebe08a7f98d1cabfb917e4/res/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "232"
+                    },
+                    "to": {
+                        "startLines": "7",
+                        "startColumns": "4",
+                        "startOffsets": "379",
+                        "endLines": "10",
+                        "endColumns": "12",
+                        "endOffsets": "556"
+                    }
+                }
+            ]
+        }
+    ]
+}

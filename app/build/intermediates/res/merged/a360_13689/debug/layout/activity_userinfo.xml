@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:background="@color/chat_update_divider_of_messageItem" />
+
+    <ScrollView
+        android:id="@+id/sv_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <net.iaround.ui.view.MyViewPager
+                android:id="@+id/vp_picture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxHeight="@dimen/y827"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/iv_head_picture"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y827"
+                android:visibility="gone" />
+
+            <include layout="@layout/activity_userinfo_base_info" />
+
+            <TextView
+                android:id="@+id/tv_action_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x36"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#9B9B9B"
+                android:textSize="@dimen/y36" />
+
+            <include layout="@layout/activity_userinfo_action" />
+
+            <TextView
+                android:id="@+id/tv_account_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x36"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/userinfo_account_info"
+                android:textColor="#9B9B9B"
+                android:textSize="@dimen/y36" />
+
+            <include layout="@layout/activity_userinof_account_info" />
+
+            <TextView
+                android:id="@+id/tv_person_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x36"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/userinfo_document"
+                android:textColor="#9B9B9B"
+                android:textSize="@dimen/y36" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y12"
+                android:background="@color/main_bg_color"
+                android:orientation="vertical">
+
+                <include layout="@layout/activity_userinfo_data_gift" />
+
+                <!--<include layout="@layout/activity_userinfo_data_hobby" />-->
+
+                <include layout="@layout/activity_userinfo_data_about" />
+
+                <include layout="@layout/activity_userinfo_data_secret" />
+
+                <include layout="@layout/activity_userinfo_data_authen_info" />
+
+                <include layout="@layout/activity_userinfo_data_last_local" />
+
+                <include layout="@layout/activity_userinfo_data_phone" />
+
+            </LinearLayout><!--资料介绍-->
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

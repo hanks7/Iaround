@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <HorizontalScrollView
+        android:id="@+id/gdi_scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/gdi_arrow_up"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/quick_action_bar_bg"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/gdi_rack"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="4dip" >
+
+            <LinearLayout
+                android:id="@+id/gdi_quick_action_items"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ImageView
+        android:id="@+id/gdi_arrow_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/quick_action_bar_top_arrow" />
+
+    <ImageView
+        android:id="@+id/gdi_arrow_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gdi_scroll"
+        android:src="@drawable/quick_action_bar_down_arrow" />
+
+</RelativeLayout>

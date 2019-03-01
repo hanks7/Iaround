@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_bg_selector">
+
+    <!--android:layout_marginLeft="@dimen/x16"-->
+    <!--android:layout_marginRight="@dimen/x16"-->
+    <RelativeLayout
+        android:id="@+id/main_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y232" >
+
+        <net.iaround.ui.view.HeadPhotoView
+            android:id="@+id/user_icon"
+            android:layout_width="@dimen/x180"
+            android:layout_height="@dimen/y180"
+            android:layout_marginBottom="@dimen/y12"
+            android:layout_marginTop="@dimen/y20"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x24"
+            />
+
+        <!--<ImageView
+            android:id="@+id/user_chatting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x110"
+            android:layout_marginTop="@dimen/y20"
+            android:src="@drawable/audio_play_right_00"
+            android:visibility="gone"/>-->
+
+        <!--android:background="@drawable/user_icon_bg"-->
+        <!--时间和距离-->
+        <TextView
+            android:id="@+id/user_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="false"
+            android:layout_marginTop="@dimen/y44"
+            android:layout_marginRight="@dimen/x48"
+            android:textColor="#FF9B9B9B"
+            android:textSize="@dimen/y30" />
+        <RelativeLayout
+            android:id="@+id/rl_personal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/user_icon"
+            android:layout_toLeftOf="@+id/user_location"
+            android:layout_centerVertical="true"
+            >
+            <!--用户名-->
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/chat_update_edit_user_value"
+                android:textSize="@dimen/y42" />
+            <!--性别年龄-->
+            <LinearLayout
+                android:id="@+id/ly_user_age_left"
+                android:layout_width="@dimen/x90"
+                android:layout_height="@dimen/y42"
+                android:layout_marginTop="@dimen/y8"
+                android:layout_marginRight="@dimen/x6"
+                android:layout_below="@id/user_name"
+                android:gravity="center"
+                android:layout_alignLeft="@+id/user_name"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_user_sex_left"
+                    android:layout_width="@dimen/x34"
+                    android:layout_height="@dimen/y42"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/tv_user_age_left"
+                    android:layout_width="@dimen/x36"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/x15"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/y30"
+                    android:textColor="@color/common_white"/>
+
+            </LinearLayout>
+            <!--星座-->
+            <TextView
+                android:id="@+id/tv_user_constellation"
+                android:layout_width="@dimen/x114"
+                android:layout_height="@dimen/y42"
+                android:layout_below="@id/user_name"
+                android:layout_toRightOf="@+id/ly_user_age_left"
+                android:layout_marginTop="@dimen/y8"
+                android:textSize="@dimen/y30"
+                android:gravity="center"
+                android:background="@drawable/encounter_dynamic_constellation_circel_bg"
+                android:textColor="@color/common_white"
+                android:visibility="gone"
+                />
+            <!--签名-->
+            <net.iaround.ui.comon.RichTextView
+                android:id="@+id/user_notes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ly_user_age_left"
+                android:layout_marginTop="@dimen/y8"
+                android:layout_marginRight="@dimen/x1"
+                android:maxLines="1"
+                android:minLines="1"
+                android:visibility="gone"
+                android:gravity="center_vertical"
+                android:textColor="#FF9B9B9B"
+                android:textSize="@dimen/y42" />
+        </RelativeLayout>
+        <!--分割线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/x264"
+            android:background="@color/chat_update_divider_of_messageItem"/>
+    </RelativeLayout>
+
+</RelativeLayout>

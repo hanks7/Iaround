@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="head_photo" type="id" />
+    <item name="adapter_holder" type="id" />
+    <item name="adapter_item" type="id" />
+    <item name="im_preview_uri" type="id"/>
+    <item name="im_face_ad" type="id"/>
+    <item name="im_face_details_icon" type="id"/>
+    <item name="im_video_recode_tag" type="id"/>
+    <item name="splash_ad" type="id"/>
+    <item name="group_topic_message_list" type="id"/>
+    <item name="chatbar_gift_selelct" type="id"/>
+    <item name="select_user" type="id"/>
+    <item name="adapter_item_tag_key" type="id"/>
+
+
+</resources>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <!--聊天中下拉更多历史消息的布局-->
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/ll_personInfo"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/y150"-->
+        <!--&gt;-->
+        <!--<net.iaround.ui.view.HeadPhotoView-->
+            <!--android:id="@+id/person_icon"-->
+            <!--android:layout_width="@dimen/x120"-->
+            <!--android:layout_height="@dimen/y120"-->
+            <!--android:layout_marginLeft="@dimen/x30"-->
+            <!--android:layout_marginRight="@dimen/x30"-->
+            <!--android:layout_marginTop="@dimen/y15"-->
+            <!--android:layout_marginBottom="@dimen/y15"/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/tv_user_name"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="@dimen/y33"-->
+            <!--android:layout_marginBottom="@dimen/y18"-->
+            <!--android:textSize="@dimen/y36"-->
+            <!--android:textColor="@color/chat_head_text_color"-->
+            <!--/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/tv_user_hobby"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignLeft="@+id/tv_user_name"-->
+            <!--android:textSize="@dimen/y36"-->
+            <!--android:textColor="@color/chat_head_text_hobby"-->
+            <!--/>-->
+
+    <!--</RelativeLayout>-->
+    <LinearLayout
+        android:id="@+id/txtLine"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y24"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="none"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text=". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . "
+            android:textColor="#99a5b3"
+            android:textSize="9sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="3dp"
+            android:singleLine="true"
+            android:text="@string/chat_personal_tip"
+            android:textColor="@color/chat_personal_head_text_color"
+            android:textSize="11dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="none"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text=". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . "
+            android:textColor="#99a5b3"
+            android:textSize="9sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+
+    <item android:drawable="@drawable/burst_2700_47_0" android:duration="45" />
+    <item android:drawable="@drawable/burst_2700_47_1" android:duration="45" />
+    <item android:drawable="@drawable/burst_2700_47_2" android:duration="45" />
+    <item android:drawable="@drawable/burst_2700_47_3" android:duration="45" />
+    <item android:drawable="@drawable/burst_2700_47_4" android:duration="45" />
+    <item android:drawable="@drawable/burst_2700_47_5" android:duration="45" />
+    <item android:drawable="@drawable/burst_2700_47_6" android:duration="45" />
+    <item android:drawable="@drawable/burst_2700_47_7" android:duration="45" />
+    <item android:drawable="@drawable/burst_2700_47_8" android:duration="45" />
+    <item android:drawable="@drawable/burst_2700_47_9" android:duration="45" />
+    <item android:drawable="@drawable/burst_2700_47_10" android:duration="45" />
+    <item android:drawable="@drawable/burst_2700_47_11" android:duration="45" />
+    <item android:drawable="@drawable/burst_2700_47_12" android:duration="45" />
+    <item android:drawable="@drawable/burst_2700_47_13" android:duration="45" />
+    <item android:drawable="@drawable/burst_2700_47_14" android:duration="45" />
+    <item android:drawable="@drawable/burst_2700_47_15" android:duration="45" />
+    <item android:drawable="@drawable/burst_2700_47_16" android:duration="45" />
+    <item android:drawable="@drawable/burst_2700_47_17" android:duration="45" />
+    <item android:drawable="@drawable/burst_2700_47_18" android:duration="45" />
+    <item android:drawable="@drawable/burst_2700_47_19" android:duration="45" />
+    <item android:drawable="@drawable/burst_2700_47_20" android:duration="45" />
+    <item android:drawable="@drawable/burst_2700_47_21" android:duration="45" />
+    <item android:drawable="@drawable/burst_2700_47_22" android:duration="45" />
+    <item android:drawable="@drawable/burst_2700_47_23" android:duration="45" />
+    <item android:drawable="@drawable/burst_2700_47_24" android:duration="45" />
+    <item android:drawable="@drawable/burst_2700_47_25" android:duration="45" />
+    <item android:drawable="@drawable/burst_2700_47_26" android:duration="45" />
+    <item android:drawable="@drawable/burst_2700_47_27" android:duration="45" />
+    <item android:drawable="@drawable/burst_2700_47_28" android:duration="45" />
+    <item android:drawable="@drawable/burst_2700_47_29" android:duration="45" />
+    <item android:drawable="@drawable/burst_2700_47_30" android:duration="45" />
+    <item android:drawable="@drawable/burst_2700_47_31" android:duration="45" />
+    <item android:drawable="@drawable/burst_2700_47_32" android:duration="45" />
+    <item android:drawable="@drawable/burst_2700_47_33" android:duration="45" />
+    <item android:drawable="@drawable/burst_2700_47_34" android:duration="45" />
+    <item android:drawable="@drawable/burst_2700_47_35" android:duration="45" />
+    <item android:drawable="@drawable/burst_2700_47_36" android:duration="45" />
+    <item android:drawable="@drawable/burst_2700_47_37" android:duration="45" />
+    <item android:drawable="@drawable/burst_2700_47_38" android:duration="45" />
+    <item android:drawable="@drawable/burst_2700_47_39" android:duration="45" />
+    <item android:drawable="@drawable/burst_2700_47_40" android:duration="45" />
+    <item android:drawable="@drawable/burst_2700_47_41" android:duration="45" />
+    <item android:drawable="@drawable/burst_2700_47_42" android:duration="45" />
+    <item android:drawable="@drawable/burst_2700_47_43" android:duration="45" />
+    <item android:drawable="@drawable/burst_2700_47_44" android:duration="45" />
+    <item android:drawable="@drawable/burst_2700_47_45" android:duration="45" />
+    <item android:drawable="@drawable/burst_2700_47_46" android:duration="45" />
+    <item android:drawable="@drawable/burst_2700_47_first" android:duration="45" />
+</animation-list>

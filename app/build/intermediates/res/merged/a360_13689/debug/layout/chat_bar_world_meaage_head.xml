@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <net.iaround.ui.view.HeadPhotoView
+            android:id="@+id/hp_world_message_avastar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="7dp">
+
+        </net.iaround.ui.view.HeadPhotoView>
+
+        <RelativeLayout
+            android:id="@+id/rl_world_message_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="78dp"
+            android:layout_toRightOf="@+id/hp_world_message_avastar">
+
+            <TextView
+                android:id="@+id/tv_chat_bar_world_message_name"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:layout_marginBottom="2dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/edit_user_tips"
+                android:textSize="15sp" />
+            <net.iaround.ui.view.pipeline.UserTitleView
+                android:id="@+id/user_title_world"
+                android:layout_toRightOf="@+id/tv_chat_bar_world_message_name"
+                android:layout_marginLeft="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+               >
+
+            </net.iaround.ui.view.pipeline.UserTitleView>
+            <TextView
+                android:id="@+id/tv_chat_bar_workd_title"
+                android:layout_width="70dp"
+                android:layout_height="18dp"
+                android:paddingLeft="15dp"
+                android:layout_marginRight="3dp"
+                android:textSize="12sp"
+                android:textColor="@color/title_bar_bg"
+                android:layout_alignTop="@+id/tv_chat_bar_world_message_name"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@+id/tv_chat_bar_world_message_name"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/tv_chat_bar_workd_recuit"
+                android:layout_width="50dp"
+                android:layout_height="18dp"
+                android:layout_toRightOf="@+id/tv_chat_bar_workd_title"
+                android:visibility="gone"
+                android:textSize="12sp"
+                android:textColor="@color/c_ffffff"
+                android:paddingLeft="18dp"
+                android:text="招募"
+                android:layout_marginLeft="3dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/chat_bar_recuit"/>
+
+            <net.iaround.ui.comon.RichTextView
+                android:id="@+id/tv_chat_bar_world_message_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/tv_chat_bar_world_message_name"
+                android:ellipsize="end"
+                android:lineSpacingExtra="2dp"
+                android:lines="2"
+                android:textColor="@color/chat_bar_world_text_color"
+                android:textSize="9sp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_world_message_skill_avastar"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/chat_bar_world_recuit_broad_cast"
+            android:layout_width="52dp"
+            android:layout_height="27dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:visibility="visible"
+            android:textSize="9sp"
+            android:gravity="center"
+            android:text="立即进入"
+            android:textColor="@color/c_ffffff"
+            android:background="@drawable/chat_bar_world_message"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

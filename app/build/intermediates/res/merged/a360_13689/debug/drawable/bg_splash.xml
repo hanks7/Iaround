@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 中间logo -->
+    <item >
+        <bitmap
+            android:gravity="fill"
+            android:src="@drawable/login_bg" />
+    </item>
+    <!-- 底部图表 -->
+    <item >
+        <bitmap
+            android:gravity="bottom|fill_horizontal"
+            android:src="@drawable/login_bottom"/>
+    </item>
+</layer-list>

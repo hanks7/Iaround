@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item android:drawable="@drawable/speak_1900_25_0" android:duration="70" />
+    <item android:drawable="@drawable/speak_1900_25_1" android:duration="70" />
+    <item android:drawable="@drawable/speak_1900_25_2" android:duration="70" />
+    <item android:drawable="@drawable/speak_1900_25_3" android:duration="70" />
+    <item android:drawable="@drawable/speak_1900_25_4" android:duration="70" />
+    <item android:drawable="@drawable/speak_1900_25_5" android:duration="70" />
+    <item android:drawable="@drawable/speak_1900_25_6" android:duration="70" />
+    <item android:drawable="@drawable/speak_1900_25_7" android:duration="70" />
+    <item android:drawable="@drawable/speak_1900_25_8" android:duration="70" />
+    <item android:drawable="@drawable/speak_1900_25_9" android:duration="70" />
+    <item android:drawable="@drawable/speak_1900_25_10" android:duration="70" />
+    <item android:drawable="@drawable/speak_1900_25_11" android:duration="70" />
+    <item android:drawable="@drawable/speak_1900_25_12" android:duration="70" />
+    <item android:drawable="@drawable/speak_1900_25_13" android:duration="70" />
+    <item android:drawable="@drawable/speak_1900_25_14" android:duration="70" />
+    <item android:drawable="@drawable/speak_1900_25_15" android:duration="70" />
+    <item android:drawable="@drawable/speak_1900_25_16" android:duration="70" />
+    <item android:drawable="@drawable/speak_1900_25_17" android:duration="70" />
+    <item android:drawable="@drawable/speak_1900_25_18" android:duration="70" />
+    <item android:drawable="@drawable/speak_1900_25_19" android:duration="70" />
+    <item android:drawable="@drawable/speak_1900_25_20" android:duration="70" />
+    <item android:drawable="@drawable/speak_1900_25_21" android:duration="70" />
+    <item android:drawable="@drawable/speak_1900_25_22" android:duration="70" />
+    <item android:drawable="@drawable/speak_1900_25_23" android:duration="70" />
+    <item android:drawable="@drawable/speak_1900_25_24" android:duration="70" />
+    <item android:drawable="@drawable/speak_1900_25_first" android:duration="70" />
+</animation-list>

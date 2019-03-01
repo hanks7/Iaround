@@ -1,0 +1,238 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="net.iaround.ui.fragment.ChatBarFamilyFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_chat_bar_left_view"
+            android:layout_width="0dp"
+            android:layout_height="172dp"
+            android:layout_weight="1">
+            />
+
+            <ImageView
+                android:id="@+id/iv_chat_bar_icon_left"
+                android:layout_width="match_parent"
+                android:layout_height="172dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/default_avatar_rect_light" />
+
+            <LinearLayout
+                android:id="@+id/ll_chat_bar_hot_hour_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:background="@drawable/chat_bar_hot_hour"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_chat_bar_hot_hour_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="30dp"
+                    android:text="@string/chat_bar_hot_hour"
+                    android:textColor="@color/title_bar_bg"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/chat_bar_barname_background"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:id="@+id/tv_chat_bar_name_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/rl_chat_bar_family_bottom_left"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/title_bar_bg"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_chat_bar_family_bottom_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/ll_chat_bar_family_person_num_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="11dp"
+                        android:background="@drawable/chat_bar_family_person_num"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_chat_bar_hot_family_person_num_left"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/title_bar_bg"
+                            android:textSize="11sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_chat_bar_family_hot_num_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/ll_chat_bar_family_person_num_left"
+                        android:background="@drawable/chat_bar_family_hot"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_chat_bar_hot_family_hot_num_left"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/title_bar_bg"
+                            android:textSize="11sp" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_chat_bar_right_view"
+            android:layout_width="0dp"
+            android:layout_height="172dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_chat_bar_icon_right"
+                android:layout_width="match_parent"
+                android:layout_height="172dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/default_avatar_rect_light" />
+
+            <LinearLayout
+                android:id="@+id/ll_chat_bar_hot_hour_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:background="@drawable/chat_bar_hot_hour"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_chat_bar_hot_hour_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="30dp"
+                    android:text="@string/chat_bar_hot_hour"
+                    android:textColor="@color/title_bar_bg"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/chat_bar_barname_background">
+
+                <TextView
+                    android:id="@+id/tv_chat_bar_name_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/rl_chat_bar_family_bottom_right"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/title_bar_bg"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_chat_bar_family_bottom_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/ll_chat_bar_family_person_num_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="11dp"
+                        android:background="@drawable/chat_bar_family_person_num"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_chat_bar_hot_family_person_num_right"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/title_bar_bg"
+                            android:textSize="11sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_chat_bar_family_hot_num_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/ll_chat_bar_family_person_num_right"
+                        android:background="@drawable/chat_bar_family_hot"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_chat_bar_hot_family_hot_num_right"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/title_bar_bg"
+                            android:textSize="11sp" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

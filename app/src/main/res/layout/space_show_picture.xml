@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_bg_color"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <net.iaround.ui.space.PagerImageView
+        android:id="@+id/imageView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:maxHeight="1000dip"
+		android:maxWidth="1000dip"
+		android:layerType="software"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:scaleType="fitCenter" />
+
+    <LinearLayout
+        android:id="@+id/show_picture_filter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#ff615955" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <TextView
+                android:id="@+id/show_picture_save"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/gray_trains_pressed_black"
+                android:gravity="center"
+                android:text="@string/save_photo"
+                android:textColor="@color/login_btn"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#ff615955" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/show_picture_del"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/iv_del_picture"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/gray_trains_pressed_black"
+                android:gravity="center"
+                android:text="@string/del_photo"
+                android:textColor="@color/login_btn"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#ff615955" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/show_picture_report"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/iv_report_picture"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/gray_trains_pressed_black"
+                android:gravity="center"
+                android:text="@string/report"
+                android:textColor="@color/login_btn"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#ff615955" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/show_picture_clane"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/gray_trains_pressed_black"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/login_btn"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+</RelativeLayout>

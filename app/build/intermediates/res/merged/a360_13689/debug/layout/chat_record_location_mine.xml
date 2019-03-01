@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/nearby_filter_checkbox_selector"
+        android:layout_marginTop="9dp"
+        android:layout_marginLeft="16dp"
+        android:visibility="gone" />
+
+    <net.iaround.ui.view.HeadPhotoView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/x120"
+        android:layout_height="@dimen/y120"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/x30"
+        android:layout_marginLeft="@dimen/x24"
+        />
+
+    <!--android:gravity="center_vertical"-->
+    <!--android:maxWidth="200dp"-->
+    <!--android:minHeight="48dp"-->
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="@dimen/x680"
+        android:layout_height="@dimen/y360"
+        android:layout_toLeftOf="@id/icon"
+        android:background="@drawable/chat_new_record_friend_bg"
+        >
+        <!--android:gravity="center_vertical"-->
+        <!--android:maxLines="5"-->
+        <!--android:maxWidth="121dp"-->
+        <!--android:paddingRight="2dp"-->
+        <TextView
+            android:id="@+id/content_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y36"
+            android:layout_marginLeft="@dimen/x45"
+            android:layout_marginRight="@dimen/x47"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@color/chat_update_edit_user_value"
+            android:textSize="@dimen/y42" />
+        <ImageView
+            android:id="@+id/content_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y249"
+            android:layout_below="@+id/content_text"
+            android:layout_marginTop="@dimen/y33"
+            android:scaleType="centerCrop"
+            android:background="@drawable/chat_new_media_record_map_bg"
+            />
+
+
+    </RelativeLayout>
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_toLeftOf="@id/content"
+        layout="@layout/chat_record_status" />
+
+</RelativeLayout>

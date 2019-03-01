@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_friends"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/common_white" >
+    <!--@drawable/setting_linear_selector_center-->
+    <net.iaround.ui.view.HeadPhotoView
+        android:id="@+id/icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/x48"
+        android:layout_marginRight="@dimen/x36"
+        >
+    </net.iaround.ui.view.HeadPhotoView>
+
+    <CheckBox
+        android:id="@+id/check_box"
+        android:layout_width="@dimen/x54"
+        android:layout_height="@dimen/y54"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/x48"
+        android:background="@drawable/round_check_selector"
+        android:button="@null"
+        android:checked="false" />
+    
+      <TextView
+          android:id="@+id/name"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+          android:layout_toRightOf="@id/icon"
+          android:singleLine="true"
+          tools:text="史盼盼"
+          android:ellipsize="end"
+          android:textColor="@color/chat_update_edit_user_value"
+          android:textSize="14sp" />
+
+    <View
+        android:id="@+id/bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/x240"
+        android:background="@color/chat_update_login_btn_select" />
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/y45"
+    android:background="@color/main_bg_color">
+
+    <LinearLayout
+        android:id="@+id/ly_details_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y80"
+        android:layout_marginBottom="@dimen/y38"
+        android:layout_marginLeft="@dimen/x48"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/x48"
+            android:layout_height="@dimen/y48"
+            android:layout_marginRight="@dimen/x42"
+            android:src="@drawable/dynamic_details_love"/>
+
+        <LinearLayout
+            android:id="@+id/ly_head_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"/>
+
+        <TextView
+            android:id="@+id/tv_details_love_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x18"
+            android:textColor="#BBBBBB"
+            android:textSize="@dimen/y36"/>
+
+    </LinearLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y2"
+        android:background="#F6F6F6F6"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/y38"
+        android:paddingLeft="@dimen/x48"
+        android:layout_marginTop="@dimen/y31"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/y48"
+            android:layout_height="@dimen/y48"
+            android:src="@drawable/dynamic_details_comment"/>
+
+        <TextView
+            android:id="@+id/tv_details_commnet_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x15"
+            android:textSize="@dimen/y36"
+            android:textColor="#BBBBBB"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/activity_basic_style"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!--<include-->
+    <!--android:id="@+id/actionBar"-->
+    <!--layout="@layout/title_with_right_text" />-->
+    <include layout="@layout/title_bar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:background="@color/chat_update_divider_of_messageItem" />
+
+    <RelativeLayout
+        android:id="@+id/mine_gift_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="32dp"
+        android:background="@color/userFragment_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/z_store_private_iocn"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/minegift_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/icon"
+            android:gravity="center_vertical"
+            android:text="@string/iaround_mine_or_other_gift_toatal"
+            android:textColor="@color/encounter_filter_sex_selcet"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/pointer"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvGiftCount"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/c_ecebf1"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="20dip"
+        android:textColor="@color/c_999999"
+        android:textSize="10sp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/tvhead"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/c_ecebf1"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvleft"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:background="@color/c_ecebf1"
+            android:gravity="left|center_vertical"
+            android:textColor="@color/c_999999"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tvright"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:background="@color/c_ecebf1"
+            android:gravity="right|center_vertical"
+            android:textColor="@color/c_999999"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/hot_list_city_cl"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+</LinearLayout>

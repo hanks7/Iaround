@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/x30"
+        android:button="@drawable/nearby_filter_checkbox_selector"
+        android:visibility="gone" />
+
+    <!--android:layout_toRightOf="@id/checkbox"-->
+    <net.iaround.ui.view.HeadPhotoView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/x120"
+        android:layout_height="@dimen/y120"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x24"
+        android:layout_toRightOf="@+id/checkbox" />
+
+    <LinearLayout
+        android:id="@+id/content_userinfo_ly"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/icon"
+        android:orientation="vertical">
+
+        <include layout="@layout/iaround_chat_userinfo_view" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="150dp"
+            android:background="@drawable/chat_new_record_friend_bg"
+            android:layout_marginRight="@dimen/x207"
+            android:orientation="vertical">
+
+            <net.iaround.ui.comon.RichTextView
+                android:id="@+id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/y35"
+                android:paddingLeft="@dimen/x45"
+                android:paddingRight="@dimen/x45"
+                android:paddingTop="@dimen/y35"
+                android:textColor="@color/chat_update_edit_user_value"
+                android:textSize="@dimen/y42" />
+
+            <TextView
+                android:id="@+id/tv_order_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/btn_select"
+                android:drawablePadding="4dp"
+                android:text="@string/is_agreed"
+                android:textColor="@color/common_iaround_red"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ll_order_option"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/tv_agree"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/selector_round_rectangle_bg"
+                    android:gravity="center"
+                    android:text="@string/summary_agree"
+                    android:textColor="@drawable/selector_text_red_white_bg"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_refuse"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/selector_round_rectangle_bg"
+                    android:gravity="center"
+                    android:text="@string/summary_disagree"
+                    android:textColor="@drawable/selector_text_red_white_bg"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

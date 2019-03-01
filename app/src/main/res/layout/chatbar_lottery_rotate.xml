@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/lottery_plate_size"
+    android:layout_height="@dimen/lottery_plate_size">
+        <ImageView
+            android:id="@+id/lottery_plate"
+            android:layout_width="@dimen/lottery_plate_size"
+            android:layout_height="@dimen/lottery_plate_size"
+            android:src="@drawable/lottery_plate"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:id="@+id/giftbox_purple"
+            android:layout_width="@dimen/lottery_gif_size"
+            android:layout_height="@dimen/lottery_gif_size"
+            android:src="@drawable/giftbox_purple"
+            android:layout_marginBottom="65dp"
+            android:layout_above="@+id/lottery_center_point"
+            android:layout_centerHorizontal="true" />
+        <ImageView
+            android:id="@+id/gold_coin_less"
+            android:layout_width="@dimen/lottery_gif_size"
+            android:layout_height="@dimen/lottery_gif_size"
+            android:src="@drawable/gold_coin"
+            android:layout_marginRight="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="47dp"
+            android:layout_above="@+id/lottery_center_point"
+            android:layout_toLeftOf="@+id/lottery_center_point"
+            android:layout_toStartOf="@+id/lottery_center_point" />
+        <ImageView
+            android:id="@+id/moon_silver_less"
+            android:layout_width="@dimen/lottery_gif_size"
+            android:layout_height="@dimen/lottery_gif_size"
+            android:src="@drawable/moon_silver"
+            android:layout_marginRight="61dp"
+            android:layout_marginEnd="61dp"
+            android:rotation="270"
+            android:layout_above="@+id/lottery_center_point"
+            android:layout_toLeftOf="@+id/lottery_center_point"
+            android:layout_toStartOf="@+id/lottery_center_point" />
+        <ImageView
+            android:id="@+id/skill_protect"
+            android:layout_width="@dimen/lottery_gif_size"
+            android:layout_height="@dimen/lottery_gif_size"
+            android:src="@drawable/skill_protect"
+            android:layout_marginRight="59dp"
+            android:layout_marginEnd="59dp"
+            android:rotation="230"
+            android:layout_below="@+id/lottery_center_point"
+            android:layout_toLeftOf="@+id/lottery_center_point"
+            android:layout_toStartOf="@+id/lottery_center_point" />
+        <ImageView
+            android:id="@+id/gold_coin_many"
+            android:layout_width="@dimen/lottery_gif_size"
+            android:layout_height="@dimen/lottery_gif_size"
+            android:src="@drawable/gold_coin"
+            android:layout_marginTop="48dp"
+            android:layout_marginRight="29dp"
+            android:layout_marginEnd="29dp"
+            android:layout_below="@+id/lottery_center_point"
+            android:layout_toLeftOf="@+id/lottery_center_point"
+            android:layout_toStartOf="@+id/lottery_center_point" />
+        <ImageView
+            android:id="@+id/skill_burst"
+            android:layout_width="@dimen/lottery_gif_size"
+            android:layout_height="@dimen/lottery_gif_size"
+            android:src="@drawable/skill_burst"
+            android:rotation="180"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="61dp" />
+        <ImageView
+            android:id="@+id/skill_kiss"
+            android:layout_width="@dimen/lottery_gif_size"
+            android:layout_height="@dimen/lottery_gif_size"
+            android:src="@drawable/skill_kiss"
+            android:layout_marginLeft="33dp"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="46dp"
+            android:rotation="140"
+            android:layout_below="@+id/lottery_center_point"
+            android:layout_toRightOf="@+id/lottery_center_point"
+            android:layout_toEndOf="@+id/lottery_center_point" />
+        <ImageView
+            android:id="@+id/skill_speak"
+            android:layout_width="@dimen/lottery_gif_size"
+            android:layout_height="@dimen/lottery_gif_size"
+            android:src="@drawable/skill_speak"
+            android:layout_marginLeft="60dp"
+            android:layout_marginStart="60dp"
+            android:rotation="108"
+            android:layout_below="@+id/lottery_center_point"
+            android:layout_toRightOf="@+id/lottery_center_point"
+            android:layout_toEndOf="@+id/lottery_center_point"
+            android:layout_marginTop="8dp" />
+        <ImageView
+            android:id="@+id/skill_kick"
+            android:layout_width="@dimen/lottery_gif_size"
+            android:layout_height="@dimen/lottery_gif_size"
+            android:src="@drawable/skill_kick"
+            android:layout_marginLeft="59dp"
+            android:layout_marginStart="59dp"
+            android:rotation="100"
+            android:layout_alignBottom="@+id/lottery_center_point"
+            android:layout_toRightOf="@+id/lottery_center_point"
+            android:layout_toEndOf="@+id/lottery_center_point" />
+        <ImageView
+            android:id="@+id/moon_silver_many"
+            android:layout_width="@dimen/lottery_gif_size"
+            android:layout_height="@dimen/lottery_gif_size"
+            android:src="@drawable/moon_silver"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="48dp"
+            android:rotation="40"
+            android:layout_above="@+id/lottery_center_point"
+            android:layout_toRightOf="@+id/lottery_center_point"
+            android:layout_toEndOf="@+id/lottery_center_point" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/lottery_center_point" />
+</RelativeLayout>

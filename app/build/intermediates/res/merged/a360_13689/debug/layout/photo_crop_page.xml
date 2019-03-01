@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llPage"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/abTitle"
+        layout="@layout/title_two_text" />
+    
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <FrameLayout
+            android:id="@+id/flCrop"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <net.iaround.tools.picture.ScaledImageView
+                android:id="@+id/ivPhoto"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="top|left"
+                android:background="#ff777777"
+                android:scaleType="matrix" />
+
+            <LinearLayout
+                android:id="@+id/rlContnet"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <View
+                        android:id="@+id/textView2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#55000000" >
+                    </View>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout4"
+                        android:visibility="gone"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <View
+                            android:id="@+id/TextView02"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="#55000000" >
+                        </View>
+
+                        <View
+                            android:id="@+id/vCrop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:background="@drawable/photo_crop_bound" >
+                        </View>
+
+                        <View
+                            android:id="@+id/textView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="#55000000" >
+                        </View>
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/textView3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#55000000" >
+                    </View>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llBottom"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dp"
+                    android:visibility="gone"
+                    android:background="@drawable/photocrop_back"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/btnLeft"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/photocrop_btn_status"
+                        android:src="@drawable/photocrop_roteleft" >
+                    </ImageButton>
+
+                    <ImageButton
+                        android:id="@+id/btnOut"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/photocrop_btn_status"
+                        android:src="@drawable/photocrop_zoom_out" >
+                    </ImageButton>
+
+                    <ImageButton
+                        android:id="@+id/btnIn"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/photocrop_btn_status"
+                        android:src="@drawable/photocrop_zoom_in" >
+                    </ImageButton>
+
+                    <ImageButton
+                        android:id="@+id/btnRight"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/photocrop_btn_status"
+                        android:src="@drawable/photocrop_rote_right" >
+                    </ImageButton>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

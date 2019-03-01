@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/y44"
+    android:paddingLeft="@dimen/y36"
+    android:paddingRight="@dimen/y36"
+    android:background="@color/common_white">
+
+    <TextView
+        android:id="@+id/tv_encounter_base_info_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/y24"
+        android:textColor="#404040"
+        android:textSize="@dimen/y48"/>
+
+
+    <TextView
+        android:id="@+id/tv_encounter_base_info_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/encounter_filter_sex_selcet"
+        android:textSize="@dimen/y30"/>
+
+    <LinearLayout
+        android:id="@+id/ly_baseinfo_age"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/y42"
+        android:layout_below="@id/tv_encounter_base_info_name"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_baseinfo_sex"
+            android:layout_width="@dimen/x30"
+            android:layout_height="@dimen/y30"/>
+
+        <TextView
+            android:id="@+id/tv_encounter_base_info_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/x6"
+            android:paddingRight="@dimen/x10"
+            android:textSize="@dimen/y24"
+            android:textColor="@color/common_white"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_encounter_base_info_constellation"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/y42"
+        android:layout_marginRight="@dimen/x6"
+        android:layout_below="@id/tv_encounter_base_info_name"
+        android:layout_toRightOf="@id/ly_baseinfo_age"
+        android:layout_marginLeft="@dimen/x10"
+        android:background="@drawable/encounter_constellation_circel_bg"
+        android:textSize="@dimen/y24"
+        android:textColor="@color/common_white"/>
+
+    <TextView
+        android:id="@+id/tv_encounter_base_info_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/x6"
+        android:layout_marginTop="@dimen/y24"
+        android:layout_marginBottom="@dimen/y44"
+        android:layout_below="@id/ly_baseinfo_age"
+        android:textSize="@dimen/y42"
+        android:textColor="#FF9B9B9B"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y2"
+        android:layout_below="@id/tv_encounter_base_info_description"
+        android:background="@color/encounter_base_info_line"/>
+
+</RelativeLayout>

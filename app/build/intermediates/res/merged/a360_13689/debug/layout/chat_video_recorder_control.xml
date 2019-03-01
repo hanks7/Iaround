@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+
+	    <View 
+	        android:id="@+id/top_backgroup"
+	        android:layout_width="fill_parent"
+	        android:layout_height="88dp"
+	        android:layout_alignParentTop="true"
+	        android:background="@drawable/chat_video_recorder_top_bg"/>
+	    
+	    <View 
+	        android:id="@+id/bottom_backgroup"
+	        android:layout_width="fill_parent"
+	        android:layout_height="190dp"
+	        android:layout_alignParentBottom="true"
+	        android:background="@drawable/chat_video_recorder_bottom_bg"/>
+	    
+		<TextView android:id="@+id/time" android:layout_width="80dp"
+			android:layout_height="wrap_content" android:layout_centerInParent="true"
+			android:layout_alignParentTop="true" android:layout_marginLeft="10dp"
+			android:layout_marginTop="20dp" android:textColor="@color/white"
+			android:textStyle="bold" android:text="00:00"
+			android:gravity="center_vertical" 
+			android:drawableLeft="@drawable/side_bar_counter_back_new"
+			android:background="@drawable/transparent" />
+
+		<Button android:id="@+id/cancel" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_margin="20dp"
+			android:layout_alignParentTop="true" android:layout_alignParentRight="true"
+			android:background="@drawable/chat_video_recorder_cancel_button_status" />
+
+		<RelativeLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_centerInParent="true"
+			android:layout_margin="30dp" android:layout_alignParentBottom="true">
+
+			<Button android:id="@+id/startRecord" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:background="@drawable/chat_video_recorder_start_button_status" />
+
+			<Button android:id="@+id/stopRecord" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:background="@drawable/chat_video_recorder_stop_button_status" />
+
+		</RelativeLayout>
+
+	</RelativeLayout>
+
+</LinearLayout>

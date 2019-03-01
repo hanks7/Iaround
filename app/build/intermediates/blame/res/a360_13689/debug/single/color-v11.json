@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
+        "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/43bd9c050b31741f3a212b9e535f7af3/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
+        "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/43bd9c050b31741f3a212b9e535f7af3/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
+    }
+]

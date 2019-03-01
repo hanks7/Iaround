@@ -1,0 +1,1306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:background="@color/userFragment_bg">
+
+    <!--标题-->
+    <include
+        android:id="@+id/activity_title"
+        layout="@layout/title_bar" />
+
+    <net.iaround.ui.chat.GroupInfoScrollView
+        android:id="@+id/scroll_view"
+        style="@style/activity_basic_style"
+        android:layout_below="@+id/activity_title"
+        android:fadingEdge="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/userFragment_bg"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/roomInfoGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/group_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y450"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/chat_bar_title_default_bg"/>
+
+
+                <!--圈子左上角标签  暂时没有确定是否需要修改-->
+                <ImageView
+                    android:id="@+id/imgTag"
+                    android:layout_width="29dp"
+                    android:layout_height="28dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/group_id"
+                    android:layout_width="@dimen/x302"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/y39"
+                    android:alpha="0.6"
+                    android:background="@drawable/group_num_of_info_bg"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/x36"
+                    android:text="@string/group_info_item_num"
+                    android:textColor="@color/chat_update_edit_user_value"
+                    android:textSize="@dimen/y36" />
+
+                <LinearLayout
+                    android:id="@+id/ll_group_hot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="120dp">
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginRight="3dp"
+                        android:src="@drawable/chat_bar_group_info_hot" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/group_info_hot_number"
+                        android:textColor="@color/title_bar_bg"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_activity_group_info_hot_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/title_bar_bg"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_group_position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/ll_group_hot"
+                    android:layout_toLeftOf="@+id/ll_attention_and_fans"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="120dp">
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginRight="3dp"
+                        android:src="@drawable/chat_bar_group_info_hot" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/group_position"
+                        tools:hint="所在地："
+                        android:textColor="@color/title_bar_bg"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_group_position"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/title_bar_bg"
+                        android:singleLine="true"
+                        android:minLines="1"
+                        android:textSize="14sp"
+                        android:text="北京"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_attention_and_fans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="116dp"
+                    android:orientation="horizontal">
+                    <!--关注按钮区域-->
+                    <LinearLayout
+                        android:id="@+id/ll_attention"
+                        android:layout_width="81dp"
+                        android:layout_height="27dp"
+                        android:background="@drawable/groupinfo_attention_bg"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+                        <ImageView
+                            android:id="@+id/iv_attention"
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_marginRight="6dp"
+                            android:src="@drawable/group_join"
+                            android:visibility="visible"/>
+                        <TextView
+                            android:id="@+id/tv_attention"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/common_white"
+                            android:textSize="12sp"
+                            android:text="@string/chat_bar_attention"
+                            android:visibility="visible"/>
+                    </LinearLayout>
+                    <!--粉丝人数区域-->
+                    <RelativeLayout
+                        android:id="@+id/ll_attention1"
+                        android:layout_width="90dp"
+                        android:layout_height="27dp"
+                        android:background="@drawable/groupinfo_attention_bg"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+                        <TextView
+                            android:id="@+id/tv_attention_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="12dp"
+                            android:textSize="12sp"
+                            android:textColor="@color/common_white"
+                            android:text="人数:8888"
+                            android:visibility="visible"/>
+                        <TextView
+                            android:id="@+id/tv_attention_num1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="6dp"
+                            android:textSize="12sp"
+                            android:textColor="@color/common_white"
+                            android:text="人数:88889"
+                            android:visibility="gone"/>
+                        <ImageView
+                            android:layout_width="6dp"
+                            android:layout_height="10dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="6dp"
+                            android:src="@drawable/chatbar_fans"
+                            android:visibility="visible"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <!-- 圈类型 和选择贴吧分类 暂时没有使用没有修改 -->
+            <RelativeLayout
+                android:id="@+id/view_post_bar"
+                android:layout_width="fill_parent"
+                android:layout_height="42dp"
+                android:background="@drawable/info_bg_center_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="11dp"
+                android:paddingRight="11dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/post_bar_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="60dp"
+                    android:drawablePadding="14dp"
+                    android:drawableRight="@drawable/arraw_turn"
+                    android:ellipsize="end"
+                    android:gravity="right|center_vertical"
+                    android:singleLine="true"
+                    android:text="@string/group_inf_select_postbar_type"
+                    android:textColor="@color/c_999999"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:id="@+id/iv_group_type"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="left|center_vertical"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/add_friend_qq" />
+
+                <TextView
+                    android:id="@+id/group_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/iv_group_type"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:singleLine="true"
+                    android:textColor="@color/c_444444"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:layout_marginBottom="12dp"
+                android:orientation="horizontal"
+                android:background="@color/common_white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="12dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/login_btn"
+                    android:text="欢迎语："/>
+                <TextView
+                    android:id="@+id/tv_welcome_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="22dp"
+                    android:singleLine="false"
+                    android:textColor="@color/chat_update_edit_user_value"
+                    tools:text="欢迎加入刚好遇见你，招管理，招主持,招招招招招招招招招招招招招大家快来计入吧" />
+            </LinearLayout>
+            <!-- 圈成员  ,邀请圈成员 -->
+            <RelativeLayout
+                android:id="@+id/rl_invit_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y162"
+                android:background="@color/white"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/icon_member"
+                    android:layout_width="@dimen/x54"
+                    android:layout_height="@dimen/y54"
+                    android:layout_marginLeft="@dimen/x45"
+                    android:layout_marginRight="@dimen/x12"
+                    android:layout_marginTop="@dimen/y54"
+                    android:src="@drawable/group_member" />
+
+                <TextView
+                    android:id="@+id/member_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/icon_member"
+                    android:textColor="@color/chat_update_edit_user_value"
+                    android:textSize="@dimen/y42" />
+
+                <LinearLayout
+                    android:id="@+id/ll_invite_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x48"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/member_invite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/x30"
+                        android:singleLine="true"
+                        android:text="@string/group_inf_invite_member"
+                        android:textColor="@color/login_btn"
+                        android:textSize="@dimen/y42" />
+
+                    <ImageView
+                        android:layout_width="@dimen/x24"
+                        android:layout_height="@dimen/y42"
+                        android:layout_marginBottom="@dimen/y60"
+                        android:layout_marginTop="@dimen/y60"
+                        android:src="@drawable/arraw_turn" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!--分割线-->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y1"
+                android:layout_marginLeft="@dimen/x51"
+                android:background="@color/chat_update_divider_of_messageItem" />
+
+            <!--用户成员头像列表-->
+            <RelativeLayout
+                android:id="@+id/group_member_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y162"
+                android:background="@color/white"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/member_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x48"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <!--第一个圈子成员头像-->
+                    <RelativeLayout
+                        android:id="@+id/avatar_layout0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/x30">
+
+                        <net.iaround.ui.view.HeadPhotoView
+                            android:id="@+id/user_icon_0"
+                            android:layout_width="@dimen/x108"
+                            android:layout_height="@dimen/y108"
+                            android:layout_centerVertical="true"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/user_icon_role0"
+                            android:layout_width="@dimen/x40"
+                            android:layout_height="@dimen/y36"
+                            android:layout_alignBottom="@+id/user_icon_0"
+                            android:layout_alignRight="@+id/user_icon_0"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/avatar_layout1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/x30">
+
+                        <net.iaround.ui.view.HeadPhotoView
+                            android:id="@+id/user_icon_1"
+                            android:layout_width="@dimen/x108"
+                            android:layout_height="@dimen/y108"
+                            android:layout_centerVertical="true"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/user_icon_role1"
+                            android:layout_width="@dimen/x40"
+                            android:layout_height="@dimen/y36"
+                            android:layout_alignBottom="@+id/user_icon_1"
+                            android:layout_alignRight="@+id/user_icon_1"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/avatar_layout2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/x30">
+
+                        <net.iaround.ui.view.HeadPhotoView
+                            android:id="@+id/user_icon_2"
+                            android:layout_width="@dimen/x108"
+                            android:layout_height="@dimen/y108"
+                            android:layout_centerVertical="true"
+                            android:visibility="invisible"/>
+
+                        <ImageView
+                            android:id="@+id/user_icon_role2"
+                            android:layout_width="@dimen/x40"
+                            android:layout_height="@dimen/y36"
+                            android:layout_alignBottom="@+id/user_icon_2"
+                            android:layout_alignRight="@+id/user_icon_2"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/avatar_layout3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/x30">
+
+                        <net.iaround.ui.view.HeadPhotoView
+                            android:id="@+id/user_icon_3"
+                            android:layout_width="@dimen/x108"
+                            android:layout_height="@dimen/y108"
+                            android:layout_centerVertical="true"
+                            android:visibility="invisible"/>
+
+                        <ImageView
+                            android:id="@+id/user_icon_role3"
+                            android:layout_width="@dimen/x40"
+                            android:layout_height="@dimen/y36"
+                            android:layout_alignBottom="@+id/user_icon_3"
+                            android:layout_alignRight="@+id/user_icon_3"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/avatar_layout4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/x30">
+
+                        <net.iaround.ui.view.HeadPhotoView
+                            android:id="@+id/user_icon_4"
+                            android:layout_width="@dimen/x108"
+                            android:layout_height="@dimen/y108"
+                            android:layout_centerVertical="true"
+                            android:visibility="invisible"/>
+
+                        <ImageView
+                            android:id="@+id/user_icon_role4"
+                            android:layout_width="@dimen/x40"
+                            android:layout_height="@dimen/y36"
+                            android:layout_alignBottom="@+id/user_icon_4"
+                            android:layout_alignRight="@+id/user_icon_4"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/avatar_layout5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/x30">
+
+                        <net.iaround.ui.view.HeadPhotoView
+                            android:id="@+id/user_icon_5"
+                            android:layout_width="@dimen/x108"
+                            android:layout_height="@dimen/y108"
+                            android:layout_centerVertical="true"
+                            android:visibility="invisible"/>
+
+                        <ImageView
+                            android:id="@+id/user_icon_role5"
+                            android:layout_width="@dimen/x40"
+                            android:layout_height="@dimen/y36"
+                            android:layout_alignBottom="@+id/user_icon_5"
+                            android:layout_alignRight="@+id/user_icon_5"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/more_user_tip"
+                    android:layout_width="@dimen/x24"
+                    android:layout_height="@dimen/y42"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x48"
+                    android:src="@drawable/arraw_turn" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y36"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <!-- 圈中心 -->
+                <RelativeLayout
+                    android:id="@+id/view_group_location"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/y162">
+
+                    <ImageView
+                        android:id="@+id/group_center"
+                        android:layout_width="@dimen/x54"
+                        android:layout_height="@dimen/y54"
+                        android:layout_marginBottom="@dimen/y54"
+                        android:layout_marginLeft="@dimen/x42"
+                        android:layout_marginRight="@dimen/x12"
+                        android:layout_marginTop="@dimen/y54"
+                        android:src="@drawable/group_center" />
+
+                    <TextView
+                        android:id="@+id/group_location_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/group_center"
+                        android:text="@string/group_location"
+                        android:textColor="@color/chat_update_edit_user_value"
+                        android:textSize="@dimen/y42" />
+
+                    <ImageView
+                        android:id="@+id/group_center_icon"
+                        android:layout_width="@dimen/x24"
+                        android:layout_height="@dimen/y42"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="@dimen/y60"
+                        android:layout_marginRight="@dimen/x48"
+                        android:layout_marginTop="@dimen/y60"
+                        android:src="@drawable/arraw_turn" />
+
+                    <TextView
+                        android:id="@+id/group_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/x30"
+                        android:layout_toLeftOf="@id/group_center_icon"
+                        android:textColor="@color/chat_update_gray_text_color"
+                        android:textSize="@dimen/y42" />
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/group_location_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y1"
+                    android:layout_marginLeft="@dimen/x51"
+                    android:background="@drawable/listview_item_divider" />
+
+                <!-- 加入条件 -->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/setting_linear_selector_center"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingBottom="9dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="9dp"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/rangeLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:text="@string/group_info_item_condition"
+                            android:textColor="@color/c_999999"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/group_join_condition"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:textColor="@color/c_999999"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/rangeHint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:textColor="@color/c_999999"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/rangeHint2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:textColor="@color/c_999999"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y1"
+                    android:layout_marginLeft="@dimen/x51"
+                    android:background="@drawable/listview_item_divider"
+                    android:visibility="gone" />
+
+                <!-- 圈主 -->
+                <RelativeLayout
+                    android:id="@+id/view_group_owner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y162"
+                    android:background="@drawable/setting_linear_selector_center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/group_owner_icon"
+                        android:layout_width="@dimen/x54"
+                        android:layout_height="@dimen/y54"
+                        android:layout_marginBottom="@dimen/y54"
+                        android:layout_marginLeft="@dimen/x42"
+                        android:layout_marginRight="@dimen/x12"
+                        android:layout_marginTop="@dimen/y54"
+                        android:src="@drawable/group_owner" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/group_owner_icon"
+                        android:singleLine="true"
+                        android:text="@string/group_info_item_creator"
+                        android:textColor="@color/chat_update_edit_user_value"
+                        android:textSize="@dimen/y42" />
+
+                    <ImageView
+                        android:id="@+id/group_owner_icon2"
+                        android:layout_width="@dimen/x24"
+                        android:layout_height="@dimen/y42"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="@dimen/y60"
+                        android:layout_marginRight="@dimen/x48"
+                        android:layout_marginTop="@dimen/y60"
+                        android:src="@drawable/arraw_turn" />
+
+                    <TextView
+                        android:id="@+id/group_owner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/x30"
+                        android:layout_toLeftOf="@+id/group_owner_icon2"
+                        android:text="卤蛋豆干"
+                        android:textColor="@color/chat_update_gray_text_color"
+                        android:textSize="@dimen/y42" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y1"
+                    android:layout_marginLeft="@dimen/x51"
+                    android:background="@drawable/listview_item_divider" />
+
+                <!-- 创建日期 -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y162"
+                    android:background="@drawable/setting_linear_selector_center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/group_create"
+                        android:layout_width="@dimen/x54"
+                        android:layout_height="@dimen/y54"
+                        android:layout_marginBottom="@dimen/y54"
+                        android:layout_marginLeft="@dimen/x42"
+                        android:layout_marginRight="@dimen/x12"
+                        android:layout_marginTop="@dimen/y54"
+                        android:src="@drawable/group_create_time" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/group_create"
+                        android:singleLine="true"
+                        android:text="@string/group_create_date"
+                        android:textColor="@color/chat_update_edit_user_value"
+                        android:textSize="@dimen/y42" />
+
+                    <TextView
+                        android:id="@+id/group_create_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/x30"
+                        android:layout_marginRight="@dimen/x103"
+                        android:textColor="@color/chat_update_gray_text_color"
+                        android:textSize="@dimen/y42" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y1"
+                    android:layout_marginLeft="@dimen/x51"
+                    android:background="@drawable/listview_item_divider" />
+
+                <!-- 圈介绍 -->
+                <RelativeLayout
+                    android:id="@+id/group_introduce_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/setting_linear_selector_center">
+
+                    <ImageView
+                        android:id="@+id/group_desc"
+                        android:layout_width="@dimen/x54"
+                        android:layout_height="@dimen/y54"
+                        android:layout_marginLeft="@dimen/x42"
+                        android:layout_marginRight="@dimen/x12"
+                        android:layout_marginTop="@dimen/y54"
+                        android:src="@drawable/group_desc" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/y54"
+                        android:layout_toRightOf="@+id/group_desc"
+                        android:singleLine="true"
+                        android:text="@string/group_description"
+                        android:textColor="@color/chat_update_edit_user_value"
+                        android:textSize="@dimen/y42" />
+
+                    <TextView
+                        android:id="@+id/group_introduce_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/group_desc"
+                        android:layout_marginBottom="@dimen/y42"
+                        android:layout_marginLeft="@dimen/x108"
+                        android:layout_marginRight="@dimen/x48"
+                        android:layout_marginTop="@dimen/y42"
+                        android:singleLine="false"
+                        android:textColor="@color/chat_update_gray_text_color"
+                        android:textSize="@dimen/y42" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/divider_introduce"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y1"
+                    android:layout_marginLeft="@dimen/x51"
+                    android:background="@drawable/listview_item_divider" />
+
+                <!-- 圈等级 -->
+
+                <RelativeLayout
+                    android:id="@+id/view_group_level"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y162"
+                    android:background="@drawable/setting_linear_selector_center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/group_star"
+                        android:layout_width="@dimen/x54"
+                        android:layout_height="@dimen/y54"
+                        android:layout_marginBottom="@dimen/y54"
+                        android:layout_marginLeft="@dimen/x42"
+                        android:layout_marginRight="@dimen/x12"
+                        android:layout_marginTop="@dimen/y54"
+                        android:src="@drawable/group_star" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/group_star"
+                        android:singleLine="true"
+                        android:text="@string/chat_room_info_level_tip"
+                        android:textColor="@color/chat_update_edit_user_value"
+                        android:textSize="@dimen/y42" />
+
+                    <TextView
+                        android:id="@+id/group_level"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/x102"
+                        android:textColor="@color/chat_update_gray_text_color"
+                        android:textSize="@dimen/y42" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/last_group_info_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y1"
+                    android:layout_marginLeft="@dimen/x51"
+                    android:background="@drawable/listview_item_divider" />
+                <!--圈状态-->
+                <RelativeLayout
+                    android:id="@+id/view_group_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y162"
+                    android:background="@drawable/setting_linear_selector_center"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/group_state_icon"
+                        android:layout_width="@dimen/x54"
+                        android:layout_height="@dimen/y54"
+                        android:layout_marginBottom="@dimen/y54"
+                        android:layout_marginLeft="@dimen/x42"
+                        android:layout_marginRight="@dimen/x12"
+                        android:layout_marginTop="@dimen/y54"
+                        android:src="@drawable/group_state" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/group_state_icon"
+                        android:singleLine="true"
+                        android:text="@string/group_info_item_status"
+                        android:textColor="@color/chat_update_edit_user_value"
+                        android:textSize="@dimen/y42" />
+
+                    <ImageView
+                        android:id="@+id/group_state_icon2"
+                        android:layout_width="@dimen/x24"
+                        android:layout_height="@dimen/y42"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="@dimen/y60"
+                        android:layout_marginRight="@dimen/x48"
+                        android:layout_marginTop="@dimen/y60"
+                        android:src="@drawable/arraw_turn" />
+
+                    <TextView
+                        android:id="@+id/group_state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/x30"
+                        android:layout_toLeftOf="@+id/group_state_icon2"
+                        android:textColor="@color/chat_update_gray_text_color"
+                        android:textSize="@dimen/y42" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y1"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="@dimen/x51"
+                        android:background="@drawable/listview_item_divider" />
+                </RelativeLayout>
+
+
+                <!--推荐圈子-->
+                <RelativeLayout
+                    android:id="@+id/view_group_recommend"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y162"
+                    android:background="@drawable/setting_linear_selector_center"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/group_recommend"
+                        android:layout_width="@dimen/x54"
+                        android:layout_height="@dimen/y54"
+                        android:layout_marginBottom="@dimen/y54"
+                        android:layout_marginLeft="@dimen/x42"
+                        android:layout_marginRight="@dimen/x12"
+                        android:layout_marginTop="@dimen/y54"
+                        android:src="@drawable/group_recommend" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/group_recommend"
+                        android:singleLine="true"
+                        android:text="@string/group_inf_group_recommend"
+                        android:textColor="@color/chat_update_edit_user_value"
+                        android:textSize="@dimen/y42" />
+
+                    <ImageView
+                        android:layout_width="@dimen/x24"
+                        android:layout_height="@dimen/y42"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="@dimen/y60"
+                        android:layout_marginRight="@dimen/x48"
+                        android:layout_marginTop="@dimen/y60"
+                        android:src="@drawable/arraw_turn" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y1"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="@dimen/x51"
+                        android:background="@drawable/listview_item_divider" />
+                </RelativeLayout>
+
+                <!-- 清除聊天记录 -->
+                <RelativeLayout
+                    android:id="@+id/view_group_clear_chat"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y162"
+                    android:background="@drawable/setting_linear_selector_center"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/group_clean"
+                        android:layout_width="@dimen/x54"
+                        android:layout_height="@dimen/y54"
+                        android:layout_marginBottom="@dimen/y54"
+                        android:layout_marginLeft="@dimen/x42"
+                        android:layout_marginRight="@dimen/x12"
+                        android:layout_marginTop="@dimen/y54"
+                        android:src="@drawable/group_clean_all_message" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/group_clean"
+                        android:singleLine="true"
+                        android:text="@string/menu_clear_history"
+                        android:textColor="@color/chat_update_edit_user_value"
+                        android:textSize="@dimen/y42" />
+
+                    <ImageView
+                        android:layout_width="@dimen/x24"
+                        android:layout_height="@dimen/y42"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="@dimen/y60"
+                        android:layout_marginRight="@dimen/x48"
+                        android:layout_marginTop="@dimen/y60"
+                        android:src="@drawable/arraw_turn" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y1"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="@dimen/x51"
+                        android:background="@drawable/listview_item_divider" />
+                </RelativeLayout>
+
+                <!--圈主帮助-->
+                <RelativeLayout
+                    android:id="@+id/view_group_help"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y162"
+                    android:background="@drawable/setting_linear_selector_center"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/group_help_icon"
+                        android:layout_width="@dimen/x54"
+                        android:layout_height="@dimen/y54"
+                        android:layout_marginBottom="@dimen/y54"
+                        android:layout_marginLeft="@dimen/x42"
+                        android:layout_marginRight="@dimen/x12"
+                        android:layout_marginTop="@dimen/y54"
+                        android:src="@drawable/group_owner_help" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/group_help_icon"
+                        android:singleLine="true"
+                        android:text="@string/group_info_group_help"
+                        android:textColor="@color/chat_update_edit_user_value"
+                        android:textSize="@dimen/y42" />
+
+                    <ImageView
+                        android:layout_width="@dimen/x24"
+                        android:layout_height="@dimen/y42"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="@dimen/y60"
+                        android:layout_marginRight="@dimen/x48"
+                        android:layout_marginTop="@dimen/y60"
+                        android:src="@drawable/arraw_turn" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y1"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="@dimen/x51"
+                        android:background="@drawable/listview_item_divider" />
+                </RelativeLayout>
+
+                <!-- 圈消息设置 -->
+                <RelativeLayout
+                    android:id="@+id/view_group_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y162"
+                    android:background="@drawable/setting_linear_selector_center"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/group_set"
+                        android:layout_width="@dimen/x54"
+                        android:layout_height="@dimen/y54"
+                        android:layout_marginBottom="@dimen/y51"
+                        android:layout_marginLeft="@dimen/x45"
+                        android:layout_marginRight="@dimen/x9"
+                        android:layout_marginTop="@dimen/y57"
+                        android:src="@drawable/group_setting" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/group_set"
+                        android:text="@string/group_msg_set_title"
+                        android:textColor="@color/chat_update_edit_user_value"
+                        android:textSize="@dimen/y42" />
+
+                    <ImageView
+                        android:id="@+id/group_set_icon"
+                        android:layout_width="@dimen/x24"
+                        android:layout_height="@dimen/y42"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="@dimen/y60"
+                        android:layout_marginRight="@dimen/x48"
+                        android:layout_marginTop="@dimen/y60"
+                        android:src="@drawable/arraw_turn" />
+
+                    <TextView
+                        android:id="@+id/tv_group_inf_msg_set_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/x30"
+                        android:layout_toLeftOf="@id/group_set_icon"
+                        android:textColor="@color/chat_update_gray_text_color"
+                        android:textSize="@dimen/y42" />
+                </RelativeLayout>
+                <!-- 圈状态 未使用-->
+                <LinearLayout
+                    android:id="@+id/view_group_status"
+                    android:layout_width="fill_parent"
+                    android:layout_height="62dp"
+                    android:background="@drawable/info_bg_bottom_selector"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="9dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="9dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="@string/group_info_item_status"
+                        android:textColor="@color/c_999999"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/group_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:gravity="right|center_vertical"
+                        android:singleLine="true"
+                        android:textColor="@color/c_444444"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/arraw_turn" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--暂时未使用-->
+            <LinearLayout
+                android:id="@+id/handler_items"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <!-- 圈 聚会 暂时没有使用-->
+
+                <RelativeLayout
+                    android:id="@+id/view_group_gatherings"
+                    android:layout_width="fill_parent"
+                    android:layout_height="62dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="9dp"
+                    android:paddingTop="9dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="11dp"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="@string/group_inf_group_gatherings"
+                        android:textColor="@color/c_999999"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="11dp"
+                        android:drawablePadding="14dp"
+                        android:drawableRight="@drawable/arraw_turn"
+                        android:gravity="center_vertical"
+                        android:singleLine="false"
+                        android:textColor="@color/c_999999"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+                <!--<View-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:layout_marginLeft="11dp"-->
+                <!--android:background="@drawable/listview_item_divider" />-->
+
+                <!-- 分享圈子 暂时没有使用-->
+
+                <RelativeLayout
+                    android:id="@+id/view_group_share"
+                    android:layout_width="fill_parent"
+                    android:layout_height="62dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="9dp"
+                    android:paddingTop="9dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="11dp"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="@string/share_my_group"
+                        android:textColor="@color/c_999999"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="11dp"
+                        android:drawablePadding="14dp"
+                        android:drawableRight="@drawable/arraw_turn"
+                        android:gravity="center_vertical"
+                        android:singleLine="false"
+                        android:textColor="@color/c_999999"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+                <!--<View-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:layout_marginLeft="11dp"-->
+                <!--android:background="@drawable/listview_item_divider" />-->
+            </LinearLayout>
+
+            <!--<TextView-->
+            <!--android:id="@+id/tv_group_inf_msg_set_tips"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_marginLeft="11dp"-->
+            <!--android:layout_marginRight="11dp"-->
+            <!--android:gravity="left|center_vertical"-->
+            <!--android:singleLine="false"-->
+            <!--android:text=""-->
+            <!--android:textColor="#bbbbbb"-->
+            <!--android:textSize="16sp"-->
+            <!--android:visibility="gone"/>-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y1"
+                android:layout_marginBottom="@dimen/y280" />
+        </LinearLayout>
+    </net.iaround.ui.chat.GroupInfoScrollView>
+    <!--加入圈子和开始圈聊按钮-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:visibility="visible">
+        <LinearLayout
+            android:id="@+id/ll_layout_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:id="@+id/rl_layout_btn"
+                android:layout_width="105dp"
+                android:layout_height="39dp"
+                android:background="@drawable/groupinfo_join_bg"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/imag_joinGroup"
+                    android:layout_width="@dimen/x54"
+                    android:layout_height="@dimen/y54"
+                    android:layout_marginBottom="@dimen/y35"
+                    android:layout_marginTop="@dimen/y35"
+                    android:src="@drawable/group_join"
+                    android:visibility="gone"/>
+                <TextView
+                    android:id="@+id/btn_join_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="加入聊吧"
+                    android:layout_centerInParent="true"
+                    android:text="@string/join_group"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_layout_btn_1"
+                android:layout_width="105dp"
+                android:layout_height="39dp"
+                android:background="@drawable/groupinfo_join_bg"
+                android:visibility="gone">
+                <TextView
+                    android:id="@+id/btn_invite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="召唤"
+                    android:layout_centerInParent="true"
+                    android:text="@string/group_invite"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/rl_layout_btn1"
+            android:layout_width="105dp"
+            android:layout_height="39dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/ll_layout_btn"
+            android:background="@drawable/group_info_join_group_btn">
+            <TextView
+                android:id="@+id/btn_invite_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/group_invite_radio"
+                tools:text="招募广播"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_layout_btn2"
+            android:layout_width="105dp"
+            android:layout_height="39dp"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@+id/rl_layout_btn1"
+            android:background="@drawable/groupinfo_invite_people_bg"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/btn_invite_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/group_invite_people"
+                tools:text="邀请聊天"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

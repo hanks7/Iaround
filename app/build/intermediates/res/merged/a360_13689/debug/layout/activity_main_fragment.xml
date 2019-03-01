@@ -1,0 +1,355 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gitv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:background="@color/common_white">
+
+    <net.iaround.ui.view.main.TabViewPager
+        android:id="@+id/main_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="52dp"/>
+
+
+    <!--@drawable/main_bottom-->
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:background="@color/chat_update_divider_of_toolMenu" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y194"
+        android:background="@drawable/main_tab_bg"
+        android:layout_alignParentBottom="true"
+        android:clipChildren="false">
+
+        <!--首页-->
+        <RelativeLayout
+            android:id="@+id/rl_home_page"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clipChildren="false">
+
+            <ImageView
+                android:id="@+id/near_tab_icon"
+                android:layout_width="@dimen/x84"
+                android:layout_height="@dimen/x84"
+                android:layout_marginTop="4dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/z_main_near_sel" />
+
+            <net.iaround.ui.view.main.GradientIconTextView
+                android:id="@+id/near_tab_text"
+                android:layout_width="wrap_content"
+                android:layout_height="12dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/near_tab_icon"
+                android:layout_gravity="center_horizontal"
+                gitv:gticon="@drawable/z_main_near"
+                gitv:gttext_size="@dimen/y36"
+                gitv:gttext_str="@string/home_page_text" />
+
+            <TextView
+                android:id="@+id/badge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/near_tab_icon"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/message_new_with_number"
+                android:gravity="center"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text="1"
+                android:textColor="@color/common_white"
+                android:textSize="10sp"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/iv_badge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="40dp"
+                android:src="@drawable/side_bar_counter_back"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <!--聊吧-->
+        <RelativeLayout
+            android:id="@+id/chat_bar_ly"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clipChildren="false">
+
+            <ImageView
+                android:id="@+id/chat_bar_tab_icon"
+                android:layout_width="@dimen/x84"
+                android:layout_height="@dimen/x84"
+                android:layout_marginTop="4dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/z_main_chat_bar" />
+
+            <net.iaround.ui.view.main.GradientIconTextView
+                android:id="@+id/chat_bar_tab_text"
+                android:layout_width="wrap_content"
+                android:layout_height="12dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/chat_bar_tab_icon"
+                android:layout_gravity="center_horizontal"
+                gitv:gticon="@drawable/z_main_chat_bar"
+                gitv:gttext_size="@dimen/y36"
+                gitv:gttext_str="@string/chat_bar_text" />
+
+            <TextView
+                android:id="@+id/chat_bar_badge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/chat_bar_tab_icon"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/message_new_with_number"
+                android:gravity="center"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text="1"
+                android:textColor="@color/common_white"
+                android:textSize="10sp"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/iv_chat_bar_badge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="40dp"
+                android:src="@drawable/side_bar_counter_back"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <!--消息-->
+        <RelativeLayout
+            android:id="@+id/messages_ly"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clipChildren="false">
+            <ImageView
+                android:id="@+id/msg_tab_icon"
+                android:layout_width="@dimen/x84"
+                android:layout_height="@dimen/x84"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/z_main_msg" />
+            <net.iaround.ui.view.main.GradientIconTextView
+                android:id="@+id/messages_tab_text"
+                android:layout_width="wrap_content"
+                android:layout_height="12dp"
+                android:layout_below="@id/msg_tab_icon"
+                android:layout_gravity="center_horizontal"
+                gitv:gticon="@drawable/z_main_msg"
+                gitv:gttext_size="@dimen/y36"
+                gitv:gttext_str="@string/messages_tab_text" />
+            <net.iaround.ui.view.DragPointView
+                android:id="@+id/badge2"
+                android:layout_width="wrap_content"
+                android:layout_height="17dp"
+                android:textColor="@color/common_white"
+                android:layout_alignParentTop="true"
+                android:layout_alignLeft="@+id/msg_tab_icon"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="3dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:paddingTop="1dp"
+                android:gravity="center"
+                android:visibility="visible" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/iv_badge2"
+                android:layout_width="@dimen/x20"
+                android:layout_height="@dimen/y20"
+                android:src="@drawable/chat_update_bg_of_chat_num"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/msg_tab_icon"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_marginTop="6dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <!--排行榜-->
+        <!--<RelativeLayout
+            android:id="@+id/dynamicCenter_ly"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clipChildren="false">
+
+            <ImageView
+                android:id="@+id/dynamic_tab_icon"
+                android:layout_width="@dimen/x84"
+                android:layout_height="@dimen/x84"
+                android:layout_marginTop="4dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/z_main_rank" />
+
+            <net.iaround.ui.view.main.GradientIconTextView
+                android:id="@+id/dynamic_tab_text"
+                android:layout_width="wrap_content"
+                android:layout_height="12dp"
+                android:layout_below="@id/dynamic_tab_icon"
+                android:layout_gravity="center_horizontal"
+                gitv:gticon="@drawable/z_main_rank"
+                gitv:gttext_size="@dimen/y36"
+                gitv:gttext_str="@string/rank_tab_text" />
+
+            <TextView
+                android:id="@+id/badge1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/dynamic_tab_icon"
+                android:layout_alignTop="@id/dynamic_tab_icon"
+                android:background="@drawable/message_new_with_number"
+                android:layout_marginLeft="15dp"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text="1"
+                android:gravity="center"
+                android:textColor="@color/common_white"
+                android:textSize="10sp"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/iv_badge1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/dynamic_tab_icon"
+                android:layout_alignTop="@id/dynamic_tab_icon"
+                android:src="@drawable/side_bar_counter_back"
+                android:visibility="invisible" />
+        </RelativeLayout>-->
+
+        <!--直播-->
+        <RelativeLayout
+            android:id="@+id/live_main_ly"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:clipChildren="false">
+
+            <ImageView
+                android:id="@+id/live_main_tab_icon"
+                android:layout_width="@dimen/x84"
+                android:layout_height="@dimen/x84"
+                android:layout_marginTop="4dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/z_main_live" />
+
+            <net.iaround.ui.view.main.GradientIconTextView
+                android:id="@+id/live_main_tab_text"
+                android:layout_width="wrap_content"
+                android:layout_height="12dp"
+                android:layout_below="@id/live_main_tab_icon"
+                android:layout_gravity="center_horizontal"
+                gitv:gticon="@drawable/z_main_live"
+                gitv:gttext_size="@dimen/y36"
+                gitv:gttext_str="@string/live_tab_text" />
+
+            <TextView
+                android:id="@+id/live_main_badge1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/live_main_tab_icon"
+                android:layout_alignTop="@id/live_main_tab_icon"
+                android:background="@drawable/message_new_with_number"
+                android:layout_marginLeft="15dp"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text="1"
+                android:gravity="center"
+                android:textColor="@color/common_white"
+                android:textSize="10sp"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/iv_live_main_badge1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/live_main_tab_icon"
+                android:layout_alignTop="@id/live_main_tab_icon"
+                android:src="@drawable/side_bar_counter_back"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <!--个人-->
+        <RelativeLayout
+            android:id="@+id/find_ly"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clipChildren="false">
+
+            <ImageView
+                android:id="@+id/find_tab_img"
+                android:layout_width="@dimen/x84"
+                android:layout_height="@dimen/x84"
+                android:layout_gravity="center"
+                android:scaleType="centerInside"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/z_main_find" />
+
+            <net.iaround.ui.view.main.GradientIconTextView
+                android:id="@+id/find_tab_text"
+                android:layout_width="wrap_content"
+                android:layout_height="12dp"
+                android:layout_below="@id/find_tab_img"
+                android:layout_gravity="center_horizontal"
+                gitv:gticon="@drawable/z_main_find"
+                gitv:gttext_size="@dimen/y36"
+                gitv:gttext_str="@string/find_tab_text" />
+
+            <TextView
+                android:id="@+id/badge3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/find_tab_img"
+                android:layout_alignTop="@id/find_tab_img"
+                android:background="@drawable/message_new_with_number"
+                android:layout_marginLeft="15dp"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="1"
+                android:textColor="@color/common_white"
+                android:textSize="10sp"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/iv_badge3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/find_tab_img"
+                android:layout_alignTop="@id/find_tab_img"
+                android:src="@drawable/side_bar_counter_back"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

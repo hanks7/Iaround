@@ -1,0 +1,25 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/zhangsen/iaround/iaround-android-online/LuBan/src/main/AndroidManifest.xml:1:1-3:12
+INJECTED from /Users/zhangsen/iaround/iaround-android-online/LuBan/src/main/AndroidManifest.xml:1:1-3:12
+INJECTED from /Users/zhangsen/iaround/iaround-android-online/LuBan/src/main/AndroidManifest.xml:1:1-3:12
+	package
+		ADDED from /Users/zhangsen/iaround/iaround-android-online/LuBan/src/main/AndroidManifest.xml:1:70-95
+		INJECTED from /Users/zhangsen/iaround/iaround-android-online/LuBan/src/main/AndroidManifest.xml
+		INJECTED from /Users/zhangsen/iaround/iaround-android-online/LuBan/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/zhangsen/iaround/iaround-android-online/LuBan/src/main/AndroidManifest.xml:1:11-69
+uses-sdk
+INJECTED from /Users/zhangsen/iaround/iaround-android-online/LuBan/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/zhangsen/iaround/iaround-android-online/LuBan/src/main/AndroidManifest.xml
+INJECTED from /Users/zhangsen/iaround/iaround-android-online/LuBan/src/main/AndroidManifest.xml
+INJECTED from /Users/zhangsen/iaround/iaround-android-online/LuBan/src/main/AndroidManifest.xml
+INJECTED from /Users/zhangsen/iaround/iaround-android-online/LuBan/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/zhangsen/iaround/iaround-android-online/LuBan/src/main/AndroidManifest.xml
+		ADDED from /Users/zhangsen/iaround/iaround-android-online/LuBan/src/main/AndroidManifest.xml
+		INJECTED from /Users/zhangsen/iaround/iaround-android-online/LuBan/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/zhangsen/iaround/iaround-android-online/LuBan/src/main/AndroidManifest.xml
+		ADDED from /Users/zhangsen/iaround/iaround-android-online/LuBan/src/main/AndroidManifest.xml
+		INJECTED from /Users/zhangsen/iaround/iaround-android-online/LuBan/src/main/AndroidManifest.xml

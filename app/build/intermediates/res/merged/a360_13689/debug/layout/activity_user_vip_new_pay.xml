@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/userFragment_bg"
+    android:orientation="vertical"
+    tools:context="net.iaround.ui.activity.UserVipNewPayActivity">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_bar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <net.iaround.ui.comon.NetImageView
+                android:id="@+id/iv_vip_banner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y480"
+                android:scaleType="fitXY"
+                android:src="@drawable/vp_demo" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_vip_banner"
+                android:layout_marginTop="16dp">
+                <!--乐游会员-->
+                <LinearLayout
+                    android:id="@+id/ll_new_pay1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/tv_pay1_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/user_vip_open_new_pay1_titile"
+                        android:textColor="@color/chat_update_edit_user_value"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_pay1_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="19.7dp"
+                        android:layout_marginTop="10dp"
+                        android:singleLine="false"
+                        android:text="@string/user_vip_open_new_pay1_hint"
+                        android:textColor="@color/chat_update_gray_text_color"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_new_pay1"
+                        android:layout_width="match_parent"
+                        android:layout_height="41.3dp"
+                        android:layout_marginBottom="12.3dp"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginRight="17dp"
+                        android:background="@drawable/chat_person_background_of_sendgift"
+                        android:gravity="center"
+                        android:text="@string/user_vip_open"
+                        android:textColor="@color/common_white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="@string/user_vip_open_new_pay1"
+                        android:textColor="@color/chat_update_gray_text_color"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="14.7dp"
+                        android:layout_marginTop="14.3dp"
+                        android:background="@drawable/divider_migu" />
+                </LinearLayout>
+                <!--遇见黄金会员-->
+                <LinearLayout
+                    android:id="@+id/ll_new_pay2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ll_new_pay1"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/tv_pay2_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:text="@string/user_vip_open_new_pay2_titile"
+                        android:textColor="@color/chat_update_edit_user_value"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_pay2_hint"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="19.7dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/user_vip_open_new_pay2_hint"
+                        android:textColor="@color/chat_update_gray_text_color"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_new_pay2"
+                        android:layout_width="match_parent"
+                        android:layout_height="41.3dp"
+                        android:layout_marginBottom="12.3dp"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginRight="17dp"
+                        android:background="@drawable/chat_person_background_of_sendgift"
+                        android:gravity="center"
+                        android:text="@string/user_vip_open"
+                        android:textColor="@color/common_white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="@string/user_vip_open_new_pay2"
+                        android:textColor="@color/chat_update_gray_text_color"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="14.7dp"
+                        android:layout_marginTop="14.3dp"
+                        android:background="@drawable/divider_migu" />
+                </LinearLayout>
+                <!--遇见白金会员-->
+                <LinearLayout
+                    android:id="@+id/ll_new_pay3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ll_new_pay2"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/tv_pay3_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/user_vip_open_new_pay3_titile"
+                        android:textColor="@color/chat_update_edit_user_value"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_pay3_hint"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="19.7dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/user_vip_open_new_pay3_hint"
+                        android:textColor="@color/chat_update_gray_text_color"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_new_pay3"
+                        android:layout_width="match_parent"
+                        android:layout_height="41.3dp"
+                        android:layout_marginBottom="12.3dp"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginRight="17dp"
+                        android:background="@drawable/chat_person_background_of_sendgift"
+                        android:gravity="center"
+                        android:text="@string/user_vip_open"
+                        android:textColor="@color/common_white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="@string/user_vip_open_new_pay3"
+                        android:textColor="@color/chat_update_gray_text_color"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="14.3dp"
+                        android:background="@drawable/divider_migu" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_migu_download"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_new_pay3"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/ll_download_migu_video_apk"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y120"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_download_migu_video_apk"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/x72"
+                            android:layout_weight="1"
+                            android:text="@string/download_migu_video_apk"
+                            android:textColor="#222222"
+                            android:textSize="@dimen/y42" />
+
+                        <ImageView
+                            android:layout_width="@dimen/x24"
+                            android:layout_height="@dimen/y42"
+                            android:layout_marginRight="@dimen/x48"
+                            android:src="@drawable/user_detail" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/line_migu"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/ll_download_migu_video_apk"
+                        android:background="@drawable/divider_migu" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_download_migu_quanquan_apk"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y120"
+                        android:layout_below="@+id/line_migu"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_download_migu_quanquan_apk"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/x72"
+                            android:layout_weight="1"
+                            android:text="@string/download_migu_quanquan_apk"
+                            android:textColor="#222222"
+                            android:textSize="@dimen/y42" />
+
+                        <ImageView
+                            android:layout_width="@dimen/x24"
+                            android:layout_height="@dimen/y42"
+                            android:layout_marginRight="@dimen/x48"
+                            android:src="@drawable/user_detail" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/line_migu_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/ll_download_migu_quanquan_apk"
+                        android:background="@drawable/divider_migu" />
+                </LinearLayout>
+                <!--领取礼包区域-->
+                <RelativeLayout
+                    android:id="@+id/rl_get_packageGift"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_migu_download"
+                    android:layout_marginTop="20dp"
+                    android:paddingBottom="25dp">
+
+                    <TextView
+                        android:id="@+id/tv_get_packageGift"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/user_vip_open_activity"
+                        android:textColor="@color/login_btn"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@+id/tv_get_packageGift"
+                        android:layout_marginLeft="33.3dp"
+                        android:layout_marginRight="33.3dp"
+                        android:background="@color/login_btn" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

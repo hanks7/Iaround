@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.inmobi.ads"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/userFragment_bg"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        style="@style/wfill_hwrap"
+        android:layout_below="@id/divider"
+        android:background="@color/common_white"
+        android:descendantFocusability="blocksDescendants">
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="@dimen/x180"
+            android:layout_height="@dimen/x180"
+            android:layout_marginBottom="@dimen/y12"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x24"
+            android:layout_marginTop="@dimen/y20"
+            tools:background="@drawable/default_avatar_round" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="55dp"
+            android:layout_toRightOf="@id/img_logo">
+
+            <TextView
+                android:id="@+id/text_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/chat_update_edit_user_value"
+                android:textSize="@dimen/y42" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_name"
+                android:layout_marginTop="@dimen/y10">
+
+                <TextView
+                    android:id="@+id/text_ad"
+                    android:layout_width="@dimen/x90"
+                    android:layout_height="@dimen/y42"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x16"
+                    android:background="@drawable/z_common_ad_bg"
+                    android:gravity="center"
+                    android:text="@string/thrid_ad_tip"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/y30" />
+
+                <TextView
+                    android:id="@+id/text_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/x80"
+                    android:layout_toRightOf="@id/text_ad"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="#FF9B9B9B"
+                    android:textSize="@dimen/y42"
+                    tools:text="中国新歌声 第三期" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/btn_download"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="false"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="5dp"
+            android:paddingTop="11dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="@string/common_ad_install"
+            android:textColor="#FF9B9B9B"
+            android:textSize="@dimen/y30" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/x264"
+            android:background="@color/chat_update_divider_of_messageItem" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ly_inmobi_ban"
+        android:layout_width="2px"
+        android:layout_height="2px"/>
+
+
+</RelativeLayout>
+
+
+
+

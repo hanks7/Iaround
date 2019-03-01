@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Gå til startsiden"</string>
+    <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s – %2$s"</string>
+    <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s – %2$s – %3$s"</string>
+    <string msgid="1594238315039666878" name="abc_action_bar_up_description">"Gå opp"</string>
+    <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"Flere alternativer"</string>
+    <string msgid="4076576682505996667" name="abc_action_mode_done">"Ferdig"</string>
+    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"Se alle"</string>
+    <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"Velg en app"</string>
+    <string msgid="121134116657445385" name="abc_capital_off">"AV"</string>
+    <string msgid="3405795526292276155" name="abc_capital_on">"PÅ"</string>
+    <string msgid="7723749260725869598" name="abc_search_hint">"Søk …"</string>
+    <string msgid="3691816814315814921" name="abc_searchview_description_clear">"Slett søket"</string>
+    <string msgid="2550479030709304392" name="abc_searchview_description_query">"Søkeord"</string>
+    <string msgid="8264924765203268293" name="abc_searchview_description_search">"Søk"</string>
+    <string msgid="8928215447528550784" name="abc_searchview_description_submit">"Utfør søket"</string>
+    <string msgid="893419373245838918" name="abc_searchview_description_voice">"Talesøk"</string>
+    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Del med"</string>
+    <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Del med %s"</string>
+    <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Skjul"</string>
+    <string msgid="2785372108150982144" name="common_google_play_services_api_unavailable_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> krever én eller flere Google Play-tjenester som ikke er tilgjengelige for øyeblikket. Ta kontakt med utvikleren for å få hjelp."</string>
+    <string msgid="7334167077229901382" name="common_google_play_services_enable_button">"Slå på Google Play-tjenester"</string>
+    <string msgid="2016066508617425489" name="common_google_play_services_enable_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> fungerer ikke med mindre du slår på Google Play-tjenester."</string>
+    <string msgid="4763733806837472840" name="common_google_play_services_enable_title">"Slå på Google Play-tjenester"</string>
+    <string msgid="5765996826213593005" name="common_google_play_services_install_button">"Installer Google Play-tjenester"</string>
+    <string msgid="1545874412485515659" name="common_google_play_services_install_text_phone">"<ns1:g id="APP_NAME">%1$s</ns1:g> kan ikke kjøre uten Google Play-tjenester, som ikke er installert på telefonen din."</string>
+    <string msgid="2742131317258851812" name="common_google_play_services_install_text_tablet">"<ns1:g id="APP_NAME">%1$s</ns1:g> kan ikke kjøre uten Google Play-tjenester, som ikke er installert på nettbrettet ditt."</string>
+    <string msgid="2110712637922504348" name="common_google_play_services_install_title">"Installer Google Play-tjenester"</string>
+    <string msgid="8004809446015217370" name="common_google_play_services_invalid_account_text">"Den angitte kontoen finnes ikke på enheten. Velg en annen konto."</string>
+    <string msgid="9894539456463288" name="common_google_play_services_invalid_account_title">"Ugyldig konto"</string>
+    <string msgid="2602915190038884860" name="common_google_play_services_network_error_text">"Du må ha datatilkobling for å koble deg til Google Play-tjenester."</string>
+    <string msgid="5183831421651758225" name="common_google_play_services_network_error_title">"Nettverksfeil"</string>
+    <string msgid="3936796119014022295" name="common_google_play_services_notification_ticker">"Feil i Google Play-tjenester"</string>
+    <string msgid="6951442375899151085" name="common_google_play_services_restricted_profile_text">"Du kan ikke få tilgang til kontoer fra en begrenset profil."</string>
+    <string msgid="4958149393843193760" name="common_google_play_services_restricted_profile_title">"Begrenset profil"</string>
+    <string msgid="59739986196915578" name="common_google_play_services_sign_in_failed_text">"Det oppsto en feil ved pålogging til den angitte kontoen. Velg en annen konto."</string>
+    <string msgid="8431204498860131150" name="common_google_play_services_sign_in_failed_title">"Pålogging mislyktes"</string>
+    <string msgid="7170719956698345984" name="common_google_play_services_unknown_issue">"<ns1:g id="APP_NAME">%1$s</ns1:g> har problemer med Google Play-tjenester. Hvis problemet vedvarer, kan du ta kontakt med utvikleren for å få hjelp."</string>
+    <string msgid="4291190028362992831" name="common_google_play_services_unsupported_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> er avhengig av Google Play-tjenester, som ikke støttes av enheten din. Ta kontakt med produsenten for å få hjelp."</string>
+    <string msgid="909734065366822541" name="common_google_play_services_unsupported_title">"Google Play-tjenester"</string>
+    <string msgid="2221302284291941971" name="common_google_play_services_update_button">"Oppdater"</string>
+    <string msgid="6230553430311881723" name="common_google_play_services_update_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> kjører ikke med mindre du oppdaterer Google Play-tjenester."</string>
+    <string msgid="2926201203597631481" name="common_google_play_services_update_title">"Oppdater Google Play-tjenester"</string>
+    <string msgid="1576144479907495032" name="common_google_play_services_updating_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> kjører ikke uten Google Play-tjenester, som oppdateres akkurat nå."</string>
+    <string msgid="1604540693139938838" name="common_google_play_services_updating_title">"Google Play-tjenester oppdateres"</string>
+    <string msgid="8334920661858223093" name="common_google_play_services_wear_update_text">"Du må installere en ny versjon av Google Play-tjenester. Appen oppdateres automatisk om en kort stund."</string>
+    <string msgid="311697239335516384" name="common_open_on_phone">"Åpne på telefonen"</string>
+    <string msgid="3156914698180786012" name="common_signin_button_text">"Logg på"</string>
+    <string msgid="1483290677806110088" name="common_signin_button_text_long">"Logg på med Google"</string>
+    <string name="connect_server_fail_prompt_toast">"Kan ikke koble til serveren. Prøv igjen senere."</string>
+    <string name="getting_message_fail_prompt_toast">"Kunne ikke hente informasjon. Prøv igjen senere."</string>
+    <string name="hms_abort">"Stopp"</string>
+    <string name="hms_abort_message">"Stoppe nedlastigen?"</string>
+    <string name="hms_bindfaildlg_message">"%1$s kan ikke bruke Huawei mobiltjenester. Start Telefon Administrator eller gå til Innstillinger, aktiver alle tillatelser for %2$s (inkludert automatisk-start og sekundær-start), og prøv igjen."</string>
+    <string name="hms_cancel">"Avbryt"</string>
+    <string name="hms_check_failure">"Kunne ikke se etter oppdateringer."</string>
+    <string name="hms_check_no_update">"Du bruker allerede den nyeste versjonen."</string>
+    <string name="hms_checking">"Ser etter oppdateringer..."</string>
+    <string name="hms_confirm">"OK"</string>
+    <string name="hms_download_failure">"Kunne ikke laste ned Huawei Mobile Services-pakken."</string>
+    <string name="hms_download_no_space">"Ikke nok ledig plass. Nedlastingen kan ikke fullføres."</string>
+    <string name="hms_download_retry">"Nedlastingen mislyktes. Prøve på nytt?"</string>
+    <string name="hms_downloading">"Laster ned Huawei Mobile Services | fremdrift: %d%%"</string>
+    <string name="hms_downloading_loading">"Laster ned"</string>
+    <string name="hms_downloading_new">"Laster ned HMS"</string>
+    <string name="hms_gamebox_name" priority="translator">"HiGame"</string>
+    <string name="hms_install">"Installer"</string>
+    <string name="hms_install_message">"Huawei-mobiltjenester må være installert for å bruke denne tjenesten. Vil du installere?"</string>
+    <string name="hms_retry">"Prøv igjen"</string>
+    <string name="hms_update">"Oppdater"</string>
+    <string name="hms_update_message">"Du må oppdatere til nyeste versjon av Huawei Mobile Services for å kunne bruke denne funksjonen. Oppdatere nå?"</string>
+    <string name="hms_update_message_new">"Denne tjenesten krever den nyeste versjonen av følgende apper:\n\n%1$s"</string>
+    <string name="hms_update_title">"Huawei Mobile Services"</string>
+    <string name="no_available_network_prompt_toast">"Ingen Internett-forbindelse. Kontroller nettverksinnstillingene."</string>
+    <string msgid="2132213647576279742" name="place_autocomplete_clear_button">"Slett søket"</string>
+    <string msgid="4600782048316473865" name="place_autocomplete_search_hint">"Søk"</string>
+    <string msgid="146198913615257606" name="search_menu_title">"Søk"</string>
+    <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="third_app_dl_cancel_download_prompt_ex">"Avbryt installasjonen?"</string>
+    <string name="third_app_dl_install_failed">"Installasjon mislyktes."</string>
+    <string name="third_app_dl_sure_cancel_download">"Ja"</string>
+    <string name="upsdk_app_dl_installing">"Laster ned HiApp"</string>
+    <string name="upsdk_app_download_info_new">"Installer"</string>
+    <string name="upsdk_app_size">"Størrelse"</string>
+    <string name="upsdk_app_version">"Versjon"</string>
+    <string name="upsdk_cancel">"Avbryt"</string>
+    <string name="upsdk_checking_update_prompt">"Ser etter oppdateringer…"</string>
+    <string name="upsdk_choice_update">"Oppdatering tilgjengelig. Last ned og installer den nyeste versjonen."</string>
+    <string name="upsdk_detail">"Detaljer"</string>
+    <string name="upsdk_install">"Installer HiApp for å oppdatere. Installere nå?"</string>
+    <string name="upsdk_ota_app_name">"App"</string>
+    <string name="upsdk_ota_cancel">"Senere"</string>
+    <string name="upsdk_ota_force_cancel_new">"Avslutt"</string>
+    <string name="upsdk_ota_notify_updatebtn">"Oppdater"</string>
+    <string name="upsdk_ota_title">"Ny versjon"</string>
+    <string name="upsdk_update_check_no_new_version">"Du bruker allerede den nyeste versjonen."</string>
+    <string name="upsdk_updating">"Oppdaterer"</string>
+</resources>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<net.iaround.floatwindow.FloatWindowView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="0.8"
+    app:floatWindowWidth="185dp"
+    app:floatWindowHeight="50dp"
+    app:screenBottom="80dp"
+    app:screenRight="5dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_chatbar_zoom"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:background="@drawable/chatbar_zoom_view_shap">
+
+        <!--<ImageView-->
+            <!--android:layout_width="81dp"-->
+            <!--android:layout_height="81dp"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:background="@drawable/chatbar_zoom_bg" />-->
+        <RelativeLayout
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="0dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true">
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/chatbar_zoom_icon_bg"/>
+            <net.iaround.ui.view.CircleImageView
+                android:id="@+id/zoom_chatbar_image"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+
+
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/zoom_chatbar_title"
+                android:layout_width="84dp"
+                android:layout_height="22dp"
+                android:layout_marginLeft="5dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textSize="14sp"
+                android:textColor="#ffffff"
+                android:text="遇见你有爱就牵手"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="5dp">
+                <ImageView
+                    android:id="@+id/zoom_chatbar_wave"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/chatbar_zoom_wave"/>
+                <TextView
+                    android:id="@+id/zoom_chatbar_hot"
+                    android:layout_width="44dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="12sp"
+                    android:textColor="#FFFFFF"
+                    android:text="5080"/>
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout
+            android:id="@+id/zoom_chatbar_close"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:background="@drawable/chatbar_zoom_close" />
+        </FrameLayout>
+
+
+    </RelativeLayout>
+
+</net.iaround.floatwindow.FloatWindowView>

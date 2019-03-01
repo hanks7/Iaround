@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_item_skill_update"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:paddingLeft="21dp"
+    android:paddingRight="21dp"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="9dp">
+
+        <ImageView
+            android:id="@+id/iv_item_skill_update_first"
+            android:layout_width="70dp"
+            android:layout_height="70dp"/>
+
+        <ImageView
+            android:id="@+id/iv_item_skill_update_icon"
+            android:layout_width="51dp"
+            android:layout_height="51dp"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+    
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_item_skill_update_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/login_btn"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_item_skill_update_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/tv_item_skill_update_name"
+            android:textColor="#868686"
+            android:textSize="12sp"/>
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/btn_skill_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:gravity="center"
+        android:text="@string/update"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:background="@drawable/touch_bg_red"/>
+
+</LinearLayout>

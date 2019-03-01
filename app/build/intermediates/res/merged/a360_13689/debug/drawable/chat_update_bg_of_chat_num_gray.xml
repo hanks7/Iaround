@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval"
+    android:useLevel="false">
+    <size android:height="@dimen/y54"
+        android:width="@dimen/x54"/>
+    <solid android:color="@color/chat_update_chatInput_hintTextColor"/>
+    <padding android:bottom="@dimen/y10" android:top="@dimen/y10"
+        android:left="@dimen/x19" android:right="@dimen/x19"/>
+</shape>

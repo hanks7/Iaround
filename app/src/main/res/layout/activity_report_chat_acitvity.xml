@@ -1,0 +1,212 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/userFragment_bg">
+
+    <include
+        android:id="@+id/activity_title"
+        layout="@layout/title_bar" />
+
+    <TextView
+        android:id="@+id/tvReasonHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y96"
+        android:layout_below="@id/activity_title"
+        android:background="@color/c_ecebf1"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="@dimen/x36"
+        android:text="@string/report_reason"
+        android:textColor="@color/chat_update_gray_text_color"
+        android:textSize="10dp" />
+
+    <RadioGroup
+        android:id="@+id/rgReason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvReasonHeader"
+        android:background="@color/white"
+        android:divider="@color/c_cccccc"
+        android:paddingLeft="20dp" >
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginRight="20dp"
+            android:button="@null"
+            android:drawableRight="@drawable/z_space_checkbox_bg"
+            android:gravity="center_vertical"
+            android:text="@string/dynamic_report_sex"
+            android:textColor="@color/c_333333" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/c_cccccc" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginRight="20dp"
+            android:button="@null"
+            android:drawableRight="@drawable/z_space_checkbox_bg"
+            android:gravity="center_vertical"
+            android:text="@string/dynamic_report_sex"
+            android:textColor="@color/c_333333" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/c_cccccc" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginRight="20dp"
+            android:button="@null"
+            android:drawableRight="@drawable/z_space_checkbox_bg"
+            android:gravity="center_vertical"
+            android:text="@string/dynamic_report_sex"
+            android:textColor="@color/c_333333" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/c_cccccc" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginRight="20dp"
+            android:button="@null"
+            android:drawableRight="@drawable/z_space_checkbox_bg"
+            android:gravity="center_vertical"
+            android:text="@string/dynamic_report_sex"
+            android:textColor="@color/c_333333" />
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1px"-->
+            <!--android:background="@color/c_cccccc" />-->
+
+        <!--<RadioButton-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="44dp"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:button="@null"-->
+            <!--android:drawableRight="@drawable/z_space_checkbox_bg"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:text="@string/dynamic_report_sex"-->
+            <!--android:textC3olor="@color/c_333333" />-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1px"-->
+            <!--android:background="@color/c_cccccc" />-->
+
+        <!--<RadioButton-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="44dp"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:button="@null"-->
+            <!--android:drawableRight="@drawable/z_space_checkbox_bg"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:text="@string/dynamic_report_sex"-->
+            <!--android:textColor="@color/c_333333" />-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1px"-->
+            <!--android:background="@color/c_cccccc" />-->
+
+        <!--<RadioButton-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="44dp"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:button="@null"-->
+            <!--android:drawableRight="@drawable/z_space_checkbox_bg"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:text="@string/dynamic_report_sex"-->
+            <!--android:textColor="@color/c_333333" />-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1px"-->
+            <!--android:background="@color/c_cccccc" />-->
+
+        <!--<RadioButton-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="44dp"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:button="@null"-->
+            <!--android:drawableRight="@drawable/z_space_checkbox_bg"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:text="@string/dynamic_report_sex"-->
+            <!--android:textColor="@color/c_333333" />-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1px"-->
+            <!--android:background="@color/c_cccccc" />-->
+
+        <!--<RadioButton-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="44dp"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:button="@null"-->
+            <!--android:drawableRight="@drawable/z_space_checkbox_bg"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:text="@string/dynamic_report_sex"-->
+            <!--android:textColor="@color/c_333333" />-->
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvMoreHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y96"
+        android:layout_below="@id/rgReason"
+        android:background="@color/c_ecebf1"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="@dimen/x36"
+        android:text="@string/added_explan"
+        android:textColor="@color/chat_update_gray_text_color"
+        android:textSize="10dp" />
+
+    <RelativeLayout
+        android:id="@+id/rlMore"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@id/tvMoreHeader"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tvMoreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="20dp"
+            android:text="@string/select_records"
+            android:textColor="@color/c_333333"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/ivArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingRight="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/z_near_big_arrow" />
+
+        <TextView
+            android:id="@+id/tvCountSeleted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/ivArrow"
+            android:layout_centerVertical="true"
+            android:text="@string/none"
+            android:textColor="@color/c_999999"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

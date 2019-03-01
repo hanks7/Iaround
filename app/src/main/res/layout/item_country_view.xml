@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/common_white">
+
+    <TextView
+        android:id="@+id/listTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/y48"
+        android:paddingTop="@dimen/y30"
+        android:paddingBottom="@dimen/y30"
+        android:background="#F2F2F2"
+        android:textColor="@color/country_group"
+        android:visibility="gone"
+        android:textSize="@dimen/y36"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/row_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:textSize="@dimen/y42"
+        android:textColor="@color/common_black"
+        android:background="@drawable/list_item_bg_selector"
+        android:paddingTop="@dimen/y39"
+        android:paddingBottom="@dimen/y39"
+        android:paddingLeft="@dimen/y48"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_below="@id/row_title"
+        android:layout_marginLeft="@dimen/x45"
+        android:visibility="gone"
+        android:background="@color/splash_login"/>
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/userFragment_bg">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title_bar" />
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/y120"
+        android:layout_below="@id/title"
+        android:layout_marginTop="@dimen/y36"
+        android:background="@color/common_white">
+
+        <TextView
+            android:id="@+id/TextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x48"
+            android:singleLine="true"
+            android:text="@string/show_hepler_in_msg"
+            android:textColor="@color/chat_update_edit_user_value"
+            android:textSize="@dimen/y42" />
+
+        <!--<net.iaround.ui.view.FlagImageView-->
+            <!--android:id="@+id/show_checkbox"-->
+            <!--android:layout_width="@dimen/x126"-->
+            <!--android:layout_height="@dimen/y72"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginRight="@dimen/x48"-->
+            <!--/>-->
+        <CheckBox
+            android:id="@+id/show_checkbox"
+            android:layout_width="@dimen/x126"
+            android:layout_height="@dimen/y72"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x48"
+            android:button="@null"
+            android:background="@drawable/group_notice_switch_selector"
+            android:checked="false" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RelativeLayout1"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/transparent">
+    </ListView>
+
+</RelativeLayout>

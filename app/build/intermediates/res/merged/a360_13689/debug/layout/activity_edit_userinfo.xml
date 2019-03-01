@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/userFragment_bg"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:background="@color/chat_update_divider_of_messageItem" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/common_white"
+            android:orientation="vertical">
+
+            <!--头像编辑区域-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y270"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x48"
+                    android:text="@string/edit_usericon"
+                    android:textColor="@color/chat_update_edit_user_value"
+                    android:textSize="@dimen/y42" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x48"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_person_headview"
+                        android:layout_width="@dimen/x162"
+                        android:layout_height="@dimen/y162"
+                        android:layout_marginRight="@dimen/x30"
+                        android:src="@drawable/iaround_default_img" />
+
+                    <ImageView
+                        android:layout_width="@dimen/x24"
+                        android:layout_height="@dimen/y42"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/arraw_turn" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y1"
+                android:layout_marginLeft="@dimen/x48"
+                android:background="@color/chat_update_divider_of_messageItem" />
+
+            <!--相册区域-->
+            <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/y520"-->
+            <!--android:visibility="gone">-->
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="@dimen/x48"-->
+            <!--android:layout_marginTop="@dimen/y60">-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:text="@string/album_title"-->
+            <!--android:textColor="@color/chat_update_edit_user_value"-->
+            <!--android:textSize="@dimen/y42" />-->
+
+            <!--<LinearLayout-->
+            <!--android:id="@+id/ll_whatchMore"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginRight="@dimen/x48"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:visibility="gone">-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginRight="@dimen/x29"-->
+            <!--android:text="@string/nearby_recent_group_more_text"-->
+            <!--android:textColor="@color/chat_update_gray_text_color"-->
+            <!--android:textSize="@dimen/y36" />-->
+
+            <!--<ImageView-->
+            <!--android:layout_width="@dimen/x24"-->
+            <!--android:layout_height="@dimen/y42"-->
+            <!--android:src="@drawable/arraw_turn" />-->
+            <!--</LinearLayout>-->
+            <!--</RelativeLayout>-->
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="@dimen/x358"-->
+            <!--android:layout_height="@dimen/y358"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_alignParentLeft="true">-->
+
+            <!--<RelativeLayout-->
+            <!--android:id="@+id/rl_add_btn"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/add_picture_btn_bg">-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/iv_addPicture"-->
+            <!--android:layout_width="@dimen/x358"-->
+            <!--android:layout_height="@dimen/y358"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:src="@drawable/add_picture" />-->
+            <!--</RelativeLayout>-->
+
+            <!--<GridView-->
+            <!--android:id="@+id/vp_picture_new"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_toRightOf="@+id/rl_add_btn"-->
+            <!--android:horizontalSpacing="@dimen/x3"-->
+            <!--android:numColumns="2" />-->
+            <!--</RelativeLayout>-->
+            <!--</RelativeLayout>-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/y30"
+                android:layout_marginLeft="@dimen/x48"
+                android:layout_marginTop="@dimen/y30">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/album_title"
+                    android:textColor="@color/chat_update_edit_user_value"
+                    android:textSize="@dimen/y42" />
+
+                <LinearLayout
+                    android:id="@+id/ll_whatchMore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/x48"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/x29"
+                        android:text="@string/nearby_recent_group_more_text"
+                        android:textColor="@color/chat_update_gray_text_color"
+                        android:textSize="@dimen/y36" />
+
+                    <ImageView
+                        android:layout_width="@dimen/x24"
+                        android:layout_height="@dimen/y42"
+                        android:src="@drawable/arraw_turn" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y358"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_user_info_add_pic"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/x3"
+                    android:src="@drawable/user_info_add_pic"/>
+
+                <ImageView
+                    android:id="@+id/iv_user_info_pic_one"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/x3"/>
+
+                <ImageView
+                    android:id="@+id/iv_user_info_pic_two"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/x3"/>
+
+
+            </LinearLayout>
+
+            <!--<android.support.v4.view.ViewPager
+                android:id="@+id/vp_picture"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y827" />-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y96"
+                android:background="@color/userFragment_bg">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x48"
+                    android:text="@string/edit_base_data"
+                    android:textColor="@color/chat_update_gray_text_color"
+                    android:textSize="@dimen/y36" />
+            </RelativeLayout>
+
+            <include layout="@layout/activity_edit_userinfo_base" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y96"
+                android:background="@color/userFragment_bg">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x48"
+                    android:text="@string/edit_secret_data"
+                    android:textColor="@color/chat_update_gray_text_color"
+                    android:textSize="@dimen/y36" />
+            </RelativeLayout>
+
+            <include layout="@layout/activity_edit_userinfo_secret" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y96"
+                android:background="@color/userFragment_bg"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x48"
+                    android:text="@string/edit_my_label"
+                    android:textColor="@color/chat_update_gray_text_color"
+                    android:textSize="@dimen/y36" />
+            </RelativeLayout>
+            <!--我的标签-->
+            <LinearLayout
+                android:id="@+id/ll_edit_mylable"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y126"
+                android:background="@color/common_white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/y54"
+                    android:layout_height="@dimen/y60"
+                    android:layout_marginLeft="@dimen/x48"
+                    android:src="@drawable/edit_lable" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x18"
+                    android:text="@string/edit_label"
+                    android:textColor="#2CD18C"
+                    android:textSize="@dimen/y42" />
+
+                <!--<net.iaround.ui.view.user.OneLineFlowLayout
+                    android:id="@+id/lable_flow_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/x30" />-->
+                <TextView
+                    android:id="@+id/tv_lable"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:layout_marginRight="@dimen/x90"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:textColor="#4A4A4A" />
+
+                <ImageView
+                    android:id="@+id/edit_lable"
+                    android:layout_width="@dimen/x24"
+                    android:layout_height="@dimen/y42"
+                    android:layout_marginRight="@dimen/x48"
+                    android:src="@drawable/user_detail" />
+
+            </LinearLayout>
+
+            <!--兴趣爱好-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y96"
+                android:background="@color/userFragment_bg"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x48"
+                    android:text="@string/edit_insterest"
+                    android:textColor="@color/chat_update_gray_text_color"
+                    android:textSize="@dimen/y36" />
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/lv_hobbys"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="#00ffffff"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y120"
+                android:layout_marginTop="@dimen/y30"
+                android:background="@color/common_white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x48"
+                    android:text="@string/edit_show_phone"
+                    android:textColor="#222222"
+                    android:textSize="@dimen/y42" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/iv_show_phone_flag"
+                    android:layout_width="@dimen/x132"
+                    android:layout_height="@dimen/y78"
+                    android:layout_marginRight="@dimen/x45"
+                    android:src="@drawable/close" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y1"
+                android:layout_marginLeft="@dimen/x48"
+                android:background="#EBEBEB" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y120"
+                android:background="@color/common_white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x48"
+                    android:text="@string/edit_show_last_location"
+                    android:textColor="#222222"
+                    android:textSize="@dimen/y42" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/iv_show_loacal_flag"
+                    android:layout_width="@dimen/x132"
+                    android:layout_height="@dimen/y78"
+                    android:layout_marginRight="@dimen/x45"
+                    android:src="@drawable/close" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include
+        android:id="@+id/activity_title"
+        layout="@layout/title_bar" />
+
+    <FrameLayout
+        android:id="@+id/framely"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/activity_title" >
+
+        <com.handmark.pulltorefresh.library.PullToRefreshExpandableListView
+            android:id="@+id/store_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
+
+         <TextView
+            android:id="@+id/head_text"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="#f8e6a9"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/store_no_data"
+            android:textColor="#5d5d5d"
+            android:textSize="14dp" />
+         
+        <!--<include
+            android:id="@+id/store_top_gold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/store_head_gold"
+            android:visibility="gone"
+            />-->
+        
+        
+    </FrameLayout>
+
+</RelativeLayout>

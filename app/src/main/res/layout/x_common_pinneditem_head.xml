@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/userFragment_bg">
+    <TextView
+        android:id="@+id/header_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y96"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="@dimen/x36"
+        android:text="2014-15-23"
+        android:textColor="@color/chat_update_gray_text_color"
+        android:textSize="@dimen/y36" />
+
+</LinearLayout>

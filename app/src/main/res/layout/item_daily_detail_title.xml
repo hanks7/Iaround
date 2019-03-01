@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="11dp"
+        android:layout_weight="1"
+        android:text="本月"
+        android:textColor="@color/item_daily_detail_datetime"
+        android:textSize="15dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_month_cash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_month_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/month_total"
+            android:textColor="@color/c_999999"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_month_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="¥400"
+            android:textColor="@color/c_999999"
+            android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:text="@string/month_cash"
+            android:textColor="@color/common_black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_month_cash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="16dp"
+            android:text="¥400"
+            android:textColor="@color/common_black"
+            android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>

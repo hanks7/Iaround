@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y120"
+        android:layout_marginTop="@dimen/y36"
+        android:background="@color/common_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_user_nickname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x48"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/edit_nickname_hint"
+            android:textColor="@color/edit_user_value"
+            android:textColorHint="#BBBBBB"
+            android:textSize="@dimen/y42" />
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="@dimen/x42"
+            android:layout_height="@dimen/y42"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/x48"
+            android:src="@drawable/edit_text_delete" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_edit_nickname_count_current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="#BBBBBB"
+            android:textSize="@dimen/y36" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:textSize="@dimen/y36" />
+
+        <TextView
+            android:id="@+id/tv_edit_nickname_count_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="14"
+            android:textColor="#BBBBBB"
+            android:textSize="@dimen/y36" />
+    </LinearLayout>
+    <!--<TextView-->
+    <!--android:id="@+id/tv_hint_out_of_nickNameLength"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="哥，字数超过限制了"-->
+    <!--android:visibility="gone"/>-->
+    <!--<TextView-->
+    <!--android:id="@+id/tv_hint_empty_of_nickName"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="哥，您确定不修改？"-->
+    <!--android:visibility="gone"/>-->
+</LinearLayout>

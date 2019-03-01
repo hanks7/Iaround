@@ -1,0 +1,27 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/zhangsen/iaround/iaround-android-online/FacebookSDK/src/main/AndroidManifest.xml:18:1-21:12
+INJECTED from /Users/zhangsen/iaround/iaround-android-online/FacebookSDK/src/main/AndroidManifest.xml:18:1-21:12
+INJECTED from /Users/zhangsen/iaround/iaround-android-online/FacebookSDK/src/main/AndroidManifest.xml:18:1-21:12
+	package
+		ADDED from /Users/zhangsen/iaround/iaround-android-online/FacebookSDK/src/main/AndroidManifest.xml:19:7-37
+		INJECTED from /Users/zhangsen/iaround/iaround-android-online/FacebookSDK/src/main/AndroidManifest.xml
+		INJECTED from /Users/zhangsen/iaround/iaround-android-online/FacebookSDK/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/zhangsen/iaround/iaround-android-online/FacebookSDK/src/main/AndroidManifest.xml:18:11-69
+application
+ADDED from /Users/zhangsen/iaround/iaround-android-online/FacebookSDK/src/main/AndroidManifest.xml:20:5-19
+uses-sdk
+INJECTED from /Users/zhangsen/iaround/iaround-android-online/FacebookSDK/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/zhangsen/iaround/iaround-android-online/FacebookSDK/src/main/AndroidManifest.xml
+INJECTED from /Users/zhangsen/iaround/iaround-android-online/FacebookSDK/src/main/AndroidManifest.xml
+INJECTED from /Users/zhangsen/iaround/iaround-android-online/FacebookSDK/src/main/AndroidManifest.xml
+INJECTED from /Users/zhangsen/iaround/iaround-android-online/FacebookSDK/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/zhangsen/iaround/iaround-android-online/FacebookSDK/src/main/AndroidManifest.xml
+		ADDED from /Users/zhangsen/iaround/iaround-android-online/FacebookSDK/src/main/AndroidManifest.xml
+		INJECTED from /Users/zhangsen/iaround/iaround-android-online/FacebookSDK/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/zhangsen/iaround/iaround-android-online/FacebookSDK/src/main/AndroidManifest.xml
+		ADDED from /Users/zhangsen/iaround/iaround-android-online/FacebookSDK/src/main/AndroidManifest.xml
+		INJECTED from /Users/zhangsen/iaround/iaround-android-online/FacebookSDK/src/main/AndroidManifest.xml

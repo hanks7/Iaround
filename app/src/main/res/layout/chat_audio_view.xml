@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:visibility="gone" >
+
+    <ImageView
+        android:id="@+id/ivAnimationStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/z_new_audio_back_gray" />
+    
+    <ImageView
+        android:id="@+id/ivAnimationMiddle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/z_new_audio_back_gray" />
+    
+    <ImageView
+        android:id="@+id/ivAnimationEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/z_new_audio_back_gray" />
+
+    <!--android:background="@drawable/z_chat_audio_back_red"-->
+    <!--android:gravity="center"-->
+
+    <RelativeLayout
+        android:id="@+id/rlContent"
+        android:layout_width="@dimen/x327"
+        android:layout_height="@dimen/y327"
+        android:layout_centerInParent="true"
+        android:background="@drawable/z_new_chat_audio_back_gray"
+         >
+        <ImageView
+            android:id="@+id/ivRecordImageFull"
+            android:layout_width="@dimen/x96"
+            android:layout_height="@dimen/y144"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y66"
+            android:scaleType="centerInside"
+            android:src="@drawable/chat_new_audio_empty2" />
+
+        <ImageView
+            android:id="@+id/ivRecordImageEmpty"
+            android:layout_width="@dimen/x96"
+            android:layout_height="@dimen/y144"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y66"
+            android:scaleType="centerInside"
+            android:src="@drawable/chat_new_audio_empty" />
+
+        <ImageView
+            android:id="@+id/ivRecordImageDelete"
+            android:layout_width="@dimen/x114"
+            android:layout_height="@dimen/y140"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y68"
+            android:src="@drawable/chat_new_audio_delet"
+            android:visibility="gone" />
+        <!--提示性语言-->
+        <TextView
+            android:id="@+id/tvNotice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y20"
+            android:layout_marginBottom="@dimen/y63"
+            android:text="@string/chat_update_audio_cancel"
+            android:textColor="@color/white"
+            android:textSize="@dimen/y36" />
+    </RelativeLayout>
+    <!--计时说话时长-->
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rlContent"
+        android:layout_centerHorizontal="true"
+        android:text="40&apos;"
+        android:textColor="@color/c_ee4552"
+        android:textSize="@dimen/y30" />
+
+</RelativeLayout>

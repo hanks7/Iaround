@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/userFragment_bg">
+
+    <include
+        android:id="@+id/activity_title"
+        layout="@layout/title_bar" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:background="@color/chat_update_divider_of_messageItem"/>
+    <RelativeLayout
+        android:id="@+id/group_edit_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y120"
+        android:layout_marginTop="@dimen/y37"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/edit_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/y48"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:text="@string/edit_group_info"
+            android:textColor="@color/chat_update_edit_user_value"
+            android:textSize="@dimen/y42" />
+
+        <ImageView
+            android:layout_width="@dimen/x24"
+            android:layout_height="@dimen/y42"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/y48"
+            android:src="@drawable/arraw_turn" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y36"
+        android:orientation="vertical">
+
+        <!--新成员加入需审核-->
+        <RelativeLayout
+            android:id="@+id/new_member_check_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y120"
+            android:background="@color/white"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x48"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:singleLine="true"
+                android:text="@string/new_member_join_check"
+                android:textColor="@color/chat_update_edit_user_value"
+                android:textSize="@dimen/y42" />
+
+            <CheckBox
+                android:id="@+id/new_member_checkbox"
+                android:button="@null"
+                android:background="@drawable/group_notice_switch_selector"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x48"
+                android:layout_width="@dimen/x126"
+                android:layout_height="@dimen/y72"
+                android:checked="true" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/y1"
+            android:layout_marginLeft="@dimen/x48"
+            android:background="@color/chat_update_login_btn_select" />
+
+        <!--非成员可查看圈话题-->
+        <RelativeLayout
+            android:id="@+id/non_member_view_topic_check_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y120"
+            android:layout_below="@+id/new_member_check_layout"
+            android:background="@color/white" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x48"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:singleLine="true"
+                android:text="@string/non_member_view_topic_check"
+                android:textColor="@color/chat_update_edit_user_value"
+                android:textSize="@dimen/y42" />
+
+            <CheckBox
+                android:id="@+id/non_member_view_topic_checkbox"
+                android:button="@null"
+                android:background="@drawable/group_notice_switch_selector"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x48"
+                android:layout_width="@dimen/x126"
+                android:layout_height="@dimen/y72"
+                android:checked="true"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/y1"
+            android:layout_marginLeft="@dimen/x48"
+            android:background="@color/chat_update_login_btn_select" />
+
+        <!--只能通过圈号搜索到本圈-->
+        <RelativeLayout
+            android:id="@+id/search_by_id_check_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y120"
+            android:layout_below="@+id/non_member_view_topic_check_layout"
+            android:background="@color/white"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x48"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:singleLine="true"
+                android:text="@string/only_search_by_id_check"
+                android:textColor="@color/chat_update_edit_user_value"
+                android:textSize="@dimen/y42"  />
+
+            <CheckBox
+                android:id="@+id/search_by_id_checkbox"
+                android:button="@null"
+                android:background="@drawable/group_notice_switch_selector"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x48"
+                android:layout_width="@dimen/x126"
+                android:layout_height="@dimen/y72"
+                android:checked="true"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/y1"
+            android:layout_marginLeft="@dimen/x48"
+            android:background="@color/chat_update_login_btn_select" />
+
+        <!--圈震动-->
+        <RelativeLayout
+            android:id="@+id/shock_check_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y120"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x48"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:singleLine="true"
+                android:text="@string/setting_notice_set_circle_vibration"
+                android:textColor="@color/chat_update_edit_user_value"
+                android:textSize="@dimen/y42"   />
+
+            <CheckBox
+                android:id="@+id/shock_checkbox"
+                android:button="@null"
+                android:background="@drawable/group_notice_switch_selector"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x48"
+                android:layout_width="@dimen/x126"
+                android:layout_height="@dimen/y72"
+                android:checked="true" />
+        </RelativeLayout>
+        <!--圈子年度服务  暂停使用-->
+        <LinearLayout
+            android:id="@+id/group_renew_service_view"
+            android:layout_width="fill_parent"
+            android:layout_height="44dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <TextView
+                android:id="@+id/group_renew_service"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:singleLine="true"
+                android:text="@string/group_renew_service_title"
+                android:textColor="@color/c_333333"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/group_expire_date"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:singleLine="true"
+                android:text="2014-01-26"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/c_333333"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arraw_turn" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--发言和发话题权限设置-->
+    <RelativeLayout
+        android:id="@+id/group_permission_settings_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y120"
+        android:layout_marginTop="@dimen/y36"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/edit_role"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x48"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:singleLine="true"
+            android:text="@string/edit_group_role"
+            android:textColor="@color/chat_update_edit_user_value"
+            android:textSize="@dimen/y42" />
+
+        <ImageView
+            android:layout_width="@dimen/x24"
+            android:layout_height="@dimen/y42"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/y48"
+            android:src="@drawable/arraw_turn"/>
+    </RelativeLayout>
+
+</LinearLayout>

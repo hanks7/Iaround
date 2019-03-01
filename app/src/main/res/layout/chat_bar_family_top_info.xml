@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <net.iaround.ui.view.MyConflicViewPager
+            android:id="@+id/vp_header"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_chat_bar_family_top_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/vp_demo"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:id="@+id/rl_chat_bar_family_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="18dp">
+
+            <LinearLayout
+                android:id="@+id/ll_chat_bar_family_person_num"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="11dp"
+                android:background="@drawable/chat_bar_family_person_num"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_chat_bar_hot_family_person_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:text="12334"
+                    android:textColor="@color/title_bar_bg"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_chat_bar_family_hot_num"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/ll_chat_bar_family_person_num"
+                android:background="@drawable/chat_bar_family_hot"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_chat_bar_hot_family_hot_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:text="12334"
+                    android:textColor="@color/title_bar_bg"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_chat_bar_family_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="14dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_chat_bar_current_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/title_bar_bg"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_chat_bar_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:textColor="@color/title_bar_bg"
+                android:textSize="18sp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tv_chat_bar_total_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/title_bar_bg"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_chat_bar_family_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_chat_bar_family_look_for"
+            android:layout_alignLeft="@+id/tv_chat_bar_family_look_for"
+            android:layout_marginBottom="3dp"
+            android:text="@string/chat_bar_family_name"
+            android:textColor="@color/title_bar_bg"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_chat_bar_family_look_for"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_above="@+id/rl_chat_bar_family_bottom"
+            android:layout_alignLeft="@+id/rl_chat_bar_family_bottom"
+            android:layout_marginBottom="9dp"
+            android:text="@string/chat_bar_family_look_for"
+            android:textColor="@color/title_bar_bg"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_chat_bar_family_join"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="11dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="19dp"
+            android:src="@drawable/chat_bar_me_join" />
+
+        <TextView
+            android:id="@+id/tv_chat_bar_family_my_family"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_chat_bar_family_join"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/iv_chat_bar_family_join"
+            android:text="@string/chat_bar_family_join"
+            android:textColor="@color/edit_user_value"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="207dp">
+
+        <LinearLayout
+            android:id="@+id/ll_chat_bar_family_empty"
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            android:layout_marginTop="23dp"
+            android:background="@drawable/chat_bar_family_my_join_empty"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_chat_bar_family_empty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_chat_bar_family_empty"
+            android:layout_marginTop="18dp"
+            android:gravity="center"
+            android:text="@string/chat_bar_my_family_empty"
+            android:textColor="@color/gray_text_color" />
+
+        <LinearLayout
+            android:layout_width="128dp"
+            android:layout_height="38dp"
+            android:layout_below="@+id/tv_chat_bar_family_empty"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_chat_bar_family_empty_select"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_takepic_selector"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chat_bar_family_select_chat_bar"
+                    android:textColor="@color/title_bar_bg"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

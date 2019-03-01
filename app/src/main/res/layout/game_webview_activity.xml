@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/action_bar"
+        layout="@layout/title_bar" />
+
+    <WebView
+        android:id="@+id/game_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/action_bar" />
+
+    <ImageView
+        android:id="@+id/err_view"
+        android:layout_below="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@color/c_ecebf1"
+        android:scaleType="centerInside"
+        android:src="@drawable/webview_404" 
+        android:visibility="gone"/>
+    
+    <TextView
+        android:id="@+id/tv_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:layout_below="@id/action_bar"
+        android:background="#CD5C5C"
+        android:visibility="visible" />
+
+</RelativeLayout>

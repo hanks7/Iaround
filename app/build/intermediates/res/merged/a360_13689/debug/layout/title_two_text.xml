@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@drawable/z_common_title_bg">
+
+    <TextView
+        android:id="@+id/title_left_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dip"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:padding="5dp"   
+        android:singleLine="true"
+        android:textColor="@color/common_white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/title_right_text"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dip"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:padding="5dip"
+        android:singleLine="true"
+        android:textColor="@color/common_white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/title_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="48dip"  
+        android:layout_marginRight="48dip"        
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/common_white"
+        android:textSize="18sp" />
+
+</RelativeLayout>

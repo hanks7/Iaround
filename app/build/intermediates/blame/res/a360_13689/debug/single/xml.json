@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/xml/rc_file_path.xml",
+        "source": "/Users/zhangsen/iaround/iaround-android-online/app/src/main/res/xml/rc_file_path.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/xml/file_paths.xml",
+        "source": "/Users/zhangsen/iaround/iaround-android-online/app/src/main/res/xml/file_paths.xml"
+    }
+]

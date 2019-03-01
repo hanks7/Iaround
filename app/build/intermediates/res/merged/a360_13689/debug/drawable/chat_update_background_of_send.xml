@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners android:radius="@dimen/x26"/>
+
+    <!--<gradient android:startColor="@color/chat_update_background_sendBtn"
+        android:endColor="@color/chat_update_background_sendBtn"/>-->
+    <solid android:color="@color/chat_update_background_sendBtn"/>
+    <!--<padding android:bottom="@dimen/y24" android:top="@dimen/y24"-->
+        <!--android:left="@dimen/x18" android:right="@dimen/x18"/>-->
+</shape>

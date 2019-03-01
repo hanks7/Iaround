@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/bg_father"
+        android:layout_width="152.5dp"
+        android:layout_height="86dp"
+        android:background="@drawable/z_find_buymember_item_bg" >
+
+        <TextView
+            android:id="@+id/time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="1个月"
+            android:textColor="@color/c_ffffff"
+            android:textSize="26dp" />
+
+        <LinearLayout
+            android:layout_width="152.5dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:gravity="right|bottom"
+            >
+
+            <TextView
+                android:id="@+id/price_text"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+
+                android:gravity="right|bottom"
+
+                android:singleLine="true"
+                android:text="$52"
+                android:textColor="@color/c_ffffff"
+                android:textSize="12sp"/>
+
+
+
+            <TextView
+                android:id="@+id/price_dec"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:drawableLeft="@drawable/shape_3"
+                android:layout_gravity="right"
+                android:drawablePadding="6dp"
+                android:singleLine="false"
+
+                android:text="已优惠\n16%"
+                android:textColor="@color/c_ffffff"
+                android:textSize="12sp"/>
+
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/userFragment_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:background="#EBEBEB" />
+    <LinearLayout
+        android:id="@+id/ly_register_phone_are"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y72"
+        android:gravity="center_vertical"
+        android:background="@color/login_edit"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/x48"
+            android:layout_height="@dimen/y48"
+            android:layout_marginLeft="@dimen/x105"
+            android:layout_marginRight="@dimen/x57"
+            android:layout_marginTop="@dimen/y48"
+            android:layout_marginBottom="@dimen/y48"
+            android:src="@drawable/register_are"/>
+
+        <TextView
+            android:id="@+id/txt_area"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="中国(+86)"
+            android:gravity="center_vertical"
+            android:textColor="@color/common_black"
+            android:textSize="@dimen/y42"/>
+
+        <ImageView
+            android:layout_width="@dimen/x24"
+            android:layout_height="@dimen/y42"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/y51"
+            android:layout_marginRight="@dimen/x66"
+            android:src="@drawable/arraw_turn"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:layout_marginLeft="@dimen/y84"
+        android:layout_below="@id/ly_register_phone_are"
+        android:background="@color/splash_login"/>
+
+    <LinearLayout
+        android:id="@+id/ly_register_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_below="@id/line1"
+        android:background="@color/login_edit"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/x48"
+            android:layout_height="@dimen/y48"
+            android:layout_marginLeft="@dimen/x105"
+            android:layout_marginRight="@dimen/x57"
+            android:layout_marginTop="@dimen/y48"
+            android:layout_marginBottom="@dimen/y48"
+            android:src="@drawable/register_phone"/>
+
+        <EditText
+            android:id="@+id/edittext_telphone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:inputType="number"
+            android:hint="@string/register_phone_numbere"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:textColor="@color/common_black"
+            android:textSize="@dimen/y42"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/x50"
+        android:layout_marginRight="@dimen/x50"
+        android:layout_marginTop="@dimen/y66"
+        android:enabled="false"
+        android:background="@drawable/btn_register_next_selector"
+        android:textColor="@drawable/txt_register_next_selector"
+        android:text="@string/register_password_next"
+        android:textSize="@dimen/y42" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x105"
+        android:layout_marginRight="@dimen/x105"
+        android:layout_marginTop="@dimen/y50"
+        android:text="@string/please_input_register_or_bind_phone_number"
+        android:textColorHint="@color/hint_text_color"
+        android:textColor="#7B7B7B"
+        android:textSize="@dimen/y36" />
+
+</LinearLayout>

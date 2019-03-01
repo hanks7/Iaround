@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color">
+
+
+    <LinearLayout
+        android:id="@+id/sv_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y300"
+        android:layout_marginTop="@dimen/y36"
+        android:background="#FFFFFF">
+
+        <EditText
+            android:id="@+id/et_user_signature"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y300"
+            android:layout_marginLeft="@dimen/x48"
+            android:layout_marginRight="@dimen/x48"
+            android:layout_marginTop="@dimen/x39"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="@string/edit_signature_hint"
+            android:textColor="@color/edit_user_value"
+            android:textColorHint="#BBBBBB"
+            android:textSize="@dimen/y42" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sv_container"
+        android:layout_marginLeft="10dp"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_edit_signnature_count_curr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="#BBBBBB"
+            android:textSize="@dimen/y36" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:textSize="@dimen/y36" />
+
+        <TextView
+            android:id="@+id/tv_edit_nickname_count_max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="140"
+            android:textColor="#BBBBBB"
+            android:textSize="@dimen/y36" />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/sv_container"
+        android:layout_marginRight="@dimen/x48"
+        android:layout_marginTop="@dimen/y30"
+        android:text="140"
+        android:textColor="#9B9B9B"
+        android:textSize="@dimen/y42"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/face_select_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#E9E9E9"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/font_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

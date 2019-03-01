@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_account"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y173"
+        android:layout_marginTop="@dimen/y36"
+        android:background="@color/common_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x48"
+            android:layout_weight="1"
+            android:text="@string/account_num"
+            android:textColor="@color/edit_user_value"
+            android:textSize="@dimen/y42" />
+
+        <TextView
+            android:id="@+id/tv_account_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x48"
+            android:textColor="@color/edit_user_key"
+            android:textSize="@dimen/y42" />
+
+        <ImageView
+            android:layout_width="@dimen/x24"
+            android:layout_height="@dimen/y42"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x48"
+            android:src="@drawable/user_detail" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_registration_way"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y173"
+        android:background="@color/common_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x48"
+            android:layout_weight="1"
+            android:text="@string/registration_way"
+            android:textColor="@color/edit_user_value"
+            android:textSize="@dimen/y42" />
+
+        <TextView
+            android:id="@+id/tv_registration_way"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x48"
+            android:textColor="@color/edit_user_key"
+            android:textSize="@dimen/y42" />
+
+        <ImageView
+            android:layout_width="@dimen/x24"
+            android:layout_height="@dimen/y42"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x48"
+            android:src="@drawable/user_detail" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_bind_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y173"
+        android:layout_marginTop="@dimen/y36"
+        android:background="@color/common_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x48"
+            android:layout_weight="1"
+            android:text="@string/setting_bind_phone"
+            android:textColor="@color/edit_user_value"
+            android:textSize="@dimen/y42" />
+
+        <TextView
+            android:id="@+id/tv_phone_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x48"
+            android:textColor="@color/edit_user_key"
+            android:textSize="@dimen/y42" />
+
+        <ImageView
+            android:layout_width="@dimen/x24"
+            android:layout_height="@dimen/y42"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x48"
+            android:src="@drawable/user_detail" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line_change_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_marginLeft="@dimen/x45"
+        android:background="#EBEBEB" />
+
+    <LinearLayout
+        android:id="@+id/ll_authentication"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y173"
+        android:background="@color/common_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x48"
+            android:layout_weight="1"
+            android:text="@string/authentication"
+            android:textColor="@color/edit_user_value"
+            android:textSize="@dimen/y42" />
+
+        <TextView
+            android:id="@+id/tv_authentication_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x48"
+            android:textColor="@color/edit_user_key"
+            android:textSize="@dimen/y42" />
+
+        <ImageView
+            android:layout_width="@dimen/x24"
+            android:layout_height="@dimen/y42"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x48"
+            android:src="@drawable/user_detail" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_marginLeft="@dimen/x45"
+        android:background="#EBEBEB" />
+
+    <!--<LinearLayout
+        android:id="@+id/ll_bind_email"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y120"
+        android:background="@color/common_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x48"
+            android:layout_weight="1"
+            android:text="@string/setting_email"
+            android:textColor="@color/edit_user_value"
+            android:textSize="@dimen/y42" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x48"
+            android:text="liushaohua@iaround.com"
+            android:textColor="@color/edit_user_key"
+            android:textSize="@dimen/y42" />
+
+        <ImageView
+            android:layout_width="@dimen/x24"
+            android:layout_height="@dimen/y42"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x48"
+            android:src="@drawable/user_detail" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y3"
+        android:layout_marginLeft="@dimen/x45"
+        android:background="#EBEBEB"
+        android:visibility="gone" />-->
+
+    <LinearLayout
+        android:id="@+id/ll_change_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y173"
+        android:background="@color/common_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x48"
+            android:layout_weight="1"
+            android:text="@string/setting_change_pwd"
+            android:textColor="@color/edit_user_value"
+            android:textSize="@dimen/y42" />
+
+        <ImageView
+            android:layout_width="@dimen/x24"
+            android:layout_height="@dimen/y42"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x48"
+            android:src="@drawable/user_detail" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_logout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y143"
+        android:layout_marginTop="@dimen/y36"
+        android:background="@color/common_white"
+        android:gravity="center"
+        android:text="@string/setting_logout"
+        android:textColor="#FF4064"
+        android:textSize="@dimen/y42" />
+
+</LinearLayout>

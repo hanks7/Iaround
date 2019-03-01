@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/tv_custom_context_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y138"
+        android:gravity="center"
+        android:textColor="@color/chat_update_message_count"
+        android:background="@drawable/list_item_bg_selector"
+        android:textSize="@dimen/y42"/>
+
+    <View
+        android:id="@+id/line_custom_context_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:background="@color/chat_update_divider_of_toolMenu"/>
+
+</LinearLayout>

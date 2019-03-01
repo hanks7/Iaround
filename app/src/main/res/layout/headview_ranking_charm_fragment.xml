@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginBottom="14dp"
+        android:layout_marginTop="19dp"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/ll_chat_bar_current_week_charm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/bt_chat_bar_current_week_charm"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:background="@drawable/ranking_charm_tab_selected"
+                android:text="@string/ranking_charm_current_week"
+                android:textColor="@color/title_bar_bg"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_chat_bar_last_week_charm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/bt_chat_bar_last_week_charm"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:background="@drawable/ranking_charm_tab_selected"
+                android:text="@string/ranking_charm_current_month"
+                android:textColor="@color/title_bar_bg"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_chat_bar_current_month_charm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/bt_chat_bar_current_month_charm"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:background="@drawable/ranking_charm_tab_selected"
+                android:text="@string/ranking_charm_current_last_week"
+                android:textColor="@color/title_bar_bg"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_chat_bar_last_month_charm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/bt_chat_bar_last_month_charm"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:background="@drawable/ranking_charm_tab_selected"
+                android:text="@string/ranking_charm_last_moth"
+                android:textColor="@color/title_bar_bg"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="154dp"
+        android:background="@drawable/ranking_three_level_select"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/rl_headview_ranking_second"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/fl_headview_ranking_person_info_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="66dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="34dp"
+                    android:orientation="vertical">
+
+
+                    <net.iaround.ui.view.HeadPhotoView
+                        android:id="@+id/iv_headview_charm_second"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentBottom="true"
+                        android:src="@drawable/iaround_default_img" />
+
+                    <ImageView
+                        android:id="@+id/iv_headview_crown_second"
+                        android:layout_width="32dp"
+                        android:layout_height="26dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="50dp"
+                        android:layout_marginTop="-3dp"
+                        android:src="@drawable/ranking_level_second" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="9dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_headview_person_second"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="4dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="Graceless"
+                        android:textColor="@color/edit_user_value"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:id="@+id/ly_user_age_second"
+                        android:layout_width="30dp"
+                        android:layout_height="14dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/iv_user_sex_second"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="1dp" />
+
+                        <TextView
+                            android:id="@+id/tv_user_age_second"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/common_white"
+                            android:textSize="@dimen/y30" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_headview_ranking_first"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/fl_headview_ranking_person_info_first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="66dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="19dp"
+                    android:orientation="vertical">
+
+
+                    <net.iaround.ui.view.HeadPhotoView
+                        android:id="@+id/iv_headview_charm_first"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentBottom="true"
+                        android:src="@drawable/iaround_default_img" />
+
+                    <ImageView
+                        android:id="@+id/iv_headview_crown_first"
+                        android:layout_width="32dp"
+                        android:layout_height="26dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="50dp"
+                        android:layout_marginTop="-3dp"
+                        android:src="@drawable/ranking_level_first" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_headview_person_first"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="4dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="Graceless"
+                        android:textColor="@color/edit_user_value"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:id="@+id/ly_user_age_first"
+                        android:layout_width="30dp"
+                        android:layout_height="14dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/iv_user_sex_first"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="1dp" />
+
+                        <TextView
+                            android:id="@+id/tv_user_age_first"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/common_white"
+                            android:textSize="@dimen/y30" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_headview_ranking_third"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/fl_headview_ranking_person_info_third"
+                    android:layout_width="wrap_content"
+                    android:layout_height="66dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="34dp"
+                    android:orientation="vertical">
+
+
+                    <net.iaround.ui.view.HeadPhotoView
+                        android:id="@+id/iv_headview_charm_third"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentBottom="true"
+                        android:src="@drawable/iaround_default_img" />
+
+                    <ImageView
+                        android:id="@+id/iv_headview_crown_third"
+                        android:layout_width="32dp"
+                        android:layout_height="26dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="50dp"
+                        android:layout_marginTop="-3dp"
+                        android:src="@drawable/ranking_level_third" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="9dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_headview_person_third"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="4dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="Graceless"
+                        android:textColor="@color/edit_user_value"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:id="@+id/ly_user_age_third"
+                        android:layout_width="30dp"
+                        android:layout_height="14dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/iv_user_sex_third"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="1dp" />
+
+                        <TextView
+                            android:id="@+id/tv_user_age_third"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/common_white"
+                            android:textSize="10sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

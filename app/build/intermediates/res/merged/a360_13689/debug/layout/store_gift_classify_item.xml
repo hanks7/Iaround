@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <View
+        android:id="@+id/view_gift"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/giftly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical">
+
+        <net.iaround.ui.comon.NetImageView
+            android:id="@+id/gift_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp" />
+
+        <RelativeLayout
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/gift_icon"
+            android:gravity="center_vertical">
+
+            <RelativeLayout
+                android:id="@+id/name_ly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical">
+
+                <RelativeLayout
+                    android:id="@+id/gift_flag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:id="@+id/flag1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/z_store_gift_vipflag"
+                        android:gravity="center"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:singleLine="true"
+                        android:textColor="#ffffff"
+                        android:textSize="9dp"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/flag2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_toRightOf="@+id/flag1"
+                        android:background="@drawable/z_store_gift_hotflag"
+                        android:gravity="center"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:singleLine="true"
+                        android:textColor="#ffffff"
+                        android:textSize="9dp"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/gift_flag"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/gift_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_toRightOf="@+id/gift_flag"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="小黄人玩偶"
+                        android:textColor="#222222"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tv_have_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:background="@drawable/store_gift_num"
+                        android:ellipsize="end"
+                        android:maxLength="5"
+                        android:singleLine="true"
+                        android:textColor="#553F3F"
+                        android:textSize="9sp"
+                        android:visibility="visible" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/gift_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name_ly"
+                android:ellipsize="end"
+                android:paddingTop="-2dp"
+                android:singleLine="true"
+                android:text="钻石：250"
+                android:textColor="@color/encounter_filter_sex_selcet"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/gift_charm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gift_price"
+                android:ellipsize="end"
+                android:paddingTop="-2dp"
+                android:singleLine="true"
+                android:text="魅力：1000"
+                android:textColor="@color/encounter_filter_sex_selcet"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/gift_experience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gift_charm"
+                android:ellipsize="end"
+                android:paddingTop="-2dp"
+                android:singleLine="true"
+                android:text="经验：1000"
+                android:textColor="@color/encounter_filter_sex_selcet"
+                android:textSize="11sp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

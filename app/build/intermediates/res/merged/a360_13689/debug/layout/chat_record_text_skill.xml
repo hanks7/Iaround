@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <net.iaround.ui.view.HeadPhotoView
+        android:id="@+id/icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@+id/checkbox"
+        android:layout_marginRight="@dimen/x24"
+        android:layout_marginLeft="15dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/content_userinfo_ly"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/icon"
+        android:orientation="vertical" >
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/iaround_chat_userinfo_view"
+            android:visibility="visible"/>
+        <RelativeLayout
+            android:id="@+id/ll_content"
+            android:layout_width="279dp"
+            android:layout_height="93dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/chat_new_record_friend_bg"
+            >
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/iv_skill_icon"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="14dp"
+                android:layout_marginRight="9dp"
+                tools:text="向客服小美使用了菊花残(战力神值+1000)，把对方打的屁滚尿流，3分钟内不能进入被踢出的聊吧，对方（经验-14）。"
+                android:textSize="12sp"
+                />
+            <ImageView
+                android:id="@+id/iv_skill_icon"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_marginRight="11dp"
+                android:src="@drawable/icon_skill_protection_fee"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="11dp" />
+            <!--<net.iaround.ui.comon.RichTextView-->
+                <!--android:id="@+id/content"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginRight="@dimen/x226"-->
+                <!--android:layout_marginLeft="15dp"-->
+                <!--android:layout_marginTop="12dp"-->
+                <!--android:textColor="@color/chat_update_edit_user_value"-->
+                <!--android:textSize="@dimen/y42" />-->
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

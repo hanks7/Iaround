@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chat_input_bar_layout"
+    android:layout_width="match_parent"
+    android:background="@color/common_white"
+    android:layout_height="wrap_content">
+   <LinearLayout
+       android:id="@+id/chat_input_reply"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+       <ImageView
+           android:id="@+id/face_menu"
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           android:layout_marginTop="7dp"
+           android:layout_marginBottom="7dp"
+           android:layout_marginLeft="8.7dp"
+           android:src="@drawable/iaround_chat_face"/>
+       <EditText
+           android:id="@+id/editContent"
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_height="@dimen/y96"
+           android:layout_toRightOf="@id/face_menu"
+           android:layout_marginLeft="@dimen/x23"
+           android:layout_marginTop="@dimen/y18"
+           android:layout_marginBottom="@dimen/y18"
+           android:textSize="@dimen/y42"
+           android:textColor="@color/black"
+           android:hint="@string/reply_dynamic"
+           android:textColorHint="@color/title_right_text"
+           android:background="@drawable/dynamic_detail_bg"
+           />
+       <TextView
+           android:id="@+id/btnSend"
+           android:layout_width="45.3dp"
+           android:layout_height="32dp"
+           android:layout_marginLeft="@dimen/x22"
+           android:layout_marginRight="@dimen/x25"
+           android:layout_marginTop="@dimen/y18"
+           android:layout_marginBottom="@dimen/y18"
+           android:text="@string/chat_sendText"
+           android:layout_gravity="right|center_vertical"
+           android:gravity="center"
+           android:textColor="@color/white"
+           android:textSize="@dimen/y42"
+           android:background="@drawable/chat_update_background_of_send"/>
+   </LinearLayout>
+
+    <!--表情菜单布局-->
+    <FrameLayout
+        android:id="@+id/faceMenu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chat_input_reply"
+        android:background="@drawable/tap_indicator_bg" />
+
+</RelativeLayout>

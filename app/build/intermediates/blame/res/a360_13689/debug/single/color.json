@@ -1,0 +1,138 @@
+[
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/color/design_error.xml",
+        "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/1993906930ebe08a7f98d1cabfb917e4/res/color/design_error.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/color/mis_default_text_color.xml",
+        "source": "/Users/zhangsen/iaround/iaround-android-online/app/src/main/res/color/mis_default_text_color.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/color/abc_tint_edittext.xml",
+        "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/43bd9c050b31741f3a212b9e535f7af3/res/color/abc_tint_edittext.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/color/abc_primary_text_material_dark.xml",
+        "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/43bd9c050b31741f3a212b9e535f7af3/res/color/abc_primary_text_material_dark.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/color/abc_tint_spinner.xml",
+        "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/43bd9c050b31741f3a212b9e535f7af3/res/color/abc_tint_spinner.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/color/common_google_signin_btn_text_dark.xml",
+        "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/play-services-base-8.4.0.aar/171df3b0bbf290be336f2c121123cead/res/color/common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/color/design_tint_password_toggle.xml",
+        "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/1993906930ebe08a7f98d1cabfb917e4/res/color/design_tint_password_toggle.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/color/mis_folder_text_color.xml",
+        "source": "/Users/zhangsen/iaround/iaround-android-online/app/src/main/res/color/mis_folder_text_color.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/color/abc_primary_text_material_light.xml",
+        "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/43bd9c050b31741f3a212b9e535f7af3/res/color/abc_primary_text_material_light.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/color/common_plus_signin_btn_text_light.xml",
+        "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/play-services-base-8.4.0.aar/171df3b0bbf290be336f2c121123cead/res/color/common_plus_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/color/abc_primary_text_disable_only_material_light.xml",
+        "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/43bd9c050b31741f3a212b9e535f7af3/res/color/abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/color/mis_action_btn.xml",
+        "source": "/Users/zhangsen/iaround/iaround-android-online/app/src/main/res/color/mis_action_btn.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/color/abc_secondary_text_material_light.xml",
+        "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/43bd9c050b31741f3a212b9e535f7af3/res/color/abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/color/abc_search_url_text.xml",
+        "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/43bd9c050b31741f3a212b9e535f7af3/res/color/abc_search_url_text.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/color/abc_tint_seek_thumb.xml",
+        "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/43bd9c050b31741f3a212b9e535f7af3/res/color/abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/color/abc_secondary_text_material_dark.xml",
+        "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/43bd9c050b31741f3a212b9e535f7af3/res/color/abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/color/switch_thumb_material_light.xml",
+        "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/43bd9c050b31741f3a212b9e535f7af3/res/color/switch_thumb_material_light.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/color/dynamic_filter_dialog_text_selector.xml",
+        "source": "/Users/zhangsen/iaround/iaround-android-online/app/src/main/res/color/dynamic_filter_dialog_text_selector.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/color/abc_btn_colored_text_material.xml",
+        "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/43bd9c050b31741f3a212b9e535f7af3/res/color/abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/color/abc_tint_switch_track.xml",
+        "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/43bd9c050b31741f3a212b9e535f7af3/res/color/abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/color/abc_hint_foreground_material_light.xml",
+        "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/43bd9c050b31741f3a212b9e535f7af3/res/color/abc_hint_foreground_material_light.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/color/common_plus_signin_btn_text_dark.xml",
+        "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/play-services-base-8.4.0.aar/171df3b0bbf290be336f2c121123cead/res/color/common_plus_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/color/x_dialog_disable_btn_selector.xml",
+        "source": "/Users/zhangsen/iaround/iaround-android-online/app/src/main/res/color/x_dialog_disable_btn_selector.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/color/vpi__dark_theme.xml",
+        "source": "/Users/zhangsen/iaround/iaround-android-online/app/src/main/res/color/vpi__dark_theme.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/color/switch_thumb_material_dark.xml",
+        "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/43bd9c050b31741f3a212b9e535f7af3/res/color/switch_thumb_material_dark.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/color/abc_tint_btn_checkable.xml",
+        "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/43bd9c050b31741f3a212b9e535f7af3/res/color/abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/color/abc_tint_default.xml",
+        "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/43bd9c050b31741f3a212b9e535f7af3/res/color/abc_tint_default.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/color/x_store_dialog_text_color.xml",
+        "source": "/Users/zhangsen/iaround/iaround-android-online/app/src/main/res/color/x_store_dialog_text_color.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/color/abc_primary_text_disable_only_material_dark.xml",
+        "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/43bd9c050b31741f3a212b9e535f7af3/res/color/abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/color/abc_btn_colored_borderless_text_material.xml",
+        "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/43bd9c050b31741f3a212b9e535f7af3/res/color/abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/color/common_google_signin_btn_text_light.xml",
+        "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/play-services-base-8.4.0.aar/171df3b0bbf290be336f2c121123cead/res/color/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/color/abc_tint_switch_thumb.xml",
+        "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/43bd9c050b31741f3a212b9e535f7af3/res/color/abc_tint_switch_thumb.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/color/abc_hint_foreground_material_dark.xml",
+        "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/43bd9c050b31741f3a212b9e535f7af3/res/color/abc_hint_foreground_material_dark.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/color/page_filter_item_text_color.xml",
+        "source": "/Users/zhangsen/iaround/iaround-android-online/app/src/main/res/color/page_filter_item_text_color.xml"
+    }
+]

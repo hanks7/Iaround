@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <!-- 小情猫表情 -->
+    <string-array name="CatCode">
+        
+  	<item>[#f1#]@[憨笑]</item>
+	<item>[#f10#]@[感冒了]</item>
+	<item>[#f11#]@[囧]</item>
+	<item>[#f12#]@[尴尬]</item>
+	<item>[#f13#]@[流口水]</item>
+	<item>[#f14#]@[吓]</item>
+	<item>[#f15#]@[仰慕]</item>
+	<item>[#f16#]@[酷]</item>
+	<item>[#f17#]@[恶魔]</item>
+	<item>[#f18#]@[偷笑]</item>
+	<item>[#f19#]@[太开心]</item>
+	<item>[#f2#]@[微笑]</item>
+	<item>[#f20#]@[鼓掌]</item>
+	<item>[#f21#]@[拥抱]</item>
+	<item>[#f22#]@[滚]</item>
+	<item>[#f23#]@[害羞]</item>
+	<item>[#f24#]@[砸死你]</item>
+	<item>[#f25#]@[抓狂]</item>
+	<item>[#f26#]@[狂]</item>
+	<item>[#f27#]@[摊手]</item>
+	<item>[#f28#]@[吃饭去]</item>
+	<item>[#f29#]@[咒骂]</item>
+	<item>[#f3#]@[嘻嘻]</item>
+	<item>[#f30#]@[在路上]</item>
+	<item>[#f31#]@[无语]</item>
+	<item>[#f32#]@[冒火]</item>
+	<item>[#f33#]@[好热]</item>
+	<item>[#f34#]@[好冷]</item>
+	<item>[#f35#]@[发烧了]</item>
+	<item>[#f36#]@[财迷]</item>
+	<item>[#f37#]@[玫瑰]</item>
+	<item>[#f38#]@[晕]</item>
+	<item>[#f39#]@[狂汗]</item>
+	<item>[#f4#]@[哈哈]</item>
+	<item>[#f40#]@[疑问]</item>
+	<item>[#f41#]@[惊讶]</item>
+	<item>[#f42#]@[斜眼]</item>
+	<item>[#f43#]@[饿了]</item>
+	<item>[#f44#]@[叹气]</item>
+	<item>[#f45#]@[吐舌头]</item>
+	<item>[#f46#]@[心碎]</item>
+	<item>[#f47#]@[微怒]</item>
+	<item>[#f48#]@[衰]</item>
+	<item>[#f49#]@[加班中]</item>
+	<item>[#f5#]@[大哭]</item>
+	<item>[#f50#]@[可怜]</item>
+	<item>[#f51#]@[猪头]</item>
+	<item>[#f52#]@[鄙视]</item>
+	<item>[#f53#]@[挖鼻孔]</item>
+	<item>[#f54#]@[泪奔]</item>
+	<item>[#f55#]@[拜拜]</item>
+	<item>[#f56#]@[调皮]</item>
+	<item>[#f57#]@[扮鬼脸]</item>
+	<item>[#f58#]@[激动]</item>
+	<item>[#f59#]@[花心]</item>
+	<item>[#f6#]@[坏笑]</item>
+	<item>[#f60#]@[围观]</item>
+	<item>[#f61#]@[倾心]</item>
+	<item>[#f62#]@[生日]</item>
+	<item>[#f63#]@[委屈]</item>
+	<item>[#f64#]@[渴了]</item>
+	<item>[#f65#]@[打招呼]</item>
+	<item>[#f66#]@[打哈欠]</item>
+	<item>[#f67#]@[晚安]</item>
+	<item>[#f68#]@[早安]</item>
+	<item>[#f69#]@[离开一下]</item>
+	<item>[#f7#]@[奋斗]</item>
+	<item>[#f70#]@[刚睡醒]</item>
+	<item>[#f71#]@[路过]</item>
+	<item>[#f72#]@[不]</item>
+	<item>[#f73#]@[呕吐]</item>
+	<item>[#f74#]@[飞吻]</item>
+	<item>[#f75#]@[石化了]</item>
+	<item>[#f76#]@[潜水]</item>
+	<item>[#f77#]@[加油]</item>
+	<item>[#f78#]@[瞌睡]</item>
+	<item>[#f79#]@[睡觉]</item>
+	<item>[#f8#]@[闭嘴]</item>
+	<item>[#f80#]@[顶]</item>
+	<item>[#f81#]@[赞]</item>
+	<item>[#f82#]@[竖中指]</item>
+	<item>[#f83#]@[胜利]</item>
+	<item>[#f84#]@[好]</item>
+	<item>[#f85#]@[爱你]</item>
+	<item>[#f9#]@[得意]</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="70dp"
+       android:background="@color/transparent"/>
+
+    <net.iaround.ui.view.luckpan.LuckPanLayout2
+        android:id="@+id/lottery_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/lottery_close"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icon_close_skill"
+            android:tint="#58c5ea" >
+        </ImageView>
+        <RelativeLayout
+            android:id="@+id/lottery_plate_container"
+            android:layout_width="@dimen/lottery_plate_size"
+            android:layout_height="@dimen/lottery_plate_size"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/lottery_close">
+            <net.iaround.ui.view.luckpan.LotteryRotateLayout
+                android:id="@+id/lottery_rotate_layout"
+                android:layout_width="@dimen/lottery_plate_size"
+                android:layout_height="@dimen/lottery_plate_size"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true">
+            </net.iaround.ui.view.luckpan.LotteryRotateLayout>
+            <ImageView
+                android:id="@+id/lottery_pointer"
+                android:layout_width="@dimen/lottery_pointer_width"
+                android:layout_height="@dimen/lottery_pointer_height"
+                android:layout_centerInParent="true"
+                android:src="@drawable/lottery_pointer"
+                android:clickable="true" />
+            <RelativeLayout
+                android:id="@+id/lottery_bingo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="invisible" >
+                <ImageView
+                    android:id="@+id/lottery_bingo_image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" />
+                <TextView
+                    android:id="@+id/lottery_bingo_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:layout_below="@+id/lottery_bingo_image"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="x 1"  />
+            </RelativeLayout>
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/btn_lottery_rule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lottery_plate_container"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:text="@string/luckpan_rule"
+            android:textColor="#58c5ea"/>
+
+    </net.iaround.ui.view.luckpan.LuckPanLayout2>
+
+</LinearLayout>

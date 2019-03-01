@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/userFragment_bg">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title_bar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:background="@color/userFragment_bg">
+
+        <net.iaround.ui.comon.PopMenu
+            android:id="@+id/llPageFilter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:visibility="gone" />
+
+        <!--style="@style/activity_basic_style"-->
+        <!--android:footerDividersEnabled="false"-->
+        <!--android:headerDividersEnabled="false"-->
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/group_message_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/gridview_item_bg"
+            android:dividerHeight="0dp"
+            android:fadingEdge="none"
+            android:background="@color/userFragment_bg"
+            ptr:ptrAnimationStyle="heart" />
+        <Button
+            android:id="@+id/create_group_btn"
+            android:layout_width="@dimen/x170"
+            android:layout_height="@dimen/y170"
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="@dimen/y210"
+            android:layout_marginRight="@dimen/x48"
+            android:background="@drawable/z_near_creat_group_img" />
+        <RelativeLayout
+            android:id="@+id/empty_ly"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/empty_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/messages_group_none" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</RelativeLayout>

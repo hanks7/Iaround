@@ -1,0 +1,22 @@
+<profiles>
+
+    <profile>
+        <id>default</id>
+        <activation>
+            <activeByDefault>true</activeByDefault>
+        </activation>
+        <dependencies>
+            <dependency>
+                compile files('libs/android-support-v4.jar')
+    			compile files('libs/bolts.jar')
+            </dependency>
+        </dependencies>
+    </profile>
+
+    <profile>
+        <id>excludeDependency</id>
+        <dependencies>
+        </dependencies>
+    </profile>
+
+</profiles>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_centerVertical="true"
+        android:button="@drawable/nearby_filter_checkbox_selector"
+        android:visibility="gone" />
+
+    <!--android:layout_marginTop="@dimen/y48"-->
+    <net.iaround.ui.view.HeadPhotoView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/x120"
+        android:layout_height="@dimen/y120"
+        android:layout_toRightOf="@+id/checkbox"
+        android:layout_marginRight="@dimen/x24"
+        android:layout_marginLeft="@dimen/x30"
+        />
+
+    <LinearLayout
+        android:id="@+id/content_userinfo_ly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/icon"
+        android:orientation="vertical" >
+
+        <include layout="@layout/iaround_chat_userinfo_view" />
+
+        <RelativeLayout
+            android:id="@+id/content"
+            android:layout_width="@dimen/x220"
+            android:layout_height="@dimen/y120"
+            android:background="@drawable/chat_new_record_friend_bg"
+            >
+            <ImageView
+                android:id="@+id/ivPlayIcon"
+                android:layout_width="@dimen/x39"
+                android:layout_height="@dimen/y54"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x33"
+                android:layout_marginRight="@dimen/x42"
+                android:src="@drawable/audio_play_right" />
+
+            <TextView
+                android:id="@+id/tvContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/ivPlayIcon"
+                android:textColor="@color/c_000000"
+                android:text="120''"
+                android:textSize="@dimen/y36" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="@style/space_progress"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@id/content_userinfo_ly"
+        android:visibility="gone" />
+
+</RelativeLayout>

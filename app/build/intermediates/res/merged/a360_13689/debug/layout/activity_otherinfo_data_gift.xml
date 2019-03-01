@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y43"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/y53"
+            android:layout_height="@dimen/y53"
+            android:layout_marginLeft="@dimen/x34"
+            android:src="@drawable/user_info_gift" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x12"
+            android:text="@string/userinfo_gift"
+            android:textColor="#222222"
+            android:textSize="@dimen/y42" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x57"
+        android:layout_marginTop="@dimen/y18"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="@dimen/x2"
+            android:layout_height="match_parent"
+            android:background="#EBEBEB" />
+
+        <ImageView
+            android:id="@+id/iv_send_gift"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/other_info_send_gift" />
+
+        <net.iaround.ui.view.InterceptScrollContainerView
+            android:id="@+id/ll_user_gift"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/y30"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="@dimen/y30"
+            android:layout_weight="1">
+
+            <GridView
+                android:id="@+id/gv_user_gift"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:numColumns="3"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ll_other_info_gift"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               >
+
+                <ImageView
+                    android:id="@+id/iv_login_user_gift_one"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp" />
+
+                <ImageView
+                    android:id="@+id/iv_login_user_gift_two"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp" />
+
+                <ImageView
+                    android:id="@+id/iv_login_user_gift_three"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_user_gift_empty_tips"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/x47"
+                android:gravity="center_vertical"
+                android:text="@string/userinfo_gift_empty_tips_other"
+                android:textColor="#FF4256"
+                android:textSize="@dimen/y42"
+                android:visibility="gone" />
+
+        </net.iaround.ui.view.InterceptScrollContainerView>
+
+        <LinearLayout
+            android:id="@+id/ll_user_gift_intenter"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_user_gift"
+                android:layout_width="@dimen/x24"
+                android:layout_height="@dimen/y42"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="@dimen/y48"
+                android:src="@drawable/user_detail" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

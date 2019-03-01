@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="93dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="93dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/iv_head_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:src="@drawable/z_common_man_avater_round" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:lines="1"
+                android:maxWidth="140dp"
+                android:textColor="@color/common_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tv_user_name"
+                android:layout_below="@id/tv_user_name"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/home_page_game_rank_shape"
+                android:drawableLeft="@drawable/tag_girl"
+                android:drawablePadding="1dp"
+                android:text="23"
+                android:textColor="@color/common_white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tv_sex"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@id/tv_sex"
+                android:background="@drawable/home_page_game_rank_shape"
+                android:text="秩序白银"
+                android:textColor="@color/common_white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_time_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tv_user_name"
+                android:layout_below="@id/tv_sex"
+                android:layout_marginTop="6dp"
+                android:text="18分钟前"
+                android:textColor="@color/home_page_text_color"
+                android:textSize="10dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_order_times"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/margin_right"
+                android:text="接单次数"
+                android:textColor="@color/home_page_text_color"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/tv_order_times"
+                android:layout_marginRight="@dimen/margin_right"
+                android:layout_marginTop="10dp"
+                android:text="10/小时"
+                android:textColor="@color/common_iaround_red"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/iv_show_discount"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginRight="8dp"
+                android:layout_toLeftOf="@id/tv_price"
+                android:layout_alignTop="@id/tv_price"
+                android:src="@drawable/tag_saves_zn" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="84dp"
+        android:background="@color/line_color" />
+</RelativeLayout>

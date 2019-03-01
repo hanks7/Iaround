@@ -1,0 +1,1273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <!-- 举报类型 -->
+    <string-array name="report_types">
+        <item>Sexy</item>
+        <item>Advertisement</item>
+        <!--<item>Violence</item>-->//暴力
+        <item>Harass</item>//骚扰
+        <!--<item>Insult</item>-->//侮辱
+        <item>Fake</item>//欺诈
+
+        <!--<item>Reactionary</item>-->//反动
+        <!--<item>Politics</item>-->//政治
+        <!--<item>Other</item>-->//其他
+    </string-array>
+    <string-array name="report_types1">
+        <item>Sexy</item>
+        <item>Advertisement</item>
+        <item>Harass</item>
+        <item>Fake</item>
+        <item>Violence</item>
+        <item>Insult</item>
+        <item>Reactionary</item>
+        <item>Politics</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="report_types3">
+        <item>Pornography</item>
+        <item>Harassment</item>
+        <item>Advertising</item>
+        <item>Violence</item>
+        <item>Reactionary</item>
+    </string-array>
+
+
+    <string-array name="starts_no_date">
+        <item>Unlimited</item>
+        <item>Aries</item>
+        <item>Taurus</item>
+        <item>Gemini</item>
+        <item>Cancer</item>
+        <item>Leo</item>
+        <item>Virgo</item>
+        <item>Libra</item>
+        <item>Scorpio</item>
+        <item>Sagittarius</item>
+        <item>Capricorn</item>
+        <item>Aquarius</item>
+        <item>Pisces</item>
+    </string-array>
+    <string-array name="horoscope_date">
+        <item>Unlimited</item>
+        <item>Aries</item>
+        <item>Taurus</item>
+        <item>Gemini</item>
+        <item>Cancer</item>
+        <item>Leo</item>
+        <item>Virgo</item>
+        <item>Libra</item>
+        <item>Scorpio</item>
+        <item>Sagittarius</item>
+        <item>Capricorn</item>
+        <item>Aquarius</item>
+        <item>Pisces</item>
+    </string-array>
+    <!-- 婚姻状况 -->
+    <string-array name="marriges">
+        <item>Unlimited</item>
+        <item>Single</item>
+        <item>In a relationship</item>
+        <item>Married</item>
+        <item>Engaged</item>
+        <item>It\'s complicated</item>
+        <item>In an open relationship</item>
+        <item>Widowed</item>
+        <item>Divorced</item>
+        <item>Separated</item>
+        <item>In a civil union</item>
+        <item>Unlimited</item>
+    </string-array>
+    <!-- 性别 -->
+    <string-array name="genders">
+        <item>Unlimited</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <!-- 血型 -->
+    <string-array name="bloods">
+        <item>Unlimited</item>
+        <item>A</item>
+        <item>B</item>
+        <item>AB</item>
+        <item>O</item>
+    </string-array>
+    <!-- 发表图片的标签 -->
+    <string-array name="tags">
+        <item>1,Girls</item>
+        <item>2,Handsome</item>
+        <item>3,Travel</item>
+        <item>4,Food</item>
+        <item>5,Pet</item>
+        <item>6,Music</item>
+        <item>7,Movies</item>
+        <item>8,Sports</item>
+        <item>9,Funny</item>
+        <item>10,Art</item>
+        <item>11,Cars</item>
+        <item>12,Architecture</item>
+        <item>13,News</item>
+        <item>14,Design</item>
+        <item>15,Fashion</item>
+        <item>16,Family</item>
+        <item>17,Life</item>
+    </string-array>
+    <!-- 选择国家 -->
+    <string-array name="select_countrys">
+        <item>##中国+86+🇨🇳</item>
+        <item>##臺灣+886+臺灣</item>
+        <item>##香港+852+🇭🇰</item>
+        <item>##澳門+853+🇲🇴</item>
+        <item>#United States+1+🇺🇸</item>
+        <item>#Canada+1+🇨🇦</item>
+        <item>#Malaysia+60+🇲🇾</item>
+        <item>#Japan+81+🇯🇵</item>
+        <item>#South Korea+82+🇰🇷</item>
+        <item>#Indonesia+62+🇮🇩</item>
+        <item>#United Kingdom+44+🇬🇧</item>
+        <item>#France+33+🇫🇷</item>
+        <item>#Germany+49+🇩🇪</item>
+        <item>#Australia+61+🇦🇺</item>
+        <item>#Singapore+65+🇸🇬</item>
+        <item>#Thailand+66+🇹🇭</item>
+        <item>Italy+39</item>
+        <item>Russian Federation+7</item>
+        <item>Afghanistan+93</item>
+        <item>Albania+355</item>
+        <item>Algeria+213</item>
+        <item>American Samoa+1</item>
+        <item>Andorra+376</item>
+        <item>Angola+244</item>
+        <item>Anguilla+1</item>
+        <item>Antigua And Barbuda+1</item>
+        <item>Argentina+54</item>
+        <item>Armenia+374</item>
+        <item>Aruba+297</item>
+        <item>Ascension Island+247</item>
+        <item>Austria+43</item>
+        <item>Azerbaijan+994</item>
+        <item>Bahamas+1</item>
+        <item>Bahrain+973</item>
+        <item>Bangladesh+880</item>
+        <item>Barbados+1</item>
+        <item>Belarus+375</item>
+        <item>Belgium+32</item>
+        <item>Belize+501</item>
+        <item>Benin+229</item>
+        <item>Bermuda+1</item>
+        <item>Bhutan+975</item>
+        <item>Bolivia+591</item>
+        <item>Bosnia And Herzegovina+387</item>
+        <item>Botswana+267</item>
+        <item>Brazil+55</item>
+        <item>British Virgin Islands+1</item>
+        <item>Brunei Darussalam+673</item>
+        <item>Bulgaria+359</item>
+        <item>Burkina Faso+226</item>
+        <item>Burundi+257</item>
+        <item>Cte Divoire+225</item>
+        <item>Cambodia+855</item>
+        <item>Cameroon+237</item>
+        <item>Cape Verde+238</item>
+        <item>Cayman Islands+1</item>
+        <item>Central African Republic+236</item>
+        <item>Chad+235</item>
+        <item>Chile+56</item>
+        <item>Christmas Island+672</item>
+        <item>Cocos Islands+672</item>
+        <item>Colombia+57</item>
+        <item>Comoros+269</item>
+        <item>Congo+242</item>
+        <item>Cook Islands+682</item>
+        <item>Costa Rica+506</item>
+        <item>Croatia+385</item>
+        <item>Cuba+53</item>
+        <item>Cyprus+357</item>
+        <item>Czech Republic+420</item>
+        <item>Denmark+45</item>
+        <item>Djibouti+253</item>
+        <item>Dominica+1</item>
+        <item>Dominican Republic+1</item>
+        <item>Ecuador+593</item>
+        <item>Egypt+20</item>
+        <item>El Salvador+503</item>
+        <item>Equatorial Guinea+240</item>
+        <item>Eritrea+291</item>
+        <item>Estonia+372</item>
+        <item>Ethiopia+251</item>
+        <item>Falkland Islands+500</item>
+        <item>Faroe Islands+298</item>
+        <item>Federated States Of Micronesia+691</item>
+        <item>Fiji+679</item>
+        <item>Finland+358</item>
+        <item>French Guiana+594</item>
+        <item>French Polynesia+689</item>
+        <item>Gabon+241</item>
+        <item>Gambia+220</item>
+        <item>Georgia+995</item>
+        <item>Ghana+233</item>
+        <item>Gibraltar+350</item>
+        <item>Greece+30</item>
+        <item>Greenland+299</item>
+        <item>Grenada+1</item>
+        <item>Guadeloupe+590</item>
+        <item>Guam+1</item>
+        <item>Guatemala+502</item>
+        <item>Guinea+224</item>
+        <item>Guinea-bissau+245</item>
+        <item>Guyana+592</item>
+        <item>Haiti+509</item>
+        <item>Honduras+504</item>
+        <item>Hungary+36</item>
+        <item>Iceland+354</item>
+        <item>India+91</item>
+        <item>Iran+98</item>
+        <item>Iraq+964</item>
+        <item>Ireland+353</item>
+        <item>Israel+972</item>
+        <item>Jamaica+1</item>
+        <item>Jordan+962</item>
+        <item>Kazakhstan+7</item>
+        <item>Kenya+254</item>
+        <item>Kiribati+686</item>
+        <item>Kuwait+965</item>
+        <item>Kyrgyzstan+996</item>
+        <item>Land Islands+358</item>
+        <item>Laos+856</item>
+        <item>Latvia+371</item>
+        <item>Lebanon+961</item>
+        <item>Lesotho+266</item>
+        <item>Liberia+231</item>
+        <item>Libyan Arab Jamahiriya+218</item>
+        <item>Liechtenstein+423</item>
+        <item>Lithuania+370</item>
+        <item>Luxembourg+352</item>
+        <item>Macedonia+389</item>
+        <item>Madagascar+261</item>
+        <item>Malawi+265</item>
+        <item>Maldives+960</item>
+        <item>Mali+223</item>
+        <item>Malta+356</item>
+        <item>Marshall Islands+692</item>
+        <item>Martinique+596</item>
+        <item>Mauritania+222</item>
+        <item>Mauritius+230</item>
+        <item>Mayotte+269</item>
+        <item>Mexico+52</item>
+        <item>Monaco+377</item>
+        <item>Mongolia+976</item>
+        <item>Montenegro+382</item>
+        <item>Montserrat+1</item>
+        <item>Morocco+212</item>
+        <item>Mozambique+258</item>
+        <item>Myanmar+95</item>
+        <item>Namibia+264</item>
+        <item>Nauru+674</item>
+        <item>Nepal+977</item>
+        <item>Netherlands+31</item>
+        <item>Netherlands Antilles+599</item>
+        <item>New Caledonia+687</item>
+        <item>New Zealand+64</item>
+        <item>Nicaragua+505</item>
+        <item>Niger+227</item>
+        <item>Nigeria+234</item>
+        <item>Niue+683</item>
+        <item>Norfolk Island+672</item>
+        <item>Norht Korea+850</item>
+        <item>Norway+47</item>
+        <item>Oman+968</item>
+        <item>Pakistan+92</item>
+        <item>Palau+680</item>
+        <item>Palestinian Territory+970</item>
+        <item>Panama+507</item>
+        <item>Papua New Guinea+675</item>
+        <item>Paraguay+595</item>
+        <item>Peru+51</item>
+        <item>Philippines+63</item>
+        <item>Pitcairn+672</item>
+        <item>Poland+48</item>
+        <item>Portugal+351</item>
+        <item>Puerto Rico+1</item>
+        <item>Qatar+974</item>
+        <item>Reunion+262</item>
+        <item>Republic Of Moldova+373</item>
+        <item>Romania+40</item>
+        <item>Rwanda+250</item>
+        <item>Samoa+685</item>
+        <item>San Marino+378</item>
+        <item>Sao Tome And Principe+239</item>
+        <item>Saudi Arabia+966</item>
+        <item>Senegal+221</item>
+        <item>Serbia+381</item>
+        <item>Seychelles+248</item>
+        <item>Sierra Leone+232</item>
+        <item>Slovakia+421</item>
+        <item>Slovenia+386</item>
+        <item>Solomon Islands+677</item>
+        <item>Somalia+252</item>
+        <item>South Africa+27</item>
+        <item>Spain+34</item>
+        <item>Sri Lanka+94</item>
+        <item>St Helena+290</item>
+        <item>St Kitts And Nevis+1</item>
+        <item>St Lucia+1</item>
+        <item>St Pierre And Miquelon+508</item>
+        <item>St Vincent And Grenadines+1</item>
+        <item>Sudan+249</item>
+        <item>Suriname+597</item>
+        <item>Svalbard And Jan Mayen+47</item>
+        <item>Swaziland+268</item>
+        <item>Sweden+46</item>
+        <item>Switzerland+41</item>
+        <item>Syrian Arab Republic+963</item>
+        <item>Tajikistan+992</item>
+        <item>Tanzania+255</item>
+        <item>Democratic Republic Of Congo+243</item>
+        <item>Timor-leste+670</item>
+        <item>Togo+228</item>
+        <item>Tokelau+690</item>
+        <item>Tonga+676</item>
+        <item>Trinidad And Tobago+1</item>
+        <item>Tunisia+216</item>
+        <item>Turkey+90</item>
+        <item>Turkmenistan+993</item>
+        <item>Turks And Caicos Islands+1</item>
+        <item>Tuvalu+688</item>
+        <item>Uganda+256</item>
+        <item>Ukraine+380</item>
+        <item>United Arab Emirates+971</item>
+        <item>Uruguay+598</item>
+        <item>Us Virgin Islands+1</item>
+        <item>Uzbekistan+998</item>
+        <item>Vanuatu+678</item>
+        <item>Vatican City+379</item>
+        <item>Venezuela+58</item>
+        <item>Vietnam+84</item>
+        <item>Wallis And Futuna+681</item>
+        <item>Yemen+967</item>
+        <item>Zambia+260</item>
+        <item>Zimbabwe+263</item>
+    </string-array>
+    <string-array name="wanttos">
+        <item>to meet</item>
+        <item>to go on a date</item>
+        <item>to go to the movies</item>
+        <item>to ride a bike</item>
+        <item>to the opera</item>
+        <item>to go horse riding</item>
+        <item>to have a candlelight dinner</item>
+        <item>to travel around the world</item>
+        <item>to have a pastoral life</item>
+        <item>to fall in love</item>
+        <item>to see the sea</item>
+        <item>to go out for a drive</item>
+        <item>to watch a sunrise</item>
+        <item>to take a dog for a walk</item>
+        <item>to eat all the good foods everywhere</item>
+        <item>to chat and have tea</item>
+        <item>to go climbing mountains</item>
+        <item>hand in hand to walk whole life</item>
+        <item>to sing songs</item>
+        <item>to eat icecream</item>
+        <item>to carry out the love in the end</item>
+        <item>to be close friends</item>
+        <item>to play and do something happy together</item>
+        <item>to speak mind</item>
+        <item>to take a walk in the riverside</item>
+        <item>to take a breath in the countryside</item>
+        <item>to look for the future together</item>
+        <item>to cook the food with love</item>
+        <item>to see stars in the roof</item>
+        <item>to have a warm embrace</item>
+        <item>to go out for a picnic</item>
+        <item>to kill time at home together</item>
+        <item>to go shopping</item>
+        <item>to do volunteer together</item>
+        <item>to go swimming</item>
+        <item>to enjoy the warm afternoon</item>
+        <item>to go running every morning together</item>
+        <item>to travel by the fire balloon</item>
+        <item>to read books under the tree</item>
+    </string-array>
+
+
+    <string-array name="sim_states">
+        <item>no SIM card is available in the device</item>
+        <item>requries a network PIN to unlock</item>
+        <item>requires the user\'s SIM PIN to unlock</item>
+        <item>requires the user\'s SIM PUK to unlock</item>
+        <item>ready</item>
+        <item>unknown</item>
+    </string-array>
+    <string-array name="monthly_salary">
+        <item>less than 2000 RMB</item>
+        <item>2000–5000 RMB</item>
+        <item>5000–10000 RMB</item>
+        <item>10000–20000 RMB</item>
+        <item>more than 20000 RMB</item>
+    </string-array>
+    <string-array name="income_data">
+        <item>less than 2000 RMB</item>
+        <item>2000-5000 RMB</item>
+        <item>4000-6000RMB</item>
+        <item>6000-10000RMB</item>
+        <item>10000-15000RMB</item>
+        <item>15000-20000RMB</item>
+        <item>20000-50000RMB</item>
+        <item>more than 50000RMB</item>
+    </string-array>
+
+    <!-- 3.0 -->
+    <string-array name="space_occupation">
+        <item>0,Unemployed</item>
+        <item>1,IT</item>
+        <item>2,Financial</item>
+        <item>3,Art</item>
+        <item>4,Industry</item>
+        <item>5,Medical</item>
+        <item>6,Hotel/Service</item>
+        <item>7,Media</item>
+        <item>8,Construction/Real Estate/Decoration/Property Management</item>
+        <item>9,Design</item>
+        <item>10,Marketing/PR</item>
+        <item>11,Transportation/Warehousing/Logistics</item>
+        <item>12,Financial Affairs</item>
+        <item>13,Energy/Mining/Geological survey</item>
+        <item>14,Business/Purchase/Trading</item>
+        <item>15,Customer Service</item>
+        <item>16,Electronics/Semiconductor/Instrumentation</item>
+        <item>17,Electric/Energy/Power</item>
+        <item>18,Engineering /Machinery</item>
+        <item>19,Insurance</item>
+        <item>20,Lawyer</item>
+        <item>21,Education</item>
+        <item>22,HR</item>
+        <item>23,Health Care</item>
+        <item>24,Administrative</item>
+        <item>25,Military/Police</item>
+        <item>26,Student</item>
+        <item>27,Civil servants</item>
+        <item>28,Agriculture</item>
+        <item>29,Others</item>
+        <item>30,Business</item>
+        <item>31,E-commerce</item>
+        <item>32,Model</item>
+    </string-array>
+
+    <string-array name="job">
+        <item>Unemployed</item>
+        <item>IT</item>
+        <item>Financial</item>
+        <item>Art</item>
+        <item>Industry</item>
+        <item>Medical</item>
+        <item>Hotel/Service</item>
+        <item>Media</item>
+        <item>Construction/Real Estate/Decoration/Property Management</item>
+        <item>Design</item>
+        <item>Marketing/PR</item>
+        <item>Transportation/Warehousing/Logistics</item>
+        <item>Financial Affairs</item>
+        <item>Energy/Mining/Geological survey</item>
+        <item>Business/Purchase/Trading</item>
+        <item>Customer Service</item>
+        <item>Electronics/Semiconductor/Instrumentation</item>
+        <item>Electric/Energy/Power</item>
+        <item>Engineering /Machinery</item>
+        <item>Insurance</item>
+        <item>Lawyer</item>
+        <item>Education</item>
+        <item>HR</item>
+        <item>Health Care</item>
+        <item>Administrative</item>
+        <item>Military/Police</item>
+        <item>Student</item>
+        <item>Civil servants</item>
+        <item>Agriculture</item>
+        <item>Others</item>
+        <item>Business</item>
+        <item>E-commerce</item>
+        <item>Model</item>
+
+    </string-array>
+
+    <!-- 数组资源，不需要翻译 -->
+    <integer-array name="gift_park_price">
+        <item>200</item>
+        <item>100</item>
+    </integer-array>
+    <integer-array name="gift_park_charm">
+        <item>20</item>
+        <item>10</item>
+    </integer-array>
+    <integer-array name="gift_coffee_price">
+        <item>300</item>
+        <item>300</item>
+    </integer-array>
+    <integer-array name="gift_coffee_charm">
+        <item>30</item>
+        <item>30</item>
+    </integer-array>
+    <integer-array name="gift_cinema_price">
+        <item>500</item>
+        <item>700</item>
+    </integer-array>
+    <integer-array name="gift_cinema_charm">
+        <item>50</item>
+        <item>70</item>
+    </integer-array>
+    <integer-array name="gift_restaurant_price">
+        <item>500</item>
+        <item>700</item>
+    </integer-array>
+    <integer-array name="gift_restaurant_charm">
+        <item>50</item>
+        <item>70</item>
+    </integer-array>
+    <integer-array name="gift_bar_price">
+        <item>1000</item>
+        <item>1200</item>
+    </integer-array>
+    <integer-array name="gift_bar_charm">
+        <item>100</item>
+        <item>120</item>
+    </integer-array>
+    <string-array name="group_forbid_time_sel">
+        <item>5min</item>
+        <item>10min</item>
+        <item>1hour</item>
+        <item>8hours</item>
+        <item>24hours</item>
+        <item>banned forever</item>
+    </string-array>
+    <string-array name="group_search_time">
+        <item>Unlimited</item>
+        <item>3days</item>
+    </string-array>
+    <!-- 情感状况 -->
+    <!-- 圈消息设置 -->
+    <string-array name="group_msgsetting_s">
+        <item>None</item>
+        <item>Receive and remind</item>
+        <item>Receive but do not remind</item>
+        <item>Shielding Group message</item>
+    </string-array>
+
+    <string-array name="group_msgsetting_tips">
+        <item>None</item>
+        <item>You will receive this Group of a new message alerts</item>
+        <item>You will not receive this Group of a new message alerts</item>
+        <item>You will not receive messages of the Group</item>
+    </string-array>
+
+    <!-- 戀愛經曆 -->
+    <string-array name="modify_love_experiences">
+        <item>never</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3"-"5</item>
+        <item>6"-"10</item>
+        <item>10+</item>
+    </string-array>
+
+    <!-- 購車情況 -->
+    <string-array name="modify_buy_car">
+        <item>yes</item>
+        <item>no</item>
+    </string-array>
+    <!-- 收入情況 -->
+    <string-array name="modify_income">
+        <item>0~300$</item>
+        <item>300~600$</item>
+        <item>600~900$</item>
+        <item>900~1500$</item>
+        <item>1500~2250$</item>
+        <item>2250~3000$</item>
+        <item>3000~7000$</item>
+        <item>7000$+</item>
+    </string-array>
+
+    <!-- 住房情況 -->
+    <string-array name="own_house_data">
+        <item>house owner</item>
+        <item>house renting</item>
+        <item>dorm</item>
+        <item>live with parents</item>
+    </string-array>
+    <string-array name="modify_house">
+        <item>house owner</item>
+        <item>house renting</item>
+        <item>dorm</item>
+        <item>live with parents</item>
+    </string-array>
+
+    <string-array name="dynamic_top_list">
+        <item>person</item>
+        <item>dynamic</item>
+        <item>group</item>
+    </string-array>
+    <string-array name="sex_data">
+        <item>woman</item>
+        <item>man</item>
+        <item>man and woman</item>
+    </string-array>
+    <string-array name="own_car_data">
+        <item>Yes</item>
+        <item>No</item>
+        <item>Planning to buy</item>
+    </string-array>
+    <string-array name="user_vip_power">
+        <item>会员智能筛选</item>
+        <item>红色醒目昵称</item>
+        <item>查看私密资料</item>
+        <item>动态自动分类</item>
+        <item>专属会员礼物</item>
+        <item>会员特权表情</item>
+        <item>关注上线提升</item>
+        <item>可加圈子翻倍</item>
+        <item>悄悄查看消息</item>
+        <item>消息数量翻倍</item>
+        <item>消息优先展示</item>
+        <item>防止骚扰</item>
+        <item>看看谁喜欢你</item>
+        <item>撤销不喜欢</item>
+    </string-array>
+    <string-array name="user_vip_power_detail">
+        <item>智能筛选，精确查找</item>
+        <item>尊贵红色，与众不同</item>
+        <item>私密资料，想看就看</item>
+        <item>男神女神随心看</item>
+        <item>身份象征，魅力爆表</item>
+        <item>仅会员专享，免费试用</item>
+        <item>关注上限提升2倍</item>
+        <item>加入圈子，数量翻倍</item>
+        <item>悄悄看不让他发现</item>
+        <item>私聊动态，数量翻倍</item>
+        <item>私聊消息，优先展示</item>
+        <item>身份验证，防止骚扰</item>
+        <item>查看谁喜欢我</item>
+        <item>给你后悔药，撤销不喜欢</item>
+    </string-array>
+    <!--圈子详情更多-->
+    <string-array name="group_myself_more">
+        <item>Manage Group</item>
+        <item>Group Transferation</item>
+        <item>Delete Group</item>
+    </string-array>
+    <string-array name="group_manager_more">
+        <item>Manage Group</item>
+        <item>Report This Group</item>
+        <item>Delete From Group</item>
+    </string-array>
+    <string-array name="group_other_more">
+        <item>Report</item>
+        <item>Leave This Group</item>
+    </string-array>
+    <string-array name="group_member_manager">
+        <item>Manage Members</item>
+        <item>Search Members</item>
+        <item>Gag User</item>
+    </string-array>
+    <string-array name="group_manage">
+        <item>All Members</item>
+        <item>Owner and Administrators</item>
+    </string-array>
+    <!--圈主-->
+    <string-array name="group_owner">
+        <item>View Profile</item>
+    </string-array>
+    <string-array name="group_manager_search_owner">
+        <item>View Profile</item>
+        <item>Report This User</item>
+    </string-array>
+    <!--圈子管理员-->
+    <string-array name="group_manager">
+        <item>View Profile</item>
+        <item>Remove him as administrator</item>
+        <item>Report this user</item>
+        <item>Detele From Group</item>
+    </string-array>
+    <!--圈子成员-->
+    <string-array name="group_search_result_item_click">
+        <item>View Profile</item>
+        <item>Gag User/Dismiss Gag</item>
+        <item>Upgrade him as administrator</item>
+        <item>Report this user</item>
+        <item>Detele From Group</item>
+    </string-array>
+    <string-array name="group_search_result_item_isForbid">
+        <item>View Profile</item>
+        <item>Dismiss Gag</item>
+        <item>Upgrade him as administrator</item>
+        <item>Report this user</item>
+        <item>Detele From Group</item>
+    </string-array>
+
+    <!--圈聊中点击用户头像对话框-->
+    <string-array name="group_role_owner_groupChat">
+        <item>View Profile</item>
+        <item>Remove him as administrator</item>
+        <item>Report this user</item>
+        <item>Detele From Group</item>
+    </string-array>
+    <string-array name="group_role_manager_groupChat">
+        <item>View Profile</item>
+        <item>Gag User/Dismiss Gag</item>
+        <item>Report this user</item>
+        <item></item>
+    </string-array>
+    <string-array name="group_role_memeber_groupChat">
+        <item>View Profile</item>
+        <item>Upgrade him as administrator</item>
+        <item>Gag User/Dismiss Gag</item>
+        <item>Report this user</item>
+        <item>Detele From Group</item>
+    </string-array>
+    <!--圈助手-->
+    <string-array name="group_helper1">
+        <item>Sticky Post in message list</item>
+        <item>Group Message Setting</item>
+        <item>Disable Group Assisant</item>
+    </string-array>
+    <string-array name="group_helper2">
+        <item>Sticky Post in message list</item>
+        <item>Group Message Setting</item>
+        <item>Enable Group Assisant</item>
+    </string-array>
+    <string-array name="group_helper3">
+        <item>Cancel Sticky Post</item>
+        <item>Group Message Setting</item>
+        <item>Disable Group Assisant</item>
+    </string-array>
+    <string-array name="group_helper4">
+        <item>Cancel Sticky Post</item>
+        <item>Group Message Setting</item>
+        <item>Enable Group Assisant</item>
+    </string-array>
+    <!--消息界面-->
+    <string-array name="message_fragment">
+        <item>Clear All Messages</item>
+        <item>Mark All As Read</item>
+    </string-array>
+
+    <!--消息界面，圈子通知-->
+    <string-array name="group_notice">
+        <item>Clear all group notice</item>
+    </string-array>
+    <!--通知界面，圈消息设置-->
+    <string-array name="group_message_setting">
+        <item>Receive and Remind</item>
+        <item>Receive but not Remind</item>
+        <item>Block message</item>
+    </string-array>
+    <string-array name="user_wallet_use_method">
+        <item>传达好感</item>
+        <item>额外展示的机会</item>
+        <item>推广自己/成为附近的焦点</item>
+        <item>提升好感度</item>
+        <item>使用精美表情</item>
+    </string-array>
+    <string-array name="user_wallet_use_method_detail">
+        <item>引起对方关注</item>
+        <item>获得额外的展示机会</item>
+        <item>马上赢得更多关注</item>
+        <item>向TA赠送钻石礼物</item>
+        <item>购买精美表情</item>
+    </string-array>
+    <string-array name="edit_interest">
+        <item>运动</item>
+        <item>旅游</item>
+        <item>艺术</item>
+        <item>美食</item>
+        <item>娱乐</item>
+        <item>休闲</item>
+    </string-array>
+    <!--<string-array name="lable_sport">-->
+    <!--<item>跑步</item>-->
+    <!--<item>旅游</item>-->
+    <!--<item>瑜伽</item>-->
+    <!--<item>篮球</item>-->
+    <!--<item>足球</item>-->
+    <!--<item>乒乓球</item>-->
+    <!--<item>羽毛球</item>-->
+    <!--<item>台球</item>-->
+    <!--<item>网球</item>-->
+    <!--<item>健身</item>-->
+    <!--<item>舞蹈</item>-->
+    <!--<item>跆拳道</item>-->
+    <!--<item>爬山</item>-->
+    <!--<item>滑雪</item>-->
+    <!--<item>高尔夫</item>-->
+    <!--<item>轮滑</item>-->
+    <!--<item>露营</item>-->
+    <!--<item>骑马</item>-->
+    <!--<item>徒步</item>-->
+    <!--<item>骑行</item>-->
+    <!--</string-array>-->
+    <!--<string-array name="lable_travel">-->
+    <!--<item>国内游</item>-->
+    <!--<item>境外游</item>-->
+    <!--<item>自驾游</item>-->
+    <!--<item>周边游</item>-->
+    <!--<item>大理</item>-->
+    <!--<item>丽江</item>-->
+    <!--<item>桂林</item>-->
+    <!--<item>三亚</item>-->
+    <!--<item>西藏</item>-->
+    <!--<item>台湾</item>-->
+    <!--<item>鼓浪屿</item>-->
+    <!--<item>张家界</item>-->
+    <!--<item>九寨沟</item>-->
+    <!--<item>长白山</item>-->
+    <!--<item>巴厘岛</item>-->
+    <!--<item>日本</item>-->
+    <!--<item>韩国</item>-->
+    <!--<item>欧洲</item>-->
+    <!--<item>东南亚</item>-->
+    <!--<item>大洋洲</item>-->
+    <!--<item>北美洲</item>-->
+    <!--<item>南美洲</item>-->
+    <!--<item>非洲</item>-->
+    <!--</string-array>-->
+    <!--<string-array name="lable_art">-->
+    <!--<item>绘画</item>-->
+    <!--<item>书法</item>-->
+    <!--<item>音乐</item>-->
+    <!--<item>表演</item>-->
+    <!--<item>写作</item>-->
+    <!--<item>阅读</item>-->
+    <!--<item>魔术</item>-->
+    <!--<item>科技</item>-->
+    <!--<item>收藏</item>-->
+    <!--<item>吉他</item>-->
+    <!--<item>钢琴</item>-->
+    <!--<item>风琴</item>-->
+    <!--<item>小提琴</item>-->
+    <!--<item>打击乐器</item>-->
+    <!--<item>民族乐器</item>-->
+    <!--<item>西洋乐器</item>-->
+    <!--</string-array>-->
+    <!--<string-array name="lable_foot">-->
+    <!--<item>烹饪</item>-->
+    <!--<item>烘焙</item>-->
+    <!--<item>中餐</item>-->
+    <!--<item>西餐</item>-->
+    <!--<item>品茶</item>-->
+    <!--<item>品酒</item>-->
+    <!--<item>咖啡</item>-->
+    <!--<item>火锅</item>-->
+    <!--<item>烧烤</item>-->
+    <!--<item>寿司</item>-->
+    <!--<item>牛排</item>-->
+    <!--<item>披萨</item>-->
+    <!--<item>汉堡</item>-->
+    <!--<item>素食</item>-->
+    <!--<item>海鲜</item>-->
+    <!--<item>奶酪</item>-->
+    <!--</string-array>-->
+    <!--<string-array name="lable_fun">-->
+    <!--<item>聚会</item>-->
+    <!--<item>追星</item>-->
+    <!--<item>八卦</item>-->
+    <!--<item>星座</item>-->
+    <!--<item>K歌</item>-->
+    <!--<item>泡吧</item>-->
+    <!--<item>表演</item>-->
+    <!--<item>摄影</item>-->
+    <!--<item>电影</item>-->
+    <!--<item>连续剧</item>-->
+    <!--<item>韩剧</item>-->
+    <!--<item>美剧</item>-->
+    <!--<item>日剧</item>-->
+    <!--<item>戏曲</item>-->
+    <!--<item>乐器</item>-->
+    <!--</string-array>-->
+    <!--<string-array name="lable_rest">-->
+    <!--<item>垂钓</item>-->
+    <!--<item>花鸟</item>-->
+    <!--<item>宠物</item>-->
+    <!--<item>散步</item>-->
+    <!--<item>逛街</item>-->
+    <!--<item>网购</item>-->
+    <!--<item>动漫</item>-->
+    <!--<item>网游</item>-->
+    <!--<item>手游</item>-->
+    <!--<item>棋牌</item>-->
+    <!--<item>桌游</item>-->
+    <!--<item>股票</item>-->
+    <!--<item>基金</item>-->
+    <!--<item>投资</item>-->
+    <!--</string-array>-->
+    <!--<string-array name="lable_my">-->
+    <!--<item>吃货</item>-->
+    <!--<item>宅</item>-->
+    <!--<item>萌萌哒</item>-->
+    <!--<item>女汉子</item>-->
+    <!--<item>小清新</item>-->
+    <!--<item>肌肉男</item>-->
+    <!--<item>小鲜肉</item>-->
+    <!--<item>大叔</item>-->
+    <!--<item>暖男</item>-->
+    <!--<item>阳光</item>-->
+    <!--<item>文艺</item>-->
+    <!--<item>靠谱</item>-->
+    <!--<item>浪漫</item>-->
+    <!--<item>理性</item>-->
+    <!--<item>感性</item>-->
+    <!--<item>逗逼</item>-->
+    <!--<item>强迫症</item>-->
+    <!--<item>拖延症</item>-->
+    <!--<item>选择恐惧症</item>-->
+    <!--<item>双重人格</item>-->
+    <!--<item>数码控</item>-->
+    <!--<item>铲屎官</item>-->
+    <!--<item>工作狂</item>-->
+    <!--<item>偏执狂</item>-->
+    <!--<item>夜猫子</item>-->
+    <!--<item>讲义气</item>-->
+    <!--<item>安静</item>-->
+    <!--</string-array>-->
+    <string-array name="love_status_data">
+        <item>Single</item>
+        <item>In a relationship</item>
+        <item>Married</item>
+        <item>Homosexual</item>
+        <item>Secret</item>
+    </string-array>
+    <string-array name="jazzy_effects">
+        <item>Standard</item>
+        <item>Tablet</item>
+        <item>CubeIn</item>
+        <item>CubeOut</item>
+        <item>FlipVertical</item>
+        <item>FlipHorizontal</item>
+        <item>Stack</item>
+        <item>ZoomIn</item>
+        <item>ZoomOut</item>
+        <item>RotateUp</item>
+        <item>RotateDown</item>
+        <item>Accordion</item>
+    </string-array>
+    <string-array name="dynamic_details_reprot">
+        <item>Sexy</item>
+        <item>Advertisement</item>
+        <item>Harass</item>
+        <item>Fake</item>
+    </string-array>
+
+    <string-array name="login_forget_pwd">
+        <item>Recover via mobile number</item>
+        <item>Recover via Email</item>
+    </string-array>
+
+    <string-array name="group_topic_detail">
+        <item>Complaints Report</item>
+    </string-array>
+    <string-array name="group_topic_detail_manager">
+        <item>Essence</item>
+        <item>Top</item>
+        <item>Delete</item>
+        <item>Complaints Report</item>
+    </string-array>
+    <string-array name="group_topic_detail_cancle_top">
+        <item>Essence</item>
+        <item>Canle Top</item>
+        <item>Delete</item>
+        <item>Complaints Report</item>
+    </string-array>
+    <string-array name="group_topic_detail_cancle_best">
+        <item>Cancle Essence</item>
+        <item>Top</item>
+        <item>Delete</item>
+        <item>Complaints Report</item>
+    </string-array>
+    <string-array name="group_topic_detail_cancle_both">
+        <item>Cancle Essence</item>
+        <item>Canle Top</item>
+        <item>Delete</item>
+        <item>Complaints Report</item>
+    </string-array>
+    <string-array name="group_topic_detail_owner">
+        <item>Delete</item>
+        <item>Complaints Report</item>
+    </string-array>
+    <string-array name="group_topic_copy_review">
+        <item>Reply comments</item>
+        <item>Copy comments</item>
+    </string-array>
+    <string-array name="group_topic_delete_review">
+        <item>Delete comments</item>
+    </string-array>
+    <string-array name="group_topic_report">
+        <item>Sexy</item>
+        <item>Advertisement</item>
+        <item>Harass</item>
+        <item>Fake</item>
+        <item>Insult</item>
+        <item>Other</item>
+    </string-array>
+
+    <!--补全缺失-->
+    <string-array name="dialog_edit_head">
+        <item>设为头像</item>
+        <item>编辑</item>
+        <item>删除</item>
+        <item>向前一位</item>
+        <item>向后一位</item>
+    </string-array>
+    <string-array name="skill_content">
+        <item>设为头像</item>
+        <item>编辑</item>
+        <item>删除</item>
+        <item>向前一位</item>
+        <item>向后一位</item>
+    </string-array>
+
+    <!--魅力榜-->
+    <string-array name="charm_rank">
+        <item>舉世無雙</item>
+        <item>風華絕代</item>
+        <item>出塵脫俗</item>
+        <item>花容月貌</item>
+    </string-array>
+    <!--富豪榜-->
+    <string-array name="regal_rank">
+        <item>至尊首富</item>
+        <item>富有四海</item>
+        <item>大富大貴</item>
+        <item>金玉滿堂</item>
+    </string-array>
+
+    <!--成长榜-->
+    <!--大么么-->
+    <string-array name="skill_grow_rank_2">
+        <item>玉樹臨風</item>
+        <item>幽雅舒適</item>
+        <item>穿金戴銀</item>
+        <item>濃情蜜意</item>
+    </string-array>
+    <!--菊花残-->
+    <string-array name="skill_grow_rank_1">
+        <item>摧花辣手</item>
+        <item>毀容高手</item>
+        <item>讓ta吃藕</item>
+        <item>夏練三伏</item>
+    </string-array>
+    <!--紧箍咒-->
+    <string-array name="skill_grow_rank_3">
+        <item>超度眾生</item>
+        <item>辯才無礙</item>
+        <item>善哉善哉</item>
+        <item>阿彌陀佛</item>
+    </string-array>
+    <!--无影脚-->
+    <string-array name="skill_grow_rank_4">
+        <item>持之以恆</item>
+        <item>廢寢忘食</item>
+        <item>懸樑刺股</item>
+        <item>聞雞起舞</item>
+    </string-array>
+    <!--保护费-->
+    <string-array name="skill_grow_rank_5">
+        <item>飛龍探雲</item>
+        <item>妙手空空</item>
+        <item>渾水摸魚</item>
+        <item>火中拾柴</item>
+    </string-array>
+
+    <!--互动榜-->
+    <!--大么么-->
+    <string-array name="skill_interactive_rank_2">
+        <item>比翼連枝</item>
+        <item>花間情聖</item>
+        <item>法式高手</item>
+        <item>烈焰紅唇</item>
+    </string-array>
+    <!--菊花残-->
+    <string-array name="skill_interactive_rank_1">
+        <item>加藤之手</item>
+        <item>千年殺手</item>
+        <item>深入敵後</item>
+        <item>背刺之王</item>
+    </string-array>
+    <!--紧箍咒-->
+    <string-array name="skill_interactive_rank_3">
+        <item>口若懸河</item>
+        <item>巧舌如簧</item>
+        <item>唇槍舌劍</item>
+        <item>不樣說話</item>
+    </string-array>
+    <!--无影脚-->
+    <string-array name="skill_interactive_rank_4">
+        <item>滅天</item>
+        <item>弑神</item>
+        <item>誅仙</item>
+        <item>屠王</item>
+    </string-array>
+    <!--保护费-->
+    <string-array name="skill_interactive_rank_5">
+        <item>教父</item>
+        <item>長老</item>
+        <item>堂主</item>
+        <item>大哥</item>
+    </string-array>
+
+    <string-array name="skill_desc_success">
+        <item><![CDATA[to <font color="#fc2452">%1$s charm %2$s</font> forced a poke,fly to sky.]]></item>
+        <item><![CDATA[to <font color="#fc2452">%1$s (charm +%2$s)</font> kiss, so romantic!]]></item>
+        <item><![CDATA[gave <font color="#fc2452">%1$s</font> the chanting, <font color="#fc2452">in the Group gag %2$s minutes</font>.]]></item>
+        <item><![CDATA[kicked <font color="#fc2452">%1$s</font> out of the Group, <font color="#fc2452">couldn\'t return in %2$s minutes</font>.]]></item>
+        <item><![CDATA["borrowed" some gold from <font color="#fc2452">%1$s</font> ,<font color="#fc2452">gold +%2$s</font>。]]></item>
+    </string-array>
+
+    <string-array name="skill_desc_failure">
+        <item><![CDATA[to <font color="#fc2452">%1$s charm %2$s</font> forced a poke,fly to sky.]]></item>
+        <item><![CDATA[to <font color="#fc2452">%1$s</font> forced a poke,but failed.]]></item>
+        <item><![CDATA[gave <font color="#fc2452">%1$s</font> the chanting, the other side doesn\'t care.]]></item>
+        <item><![CDATA[<font color="#fc2452">%1$s</font> please leave the group, but failed.]]></item>
+        <item><![CDATA[want to get the gold of <font color="#fc2452">%1$s</font>, but find no wallet.]]></item>
+    </string-array>
+
+    <string-array name="skill_desc_success_receive">
+        <item><![CDATA[<font color="#fc2452">%1$s</font> attack you, <font color="#fc2452">your charm %2$s</font>.]]></item>
+        <item><![CDATA[<font color="#fc2452">%1$s</font> kiss you, <font color="#fc2452">your charm +%2$s</font>.]]></item>
+        <item><![CDATA[<font color="#fc2452">%1$s</font> so that you can not speak, <font color="#fc2452">banned %2$s minutes</font>.]]></item>
+        <item><![CDATA[<font color="#fc2452">%1$s</font> kicked you away, <font color="#fc2452">could not return in %2$s minutes</font>.]]></item>
+        <item><![CDATA[borrowed some gold from <font color="#fc2452">%1$s</font> ,<font color="#fc2452">gold +%2$s</font>.]]></item>
+    </string-array>
+
+    <string-array name="skill_desc_failure_receive">
+        <item><![CDATA[<font color="#fc2452">%1$s</font> attack you,but failed.]]></item>
+        <item><![CDATA[<font color="#fc2452">%1$s</font> kiss you, <font color="#fc2452">your charm +%2$s</font>.]]></item>
+        <item><![CDATA[<font color="#fc2452">%1$s</font> to read the spell to you, but you do not have any reaction.]]></item>
+        <item><![CDATA[<font color="#fc2452">%1$s</font> kicked you away, but failed.]]></item>
+        <item><![CDATA[want to get the gold of <font color="#fc2452">%1$s</font>, but find no wallet.]]></item>
+    </string-array>
+
+    <string-array name="skill_desc_success_no_color">
+        <item><![CDATA[to %1$s charm +%2$s forced a poke,fly to sky.]]></item>
+        <item><![CDATA[to %1$s (charm +%2$s) kiss, so romantic!]]></item>
+        <item><![CDATA[gave %1$s the chanting, in the Group gag %2$s minutes.]]></item>
+        <item><![CDATA[kicked %1$s out of the Group, couldn\'t return in %2$s minutes.]]></item>
+        <item><![CDATA["borrowed" some gold from %1$s ,gold +%2$s]]></item>
+    </string-array>
+    <string-array name="skill_desc_failure_no_color">
+        <item><![CDATA[to %1$s forced a poke,but failed.]]></item>
+        <item><![CDATA[to %1$s (charm +%2$s) kiss, so romantic!]]></item>
+        <item><![CDATA[gave %1$s the chanting, the other side doesn\'t care.]]></item>
+        <item><![CDATA[%1$s please leave the group, but failed.]]></item>
+        <item><![CDATA[want to get the gold of %1$s, but find no wallet.]]></item>
+    </string-array>
+
+    <string-array name="luckpan_icons">
+        <item>giftbox_purple</item>
+        <item>moon_silver</item>
+        <item>skill_kick</item>
+        <item>skill_speak</item>
+        <item>skill_kiss</item>
+        <item>skill_burst</item>
+        <item>gold_coin</item>
+        <item>skill_protect</item>
+        <item>moon_silver</item>
+        <item>gold_coin</item>
+
+    </string-array>
+
+    <string-array name="luckpan_names">
+        <item>Box</item>
+        <item>Silver moon</item>
+        <item>Kick</item>
+        <item>Ban</item>
+        <item>Kiss</item>
+        <item>Kill face</item>
+        <item>Coin</item>
+        <item>Steal</item>
+        <item>Silver moon</item>
+        <item>Coin</item>
+    </string-array>
+
+    <integer-array name="luckpan_counts">
+        <item>1</item>
+        <item>50</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>50000</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5000</item>
+    </integer-array>
+
+    <string-array name="luckpan_colors">
+        <item>#58c5ea</item>
+        <item>#b5e8f9</item>
+        <item>#58c5ea</item>
+        <item>#b5e8f9</item>
+        <item>#58c5ea</item>
+        <item>#b5e8f9</item>
+        <item>#58c5ea</item>
+        <item>#b5e8f9</item>
+        <item>#58c5ea</item>
+        <item>#b5e8f9</item>
+    </string-array>
+
+    <!-- 体形 -->
+    <string-array name="body_type_array_s">
+        <item>不限</item>
+        <item>骨感</item>
+        <item>苗条</item>
+        <item>匀称</item>
+        <item>微胖</item>
+        <item>健壮</item>
+        <item>丰满</item>
+    </string-array>
+    <string-array name="group_fans_more">
+        <item>Report</item>
+        <item>Unfollow</item>
+    </string-array>
+    <string-array name="group_visitor_more">
+        <item>Report</item>
+    </string-array>
+
+    <string-array name="body_type_array">
+        <item>骨感</item>
+        <item>苗條</item>
+        <item>勻稱</item>
+        <item>微胖</item>
+        <item>健壯</item>
+        <item>豐滿</item>
+    </string-array>
+
+    <string-array name="video_chat_state">
+        <item>Cancelled</item>
+        <item>Call cancelled by caller</item>
+        <item>Call declined by user</item>
+        <item>Declined</item>
+        <item>Call wasn\'t answered</item>
+        <item>Line busy</item>
+    </string-array>
+
+    <string-array name="detailed_title">
+        <item>Diamond</item>
+        <item>Stars</item>
+    </string-array>
+
+    <string-array name="day_list">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+
+    <string-array name="home_container_title">
+        <item>Play</item>
+        <item>Audio</item>
+    </string-array>
+
+</resources>

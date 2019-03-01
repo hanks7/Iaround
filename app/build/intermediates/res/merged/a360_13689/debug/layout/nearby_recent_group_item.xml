@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/userFragment_bg"
+    android:orientation="vertical" >
+    <!--<Button-->
+        <!--android:id="@+id/btn_to_myslefGroup"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/red"-->
+        <!--android:text="跳转到我的圈子"/>-->
+    <!--列表头部提示:热门圈子，推荐圈子。。。-->
+    <RelativeLayout
+        android:id="@+id/header_part"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y96"
+        android:background="@color/userFragment_bg"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x36"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/more_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/nearby_recent_group_more_text"
+                android:textColor="@color/chat_update_gray_text_color"
+                android:textSize="@dimen/y36" />
+            <ImageView
+                android:layout_width="@dimen/x18"
+                android:layout_height="@dimen/y33"
+                android:layout_marginLeft="@dimen/x11"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/z_near_small_arrow"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x36"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/nearby_recent_group_title"
+            android:textColor="@color/chat_update_gray_text_color"
+            android:textSize="@dimen/y36"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/recent_groups_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y240"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/group_icon"
+                android:layout_width="@dimen/x180"
+                android:layout_height="@dimen/y180"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x24"
+                android:src="@drawable/group_item_default_icon" />
+
+            <RelativeLayout
+                android:id="@+id/group_desc_part"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/group_icon" >
+
+                <TextView
+                    android:id="@+id/group_name"
+                    android:layout_width="@dimen/x244"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/chat_update_edit_user_value"
+                    android:textSize="@dimen/y42" />
+
+                <!--圈子人数和类型-->
+                <RelativeLayout
+                    android:id="@+id/group_member_part"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_below="@id/group_name">
+
+                    <ImageView
+                        android:id="@+id/group_members_icon"
+                        android:layout_width="@dimen/x30"
+                        android:layout_height="@dimen/y30"
+                        android:layout_marginTop="@dimen/y10"
+                        android:src="@drawable/group_num_small_round" />
+
+                    <TextView
+                        android:id="@+id/group_members"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x12"
+                        android:layout_toRightOf="@id/group_members_icon"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="@color/chat_update_gray_text_color"
+                        android:textSize="@dimen/y36" />
+
+                    <TextView
+                        android:id="@+id/group_category"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x40"
+                        android:layout_toRightOf="@id/group_members"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="@color/chat_update_gray_text_color"
+                        android:textSize="@dimen/y36" />
+                </RelativeLayout>
+                <!--定位-->
+                <TextView
+                    android:id="@+id/group_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/group_member_part"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/chat_update_gray_text_color"
+                    android:textSize="@dimen/y36" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/y240"-->
+            <!--android:layout_weight="1" >-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/group_icon"-->
+                <!--android:layout_width="@dimen/x180"-->
+                <!--android:layout_height="@dimen/y180"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:layout_marginLeft="@dimen/x30"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginRight="@dimen/x24"-->
+                <!--android:src="@drawable/group_item_default_icon" />-->
+
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/group_desc_part"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_toRightOf="@+id/group_icon" >-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/group_name"-->
+                    <!--android:layout_width="@dimen/x244"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:ellipsize="end"-->
+                    <!--android:singleLine="true"-->
+                    <!--android:textColor="@color/chat_update_edit_user_value"-->
+                    <!--android:textSize="@dimen/y42" />-->
+
+                <!--&lt;!&ndash;圈子人数和类型&ndash;&gt;-->
+                <!--<RelativeLayout-->
+                    <!--android:id="@+id/group_member_part"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_below="@id/group_name">-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/group_members_icon"-->
+                        <!--android:layout_width="@dimen/x30"-->
+                        <!--android:layout_height="@dimen/y30"-->
+                        <!--android:layout_marginTop="@dimen/y10"-->
+                        <!--android:src="@drawable/group_num_small_round" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/group_members"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginLeft="@dimen/x12"-->
+                        <!--android:layout_toRightOf="@id/group_members_icon"-->
+                        <!--android:ellipsize="end"-->
+                        <!--android:singleLine="true"-->
+                        <!--android:textColor="@color/chat_update_gray_text_color"-->
+                        <!--android:textSize="@dimen/y36" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/group_category"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginLeft="@dimen/x40"-->
+                        <!--android:layout_toRightOf="@id/group_members"-->
+                        <!--android:ellipsize="end"-->
+                        <!--android:singleLine="true"-->
+                        <!--android:textColor="@color/chat_update_gray_text_color"-->
+                        <!--android:textSize="@dimen/y36" />-->
+                <!--</RelativeLayout>-->
+                <!--&lt;!&ndash;定位&ndash;&gt;-->
+                <!--<TextView-->
+                    <!--android:id="@+id/group_location"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@id/group_member_part"-->
+                    <!--android:ellipsize="end"-->
+                    <!--android:singleLine="true"-->
+                    <!--android:textColor="@color/chat_update_gray_text_color"-->
+                    <!--android:textSize="@dimen/y36" />-->
+
+            <!--</RelativeLayout>-->
+        <!--</RelativeLayout>-->
+    </LinearLayout>
+
+</LinearLayout>

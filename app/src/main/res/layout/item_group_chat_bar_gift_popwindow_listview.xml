@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="29dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/tv_gift_array_num"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="10dp"
+            android:text="1314"
+            android:textColor="@color/login_btn"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_gift_array_des"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/tv_gift_array_num"
+            android:text="一生一世"
+            android:textColor="@color/chatbar_gift_array"
+            android:textSize="12sp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            />
+        <View
+            android:id="@+id/view_gift_array_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="@color/chatbar_gift_array_line"
+            android:gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp">
+
+        </View>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

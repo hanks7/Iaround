@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/layout-v21/notification_template_icon_group.xml",
+        "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/43bd9c050b31741f3a212b9e535f7af3/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/layout-v21/notification_action_tombstone.xml",
+        "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/43bd9c050b31741f3a212b9e535f7af3/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/layout-v21/notification_template_custom_big.xml",
+        "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/43bd9c050b31741f3a212b9e535f7af3/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/layout-v21/place_autocomplete_fragment.xml",
+        "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/play-services-location-8.4.0.aar/ac009cbf4ba57b4f631e64465e79d8e5/res/layout-v21/place_autocomplete_fragment.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13689/debug/layout-v21/notification_action.xml",
+        "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/43bd9c050b31741f3a212b9e535f7af3/res/layout-v21/notification_action.xml"
+    }
+]

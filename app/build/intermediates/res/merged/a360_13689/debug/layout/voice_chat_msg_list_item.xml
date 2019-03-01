@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/x284"
+    android:background="@color/common_white">
+
+    <net.iaround.ui.view.HeadPhotoView
+        android:id="@+id/friend_icon"
+        android:layout_width="@dimen/x180"
+        android:layout_height="@dimen/y180"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="18dp" />
+
+    <!--右侧时间-->
+    <TextView
+        android:id="@+id/onlineTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="27dp"
+        android:layout_marginRight="16dp"
+        android:singleLine="true"
+        android:textColor="@color/gray_text_color"
+        android:textSize="@dimen/y33" />
+
+    <!--用户名-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/friend_icon"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxEms="11"
+            android:singleLine="true"
+            android:textColor="@color/edit_user_value"
+            android:textSize="@dimen/y42" />
+
+        <TextView
+            android:id="@+id/tv_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y30"
+            android:layout_marginRight="20dp"
+            android:ellipsize="end"
+            android:maxEms="15"
+            android:singleLine="true"
+            android:textColor="@color/gray_text_color"
+            android:textSize="@dimen/y36" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/x240"
+        android:background="@color/chat_update_divider_of_messageItem" />
+
+</RelativeLayout>

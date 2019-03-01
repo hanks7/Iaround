@@ -1,0 +1,87 @@
+<!--
+  ~ Copyright (C) 2014 pengjianbo(pengjianbosoft@gmail.com), Inc.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~  Unless required by applicable law or agreed to in writing, software
+  ~  distributed under the License is distributed on an "AS IS" BASIS,
+  ~  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~  See the License for the specific language governing permissions and
+  ~  limitations under the License.
+  -->
+
+<resources>
+
+    <string name="gallery">手機相冊</string>
+
+    <string name="all_photo">全部圖片</string>
+
+    <string name="selected">已選(%1$d/%2$d)</string>
+
+    <string name="folder_photo_size">共%1$d張</string>
+
+    <string name="photo_edit">圖片編輯</string>
+
+    <string name="photo_crop">圖片裁剪</string>
+
+    <string name="crop_suc">裁剪成功</string>
+
+    <string name="crop_fail">裁剪失敗</string>
+
+    <string name="no_photo">無圖片</string>
+
+    <string name="waiting">請稍等…</string>
+
+    <string name="select_max_tips">已達到最大選擇數量</string>
+
+    <string name="empty_sdcard">沒有SD卡</string>
+
+    <string name="open_gallery_fail">相冊初始化失敗!</string>
+
+    <string name="take_photo_fail">拍照失敗</string>
+
+    <string name="saving">正在保存照片…</string>
+
+    <string name="please_reopen_gf">請重新打開圖片流覽器</string>
+
+    <string name="edit_letoff_photo_format">該圖片格式不支援此操作</string>
+
+    <string name="photo_list_empty">獲取圖片失敗!</string>
+
+    <string name="preview">預覽</string>
+
+    <string name="permissions_tips_gallery">這個App請求訪問你的相冊</string>
+
+    <string name="permissions_tips_video">這個App請求訪問你的視頻</string>
+
+    <string name="permissions_denied_tips">無法獲取圖片</string>
+
+    <string name="maxsize_zero_tip">maxsize 應該大於0</string>
+
+    <string name="preview_select">選擇</string>
+
+    <string name="photo_size_error1">照片尺寸過小,請更換其他照片</string>
+
+    <string name="picture_all_video">所有視頻</string>
+
+    <string name="picture_all_audio">所有音訊</string>
+
+    <string name="picture_camera_roll">相機膠捲</string>
+
+    <string name="picture_take_picture">拍摄</string>
+
+    <string name="picture_photograph">拍照</string>
+
+    <string name="picture_cancel">取消</string>
+
+    <string name="photo_video_long_min">視頻時長不能低於5秒</string>
+
+    <string name="photo_video_long_max">視頻時長不能超過30秒</string>
+
+
+    <string name="start_play_hint">你正在使用移動網絡播放視頻。</string>
+</resources>

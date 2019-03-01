@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/face_item_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="68dip"
+        android:background="@drawable/info_bg_center_selector"
+        android:paddingLeft="11dip"
+        android:paddingRight="11dip" >
+
+        <ImageView
+            android:id="@+id/face_img"
+            android:layout_width="45dip"
+            android:layout_height="45dip"
+            android:layout_centerVertical="true"
+             />
+
+        <RelativeLayout
+            android:id="@+id/progress_ly"
+            android:layout_width="57dp"
+            android:layout_height="29dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="1dp"
+            android:background="@drawable/face_download_btn" >
+
+            <TextView
+                android:id="@+id/progress_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:gravity="center"
+                android:textColor="#007aff"
+                android:textSize="12dp" />
+
+            <net.iaround.ui.view.face.TextProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:progressDrawable="@drawable/face_detail_progressbar"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/face_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="11dp"
+            android:layout_toRightOf="@id/face_img"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/c_000000"
+            android:textSize="18sp" />
+        
+           <TextView
+            android:id="@+id/none_face"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/chat_update_gray_text_color"
+            android:textSize="@dimen/y42"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/y1"
+        android:background="@color/chat_update_divider_of_toolMenu" />
+
+</LinearLayout>

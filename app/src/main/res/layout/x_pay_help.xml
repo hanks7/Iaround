@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/splash_login"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="right|center_vertical"
+        android:background="@color/splash_login"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:text="@string/pay_help"
+            android:textColor="@color/red"
+            android:textSize="16sp" />
+
+        <!--隐藏掉客服电话-->
+        <TextView
+            android:id="@+id/teletphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/cs_telphone"
+            android:textColor="#999999"
+            android:textSize="16sp"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</RelativeLayout>

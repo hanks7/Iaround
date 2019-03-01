@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/loadingbar"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"
+            android:layout_gravity="center_horizontal"
+            android:indeterminateDrawable="@anim/loading"
+            android:indeterminateDuration="800"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_loading_view_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/visitor_loading_more"
+            android:visibility="visible"
+            android:textSize="13dp" />
+    </LinearLayout>
+<!--
+    <LinearLayout
+        android:id="@+id/no_more_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="11dp"
+            android:text="@string/load_host_complete"
+            android:textColor="@color/common_green" />
+    </LinearLayout>-->
+
+</FrameLayout>

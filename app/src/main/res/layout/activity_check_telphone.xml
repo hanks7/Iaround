@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/tabar_actionbar_layout" />
+
+    <LinearLayout
+        android:id="@+id/input_layout_foucus"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y72"
+        android:background="@color/common_white"
+        android:orientation="vertical" >
+
+
+        <LinearLayout
+            android:id="@+id/ly_register_ver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:background="@color/login_edit"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edittext_msg_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:inputType="number"
+                android:paddingLeft="@dimen/x142"
+                android:paddingTop="@dimen/y51"
+                android:paddingBottom="@dimen/y51"
+                android:paddingRight="@dimen/x90"
+                android:hint="@string/register_ver_code_hint"
+                android:textColorHint="@color/hint_text_color"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:textColor="@color/common_black"
+                android:textSize="@dimen/y42"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/y40"
+                android:layout_marginBottom="@dimen/y40"
+                android:background="@color/splash_login"/>
+
+            <TextView
+                android:id="@+id/btn_resend_code"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="@dimen/x90"
+                android:paddingRight="@dimen/x90"
+                android:paddingTop="@dimen/y51"
+                android:paddingBottom="@dimen/y51"
+                android:textColor="@color/common_grey"
+                android:textSize="@dimen/y42"
+                android:text="@string/register_ver_send_code"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y1"
+            android:layout_marginLeft="@dimen/x84"
+            android:background="@color/splash_login"/>
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:hint="@string/rest_login_password"
+            android:textColorHint="@color/hint_text_color"
+            android:paddingTop="@dimen/x51"
+            android:paddingLeft="@dimen/y142"
+            android:paddingRight="@dimen/y142"
+            android:paddingBottom="@dimen/x51"
+            android:background="@color/login_edit"
+            android:inputType="textPassword"
+            android:gravity="center_vertical"
+            android:textColor="@color/common_black"
+            android:textSize="@dimen/y42"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_start_bind"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/x50"
+        android:layout_marginRight="@dimen/x50"
+        android:layout_marginTop="@dimen/y66"
+        android:background="@drawable/chat_person_background_of_sendgift"
+        android:enabled="false"
+        android:padding="@dimen/y41"
+        android:text="@string/ok"
+        android:textColor="@drawable/txt_register_next_selector"
+        android:textSize="@dimen/y42" />
+
+</LinearLayout>

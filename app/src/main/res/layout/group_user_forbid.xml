@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/userFragment_bg"
+    android:orientation="vertical" >
+	<include layout="@layout/title_bar"/>
+
+    <FrameLayout style="@style/double_fill" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/common_white">
+
+                <!--禁言标题-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y97"
+                    android:paddingLeft="@dimen/x36"
+                    android:gravity="center_vertical"
+                    android:text="@string/group_user_forbid_title_user"
+                    android:textColor="@color/chat_update_gray_text_color"
+                    android:textSize="@dimen/y36"
+                    android:background="@color/userFragment_bg"/>
+
+                <RelativeLayout
+                    android:id="@+id/userItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y240"
+                    android:orientation="horizontal" >
+
+                    <net.iaround.ui.view.HeadPhotoView
+                        android:id="@+id/friend_icon"
+                        android:layout_width="@dimen/x180"
+                        android:layout_height="@dimen/y180"
+                        android:layout_marginBottom="@dimen/y30"
+                        android:layout_marginLeft="@dimen/x30"
+                        android:layout_marginRight="@dimen/x30"
+                        android:layout_marginTop="@dimen/y30" >
+                    </net.iaround.ui.view.HeadPhotoView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/friend_icon"
+                        android:layout_centerVertical="true">
+
+                        <TextView
+                            android:id="@+id/userName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:textColor="@color/chat_update_edit_user_value"
+                            android:textSize="@dimen/y42" />
+
+                        <LinearLayout
+                            android:id="@+id/genderBg"
+                            android:layout_width="@dimen/x90"
+                            android:layout_height="@dimen/y42"
+                            android:layout_below="@+id/userName"
+                            android:background="@drawable/group_member_age_girl_bg"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="@dimen/y10"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:id="@+id/genderTag"
+                                android:layout_width="@dimen/x32"
+                                android:layout_height="@dimen/y42"
+                                android:layout_gravity="center_vertical" />
+                            <TextView
+                                android:id="@+id/userAge"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/y30" />
+                        </LinearLayout>
+                        <!--暂时没有使用-->
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/y10"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+                            <TextView
+                                android:id="@+id/distance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:drawableLeft="@drawable/chat_main_distance_logo"
+                                android:singleLine="true"
+                                android:textColor="@color/chat_create_room_gray"
+                                android:textSize="12sp"
+                                android:visibility="gone"/>
+
+                            <TextView
+                                android:id="@+id/sepa"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:text="|"
+                                android:textColor="@color/chat_create_room_gray"
+                                android:textSize="12sp"
+                                android:visibility="gone"/>
+
+                            <TextView
+                                android:id="@+id/onlineTag"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:textColor="@color/chat_create_room_gray"
+                                android:textSize="12sp"
+                                android:visibility="gone"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/selfText"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/genderBg"
+                            android:layout_marginTop="@dimen/y10"
+                            android:layout_marginRight="@dimen/x47"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:textColor="@color/chat_update_gray_text_color"
+                            android:textSize="@dimen/y42"
+                            android:visibility="gone"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <!-- 已禁言 -->
+
+                <LinearLayout
+                    android:id="@+id/cancleForbidLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/y96"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/x36"
+                        android:text="@string/group_user_forbid_time_title"
+                        android:textColor="@color/chat_update_gray_text_color"
+                        android:textSize="@dimen/y42"
+                        android:background="@color/userFragment_bg"/>
+
+                    <TextView
+                        android:id="@+id/forbid_time_tip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="60dp"
+                        android:drawableLeft="@drawable/group_forbid_time_icon"
+                        android:drawablePadding="7dp"
+                        android:gravity="center_vertical"
+                        android:singleLine="false"
+                        android:text="@string/group_user_forbid_time_tip"
+                        android:textColor="#63625e"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:id="@+id/remain_time"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="50dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/remain_time_hour"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:textColor="@color/red"
+                            android:textSize="35sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:text="@string/hour"
+                            android:textColor="#63625e"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/remain_time_min"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:textColor="@color/red"
+                            android:textSize="35sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/minute"
+                            android:textColor="#63625e"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/remain_time_forever"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="50dp"
+                        android:gravity="center_horizontal"
+                        android:singleLine="true"
+                        android:text="@string/forever_forbid"
+                        android:textColor="@color/red"
+                        android:textSize="25sp"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/cancleForbidBtn"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="@dimen/x50"
+                        android:layout_marginRight="@dimen/x50"
+                        android:layout_marginTop="@dimen/y126"
+                        android:layout_marginBottom="@dimen/y60"
+                        android:background="@drawable/group_info_search_member"
+                        android:gravity="center"
+                        android:text="@string/group_user_forbid_now"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/y42" />
+                </LinearLayout>
+
+                <!-- 选择禁言时间 -->
+
+                <LinearLayout
+                    android:id="@+id/timeLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/common_white"
+                    android:visibility="gone" >
+
+                    <!--选择禁言时间-->
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/y96"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/x36"
+                        android:text="@string/group_user_forbid_title_time"
+                        android:textColor="@color/chat_update_gray_text_color"
+                        android:textSize="@dimen/y42"
+                        android:background="@color/userFragment_bg"/>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/y45"
+                        android:layout_marginLeft="@dimen/x36"
+                        android:layout_marginRight="@dimen/x35"
+                        android:text="@string/group_forbid_des"
+                        android:textColor="@color/chat_update_gray_text_color"
+                        android:textSize="@dimen/y42" />
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/y100"
+                        android:layout_marginTop="@dimen/y126"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_forbid_hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/group_forbid_title"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/chat_update_edit_user_value"
+                            android:textSize="@dimen/y42"
+                            android:layout_marginRight="@dimen/x36"
+                            android:layout_marginLeft="@dimen/x126"
+                            android:layout_marginTop="@dimen/x36"/>
+                        <RelativeLayout
+                            android:id="@+id/rl_forbid"
+                            android:layout_width="@dimen/x624"
+                            android:layout_height="@dimen/y100"
+                            android:orientation="horizontal"
+                            android:layout_toRightOf="@+id/tv_forbid_hint"
+                            android:background="@drawable/group_forbid_bg">
+                            <TextView
+                                android:id="@+id/tv_forbid_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/chat_update_edit_user_value"
+                                android:textSize="@dimen/y42"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/x45"/>
+                            <View
+                                android:id="@+id/divider"
+                                android:layout_width="@dimen/x1"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="@dimen/x29"
+                                android:layout_marginTop="@dimen/y27"
+                                android:layout_marginBottom="@dimen/y21"
+                                android:background="@color/chat_update_chatInput_hintTextColor"/>
+                            <Button
+                                android:id="@+id/sp_group_forbid"
+                                android:layout_width="@dimen/x60"
+                                android:layout_height="@dimen/y60"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="@dimen/x31"
+                                android:background="@drawable/group_forbid_icon"/>
+                        </RelativeLayout>
+                        <!--<Spinner-->
+                            <!--android:id="@+id/sp_group_forbid"-->
+                            <!--android:layout_width="@dimen/x624"-->
+                            <!--android:layout_toRightOf="@+id/tv_forbid_hint"-->
+                            <!--android:layout_marginLeft="@dimen/x36"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:background="@drawable/pay_szf_spinner"-->
+                            <!--android:textColor="@color/chat_update_edit_user_value"-->
+                            <!--android:visibility="gone"/>-->
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/okBtn"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="@dimen/x50"
+                        android:layout_marginRight="@dimen/x50"
+                        android:layout_marginTop="@dimen/y126"
+                        android:layout_marginBottom="@dimen/y60"
+                        android:background="@drawable/group_info_search_member"
+                        android:gravity="center"
+                        android:text="@string/ok"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/y42" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </FrameLayout>
+
+</LinearLayout>

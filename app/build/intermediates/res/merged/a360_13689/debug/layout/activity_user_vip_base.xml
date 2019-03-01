@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y234"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="@color/common_white">
+
+    <net.iaround.ui.view.HeadPhotoView
+        android:id="@+id/iv_head"
+        android:layout_width="@dimen/x150"
+        android:layout_height="@dimen/x150"
+        android:layout_marginLeft="@dimen/x66"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/y150"
+        android:layout_marginLeft="@dimen/x30"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user_vip_base_text"
+            android:textColor="#222222"
+            android:textSize="@dimen/y45" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/view_vip_status"
+                android:layout_width="@dimen/x54"
+                android:layout_height="@dimen/x54"
+                android:background="@drawable/user_vip_off" />
+
+            <TextView
+                android:id="@+id/tv_vp_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x3"
+                android:text="@string/user_vip_base_status"
+                android:textColor="#9B9B9B" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btn_vip_pay"
+        android:layout_width="@dimen/x282"
+        android:layout_height="@dimen/y90"
+        android:layout_marginRight="@dimen/x60"
+        android:background="@drawable/btn_takepic_selector"
+        android:text="@string/user_vip_open"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

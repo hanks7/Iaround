@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical"
+  >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp">
+        <ImageView
+            android:id="@+id/iv_fragment_skill_photo"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:src="@drawable/chat_bar_family_join"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="21dp"/>
+        <TextView
+            android:id="@+id/tv_fragment_skill_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="大嬷嬷"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_fragment_skill_photo"/>
+        <LinearLayout
+            android:id="@+id/ll_fragment_skill_member"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+            <ImageView
+                android:id="@+id/fragment_skill_member_fist"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="3dp"/>
+            <ImageView
+                android:id="@+id/fragment_skill_member_second"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="3dp"/>
+
+            <ImageView
+                android:id="@+id/fragment_skill_member_third"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="9dp"/>
+            <ImageView
+                android:id="@+id/fragment_skill_member_enter"
+                android:layout_width="9dp"
+                android:layout_height="9dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="15dp"/>
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

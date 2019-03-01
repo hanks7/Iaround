@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y264"
+    android:layout_marginTop="@dimen/y30"
+    android:background="@color/common_white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:id="@+id/ll_power_ceo_logo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_NumFirst"
+            android:layout_width="@dimen/x60"
+            android:layout_height="@dimen/x60"
+            android:src="@drawable/user_vip_status" />
+
+        <TextView
+            android:id="@+id/tv_NumFirst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y42"
+            android:text="@string/user_vip_logo_ceo"
+            android:textColor="#222222" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_power_know_visitor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_NumSecond"
+            android:layout_width="@dimen/x60"
+            android:layout_height="@dimen/x60"
+            android:src="@drawable/user_vip_logo_visitor" />
+
+        <TextView
+            android:id="@+id/tv_NumSecond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y42"
+            android:text="@string/user_vip_logo_visotor"
+            android:textColor="#222222" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_power_look_pic"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_NumThird"
+            android:layout_width="@dimen/x60"
+            android:layout_height="@dimen/x60"
+            android:src="@drawable/user_vip_logo_pic" />
+
+        <TextView
+            android:id="@+id/tv_NumThird"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y42"
+            android:text="@string/user_vip_logo_pic"
+            android:textColor="#222222" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="app_name">one-push-getui</string>
+    <string name="bind_alias_fail">Binding alias failure</string>
+    <string name="bind_alias_success">Binding alias success</string>
+
+    <string name="unbind_alias_fail">Untying alias failure</string>
+    <string name="unbind_alias_success">Untying the alias success</string>
+</resources>

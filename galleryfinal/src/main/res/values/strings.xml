@@ -1,0 +1,46 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="gallery">Gallery</string>
+    <string name="all_photo">All Photo</string>
+    <string name="selected">selected(%1$d/%2$d)</string>
+    <string name="folder_photo_size">%1$d Piece</string>
+    <string name="photo_edit">Photo Edit</string>
+    <string name="photo_crop">Photo Crop</string>
+    <string name="crop_suc">Photo crop success</string>
+    <string name="crop_fail">Photo crop failure</string>
+    <string name="no_photo">Photo empty</string>
+    <string name="waiting">Please wait…</string>
+    <string name="select_max_tips">Has reached the maximum number selection!</string>
+    <string name="empty_sdcard">No SD card</string>
+    <string name="open_gallery_fail">Gallery init failure!</string>
+    <string name="take_photo_fail">Take photo failure</string>
+    <string name="saving">Saving picture…</string>
+    <string name="please_reopen_gf">Please reopen Gallery</string>
+    <string name="edit_letoff_photo_format">The image format does not support this operation!</string>
+    <string name="photo_list_empty">Failed to get the picture!</string>
+    <string name="preview">Preview</string>
+    <string name="permissions_tips_gallery">This app requesting access to your Gallery</string>
+    <string name="permissions_tips_video">This app requesting access to your Video</string>
+    <string name="permissions_denied_tips">Unable to get pictures</string>
+    <string name="maxsize_zero_tip">Maxsize should be greater than zero</string>
+    <string name="preview_select">Choice</string>
+    <string name="photo_size_error1">Photo size is too small, please change other photos</string>
+    <string name="picture_all_video">All video</string>
+    <string name="picture_all_audio">All audio</string>
+    <string name="picture_camera_roll">CameraRoll</string>
+    <string name="picture_take_picture">Shot</string>
+    <string name="picture_photograph">Photograph</string>
+    <string name="picture_record_video">Record Video</string>
+    <string name="picture_cancel">Cancel</string>
+    <string name="photo_video_long_min">Time can not be less than 5 seconds.</string>
+    <string name="photo_video_long_max">Time can not exceed 30 seconds.</string>
+
+    <string name="VideoView_ar_aspect_fit_parent">Aspect / Fit parent</string>
+    <string name="VideoView_ar_aspect_fill_parent">Aspect / Fill parent</string>
+    <string name="VideoView_ar_aspect_wrap_content">Aspect / Wrap content</string>
+    <string name="VideoView_ar_match_parent">Free / Fill parent</string>
+    <string name="VideoView_ar_16_9_fit_parent">16:9 / Fit parent</string>
+    <string name="VideoView_ar_4_3_fit_parent">4:3 / Fit parent</string>
+    <string name="N_A">N/A</string>
+
+    <string name="start_play_hint">You are using a mobile network to play video.</string>
+</resources>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/userFragment_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:background="@color/chat_update_divider_of_messageItem"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y33">
+
+            <TextView
+                android:id="@+id/tvCounter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/report_comtent"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y300"
+                android:background="@color/common_white"
+                android:gravity="top|left"
+                android:paddingLeft="@dimen/x48"
+                android:paddingRight="@dimen/x48"
+                android:paddingTop="@dimen/y39"
+                android:paddingBottom="@dimen/y39"
+                android:maxLength="500"
+                android:hint="@string/report_hint"
+                android:textSize="@dimen/y42"
+                android:textColorHint="@color/chat_update_chatInput_hintTextColor"
+                />
+
+            <TextView
+                android:id="@+id/typeTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dip"
+                android:paddingBottom="2dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:visibility="gone"
+                android:text="@string/report_type"
+                android:textColor="@color/c_b28850"
+                android:textSize="14sp" >
+            </TextView>
+
+            <ListView
+                android:id="@+id/lvType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:choiceMode="singleChoice"
+                android:layout_marginTop="@dimen/y32"
+                android:background="@color/common_white"
+                android:dividerHeight="0dp"
+                android:divider="@color/gridview_item_bg"
+                android:dividerPadding="0dp"
+                >
+            </ListView>
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

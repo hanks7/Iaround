@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+
+   <!-- <include
+        android:id="@+id/expandable_head"
+        layout="@layout/x_store_expandable_head"
+         />-->
+
+    <net.iaround.ui.view.face.MyGridView
+        android:id="@+id/store_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:gravity="center"
+        android:horizontalSpacing="0dp"
+        android:listSelector="@drawable/transparent"
+        android:numColumns="2"
+        android:overScrollMode="never"
+        android:paddingLeft="10dp"
+        android:paddingRight="20dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="9dp"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="0dp" />
+
+</LinearLayout>

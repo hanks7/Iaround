@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title_bar" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_below="@+id/title_bar"
+        android:background="@color/chat_update_divider_of_toolMenu" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/pull_video_chat_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/divider"
+        android:background="@color/bg_color"
+        android:cacheColorHint="@color/bg_color"
+        android:divider="@color/bg_color"
+        android:fadingEdge="none"
+        android:listSelector="@color/bg_color" />
+
+    <LinearLayout
+        android:id="@+id/empty_friend"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/divider"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/y132"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y436"
+            android:src="@drawable/have_no_friend_dynamic" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y70"
+            android:gravity="center"
+            android:text="@string/content_is_empty" />
+    </LinearLayout>
+
+</RelativeLayout>

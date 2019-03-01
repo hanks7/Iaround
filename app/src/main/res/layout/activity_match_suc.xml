@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y245"
+        android:text="@string/matches_suc_matches_suc"
+        android:textColor="#FF4064"
+        android:textSize="@dimen/y80"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_other_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y40"
+        android:text="@string/matches_suc_nickname_tips"
+        android:textColor="#4A4A4A"
+        android:textSize="@dimen/y40" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y40"
+        android:text="@string/matches_suc_enjoy_eachother"
+        android:textColor="#4A4A4A"
+        android:textSize="@dimen/y40" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/y360"
+        android:layout_marginTop="@dimen/y210"
+        android:orientation="horizontal">
+
+        <net.iaround.ui.view.CircleImageView
+            android:id="@+id/iv_myself_head"
+            android:layout_width="@dimen/y360"
+            android:layout_height="match_parent"
+            android:background="@color/common_white"
+            android:src="@drawable/default_avatar_rect_light" />
+
+        <net.iaround.ui.view.CircleImageView
+            android:id="@+id/iv_other_head"
+            android:layout_width="@dimen/y360"
+            android:layout_height="@dimen/y360"
+            android:layout_marginLeft="@dimen/x45"
+            android:background="@color/common_white"
+            android:src="@drawable/default_avatar_rect_light" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_start_chat"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y120"
+        android:layout_marginLeft="@dimen/x50"
+        android:layout_marginRight="@dimen/x50"
+        android:layout_marginTop="@dimen/y387"
+        android:background="@drawable/btn_takepic_selector"
+        android:gravity="center"
+        android:text="@string/matches_suc_btn_start_chat"
+        android:textColor="@color/common_white" />
+
+    <Button
+        android:id="@+id/btn_continue_match"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y120"
+        android:layout_marginLeft="@dimen/x50"
+        android:layout_marginRight="@dimen/x50"
+        android:layout_marginTop="@dimen/y38"
+        android:background="@drawable/btn_report_selector"
+        android:gravity="center"
+        android:text="@string/matches_suc_btn_continue_matches"
+        android:textColor="@color/common_white" />
+
+
+</LinearLayout>

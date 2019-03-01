@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:gravity="center_vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_skill_left"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginLeft="13dp"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:id="@+id/rl_skill_left_main"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerVertical="true">
+                <ImageView
+                    android:id="@+id/iv_skill_left_main"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/chat_bar_family_join"
+                   />
+
+
+            </RelativeLayout>
+
+
+            <net.iaround.ui.view.RatingBarView
+                android:id="@+id/rbv_skill_left_first"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                app:singelStarSize="13dp"
+                app:paddingSpace="6dp"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/rl_skill_left_main">
+            </net.iaround.ui.view.RatingBarView>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_skill_center"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_centerInParent="true"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_center"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:src="@drawable/other_info_skill_expand" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_skill_right"
+            android:layout_width="120dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@+id/ll_skill_center"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rl_skill_right_main"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerVertical="true">
+                <ImageView
+                    android:id="@+id/iv_skill_right_main"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                   android:layout_centerInParent="true"
+                    android:src="@drawable/chat_bar_family_join" />
+
+            </RelativeLayout>
+
+            <net.iaround.ui.view.RatingBarView
+                android:id="@+id/rbv_skill_right_first"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                app:singelStarSize="13dp"
+                app:paddingSpace="6dp"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/rl_skill_right_main"/>
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/chat_update_divider_of_toolMenu"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <net.iaround.ui.view.ExpandLayout
+        android:id="@+id/el_skill_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true">
+    </net.iaround.ui.view.ExpandLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/chat_update_divider_of_toolMenu" />
+
+
+</LinearLayout>

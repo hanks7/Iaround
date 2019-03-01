@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/userFragment_bg">
+
+    <include layout="@layout/title_bar" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y60"
+        android:text="@string/msg_code_have_send"
+        android:textColor="@color/chat_update_chatInput_hintTextColor"
+        android:textSize="@dimen/y36" />
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="@dimen/y48"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:textColor="@color/chat_update_edit_user_value"-->
+        <!--android:textSize="@dimen/y60"/>-->
+
+    <LinearLayout
+        android:id="@+id/input_layout_foucus"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y60"
+        android:background="#E7E7E7"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y144"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edittext_msg_code"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:ellipsize="end"
+                android:ems="10"
+                android:hint="@string/register_input_code"
+                android:inputType="phone"
+                android:paddingLeft="11dp"
+                android:paddingRight="11dp"
+                android:singleLine="true"
+                android:textColor="@color/c_ff000000"
+                android:textColorHint="@color/c_ff8c8c8c"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_resend_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/z_btn_red_white_selector"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:padding="11dp"
+                android:singleLine="true"
+                android:text="@string/register_resend_code"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/spit_view"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="left|center_vertical"
+            android:background="@drawable/listview_item_divider" />
+
+        <LinearLayout
+            android:id="@+id/set_pwd_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp" >
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="0dip"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:ellipsize="end"
+                android:ems="10"
+                android:hint="@string/register_set_psw"
+                android:paddingLeft="11dp"
+                android:paddingRight="11dp"
+                android:singleLine="true"
+                android:textColor="@color/c_ff000000"
+                android:textColorHint="@color/c_ff8c8c8c"
+                android:textSize="15sp" />
+
+            <!-- <CheckBox -->
+            <!-- android:id="@+id/cbShowPsw" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="fill_parent" -->
+            <!-- android:layout_gravity="center_vertical" -->
+            <!-- android:layout_margin="10dp" -->
+            <!-- android:background="@color/c_ffe0e0e0" -->
+            <!-- android:button="@null" -->
+            <!-- android:checked="true" -->
+            <!-- android:gravity="center" -->
+            <!-- android:paddingLeft="10dp" -->
+            <!-- android:paddingRight="10dp" -->
+            <!-- android:text="..." -->
+            <!-- android:textColor="@color/c_ff494949" -->
+            <!-- android:textSize="12sp" /> -->
+
+            <FrameLayout
+                android:id="@+id/delete_password_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:paddingRight="5dp"
+                android:visibility="invisible" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:src="@drawable/chat_teme_detail_gift_bg" />
+
+                <ImageView
+                    android:id="@+id/delete_password_btn"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:paddingRight="1dp"
+                    android:src="@drawable/delete_password_selector" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+<!--     <Button -->
+<!--         android:id="@+id/next_step" -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="48dp" -->
+<!--         android:layout_gravity="center_horizontal" -->
+<!--         android:layout_marginLeft="34dp" -->
+<!--         android:layout_marginRight="34dp" -->
+<!--         android:layout_marginTop="29dp" -->
+<!--         android:background="@drawable/z_btn_red_selector" -->
+<!--         android:padding="10dip" -->
+<!--         android:text="@string/next" -->
+<!--         android:textColor="@color/white" -->
+<!--         android:textSize="15sp" /> -->
+
+    <Button
+        android:id="@+id/btn_start_bind"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="34dp"
+        android:layout_marginRight="34dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/chat_person_background_of_sendgift"
+        android:enabled="false"
+        android:padding="10dip"
+        android:text="@string/text_bind"
+        android:textColor="#FFF"
+        android:textSize="15sp" />
+
+</LinearLayout>

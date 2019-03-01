@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ctl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_heightPercent="29.7%w">
+
+        <ImageView
+            android:id="@+id/skill_icon"
+            android:layout_width="102dp"
+            android:layout_height="102dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            app:layout_heightPercent="27.2%w"
+            app:layout_marginLeftPercent="4.5%w"
+            app:layout_widthPercent="27.2%w"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <ImageView
+            android:id="@+id/iv_skill_first"
+            android:layout_width="25.33dp"
+            android:layout_height="25.33dp"
+            android:layout_marginTop="6dp"
+            app:layout_heightPercent="20.24%w"
+            android:layout_alignParentBottom="true"
+            app:layout_marginBottomPercent="6.56%w"
+            app:layout_marginLeftPercent="8%w"
+            app:layout_widthPercent="20.24%w" />
+
+        <TextView
+            android:id="@+id/skill_name_icon_below"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_marginBottomPercent="2.1%w"
+            android:layout_alignParentBottom="true"
+            app:layout_marginLeftPercent="12.54%w"
+            app:layout_textSizePercent="3.85%w"
+            tools:text="大么么" />
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/skill_icon"
+            android:layout_toRightOf="@+id/skill_icon"
+            app:layout_marginLeftPercent="5.1%w">
+
+            <TextView
+                android:id="@+id/skill_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/center_view"
+                android:layout_marginBottom="6dp"
+                android:textColor="@color/country_group"
+                android:textSize="15sp"
+                app:layout_marginBottomPercent="4.9%w"
+                app:layout_textSizePercent="6.05%w"
+                tools:text="大么么" />
+
+            <net.iaround.ui.view.RatingBarView
+                android:id="@+id/ratingBarView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                app:paddingSpace="3.5dp"
+                app:singelStarSize="13dp"
+                tools:visibility="visible" />
+
+            <View
+                android:id="@+id/center_view"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/tv_open_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/login_btn"
+                android:textSize="9sp"
+                android:visibility="gone"
+                app:layout_textSizePercent="3.75%w"
+                tools:text="达到xx级或成为会员即可开启本技能"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/center_view"
+                android:layout_marginTop="6dp"
+                android:text="@string/effect"
+                android:textColor="@color/gray_text_color"
+                android:textSize="11sp"
+                app:layout_marginTopPercent="6.2%w"
+                app:layout_textSizePercent="4.8%w" />
+
+            <TextView
+                android:id="@+id/skill_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/center_view"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_toEndOf="@+id/textView6"
+                android:layout_toRightOf="@+id/textView6"
+                android:textColor="@color/gray_text_color"
+                android:textSize="11sp"
+                app:layout_marginEndPercent="6.75%w"
+                app:layout_marginTopPercent="6.7%w"
+                app:layout_textSizePercent="5%w" />
+
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="60dp"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/touch_bg_red"
+        android:text="@string/update"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_heightPercent="6.4%w"
+        app:layout_marginRightPercent="5.2%w"
+        app:layout_marginTopPercent="6.2%w"
+        app:layout_textSizePercent="3.2%w"
+        app:layout_widthPercent="16%w" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/encounter_base_info_line"
+        app:layout_heightPercent="0.1%w"
+        app:layout_marginLeftPercent="4.5%w" />
+</com.zhy.android.percent.support.PercentRelativeLayout>

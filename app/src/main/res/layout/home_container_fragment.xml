@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal">
+        <!--如果MagicIndicator需要加背景颜色   需要在其外面嵌套一个父布局  在父布局添加背景颜色-->
+        <net.lucode.hackware.magicindicator.MagicIndicator
+            android:id="@+id/home_container_fragment_magicindicator"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_weight="1"/>
+        <LinearLayout
+            android:id="@+id/ll_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/iv_near_filter"
+                android:layout_width="@dimen/x46"
+                android:layout_height="@dimen/x46"
+                android:layout_marginRight="@dimen/x51"
+                android:background="@drawable/near_filter" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/home_container_fragment_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

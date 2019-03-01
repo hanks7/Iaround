@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e3e3e3"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/abTitle"
+        layout="@layout/title_with_right_text" />
+
+    <FrameLayout
+        style="@style/double_fill"
+        android:layout_below="@id/abTitle" >
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdge="none"
+            android:scrollbars="none" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <net.iaround.ui.comon.NetImageView
+                    android:id="@+id/header_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="192dp"
+                    android:background="@color/gray"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/header_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/header_image"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="20dip"
+                    android:text="@string/vip_select_package"
+                    android:textColor="@color/c_999999"
+                    android:textSize="13sp" />
+
+                <net.iaround.ui.view.face.MyGridView
+                    android:id="@+id/gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/header_text"
+                    android:columnWidth="152.5dp"
+                    android:fadingEdge="none"
+                    android:gravity="center"
+                    android:horizontalSpacing="15dp"
+                    android:listSelector="@drawable/transparent"
+                    android:numColumns="2"
+                    android:overScrollMode="never"
+                    android:paddingBottom="6dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:scrollbars="none"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="12dp" />
+
+                <RelativeLayout
+                    android:id="@+id/relative_vip_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/gridview"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/foot_left_text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dip"
+                        android:text="@string/vip_agree"
+                        android:textColor="@color/c_999999"
+                        android:textSize="13sp" />
+                    
+                    <TextView
+                        android:id="@+id/foot_left_text2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/foot_left_text1"
+                        android:gravity="center_vertical"
+                        android:text="@string/vip_protocol"
+                        android:textColor="#ef555e"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/foot_right_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical"
+                        android:paddingRight="20dip"
+                        android:text="@string/vip_pay_help"
+                        android:textColor="#ef555e"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+                
+                <TextView
+                    android:id="@+id/tv_pay_vip_order_new"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_below="@id/relative_vip_order"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:visibility="gone"
+                    android:textSize="16dp"
+                    android:text="@string/vip_buy_order_new"/>
+                
+            </RelativeLayout>
+        </ScrollView>
+    </FrameLayout>
+
+</LinearLayout>
