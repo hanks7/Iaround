@@ -47,7 +47,7 @@ public class BaseActivity extends FragmentActivity {
     private FrameLayout mFlipper;
     private Dialog mWaitDialog = null;
     private int mPermissionRequestState = 0;
-    protected boolean mIsDestroy = false; //手动标记为已销毁
+    protected boolean mIsDestroy = false; //   手动标记为已销毁
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
