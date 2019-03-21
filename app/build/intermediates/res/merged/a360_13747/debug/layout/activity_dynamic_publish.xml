@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/userFragment_bg"
+    android:orientation="vertical">
+
+    <!--<include layout="@layout/tabar_actionbar_layout"/>-->
+    <include layout="@layout/title_bar"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:background="@color/chat_update_divider_of_toolMenu"/>
+    <ScrollView
+        android:id="@+id/svContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:isScrollContainer="true" >
+
+        <LinearLayout
+            android:id="@+id/llContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/common_white"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <ScrollView
+                android:id="@+id/llInputContent"
+                android:layout_width="match_parent"
+                android:layout_height="188.5dp"
+                android:orientation="vertical"
+                android:scrollbars="none" >
+
+                <EditText
+                    android:id="@+id/etTextContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="11dp"
+                    android:background="@color/transparent"
+                    android:gravity="left|top"
+                    android:hint="@string/share_say_something_text"
+                    android:isScrollContainer="true"
+                    android:paddingLeft="@dimen/x48"
+                    android:paddingRight="@dimen/x48"
+                    android:paddingBottom="@dimen/y42"
+                    android:paddingTop="@dimen/y42"
+                    android:textColor="@color/common_black"
+                    android:textColorHint="@color/common_hint"
+                    android:textSize="@dimen/y42" />
+            </ScrollView>
+
+            <RelativeLayout
+                android:id="@+id/llAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x48"
+                android:layout_marginRight="@dimen/x48" >
+                
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/dynamic_address_background_shape"
+                    android:orientation="horizontal">
+                    
+                    <ImageView
+                        android:layout_width="@dimen/x36"
+                        android:layout_height="@dimen/y45"
+                        android:layout_marginRight="@dimen/x12"
+                        android:background="@drawable/dynamic_new_address"/>
+
+                    <TextView
+                        android:id="@+id/tvAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:maxWidth="200dp"
+                        android:textColor="@color/encounter_filter_sex_selcet"
+                        android:textSize="@dimen/y36" />
+                    
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/ivFace"
+                    android:layout_width="@dimen/x78"
+                    android:layout_height="@dimen/y78"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/z_common_face_icon" />
+
+                <TextView
+                    android:id="@+id/tvCountLimit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/ivFace"
+                    android:paddingRight="6dp"
+                    android:textColor="@color/encounter_filter_sex_selcet"
+                    android:textSize="@dimen/y36" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/y26"
+                android:layout_marginTop="@dimen/y26"
+                android:orientation="vertical"
+                android:background="@color/userFragment_bg">
+
+                <LinearLayout
+                    android:id="@+id/llFirstRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+                <include
+                    android:id="@+id/ly_add"
+                    layout="@layout/view_preview_bottom"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rlFaceLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_black" >
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/activity_basic_style"
+    android:background="@drawable/info_bg_center"
+    android:orientation="vertical" >
+
+    <!--<include-->
+        <!--android:id="@+id/activity_title"-->
+        <!--layout="@layout/title_one_text" />-->
+    <include
+        android:id="@+id/activity_title"
+        layout="@layout/title_bar" />
+
+    <!--
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/c_fcfef6"
+        android:paddingLeft="13dip"
+        android:paddingRight="13dip" >
+
+        <ImageView
+            android:id="@+id/btn_search"
+            android:layout_width="32dip"
+            android:layout_height="32dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/btn_search_selector" />
+
+        <EditText
+            android:id="@+id/edit_search"
+            style="@style/edit_text_style"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/btn_search"
+            android:background="@drawable/textfield_holo_dark_selector"
+            android:gravity="left|center_vertical"
+            android:hint="@string/add_friend_textfield_hint"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:padding="8dip" />
+    </RelativeLayout>-->
+
+    <RelativeLayout
+        android:id="@+id/rlSearchBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_address_search_bar_heigh"
+        android:background="@drawable/z_common_bg_white_round"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="8dp" >
+
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/transparent"
+            android:drawableLeft="@drawable/group_search_icon"
+            android:drawablePadding="@dimen/dp_1"
+            android:hint="@string/add_friend_textfield_hint"
+            android:gravity="center"
+            android:textColor="@color/c_999999"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <!-- <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.67dip"
+        android:background="@drawable/listview_item_divider" />
+ -->
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/user_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="@null" />
+
+</LinearLayout>

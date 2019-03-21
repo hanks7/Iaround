@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/chatbar_gift_layout_bg"
+    android:visibility="visible">
+
+    <RelativeLayout
+        android:id="@+id/rl_userinfo"
+        android:layout_width="match_parent"
+        android:layout_height="36dp">
+
+        <TextView
+            android:id="@+id/tv_handsel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="赠送"
+            android:textColor="@color/common_white"
+            android:textSize="12sp" />
+        <!--用户头像-->
+        <net.iaround.ui.view.HeadPhotoView
+            android:id="@+id/user_icon"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/tv_handsel" />
+        <!--赠送用户昵称-->
+        <TextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/rl_pay_layout"
+            android:layout_toRightOf="@+id/user_icon"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/chatbar_gift_userinfo_name"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_pay_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp">
+            <!--星星区域-->
+            <LinearLayout
+                android:id="@+id/ll_star_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginRight="3dp"
+                    android:src="@drawable/icon_star" />
+
+                <TextView
+                    android:id="@+id/tv_star_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="1dp"
+                    android:textColor="@color/common_white"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginTop="1dp"
+                    android:src="@drawable/chatbar_gift_lookmore_icon" />
+            </LinearLayout>
+            <!--钻石区域-->
+            <LinearLayout
+                android:id="@+id/ll_diamond_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_toRightOf="@+id/ll_star_layout"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginRight="3dp"
+                    android:src="@drawable/chatbar_gift_diamond_icon" />
+
+                <TextView
+                    android:id="@+id/tv_diamond_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="1dp"
+                    android:textColor="@color/common_white"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginTop="1dp"
+                    android:src="@drawable/chatbar_gift_lookmore_icon" />
+            </LinearLayout>
+            <!--金币区域-->
+            <LinearLayout
+                android:id="@+id/ll_coin_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/ll_diamond_layout"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_coin_icon"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginRight="4dp"
+                    android:src="@drawable/chatbar_gift_coin_icon" />
+
+                <TextView
+                    android:id="@+id/tv_coin_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="1dp"
+                    android:textColor="@color/common_white"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginTop="1dp"
+                    android:src="@drawable/chatbar_gift_lookmore_icon" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

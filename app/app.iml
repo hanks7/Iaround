@@ -8,11 +8,11 @@
     </facet>
     <facet type="android" name="Android">
       <configuration>
-        <option name="SELECTED_BUILD_VARIANT" value="a360_13689Debug" />
-        <option name="ASSEMBLE_TASK_NAME" value="assembleA360_13689Debug" />
-        <option name="COMPILE_JAVA_TASK_NAME" value="compileA360_13689DebugSources" />
+        <option name="SELECTED_BUILD_VARIANT" value="a360_13747Debug" />
+        <option name="ASSEMBLE_TASK_NAME" value="assembleA360_13747Debug" />
+        <option name="COMPILE_JAVA_TASK_NAME" value="compileA360_13747DebugSources" />
         <afterSyncTasks>
-          <task>generateA360_13689DebugSources</task>
+          <task>generateA360_13747DebugSources</task>
         </afterSyncTasks>
         <option name="ALLOW_USER_CONFIGURATION" value="false" />
         <option name="MANIFEST_FILE_RELATIVE_PATH" value="/src/main/AndroidManifest.xml" />
@@ -23,70 +23,70 @@
     </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7">
-    <output url="file://$MODULE_DIR$/build/intermediates/javac/a360_13689Debug/compileA360_13689DebugJavaWithJavac/classes" />
-    <output-test url="file://$MODULE_DIR$/build/intermediates/javac/a360_13689DebugUnitTest/compileA360_13689DebugUnitTestJavaWithJavac/classes" />
+    <output url="file://$MODULE_DIR$/build/intermediates/javac/a360_13747Debug/compileA360_13747DebugJavaWithJavac/classes" />
+    <output-test url="file://$MODULE_DIR$/build/intermediates/javac/a360_13747DebugUnitTest/compileA360_13747DebugUnitTestJavaWithJavac/classes" />
     <exclude-output />
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/proto/a360_13689Debug/javanano" isTestSource="false" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/apt/a360_13689/debug" isTestSource="false" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/not_namespaced_r_class_sources/a360_13689Debug/processA360_13689DebugResources/r" isTestSource="false" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/aidl/a360_13689/debug" isTestSource="false" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/buildConfig/a360_13689/debug" isTestSource="false" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/rs/a360_13689/debug" isTestSource="false" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/rs/a360_13689/debug" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/resValues/a360_13689/debug" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/a360_13689Debug/res" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/a360_13689Debug/resources" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/a360_13689Debug/assets" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/a360_13689Debug/aidl" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/a360_13689Debug/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/a360_13689Debug/rs" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/a360_13689Debug/shaders" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/proto/a360_13689DebugAndroidTest/javanano" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/apt/androidTest/a360_13689/debug" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/not_namespaced_r_class_sources/a360_13689DebugAndroidTest/processA360_13689DebugAndroidTestResources/r" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/aidl/androidTest/a360_13689/debug" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/buildConfig/androidTest/a360_13689/debug" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/rs/androidTest/a360_13689/debug" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/rs/androidTest/a360_13689/debug" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/resValues/androidTest/a360_13689/debug" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestA360_13689Debug/res" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestA360_13689Debug/resources" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestA360_13689Debug/assets" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestA360_13689Debug/aidl" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestA360_13689Debug/java" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestA360_13689Debug/rs" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestA360_13689Debug/shaders" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/proto/a360_13689DebugUnitTest/javanano" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/apt/test/a360_13689/debug" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testA360_13689Debug/res" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testA360_13689Debug/resources" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testA360_13689Debug/assets" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testA360_13689Debug/aidl" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testA360_13689Debug/java" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testA360_13689Debug/rs" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testA360_13689Debug/shaders" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/a360_13689/res" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/a360_13689/resources" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/a360_13689/assets" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/a360_13689/aidl" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/a360_13689/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/a360_13689/rs" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/a360_13689/shaders" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testA360_13689/res" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testA360_13689/resources" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testA360_13689/assets" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testA360_13689/aidl" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testA360_13689/java" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testA360_13689/rs" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testA360_13689/shaders" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestA360_13689/res" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestA360_13689/resources" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestA360_13689/assets" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestA360_13689/aidl" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestA360_13689/java" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestA360_13689/rs" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestA360_13689/shaders" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/proto/a360_13747Debug/javanano" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/apt/a360_13747/debug" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/not_namespaced_r_class_sources/a360_13747Debug/processA360_13747DebugResources/r" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/aidl/a360_13747/debug" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/buildConfig/a360_13747/debug" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/rs/a360_13747/debug" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/rs/a360_13747/debug" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/resValues/a360_13747/debug" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/a360_13747Debug/res" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/a360_13747Debug/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/a360_13747Debug/assets" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/a360_13747Debug/aidl" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/a360_13747Debug/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/a360_13747Debug/rs" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/a360_13747Debug/shaders" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/proto/a360_13747DebugAndroidTest/javanano" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/apt/androidTest/a360_13747/debug" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/not_namespaced_r_class_sources/a360_13747DebugAndroidTest/processA360_13747DebugAndroidTestResources/r" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/aidl/androidTest/a360_13747/debug" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/buildConfig/androidTest/a360_13747/debug" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/rs/androidTest/a360_13747/debug" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/rs/androidTest/a360_13747/debug" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/resValues/androidTest/a360_13747/debug" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestA360_13747Debug/res" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestA360_13747Debug/resources" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestA360_13747Debug/assets" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestA360_13747Debug/aidl" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestA360_13747Debug/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestA360_13747Debug/rs" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestA360_13747Debug/shaders" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/proto/a360_13747DebugUnitTest/javanano" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/apt/test/a360_13747/debug" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testA360_13747Debug/res" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testA360_13747Debug/resources" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testA360_13747Debug/assets" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testA360_13747Debug/aidl" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testA360_13747Debug/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testA360_13747Debug/rs" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testA360_13747Debug/shaders" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/a360_13747/res" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/a360_13747/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/a360_13747/assets" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/a360_13747/aidl" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/a360_13747/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/a360_13747/rs" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/a360_13747/shaders" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testA360_13747/res" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testA360_13747/resources" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testA360_13747/assets" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testA360_13747/aidl" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testA360_13747/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testA360_13747/rs" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testA360_13747/shaders" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestA360_13747/res" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestA360_13747/resources" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestA360_13747/assets" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestA360_13747/aidl" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestA360_13747/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestA360_13747/rs" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestA360_13747/shaders" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/debug/res" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/debug/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/debug/assets" type="java-resource" />
@@ -131,21 +131,30 @@
       <sourceFolder url="file://$MODULE_DIR$/src/test/shaders" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/build/extracted-include-protos" />
       <excludeFolder url="file://$MODULE_DIR$/build/extracted-protos" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/annotation_processor_list" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/apk_list" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/blame" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/check-libraries" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/check-manifest" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/checkA360_13689DebugClasspath" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/checkA360_13747DebugClasspath" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/compatible_screen_manifest" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/instant_run_merged_manifests" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/javac" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/jniLibs" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/legacy_multidex_aapt_derived_proguard_rules" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/merged_assets" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/merged_manifests" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/prebuild" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/processed_res" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/res" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/rs" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/shader_assets" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/shaders" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/split_list" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/symbols" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/transforms" />
       <excludeFolder url="file://$MODULE_DIR$/build/outputs" />
       <excludeFolder url="file://$MODULE_DIR$/build/tmp" />
     </content>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+  
+
+    <RelativeLayout
+        android:id="@+id/faceitem_footlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="68dip"
+        android:background="@drawable/info_bg_center_selector"
+        android:paddingLeft="11dip"
+        android:layout_marginBottom="19dp"
+        android:paddingRight="11dip" >
+
+        <TextView
+            android:id="@+id/face_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="11dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/face_buy_history"
+            android:textColor="@color/c_000000"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/next_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="11dp"
+            android:src="@drawable/arraw_turn" />
+    </RelativeLayout>
+
+   
+</LinearLayout>

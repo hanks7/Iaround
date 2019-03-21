@@ -1,0 +1,10 @@
+#Wed Mar 20 18:31:38 CST 2019
+path.2=classes3.dex
+path.1=classes2.dex
+path.0=classes.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+base.2=/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/transforms/dex/a360_13747/debug/0
+base.1=/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/transforms/dex/a360_13747/debug/0
+base.0=/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/transforms/dex/a360_13747/debug/0

@@ -415,6 +415,7 @@ class UIMainHandler extends Handler {
                     shareDate.putInt(SharedPreferenceUtil.SHOWMIGU, initBean.showMigu);
                     shareDate.putInt(SharedPreferenceUtil.SHOW_MANLIAN, initBean.showManlian);
                     shareDate.putInt(SharedPreferenceUtil.ACCOMPANY_IS_SHOW, initBean.accompanyIsShow);
+                    shareDate.putInt(SharedPreferenceUtil.VOICE_IS_SHOW, initBean.isShowVoice);
 
                     Common.getInstance().setDefaultTab(initBean.defaultTab);
                     Common.getInstance().setBlockStatus(initBean.relationswitch);

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color">
+
+    <ImageView
+        android:id="@+id/iv_unlogin"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/y264"
+        android:background="@drawable/login_main_bg"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x86"
+        android:layout_marginRight="@dimen/x86"
+        android:layout_marginBottom="@dimen/y193"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_regist"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/y132"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/x23"
+            android:text="@string/splash_register"
+            android:textSize="@dimen/y42"
+            android:textColor="@color/common_white"
+            android:background="@drawable/btn_splash_regist_selector"/>
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/y132"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/x23"
+            android:gravity="center"
+            android:text="@string/splash_login"
+            android:textSize="@dimen/y42"
+            android:textColor="@color/login_btn"
+            android:background="@drawable/btn_splash_login_selector"/>
+    </LinearLayout>
+
+</LinearLayout>

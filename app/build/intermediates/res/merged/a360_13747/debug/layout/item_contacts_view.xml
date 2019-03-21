@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_bg_selector">
+
+
+    <RelativeLayout
+        android:id="@+id/main_view"
+        android:layout_marginLeft="@dimen/x16"
+        android:layout_marginRight="@dimen/x16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <net.iaround.ui.view.HeadPhotoView
+            android:id="@+id/user_icon"
+            android:layout_width="@dimen/x200"
+            android:layout_height="@dimen/y200"
+            android:layout_marginBottom="@dimen/y20"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x30"
+            android:layout_marginTop="@dimen/y20" />
+
+        <RelativeLayout
+            android:id="@+id/rl_personal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/user_icon" >
+
+            <TextView
+                android:id="@+id/user_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/x24"
+                android:textColor="#FF9B9B9B"
+                android:textSize="@dimen/y36" />
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@id/user_location"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#FF222222"
+                android:textSize="@dimen/y42" />
+
+            <LinearLayout
+                android:id="@+id/ly_user_age_left"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/y42"
+                android:layout_marginTop="@dimen/y16"
+                android:layout_below="@id/user_name"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_user_sex_left"
+                    android:layout_width="@dimen/x30"
+                    android:layout_height="@dimen/y30"/>
+
+                <TextView
+                    android:id="@+id/tv_user_age_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/x6"
+                    android:paddingRight="@dimen/x10"
+                    android:textSize="@dimen/y24"
+                    android:textColor="@color/common_white"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_user_constellation"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/y42"
+                android:layout_below="@id/user_name"
+                android:layout_toRightOf="@id/ly_user_age_left"
+                android:layout_marginTop="@dimen/y18"
+                android:layout_marginLeft="@dimen/x6"
+                android:background="@drawable/encounter_constellation_circel_bg"
+                android:textSize="@dimen/y24"
+                android:textColor="@color/common_white"/>
+
+            <TextView
+                android:id="@+id/user_notes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ly_user_age_left"
+                android:layout_marginTop="@dimen/y17"
+                android:gravity="center"
+                android:textColor="#FF9B9B9B"
+                android:textSize="@dimen/y42" />
+
+
+        </RelativeLayout>
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y2"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/user_icon"
+            android:background="#FFE7E7E7"/>
+    </RelativeLayout>
+
+</RelativeLayout>

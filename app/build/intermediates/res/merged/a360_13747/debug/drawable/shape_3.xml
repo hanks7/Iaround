@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+	android:shape="rectangle">
+	<gradient android:startColor="#B8215E" android:endColor="#B8215E" />
+
+	<size
+		android:width="2dp"
+		android:height="27dp"/><!-- 宽度和高度 -->
+	<!-- stroke描边 -->
+	<!--<stroke android:width="2dp" android:color="#B8215E" />-->
+	<solid
+		android:color="#B8215E"/><!-- 填充的颜色 -->
+</shape>

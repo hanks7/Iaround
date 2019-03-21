@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/tv_base_success"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:drawablePadding="6dp"
+        android:drawableStart="@drawable/circle_skill_detail_red"
+        android:textColor="@color/login_btn"
+        tools:text="基础成功率：52%"
+        android:drawableLeft="@drawable/circle_skill_detail_red" />
+
+    <TextView
+        android:id="@+id/tv_acer_success"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="6dp"
+        android:textSize="12sp"
+        android:drawableStart="@drawable/circle_skill_detail_yellow"
+        android:textColor="@color/skill_yellow"
+        android:visibility="gone"
+        tools:text="元宝升级加成：10%"
+        tools:visibility="visible"
+        android:drawableLeft="@drawable/circle_skill_detail_yellow" />
+
+    <TextView
+        android:id="@+id/tv_ranking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="6dp"
+        android:drawableStart="@drawable/circle_skill_detail_blue"
+        android:textColor="@color/ranking_charm_charmnumber"
+        android:visibility="gone"
+        android:textSize="12sp"
+        tools:text="排行榜加成: 7%"
+        tools:visibility="visible"
+        android:drawableLeft="@drawable/circle_skill_detail_blue" />
+
+
+    <TextView
+        android:id="@+id/tv_diamond_success_rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="6dp"
+        android:drawableStart="@drawable/circle_skill_detail_green"
+        android:textColor="@color/lable_rest_color"
+        android:visibility="gone"
+        tools:text="钻石升级加成：10%"
+        android:textSize="12sp"
+        tools:visibility="visible"
+        android:drawableLeft="@drawable/circle_skill_detail_green" />
+
+    <TextView
+        android:id="@+id/tv_recharge_upgrade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="6dp"
+        android:drawableStart="@drawable/circle_skill_detail_upgrade"
+        android:textColor="@color/recharge_upgrade"
+        android:visibility="gone"
+        android:textSize="12sp"
+        tools:text="充值升级加成: 7%"
+        tools:visibility="visible"
+        android:drawableLeft="@drawable/circle_skill_detail_blue" />
+
+    <TextView
+        android:id="@+id/tv_recharge_upgrade_star"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="6dp"
+        android:drawableStart="@drawable/circle_skill_detail_upgrade"
+        android:textColor="@color/recharge_upgrade"
+        android:visibility="gone"
+        android:textSize="12sp"
+        tools:text="星星升级加成: 7%"
+        tools:visibility="visible"
+        android:drawableLeft="@drawable/circle_skill_detail_blue" />
+
+</RelativeLayout>

@@ -291,6 +291,10 @@ public class SharedPreferenceUtil {
      */
     public final static String ACCOMPANY_IS_SHOW = "accompanyIsShow";
     /**
+     * 首页 是否显示语聊
+     */
+    public final static String VOICE_IS_SHOW = "VOICE_IS_SHOW";
+    /**
      * 邂逅通知数据状态 1显示别人对我有意思 2显示别人和我互有意思
      */
     public final static String MEET_GAME_FLAG = "meet_game_flag";

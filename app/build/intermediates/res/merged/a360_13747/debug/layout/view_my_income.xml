@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6">
+
+    <TextView
+        android:id="@+id/tv_my_income_date"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x120"
+        android:paddingLeft="@dimen/x60"
+        android:paddingRight="@dimen/x48"
+        android:gravity="center_vertical"
+        android:drawablePadding="@dimen/x18"
+        android:text="2017年02月"
+        android:drawableLeft="@drawable/my_income_date_left"
+        android:drawableRight="@drawable/my_income_arrow"
+        android:background="@color/white"/>
+
+    <LinearLayout
+        android:id="@+id/ly_my_income_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_my_income_date"
+        android:gravity="center_vertical"
+        android:background="#2CD18C"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_my_income_total1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y78"
+                android:text="@string/income_details_payment_total"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x36"/>
+
+            <TextView
+                android:id="@+id/tv_my_income_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y33"
+                android:layout_below="@id/tv_my_income_total1"
+                android:layout_marginBottom="@dimen/x87"
+                android:textSize="@dimen/y72"
+                android:textColor="@color/white"
+                android:text="0.00"/>
+
+        </RelativeLayout>
+        
+        <View
+            android:layout_width="@dimen/x6"
+            android:layout_height="@dimen/y90"
+            android:background="@color/white"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_my_income_already_present1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y78"
+                android:text="@string/income_details_payment_already_present"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x36"/>
+
+            <TextView
+                android:id="@+id/tv_my_income_already_present"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y33"
+                android:layout_below="@id/tv_my_income_already_present1"
+                android:layout_marginBottom="@dimen/x87"
+                android:textSize="@dimen/y72"
+                android:textColor="@color/white"
+                android:text="23000"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/x6"
+            android:layout_height="@dimen/y90"
+            android:background="@color/white"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_my_income_tax1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y78"
+                android:text="@string/income_details_payment_tax"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x36"/>
+
+            <TextView
+                android:id="@+id/tv_my_income_tax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y33"
+                android:layout_below="@id/tv_my_income_tax1"
+                android:layout_marginBottom="@dimen/x87"
+                android:textSize="@dimen/y72"
+                android:textColor="@color/white"
+                android:text="300"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ly_my_income_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y36"
+        android:layout_below="@id/ly_my_income_data"
+        android:orientation="horizontal"
+        android:background="@color/white">
+        
+        
+        <TextView
+            android:id="@+id/tv_my_income_tab1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/y129"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/my_income_tab_select"
+            android:textSize="@dimen/y45"
+            android:text="@string/income_details_tab1"
+            android:background="@drawable/my_income_tan_select"/>
+
+        <TextView
+            android:id="@+id/tv_my_income_tab2"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/y129"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/title_text_color"
+            android:textSize="@dimen/y45"
+            android:background="@drawable/my_income_tab_normal"
+            android:text="@string/income_details_tab2"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ly_my_income_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/y51"
+        android:paddingBottom="@dimen/y54"
+        android:layout_below="@id/ly_my_income_tab"
+        android:background="@color/common_white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/income_details_date"
+            android:textSize="@dimen/y39"
+            android:textColor="@color/my_income_tab_select"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/income_details_payment_type"
+            android:textSize="@dimen/y39"
+            android:textColor="@color/my_income_tab_select"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/income_details_money"
+            android:textSize="@dimen/y39"
+            android:textColor="@color/my_income_tab_select"/>
+    </LinearLayout>
+
+</RelativeLayout>

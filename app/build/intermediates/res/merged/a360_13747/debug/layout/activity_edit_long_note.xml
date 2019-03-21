@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/long_note_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <include
+        android:id="@+id/action_bar"
+        layout="@layout/title_one_text" />
+
+    <!-- <ScrollView -->
+    <!-- android:id="@+id/face_layout_scrollview" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_alignParentBottom="true" > -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:orientation="vertical" > -->
+
+
+    <!-- <RelativeLayout -->
+    <!-- android:id="@+id/face_select_layout" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:background="#E9E9E9" -->
+    <!-- android:orientation="horizontal" -->
+    <!-- android:padding="10dp" > -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/font_num" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_alignParentLeft="true" -->
+    <!-- android:textColor="#000" -->
+    <!-- android:textSize="18sp" -->
+    <!-- android:textStyle="bold" /> -->
+
+
+    <!-- <Button -->
+    <!-- android:id="@+id/face_select" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_alignParentRight="true" -->
+    <!-- android:layout_marginRight="10dp" -->
+    <!-- android:background="@drawable/face_menu_logo_button_status" /> -->
+    <!-- </RelativeLayout> -->
+
+
+    <!-- <FrameLayout -->
+    <!-- android:id="@+id/face_layout" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" > -->
+    <!-- </FrameLayout> -->
+    <!-- </LinearLayout> -->
+    <!-- </ScrollView> -->
+
+    <net.iaround.utils.EditTextViewUtil
+        android:id="@+id/edit_input"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/action_bar"
+        android:background="@drawable/replay_edit_bg"
+        android:ems="10"
+        android:gravity="top"
+        android:padding="10dp" >
+
+        <requestFocus />
+    </net.iaround.utils.EditTextViewUtil>
+
+
+    <!--
+          android:layout_height="match_parent"
+        android:layout_above="@id/face_layout_scrollview"
+        android:layout_below="@id/action_bar"
+    -->
+
+
+    <!-- <EditText -->
+    <!-- android:id="@+id/edit_input" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="150dp" -->
+    <!-- android:layout_below="@+id/action_bar" -->
+    <!-- android:background="@color/white" -->
+    <!-- android:ems="10" -->
+    <!-- android:gravity="top" -->
+    <!-- android:lines="12" -->
+    <!-- android:padding="10dp" -->
+    <!-- > -->
+
+
+    <!-- <requestFocus /> -->
+    <!-- </EditText> -->
+
+</RelativeLayout>

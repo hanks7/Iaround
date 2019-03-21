@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13747/debug/anim-v21/design_bottom_sheet_slide_in.xml",
+        "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/1993906930ebe08a7f98d1cabfb917e4/res/anim-v21/design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "/Users/zhangsen/iaround/iaround-android-online/app/build/intermediates/res/merged/a360_13747/debug/anim-v21/design_bottom_sheet_slide_out.xml",
+        "source": "/Users/zhangsen/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/1993906930ebe08a7f98d1cabfb917e4/res/anim-v21/design_bottom_sheet_slide_out.xml"
+    }
+]

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/common_white"
+    android:orientation="vertical" >
+    <!--android:background="@color/c_efefef"-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:background="@color/chat_update_divider_of_toolMenu" />
+    <GridView
+        android:id="@+id/gift_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x124"
+        android:layout_marginRight="@dimen/x124"
+        android:layout_marginTop="@dimen/y43"
+        android:layout_marginBottom="@dimen/y54"
+        android:horizontalSpacing="@dimen/x150"
+        android:numColumns="3"
+        android:verticalSpacing="@dimen/y51"
+        />
+
+<!--     android:layout_height="184dp" -->
+</LinearLayout>

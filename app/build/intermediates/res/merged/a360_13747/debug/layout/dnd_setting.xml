@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/userFragment_bg">
+
+    <include layout="@layout/title_bar" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <ScrollView
+            android:id="@+id/iARScrollView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/y120"
+                    android:background="@color/common_white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/y36">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="@dimen/x48"
+                        android:text="@string/setting_notice_avoid_trouble"
+                        android:textColor="@color/chat_update_gray_text_color"
+                        android:textSize="@dimen/y42" />
+
+                    <!--<net.iaround.ui.view.FlagImageView-->
+                        <!--android:id="@+id/cbDndSetting"-->
+                        <!--android:layout_width="@dimen/x126"-->
+                        <!--android:layout_height="@dimen/y72"-->
+                        <!--android:layout_marginRight="@dimen/x48" />-->
+                    <CheckBox
+                        android:id="@+id/cbDndSetting"
+                        android:layout_width="@dimen/x126"
+                        android:layout_height="@dimen/y72"
+                        android:layout_marginRight="@dimen/x48"
+                        android:button="@null"
+                        android:background="@drawable/group_notice_switch_selector">
+                    </CheckBox>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/y96"
+                    android:text="@string/start_dnd_model_text"
+                    android:layout_marginLeft="@dimen/x48"
+                    android:layout_marginRight="@dimen/x42"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/chat_update_gray_text_color"
+                    android:textSize="@dimen/y30" />
+                <!--时间选择-->
+                <LinearLayout
+                    android:id="@+id/dnd_setting_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="35dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="30dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="30dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/show_start_time"
+                                android:layout_width="96dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/z_set_time_bg"
+                                android:gravity="center"
+                                android:text="aaaa"
+                                android:textColor="@color/c_333333"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                android:text="@string/to"
+                                android:textColor="@color/c_333333"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/show_end_time"
+                                android:layout_width="96dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/z_set_time_bg"
+                                android:gravity="center"
+                                android:text="bbbb"
+                                android:textColor="@color/c_333333"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/start_time"
+                                android:textColor="@color/c_333333" />
+
+                            <TextView
+                                android:id="@+id/tvStartTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/c_333333" />
+                        </LinearLayout>
+
+                        <SeekBar
+                            android:id="@+id/sbStartTime"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:max="23" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="10dp"
+                            
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/stop_time"
+                                android:textColor="@color/c_333333" />
+
+                            <TextView
+                                android:id="@+id/tvStopTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/c_000000" />
+                        </LinearLayout>
+
+                        <SeekBar
+                            android:id="@+id/sbStopTime"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:paddingBottom="10dp" 
+                            android:max="23" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+</LinearLayout>

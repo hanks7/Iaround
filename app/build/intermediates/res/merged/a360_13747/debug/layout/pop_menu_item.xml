@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:padding="15dp"
+        android:text="@string/dynamic_filter_all"
+        android:textColor="@color/page_filter_item_text_color"
+        android:textSize="18dp" />
+    <!--<TextView-->
+        <!--android:id="@+id/tvName"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/y138"-->
+        <!--android:gravity="center"-->
+        <!--android:textColor="@color/chat_update_message_count"-->
+        <!--android:textSize="@dimen/y42"/>-->
+    <TextView
+        android:id="@+id/tvSplit"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#ff615955" />
+    <!--<TextView-->
+        <!--android:id="@+id/tvSplit"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/y1"-->
+        <!--android:layout_marginTop="@dimen/y48"-->
+        <!--android:background="@color/chat_update_divider_of_toolMenu"/>-->
+</LinearLayout>

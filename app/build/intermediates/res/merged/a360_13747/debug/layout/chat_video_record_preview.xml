@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true" >
+    </VideoView>
+
+    <ImageView
+        android:id="@+id/preview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/chat_video_record_preview_play_bg" />
+
+    <RelativeLayout
+        android:id="@+id/time_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="30dp" >
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/transparent"
+            android:gravity="center"
+            android:text="00:00"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/chat_video_recorder_cancel_button_status" />
+
+    <RelativeLayout
+        android:id="@+id/playControl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="30dp" >
+
+        <Button
+            android:id="@+id/pause"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/transparent"
+            android:padding="5dp"
+            android:text="@string/chat_video_record_preview_pause"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/transparent"
+            android:padding="5dp"
+            android:text="@string/chat_video_record_preview_stop"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/previewControl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="30dp" >
+
+        <Button
+            android:id="@+id/again"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/transparent"
+            android:padding="5dp"
+            android:paddingTop="10dp"
+            android:text="@string/chat_video_record_preview_again"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/use"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/transparent"
+            android:padding="5dp"
+            android:paddingTop="10dp"
+            android:text="@string/chat_video_record_preview_use"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/top_backgroup"
+        android:layout_width="fill_parent"
+        android:layout_height="88dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/chat_video_recorder_top_bg" />
+
+    <View
+        android:id="@+id/bottom_backgroup"
+        android:layout_width="fill_parent"
+        android:layout_height="190dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/chat_video_recorder_bottom_bg" />
+
+</RelativeLayout>

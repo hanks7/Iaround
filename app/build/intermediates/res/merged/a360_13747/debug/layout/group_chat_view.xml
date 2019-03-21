@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/groupChat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:alpha="1"
+            android:background="@color/userFragment_bg">
+
+            <net.iaround.ui.chat.ChatPersionPullDownView
+                android:id="@+id/chatting_pull_down_view"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent">
+
+                <ListView
+                    android:id="@+id/chatRecordList"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="#00000000"
+                    android:divider="@drawable/listview_divider_transparent"
+                    android:dividerHeight="20dp"
+                    android:fadingEdge="none"
+                    android:scrollingCache="false"
+                    android:animationCache="false"
+                    android:footerDividersEnabled="true"
+                    android:listSelector="@drawable/chat_room_record_list_item_bg"
+                    android:scrollbars="none"
+                    android:stackFromBottom="true" />
+            </net.iaround.ui.chat.ChatPersionPullDownView>
+            <!--发送语音-->
+
+            <include
+                android:id="@+id/chat_audio_layout"
+                layout="@layout/chat_audio_view"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_centerInParent="true" />
+
+            <TextView
+                android:id="@+id/fontNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp" />
+
+            <TextView
+                android:id="@+id/unseeNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/z_msg_unsee_num"
+                android:gravity="center_vertical"
+                android:paddingLeft="9dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+
+        <!--底部输入框-->
+        <LinearLayout
+            android:id="@+id/ll_quick_sendmsg_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="1"
+            android:background="@color/userFragment_bg"
+            android:gravity="right|bottom"
+            android:paddingBottom="11dp"
+            android:paddingRight="20dp"
+            android:paddingTop="11dp"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/btn_send_1"
+                android:layout_width="65dp"
+                android:layout_height="33dp"
+                android:background="@drawable/group_chat_view_bg"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/chat_bar_quick_kou1"
+                android:textColor="#4095FF"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/btn_send_2"
+                android:layout_width="65dp"
+                android:layout_height="33dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/group_chat_view_bg"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/chat_bar_quick_kou2"
+                android:textColor="#FFAD40"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/chat_input_layout"
+            layout="@layout/chat_input_bar" />
+
+        <LinearLayout
+            android:id="@+id/llMoreHandle"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/ivRepeater"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/z_chat_repeater_icon" />
+
+            <ImageView
+                android:id="@+id/ivDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/z_chat_delete_icon" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <net.iaround.ui.view.pipeline.PipelineGiftView
+            android:id="@+id/pipelineView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <net.iaround.ui.view.pipeline.PipelineGiftView
+            android:id="@+id/pipelineView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <net.iaround.ui.view.pipeline.PipelineGiftView
+            android:id="@+id/pipelineView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="58dp"
+      >
+        <net.iaround.ui.view.pipeline.PipelineWelcomeView
+            android:id="@+id/pipelineView4"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal">
+
+        <net.iaround.ui.view.LuxuryGiftView
+            android:id="@+id/luxuryGiftView"
+            android:layout_width="370dp"
+            android:layout_height="180dp" />
+    </RelativeLayout>
+
+
+</FrameLayout>

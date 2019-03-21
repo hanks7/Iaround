@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+
+<!--     android:background="@drawable/setting_linear_selector" -->
+    <ImageView
+        android:id="@+id/diamond_icon"
+        android:layout_alignParentLeft="true"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="20dp"
+        android:scaleType="centerInside"
+        android:layout_centerVertical="true"
+        android:src="@drawable/z_store_diamond_iocn" />
+
+    <TextView
+        android:id="@+id/diamond_num"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_toRightOf="@id/diamond_icon"
+        android:layout_centerVertical="true"
+        android:singleLine="true"
+        android:gravity="left|center_vertical"
+        android:text="aaaaaaaaaa"
+        android:textColor="#999999"
+        android:textSize="15sp" />
+
+    <LinearLayout
+
+        android:id="@+id/btn_buy"
+        android:layout_width="100dp"
+        android:layout_height="31dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_gravity="right|center_vertical"
+        android:background="@drawable/z_store_giftbags_buybtn_selector" >
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:singleLine="true"
+            android:drawableLeft="@drawable/z_pay_diamond_icon"
+            android:drawablePadding="4dp"
+            android:text="aaaa"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </LinearLayout>
+	 <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+          android:background="@color/c_ecebf1"
+            />
+</RelativeLayout>

@@ -28,7 +28,7 @@ android {
         multiDexEnabled true //突破应用方法数65535的一个限制
         multiDexKeepProguard file("tinkerMultidexKeep.pro")
         //keep specific classes using proguard syntax
-        manifestPlaceholders = [UMENG_CHANNEL_VALUE: "yujian_guanwang_13636"] //默认名称
+        manifestPlaceholders = [UMENG_CHANNEL_VALUE: "yujian_guanwang_13751"] //默认名称
 
         flavorDimensions "default"
     }
@@ -94,97 +94,97 @@ android {
     }
 
     productFlavors {
-        anzhi_13677 {
+        anzhi_13735 {
             dimension "default"
-            buildConfigField "String", "packageID", '"13677"'
+            buildConfigField "String", "packageID", '"13735"'
             buildConfigField "Boolean", "showAdvert", 'true'
         }
-        sougou_13678 {
+        sougou_13736 {
             dimension "default"
-            buildConfigField "String", "packageID", '"13678"'
+            buildConfigField "String", "packageID", '"13736"'
             buildConfigField "Boolean", "showAdvert", 'true'
         }
-        ali_13679 {
+        ali_13737 {
             dimension "default"
-            buildConfigField "String", "packageID", '"13679"'
+            buildConfigField "String", "packageID", '"13737"'
             buildConfigField "Boolean", "showAdvert", 'true'
         }
-        meizu_13680 {
+        meizu_13738 {
             dimension "default"
-            buildConfigField "String", "packageID", '"13680"'
+            buildConfigField "String", "packageID", '"13738"'
             buildConfigField "Boolean", "showAdvert", 'true'
         }
-        wandoujia_13681 {
+        wandoujia_13739 {
             dimension "default"
-            buildConfigField "String", "packageID", '"13681"'
+            buildConfigField "String", "packageID", '"13739"'
             buildConfigField "Boolean", "showAdvert", 'true'
         }
-        vivo_13682 {
+        vivo_13740 {
             dimension "default"
-            buildConfigField "String", "packageID", '"13682"'
-            buildConfigField "Boolean", "showAdvert", 'true'
-        }
-        //手动去广告
-        oppo_13683 {
-            dimension "default"
-            buildConfigField "String", "packageID", '"13683"'
-            buildConfigField "Boolean", "showAdvert", 'false'
-        }
-        chuizi_13684 {
-            dimension "default"
-            buildConfigField "String", "packageID", '"13684"'
-            buildConfigField "Boolean", "showAdvert", 'true'
-        }
-        lenovo_13685 {
-            dimension "default"
-            buildConfigField "String", "packageID", '"13685"'
-            buildConfigField "Boolean", "showAdvert", 'true'
-        }
-        samsung_13686 {
-            dimension "default"
-            buildConfigField "String", "packageID", '"13686"'
+            buildConfigField "String", "packageID", '"13740"'
             buildConfigField "Boolean", "showAdvert", 'true'
         }
         //手动去广告
-        jinli_13687 {
+        oppo_13741 {
             dimension "default"
-            buildConfigField "String", "packageID", '"13687"'
+            buildConfigField "String", "packageID", '"13741"'
             buildConfigField "Boolean", "showAdvert", 'false'
         }
-        xiaomi_13688 {
+        chuizi_13742 {
             dimension "default"
-            buildConfigField "String", "packageID", '"13688"'
+            buildConfigField "String", "packageID", '"13742"'
             buildConfigField "Boolean", "showAdvert", 'true'
         }
-        a360_13689 {
+        lenovo_13743 {
             dimension "default"
-            buildConfigField "String", "packageID", '"13689"'
+            buildConfigField "String", "packageID", '"13743"'
             buildConfigField "Boolean", "showAdvert", 'true'
         }
-        baidu_13690 {
+        samsung_13744 {
             dimension "default"
-            buildConfigField "String", "packageID", '"13690"'
+            buildConfigField "String", "packageID", '"13744"'
             buildConfigField "Boolean", "showAdvert", 'true'
         }
-        tencent_13691 {
+        //手动去广告
+        jinli_13745 {
             dimension "default"
-            buildConfigField "String", "packageID", '"13691"'
+            buildConfigField "String", "packageID", '"13745"'
+            buildConfigField "Boolean", "showAdvert", 'false'
+        }
+        xiaomi_13746 {
+            dimension "default"
+            buildConfigField "String", "packageID", '"13746"'
             buildConfigField "Boolean", "showAdvert", 'true'
         }
-        huawei_13692 {
+        a360_13747 {
             dimension "default"
-            buildConfigField "String", "packageID", '"13692"'
+            buildConfigField "String", "packageID", '"13747"'
             buildConfigField "Boolean", "showAdvert", 'true'
         }
-        yujian_guanwang_13693 {
+        baidu_13748 {
             dimension "default"
-            buildConfigField "String", "packageID", '"13693"'
+            buildConfigField "String", "packageID", '"13748"'
+            buildConfigField "Boolean", "showAdvert", 'true'
+        }
+        tencent_13749 {
+            dimension "default"
+            buildConfigField "String", "packageID", '"13749"'
+            buildConfigField "Boolean", "showAdvert", 'true'
+        }
+        huawei_13750 {
+            dimension "default"
+            buildConfigField "String", "packageID", '"13750"'
+            buildConfigField "Boolean", "showAdvert", 'true'
+        }
+        yujian_guanwang_13751 {
+            dimension "default"
+            buildConfigField "String", "packageID", '"13751"'
             buildConfigField "Boolean", "showAdvert", 'true'
         }
         //自动去广告，由 Config 开关控制
-        google_13694 {
+        google_13752 {
             dimension "default"
-            buildConfigField "String", "packageID", '"13694"'
+            buildConfigField "String", "packageID", '"13752"'
             buildConfigField "Boolean", "showAdvert", 'false'
         }
         yingyonghui_13658 {

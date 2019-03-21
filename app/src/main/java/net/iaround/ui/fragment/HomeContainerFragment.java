@@ -84,26 +84,38 @@ public class HomeContainerFragment extends LazyLoadBaseFragment {
             fragmentList = new ArrayList<>();
         }
         final int showWhat = SharedPreferenceUtil.getInstance(mContext).getInt(SharedPreferenceUtil.ACCOMPANY_IS_SHOW);
+        int isShowVoice = SharedPreferenceUtil.getInstance(mContext).getInt(SharedPreferenceUtil.VOICE_IS_SHOW);
         if (showWhat == 1) {
-            titles = BaseApplication.appContext.getResources().getStringArray(R.array.home_container_title);
+            if(isShowVoice == 1){
+                titles = BaseApplication.appContext.getResources().getStringArray(R.array.home_container_title);
+            }else {
+                titles = new String[]{mContext.getResources().getString(R.string.play_with_you)};
+            }
             if (mHomePageFragment == null) {
                 mHomePageFragment = new HomePageFragment();
             }
             fragmentList.add(mHomePageFragment);
+
         } else {
-            titles = new String[]{mContext.getResources().getString(R.string.near_fragment), mContext.getResources().getString(R.string.chat_sound)};
+            if(isShowVoice == 1){//显示语聊
+                titles = new String[]{mContext.getResources().getString(R.string.near_fragment), mContext.getResources().getString(R.string.chat_sound)};
+            }else {
+                titles = new String[]{mContext.getResources().getString(R.string.near_fragment)};
+            }
             if (mNear1Fragment == null) {
                 mNear1Fragment = new Near1Fragment();
             }
             fragmentList.add(mNear1Fragment);
+
+        }
+        if(isShowVoice == 1){
+            if (mVoiceFragment == null) {
+                mVoiceFragment = new VoiceFragment();
+            }
+            fragmentList.add(mVoiceFragment);
         }
 
-        if (mVoiceFragment == null) {
-            mVoiceFragment = new VoiceFragment();
-        }
 
-
-        fragmentList.add(mVoiceFragment);
 
         BaseFragmentPagerAdapter baseFragmentPagerAdapter = new BaseFragmentPagerAdapter(getChildFragmentManager(), fragmentList, titles, mContext);
         mViewPager.setAdapter(baseFragmentPagerAdapter);

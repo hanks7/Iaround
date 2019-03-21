@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/z_space_dialog_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="36dp"
+        android:textSize="18sp" 
+        android:text="确认要删除该张图片吗"
+        android:textColor="#333333" />
+
+    <TextView
+        android:id="@+id/dialog_content"
+        style="@style/dialog_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:layout_marginBottom="20dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="5dip"
+        android:gravity="left"
+        android:text="这里是dialog的文本内容"
+        android:visibility="gone" />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="32dp"
+        android:button="@null"
+        android:drawableLeft="@drawable/z_space_checkbox_bg"
+        android:drawablePadding="4dp"
+        android:text="@string/space_modify_photo_delect_checkbox"
+        android:textColor="#999999"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@drawable/dialog_divider" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+         <TextView
+            android:id="@+id/dialog_negative"
+            style="@style/dialog_button"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="取消"
+            android:textSize="18sp" 
+            android:textColor="#333333" />
+
+        <ImageView
+            android:id="@+id/dialog_btn_devider"
+            android:layout_width="1dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/dialog_divider" />
+        
+        <TextView
+            android:id="@+id/dialog_positive"
+            style="@style/dialog_button"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="确定"
+            android:textSize="18sp" 
+            android:textColor="#333333" />
+
+       
+        <!-- android:textStyle="bold"去掉粗体显示2014/4/27 -->
+    </LinearLayout>
+
+</LinearLayout>

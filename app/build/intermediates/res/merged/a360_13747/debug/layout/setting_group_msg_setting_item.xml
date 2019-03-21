@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/userFragment_bg">
+
+    <LinearLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y96"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/title_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/y48"
+            android:text="TextView"
+            android:textColor="@color/chat_update_gray_text_color"
+            android:textSize="@dimen/y30"/>
+
+        <TextView
+            android:id="@+id/title_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="TextView"
+            android:textColor="@color/c_999999"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y210"
+        android:layout_below="@id/title_layout"
+        android:background="@color/common_white"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="@dimen/y150"
+            android:layout_height="@dimen/y150"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/x48"
+            android:layout_centerVertical="true" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/group_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/icon"
+            android:layout_marginLeft="@dimen/x36"
+            android:text="TextView"
+            android:textColor="@color/chat_update_edit_user_value"
+            android:textSize="@dimen/y42" />
+
+        <ImageView
+            android:layout_width="@dimen/x24"
+            android:layout_height="@dimen/y42"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x48"
+            android:background="@drawable/arraw_turn" />
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y10"
+            android:layout_alignParentBottom="true"
+            android:background="@color/chat_update_login_btn_select"
+            android:layout_marginLeft="@dimen/x240"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y120"
+        android:layout_below="@+id/title_layout"
+        android:background="@color/common_white" >
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x48"
+            android:text="@string/no_group_in_here"
+            android:textColor="@color/chat_update_edit_user_value"
+            android:textSize="@dimen/y42" />
+    </RelativeLayout>
+
+</RelativeLayout>

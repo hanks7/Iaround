@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string msgid="4600421777120114993" name="abc_action_bar_home_description">"मुख्यपृष्ठ पर नेविगेट करें"</string>
+    <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
+    <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s, %3$s"</string>
+    <string msgid="1594238315039666878" name="abc_action_bar_up_description">"ऊपर नेविगेट करें"</string>
+    <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"अधिक विकल्प"</string>
+    <string msgid="4076576682505996667" name="abc_action_mode_done">"पूर्ण"</string>
+    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"सभी देखें"</string>
+    <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"कोई एप्‍लिकेशन चुनें"</string>
+    <string msgid="121134116657445385" name="abc_capital_off">"बंद"</string>
+    <string msgid="3405795526292276155" name="abc_capital_on">"चालू"</string>
+    <string msgid="7723749260725869598" name="abc_search_hint">"खोजा जा रहा है…"</string>
+    <string msgid="3691816814315814921" name="abc_searchview_description_clear">"क्‍वेरी साफ़ करें"</string>
+    <string msgid="2550479030709304392" name="abc_searchview_description_query">"खोज क्वेरी"</string>
+    <string msgid="8264924765203268293" name="abc_searchview_description_search">"खोजें"</string>
+    <string msgid="8928215447528550784" name="abc_searchview_description_submit">"क्वेरी सबमिट करें"</string>
+    <string msgid="893419373245838918" name="abc_searchview_description_voice">"ध्वनि खोज"</string>
+    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"इसके द्वारा साझा करें"</string>
+    <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"%s के साथ साझा करें"</string>
+    <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"संक्षिप्त करें"</string>
+    <string msgid="2785372108150982144" name="common_google_play_services_api_unavailable_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> को ऐसी एक या अधिक Google Play सेवाओं की आवश्यकता है जो वर्तमान में उपलब्ध नहीं हैं. कृपया सहायता के लिए डेवलपर से संपर्क करें."</string>
+    <string msgid="7334167077229901382" name="common_google_play_services_enable_button">"Google Play सेवाएं सक्षम करें"</string>
+    <string msgid="2016066508617425489" name="common_google_play_services_enable_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> तब तक कार्य नहीं करेगा जब तक आप Google Play सेवाओं को सक्षम नहीं करते."</string>
+    <string msgid="4763733806837472840" name="common_google_play_services_enable_title">"Google Play सेवाएं सक्षम करना"</string>
+    <string msgid="5765996826213593005" name="common_google_play_services_install_button">"Google Play सेवाएं प्राप्त करें"</string>
+    <string msgid="1545874412485515659" name="common_google_play_services_install_text_phone">"<ns1:g id="APP_NAME">%1$s</ns1:g> उन Google Play सेवाओं के बिना नहीं चलेगा जो आपके फ़ोन में उपलब्ध नहीं हैं."</string>
+    <string msgid="2742131317258851812" name="common_google_play_services_install_text_tablet">"<ns1:g id="APP_NAME">%1$s</ns1:g> उन Google Play सेवाओं के बिना नहीं चलेगा जो आपके टैबलेट में उपलब्ध नहीं हैं."</string>
+    <string msgid="2110712637922504348" name="common_google_play_services_install_title">"Google Play सेवाएं प्राप्त करना"</string>
+    <string msgid="8004809446015217370" name="common_google_play_services_invalid_account_text">"निर्दिष्ट खाता इस डिवाइस पर मौजूद नहीं है. कृपया कोई भिन्न खाता चुनें."</string>
+    <string msgid="9894539456463288" name="common_google_play_services_invalid_account_title">"अमान्य खाता"</string>
+    <string msgid="2602915190038884860" name="common_google_play_services_network_error_text">"Google Play सेवाओं से कनेक्ट करने के लिए डेटा कनेक्शन की आवश्यकता है."</string>
+    <string msgid="5183831421651758225" name="common_google_play_services_network_error_title">"नेटवर्क त्रुटि"</string>
+    <string msgid="3936796119014022295" name="common_google_play_services_notification_ticker">"Google Play सेवाएं त्रुटि"</string>
+    <string msgid="6951442375899151085" name="common_google_play_services_restricted_profile_text">"किसी प्रतिबंधित प्रोफ़ाइल से खातों को ऐक्सेस किया जाना समर्थित नहीं है."</string>
+    <string msgid="4958149393843193760" name="common_google_play_services_restricted_profile_title">"प्रतिबंधित प्रोफ़ाइल"</string>
+    <string msgid="59739986196915578" name="common_google_play_services_sign_in_failed_text">"निर्दिष्‍ट खाते में प्रवेश करने में त्रुटि. कृपया कोई भिन्‍न खाता चुनें."</string>
+    <string msgid="8431204498860131150" name="common_google_play_services_sign_in_failed_title">"प्रवेश करना विफल रहा"</string>
+    <string msgid="7170719956698345984" name="common_google_play_services_unknown_issue">"<ns1:g id="APP_NAME">%1$s</ns1:g> को Google Play सेवाओं के साथ समस्या है. यदि समस्या बनी रहती है, तो कृपया सहायता के लिए डेवलपर से संपर्क करें."</string>
+    <string msgid="4291190028362992831" name="common_google_play_services_unsupported_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> उन Google Play सेवाओं पर निर्भर है जो आपके डिवाइस द्वारा समर्थित नहीं हैं. सहायता के लिए निर्माता से संपर्क करें."</string>
+    <string msgid="909734065366822541" name="common_google_play_services_unsupported_title">"Google Play सेवाएं"</string>
+    <string msgid="2221302284291941971" name="common_google_play_services_update_button">"अपडेट करें"</string>
+    <string msgid="6230553430311881723" name="common_google_play_services_update_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> तब तक नहीं चलेगा जब तक आप Google Play सेवाओं को अपडेट नहीं करते."</string>
+    <string msgid="2926201203597631481" name="common_google_play_services_update_title">"Google Play सेवाओं को अपडेट करें"</string>
+    <string msgid="1576144479907495032" name="common_google_play_services_updating_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> उन Google Play सेवाओं के बिना नहीं चलेगा जो वर्तमान में अपडेट हो रही हैं."</string>
+    <string msgid="1604540693139938838" name="common_google_play_services_updating_title">"Google Play सेवाएं अपडेट हो रही हैं"</string>
+    <string msgid="8334920661858223093" name="common_google_play_services_wear_update_text">"Google Play सेवाओं के नए वर्शन की आवश्यकता है. यह स्वयं को जल्दी ही अपडेट करेगा."</string>
+    <string msgid="311697239335516384" name="common_open_on_phone">"फ़ोन पर खोलें"</string>
+    <string msgid="3156914698180786012" name="common_signin_button_text">"प्रवेश करें"</string>
+    <string msgid="1483290677806110088" name="common_signin_button_text_long">"Google के साथ प्रवेश करें"</string>
+    <string name="connect_server_fail_prompt_toast">"सर्वर से कनेक्ट करने में असमर्थ। कृपया बाद में पुनः प्रयास करें।"</string>
+    <string name="getting_message_fail_prompt_toast">"जानकारी पुनः प्राप्त करने में असमर्थ। कृपया बाद में पुनः प्रयास करें।"</string>
+    <string name="hms_abort">"बंद करें"</string>
+    <string name="hms_abort_message">"डाउनलोड बंद करें?"</string>
+    <string name="hms_bindfaildlg_message">"हुअवी मोबाइल सेवाओं का उपयोग करने के लिए %1$s अक्षम है। कृपया फोन प्रबंधक को लांच करें या सेटिंग्स पर जाएं, %2$s के लिए सभी अनुमतियों को सक्षम करें (स्वतः-लांच तथा सहायक लांच सहित), और फिर कोशिश करें।"</string>
+    <string name="hms_cancel">"रद्द करें"</string>
+    <string name="hms_check_failure">"अद्यतन की जाँच करने में विफल रहा।"</string>
+    <string name="hms_check_no_update">"आप पहले से ही नवीनतम संस्करण का उपयोग कर रहे हैं।"</string>
+    <string name="hms_checking">"अद्यतन की जाँच कर रहा है…"</string>
+    <string name="hms_confirm">"ठीक"</string>
+    <string name="hms_download_failure">"हुअवी मोबाइल सेवाएँ पैकेज डाउनलोड करने में विफल रहा।"</string>
+    <string name="hms_download_no_space">"रिक्त स्थान पर्याप्त नहीं है। डाउनलोड पूर्ण नहीं किया जा सकता।"</string>
+    <string name="hms_download_retry">"डाउनलोड विफल रहा। पुन: प्रयास करें?"</string>
+    <string name="hms_downloading">"हुअवी मोबाइल सेवाएँ डाउनलोड की जा रही हैं | प्रगति: %d%%"</string>
+    <string name="hms_downloading_loading">"डाउनलोड हो रहा है"</string>
+    <string name="hms_downloading_new">"HMS डाउनलोड कर रहा है"</string>
+    <string name="hms_gamebox_name" priority="translator">"HiGame"</string>
+    <string name="hms_install">"स्थापित करें"</string>
+    <string name="hms_install_message">"इस सुविधा का उपयोग करने के लिए हुअवी मोबाइल सेवाएँ स्थापित होनी चाहिए। स्थापित करें?"</string>
+    <string name="hms_retry">"पुनः प्रयास करें"</string>
+    <string name="hms_update">"अद्यतन करें"</string>
+    <string name="hms_update_message">"इस सुविधा का उपयोग करने के लिए हुअवी मोबाइल सेवाओं के नवीनतम संस्करण पर अद्यतन करें। अभी अद्यतन करें?"</string>
+    <string name="hms_update_message_new">"इस सेवा को निम्नलिखित ऐप के नवीनतम संस्करण की आवश्यकता है:\n\n%1$s"</string>
+    <string name="hms_update_title">"हुअवी मोबाइल सेवाएँ"</string>
+    <string name="no_available_network_prompt_toast">"कोई इंटरनेट कनेक्शन नहीं है। कृपया अपनी नेटवर्क सेटिंग्स जाँचें।"</string>
+    <string msgid="2132213647576279742" name="place_autocomplete_clear_button">"खोज साफ़ करें"</string>
+    <string msgid="4600782048316473865" name="place_autocomplete_search_hint">"खोजें"</string>
+    <string msgid="146198913615257606" name="search_menu_title">"खोज"</string>
+    <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="third_app_dl_cancel_download_prompt_ex">"स्थापना रद्द करें?"</string>
+    <string name="third_app_dl_install_failed">"स्थापना विफल रही।"</string>
+    <string name="third_app_dl_sure_cancel_download">"हाँ"</string>
+    <string name="upsdk_app_dl_installing">"HiApp डाउनलोड कर रहा है"</string>
+    <string name="upsdk_app_download_info_new">"स्थापित करें"</string>
+    <string name="upsdk_app_size">"आकार"</string>
+    <string name="upsdk_app_version">"संस्करण"</string>
+    <string name="upsdk_cancel">"रद्द करें"</string>
+    <string name="upsdk_checking_update_prompt">"अद्यतन की जाँच कर रहा है…"</string>
+    <string name="upsdk_choice_update">"अद्यतन उपलब्ध है। कृपया नवीनतम संस्करण डाउनलोड करके स्थापित करें।"</string>
+    <string name="upsdk_detail">"विवरण"</string>
+    <string name="upsdk_install">"अद्यतन करने के लिए HiApp स्थापित करें। अभी स्थापित करें?"</string>
+    <string name="upsdk_ota_app_name">"ऐप"</string>
+    <string name="upsdk_ota_cancel">"बाद में"</string>
+    <string name="upsdk_ota_force_cancel_new">"बाहर निकलें"</string>
+    <string name="upsdk_ota_notify_updatebtn">"अद्यतन करें"</string>
+    <string name="upsdk_ota_title">"नया संस्करण"</string>
+    <string name="upsdk_update_check_no_new_version">"आप पहले से ही नवीनतम संस्करण का उपयोग कर रहे हैं।"</string>
+    <string name="upsdk_updating">"अद्यतन कर रहा है"</string>
+</resources>

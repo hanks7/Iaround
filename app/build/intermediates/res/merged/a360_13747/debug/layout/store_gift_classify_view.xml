@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/activity_basic_style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <include
+        android:id="@+id/giftlist_headview"
+        layout="@layout/x_store_gifsclassify_headview" />
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_below="@+id/giftlist_headview"
+        android:background="@color/group_recommend_divider"/>
+    <FrameLayout
+        android:id="@+id/store_gift_classify"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/divider"
+        android:orientation="vertical" >
+
+        <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+            android:id="@+id/giftContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:overScrollMode="never"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <include
+                    android:id="@+id/tips_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    layout="@layout/x_store_gifsclassify_tips_view"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tips_empty_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="50dp"
+                    android:gravity="center"
+                    android:text="@string/store_no_data"
+                    android:textColor="@drawable/z_store_emptyview_text_selector"
+                    android:textSize="20dp"
+                    android:visibility="gone" />
+
+                <net.iaround.ui.view.face.MyGridView
+                    android:id="@+id/store_classify_gift_gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fadingEdge="none"
+                    android:gravity="center"
+                    android:horizontalSpacing="10dp"
+                    android:listSelector="@drawable/transparent"
+                    android:numColumns="2"
+                    android:overScrollMode="never"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="16dp"
+                    android:scrollbars="none"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="13dp" />
+            </LinearLayout>
+        </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<net.iaround.ui.view.dynamic.GrapeGridview
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/iconGrid"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/x54"
+    android:paddingRight="@dimen/x54"
+    android:paddingTop="@dimen/y60"
+    android:horizontalSpacing="@dimen/x54"
+    android:numColumns="8"
+    android:verticalSpacing="@dimen/y54"
+    />

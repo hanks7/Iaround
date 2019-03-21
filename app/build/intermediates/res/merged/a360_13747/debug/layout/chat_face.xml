@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/y600"
+    android:background="@color/common_white"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:background="@color/chat_update_divider_of_toolMenu"/>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/y490" >
+        <!--表情布局容器-->
+        <RelativeLayout
+            android:id="@+id/faceIconView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/chatface_point"
+            >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/main_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <!--android:paddingTop="@dimen/y72"-->
+                <!--android:paddingLeft="@dimen/x72"-->
+                <!--android:paddingRight="@dimen/x54"-->
+            </android.support.v4.view.ViewPager>
+        </RelativeLayout>
+        <!--圆点指示器-->
+        <net.iaround.ui.chat.view.ChatFacePointView
+            android:id="@+id/chatface_point"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/y30"
+            android:gravity="center"
+            android:paddingRight="@dimen/x24"
+            app:fillColor="#12B7F5"
+            app:strokeColor="#D8D8D8" />
+
+        <net.iaround.ui.view.dynamic.CirclePageIndicator
+            android:id="@+id/indicator"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:padding="5dp"
+            app:fillColor="#b1b1b1"
+            app:strokeColor="#b1b1b1"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <!--表情底部导航条-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y108"
+        android:background="@color/chat_face_bottombar_normal"
+        android:orientation="horizontal" >
+
+        <!--右侧添加表情按钮-->
+        <RelativeLayout
+            android:id="@+id/rlShop"
+            android:layout_width="@dimen/x138"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:background="@drawable/chat_face_bottombar_bg" >
+            <ImageView
+                android:id="@+id/faceLogo"
+                android:layout_width="@dimen/x70"
+                android:layout_height="@dimen/y70"
+                android:layout_centerInParent="true"
+                android:src="@drawable/face_shopping" />
+
+            <ImageView
+                android:id="@+id/ivNewPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:padding="2dp"
+                android:src="@drawable/z_main_dot"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <!--左侧可滚动的表情按钮-->
+        <HorizontalScrollView
+            android:id="@+id/face_scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/rlShop"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/bottomBar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+</LinearLayout>

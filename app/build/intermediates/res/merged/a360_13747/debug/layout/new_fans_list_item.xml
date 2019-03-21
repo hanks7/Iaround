@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y306"
+    android:background="@color/common_white" >
+
+    <net.iaround.ui.view.HeadPhotoView
+        android:id="@+id/fans_icon"
+        android:layout_width="@dimen/x150"
+        android:layout_height="@dimen/y150"
+        android:layout_marginLeft="@dimen/x36"
+        android:layout_marginRight="@dimen/x18"
+        android:layout_marginTop="@dimen/y30" >
+    </net.iaround.ui.view.HeadPhotoView>
+
+    <TextView
+        android:id="@+id/datetime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/y48"
+        android:layout_marginRight="@dimen/x48"
+        android:text="12:12"
+        android:textColor="@color/chat_update_gray_text_color"
+        android:textSize="@dimen/y33" />
+    <TextView
+        android:id="@+id/fans_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y48"
+        android:layout_toRightOf="@id/fans_icon"
+        android:singleLine="true"
+        android:text="TextVieasdfasdfadsfasdfw"
+        android:textColor="#FF4064"
+        android:textSize="@dimen/y42" />
+    <RelativeLayout
+        android:id="@+id/rlAgeSex"
+        android:layout_width="@dimen/x90"
+        android:layout_height="@dimen/y42"
+        android:layout_below="@+id/fans_name"
+        android:layout_toRightOf="@id/fans_icon"
+        android:layout_marginTop="@dimen/y18"
+        android:layout_centerVertical="true"
+        android:background="@drawable/group_member_age_girl_bg">
+        <ImageView
+            android:id="@+id/ivSex"
+            android:layout_width="@dimen/x30"
+            android:layout_height="@dimen/y30"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x8"
+            android:src="@drawable/z_common_female_icon"
+            />
+        <TextView
+            android:id="@+id/tvAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ivSex"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="24"
+            android:textColor="@color/white"
+            android:textSize="@dimen/y30" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/x48"
+        android:layout_marginBottom="@dimen/y36"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true">
+        <TextView
+            android:id="@+id/left_text"
+            android:layout_width="@dimen/x150"
+            android:layout_height="@dimen/y72"
+            android:layout_marginRight="@dimen/x36"
+            android:background="@drawable/z_fans_btn_white_new"
+            android:gravity="center"
+            android:text="@string/fans_msg_ignor"
+            android:textColor="@color/chat_update_chatInput_hintTextColor"
+            android:textSize="@dimen/y36" />
+        <TextView
+            android:id="@+id/right_text"
+            android:layout_width="@dimen/x150"
+            android:layout_height="@dimen/y72"
+            android:background="@drawable/z_fans_btn_red_new"
+            android:layout_toRightOf="@+id/left_text"
+            android:gravity="center"
+            android:text="@string/postbar_concerned_flag_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/y36"
+            />
+    </RelativeLayout>
+    <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/x36"
+        android:background="@color/chat_update_divider_of_messageItem" />
+
+</RelativeLayout>

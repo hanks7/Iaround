@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+
+    >
+
+        <RelativeLayout
+            android:id="@+id/rl_other_info_show_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="19dp">
+
+            <ImageView
+                android:id="@+id/iv_show_status"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="4dp"
+                android:src="@drawable/other_user_info_skill_status_normal_bg_new" />
+
+            <TextView
+                android:id="@+id/tv_show_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/iv_show_status"
+                android:text="@string/chat_bar_show_status_normal"
+                android:textColor="@color/c_ffffff"
+                android:textSize="11sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_other_info_show_chat_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/rl_other_info_show_status"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/iv_show_chat_bar"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="4dp"
+                android:src="@drawable/other_user_info_skill_status_normal_white_bg_new" />
+
+            <TextView
+                android:id="@+id/tv_show_chat_bar_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/iv_show_chat_bar"
+                android:text="@string/show_chat_bar_one"
+                android:textColor="@color/c_ffffff"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/tv_show_chat_bar_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_show_chat_bar_one"
+                android:textColor="@color/chat_bar_name_color"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/tv_show_chat_bar_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_show_chat_bar_name"
+                android:text="@string/show_chat_bar_two"
+                android:textColor="@color/c_ffffff"
+                android:textSize="11sp" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

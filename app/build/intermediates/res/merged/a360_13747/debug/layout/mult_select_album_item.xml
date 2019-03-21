@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="95dp" >
+    
+    <ImageView 
+        android:id="@+id/ivAlbum"
+        android:layout_width="73dp"
+        android:layout_height="73dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/boy_want_icon"/>
+    
+	<TextView 
+	    android:id="@+id/tvBuckname"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@id/ivAlbum"
+	    android:textSize="16dp"
+	    android:gravity="left"
+	    android:layout_centerVertical="true"
+	    android:text="生活拾趣"
+	    android:textColor="@color/c_444444"/>
+	
+	<ImageView 
+	    android:id="@+id/ivArrow"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginRight="10dp"
+	    android:layout_centerVertical="true"
+	    android:layout_alignParentRight="true"
+	    android:src="@drawable/arraw_turn"/>
+	
+	<View 
+	    android:id="@+id/vSplit"
+	    android:layout_width="wrap_content"
+	    android:layout_height="1px"
+	    android:layout_marginLeft="98dp"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentBottom="true"
+	    android:background="@color/c_cdccd4"/>
+</RelativeLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/content_ly"
+        android:layout_width="match_parent"
+        android:layout_height="162dp"
+        android:background="@drawable/z_common_title_bg" >
+
+        <RelativeLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="48dip" >
+
+            <include layout="@layout/tabar_actionbar_layout"/>
+
+            <!--<ImageView-->
+                <!--android:id="@+id/title_back"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:paddingLeft="5dp"-->
+                <!--android:paddingRight="35dp"-->
+                <!--android:src="@drawable/title_back_selector" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/title_right_text"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginRight="8dip"-->
+                <!--android:ellipsize="end"-->
+                <!--android:gravity="center"-->
+                <!--android:padding="5dip"-->
+                <!--android:singleLine="true"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="14sp" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/title_name"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:layout_marginLeft="50dp"-->
+                <!--android:layout_marginRight="50dp"-->
+                <!--android:ellipsize="end"-->
+                <!--android:gravity="center"-->
+                <!--android:singleLine="true"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="18sp" />-->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/info_ly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="75dp" >
+
+            <net.iaround.ui.comon.NetImageView
+                android:id="@+id/user_icon"
+                android:layout_width="63dp"
+                android:layout_height="63dp"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@+id/user_icon"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:layout_toLeftOf="@+id/divder"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+            <View
+                android:id="@+id/divder"
+                android:layout_width="0.5dp"
+                android:layout_height="52dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="40dp"
+                android:layout_toLeftOf="@+id/balance_tv"
+                android:background="#2a2a2a"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/balance_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="#ffffff"
+                android:text="@string/love_count"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/balance_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/balance_tv"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="#ffffff"
+                android:textSize="30dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/content_ly" >
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/list_view"
+            style="@style/double_fill"
+            android:background="@color/white"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:scrollbars="none" />
+    </FrameLayout>
+
+</RelativeLayout>

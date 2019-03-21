@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/y1"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/x98"
+            android:layout_marginRight="@dimen/x25"
+            android:background="#D7D7D7"/>
+
+        <TextView
+            android:id="@+id/tv_third_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_third_login"
+            android:textColor="@color/common_grey"
+            android:textSize="@dimen/y42"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/y1"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/x25"
+            android:layout_marginRight="@dimen/x98"
+            android:background="#D7D7D7"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y61"
+        android:layout_marginRight="@dimen/x77"
+        android:layout_marginLeft="@dimen/x77"
+        android:layout_marginBottom="@dimen/y99"
+        android:layout_below="@id/ly_thread_login"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/btn_login_facebook"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:visibility="invisible"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/x142"
+                android:layout_height="@dimen/y142"
+                android:src="@drawable/thread_facebook"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y27"
+                android:textColor="@color/hint_text_color"
+                android:textSize="@dimen/y34"
+                android:text="@string/login_facebook"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_login_qq"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:visibility="invisible"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/x142"
+                android:layout_height="@dimen/y142"
+                android:src="@drawable/thread_qq"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y27"
+                android:textColor="@color/hint_text_color"
+                android:textSize="@dimen/y34"
+                android:text="@string/login_qq"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_login_wechat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:visibility="invisible"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/x142"
+                android:layout_height="@dimen/y142"
+                android:src="@drawable/thread_weixin"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y27"
+                android:textColor="@color/hint_text_color"
+                android:textSize="@dimen/y34"
+                android:text="@string/login_wechat"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_login_sina"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:visibility="invisible"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/x142"
+                android:layout_height="@dimen/y142"
+                android:src="@drawable/thread_weibo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y27"
+                android:textColor="@color/hint_text_color"
+                android:textSize="@dimen/y34"
+                android:text="@string/login_sina"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

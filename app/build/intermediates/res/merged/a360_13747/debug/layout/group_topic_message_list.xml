@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/activity_title"
+        layout="@layout/title_bar" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+          xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/messages_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/activity_title"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:scrollbars="none"
+        android:showDividers="none" 
+        ptr:ptrMode="pullUpFromBottom" />
+
+</RelativeLayout>

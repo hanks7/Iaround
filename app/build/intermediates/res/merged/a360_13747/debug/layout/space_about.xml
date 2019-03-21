@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/tabar_actionbar_layout" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:id="@+id/ivHead"
+            android:layout_width="fill_parent"
+            android:layout_height="124dp"
+           	android:scaleType="centerInside"
+            android:src="@drawable/login_logo" >
+        </ImageView>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivHead"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/btnWebSite"
+                android:layout_width="fill_parent"
+                android:layout_height="52dp"
+                android:gravity="center_vertical"
+                android:background="@color/common_white"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/visit_app_website"
+                    android:textColor="@color/c_ff000000"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pointer" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/listview_item_divider" />
+
+            <LinearLayout
+                android:id="@+id/btnWeibo"
+                android:layout_width="fill_parent"
+                android:layout_height="52dp"
+                android:background="@color/common_white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/visit_app_weibo"
+                    android:textColor="@color/c_ff000000"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pointer" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/pswSep"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/chat_update_divider_of_toolMenu" />
+
+            <LinearLayout
+                android:id="@+id/btnWeixin"
+                android:layout_width="fill_parent"
+                android:layout_height="52dp"
+                android:gravity="center_vertical"
+                android:background="@color/common_white"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/visit_app_weixin"
+                    android:textColor="@color/c_ff000000"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pointer" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/listview_item_divider" />
+
+            <LinearLayout
+                android:id="@+id/btnPhone"
+                android:layout_width="fill_parent"
+                android:layout_height="52dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:background="@color/common_white"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/customer_service_hotline"
+                    android:textColor="@color/c_ff000000"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pointer" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/listview_item_divider" />
+
+            <LinearLayout
+                android:id="@+id/btnMail"
+                android:layout_width="fill_parent"
+                android:layout_height="52dp"
+                android:gravity="center_vertical"
+                android:background="@color/common_white"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/customer_service_mail"
+                    android:textColor="@color/c_ff000000"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pointer" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/copyright_string"
+                    android:textColor="@color/c_ffababab"
+                    android:textSize="8dp" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="13dp"
+                    android:text="@string/company_name"
+                    android:textColor="@color/c_ffababab"
+                    android:textSize="8dp" />
+            </LinearLayout>
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

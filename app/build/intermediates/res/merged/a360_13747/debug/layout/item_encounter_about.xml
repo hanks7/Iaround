@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="@dimen/y6"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/x36"
+        android:background="@color/login_btn_select"/>
+
+    <TextView
+        android:id="@+id/tv_encounter_about_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.4"
+        android:singleLine="true"
+        android:layout_marginBottom="@dimen/y45"
+        android:textColor="@color/common_grey"
+        android:textSize="@dimen/y42"/>
+
+    <TextView
+        android:id="@+id/tv_encounter_about_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.6"
+        android:layout_marginBottom="@dimen/y45"
+        android:layout_marginLeft="@dimen/x108"
+        android:textColor="@color/common_grey"
+        android:textSize="@dimen/y42"/>
+
+
+</LinearLayout>

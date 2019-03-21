@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<net.iaround.ui.chat.view.swipelayout.SwipeListLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sll_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_top"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="#66ff0000"
+            android:gravity="center"
+            android:text="置顶"
+            android:visibility="gone"/>
+
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="#330000ff"
+            android:gravity="center"
+            android:text="删除" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <View
+                android:id="@+id/divider_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y1"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/x240"
+                android:background="@color/chat_update_divider_of_messageItem"
+                />
+
+            <RelativeLayout
+                android:id="@+id/layout_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/info_bg_center_selector"
+                android:orientation="horizontal"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true">
+
+                <net.iaround.ui.view.HeadPhotoView
+                    android:id="@+id/friend_icon"
+                    android:layout_width="@dimen/x180"
+                    android:layout_height="@dimen/y180"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:layout_marginRight="@dimen/x30"
+                    android:layout_marginTop="@dimen/y21"
+                    android:layout_marginBottom="@dimen/y24"
+                    />
+                <!--右侧时间-->
+                <TextView
+                    android:id="@+id/onlineTag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/x48"
+                    android:layout_marginTop="@dimen/y66"
+                    android:singleLine="true"
+                    android:textColor="@color/gray_text_color"
+                    android:textSize="@dimen/y33" />
+                <!--用户名-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/friend_icon"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true">
+                    <TextView
+                        android:id="@+id/userName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxEms="11"
+                        android:singleLine="true"
+                        android:textColor="@color/edit_user_value"
+                        android:textSize="@dimen/y42" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/userName"
+                        android:layout_marginTop="@dimen/y30"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/chat_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/message_send_arri"
+                            android:gravity="center"
+                            android:textSize="9dp"
+                            android:textColor="@color/white"
+                            android:visibility="gone"/>
+
+                        <TextView
+                            android:id="@+id/tv_notice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:maxEms="15"
+                            android:textSize="@dimen/y36"
+                            android:textColor="@color/gray_text_color" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!--android:maxWidth="@dimen/x90"-->
+                <TextView
+                    android:id="@+id/chat_num_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/onlineTag"
+                    android:layout_marginRight="@dimen/x45"
+                    android:layout_marginTop="@dimen/y30"
+                    android:gravity="center"
+                    android:textSize="@dimen/y33"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</net.iaround.ui.chat.view.swipelayout.SwipeListLayout>

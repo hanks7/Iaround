@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/userFragment_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--接收新消息推送-->
+        <LinearLayout
+            android:id="@+id/ll_receive_new_msg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y120"
+            android:layout_marginTop="@dimen/y36"
+            android:background="@color/common_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x48"
+                android:layout_weight="1"
+                android:text="@string/setting_notice_receive_new_msg"
+                android:textColor="#222222"
+                android:textSize="@dimen/y42" />
+
+            <TextView
+                android:id="@+id/tv_receive_message_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/setting_notice_receive_new_msg_open"
+                android:textColor="#9B9B9B"
+                android:textSize="@dimen/y42" />
+
+            <ImageView
+                android:layout_width="@dimen/x24"
+                android:layout_height="@dimen/y42"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginRight="@dimen/x48"
+                android:src="@drawable/user_detail" />
+        </LinearLayout>
+        <!--新消息提示-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y120"
+            android:layout_marginLeft="@dimen/x48"
+            android:layout_marginRight="@dimen/x48"
+            android:gravity="center_vertical"
+            android:text="@string/setting_notice_receive_new_msg_tips"
+            android:textColor="#9B9B9B"
+            android:textSize="@dimen/y30"
+            android:visibility="gone"/>
+
+        <!--免打扰时段-->
+        <LinearLayout
+            android:id="@+id/ll_avoid_trouble_time"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y120"
+            android:background="@color/common_white"
+            android:layout_marginTop="@dimen/y36"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x48"
+                android:layout_weight="1"
+                android:text="@string/setting_notice_avoid_trouble"
+                android:textColor="#222222"
+                android:textSize="@dimen/y42" />
+
+            <TextView
+                android:id="@+id/tv_undistrupt_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#9B9B9B"
+                android:textSize="@dimen/y42" />
+
+            <ImageView
+                android:layout_width="@dimen/x24"
+                android:layout_height="@dimen/y42"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginRight="@dimen/x48"
+                android:src="@drawable/user_detail" />
+        </LinearLayout>
+
+        <!--免打扰提示-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y96"
+            android:layout_marginLeft="@dimen/x48"
+            android:layout_marginRight="@dimen/x42"
+            android:gravity="center_vertical"
+            android:text="@string/setting_notice_avoid_trouble_tips"
+            android:textColor="#9B9B9B"
+            android:textSize="@dimen/y30" />
+
+        <!--私聊消息通知-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y120"
+            android:background="@color/common_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x48"
+                android:layout_weight="1"
+                android:text="@string/set_private_news_notify"
+                android:textColor="#222222"
+                android:textSize="@dimen/y42" />
+
+            <net.iaround.ui.view.FlagImageView
+                android:id="@+id/fiv_private_news_notify"
+                android:layout_width="@dimen/x126"
+                android:layout_height="@dimen/y72"
+                android:layout_marginRight="@dimen/x48" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y1"
+            android:layout_marginLeft="@dimen/x45"
+            android:background="#E6E6E6" />
+
+        <!--动态消息通知-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y120"
+            android:background="@color/common_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x48"
+                android:layout_weight="1"
+                android:text="@string/set_set_dynamic_news_notify"
+                android:textColor="#222222"
+                android:textSize="@dimen/y42" />
+
+            <net.iaround.ui.view.FlagImageView
+                android:id="@+id/fiv_dynamic_news_notify"
+                android:layout_width="@dimen/x126"
+                android:layout_height="@dimen/y72"
+                android:layout_marginRight="@dimen/x48" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y1"
+            android:layout_marginLeft="@dimen/x45"
+            android:background="#E6E6E6" />
+
+        <!--搭讪消息通知-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y120"
+            android:background="@color/common_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x48"
+                android:layout_weight="1"
+                android:text="@string/set_accost_news_notify"
+                android:textColor="#222222"
+                android:textSize="@dimen/y42" />
+
+            <net.iaround.ui.view.FlagImageView
+                android:id="@+id/fiv_accost_news_notify"
+                android:layout_width="@dimen/x126"
+                android:layout_height="@dimen/y72"
+                android:layout_marginRight="@dimen/x48" />
+        </LinearLayout>
+
+        <!--隐藏私聊正文-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y120"
+            android:background="@color/common_white"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x48"
+                android:layout_weight="1"
+                android:text="@string/setting_notice_hide_chat_text"
+                android:textColor="#222222"
+                android:textSize="@dimen/y42" />
+
+            <net.iaround.ui.view.FlagImageView
+                android:id="@+id/fiv_hide_chat_text"
+                android:layout_width="@dimen/x126"
+                android:layout_height="@dimen/y72"
+                android:layout_marginRight="@dimen/x48" />
+        </LinearLayout>
+
+        <!--隐藏私聊正文提示-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y96"
+            android:layout_marginLeft="@dimen/x48"
+            android:layout_marginRight="@dimen/x48"
+            android:gravity="center_vertical"
+            android:text="@string/setting_notice_hide_chat_text_tips"
+            android:textColor="#9B9B9B"
+            android:textSize="@dimen/y30" />
+
+        <!--声音-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y120"
+            android:background="@color/common_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x48"
+                android:layout_weight="1"
+                android:text="@string/setting_notice_set_audio"
+                android:textColor="#222222"
+                android:textSize="@dimen/y42" />
+
+            <net.iaround.ui.view.FlagImageView
+                android:id="@+id/fiv_set_audio"
+                android:layout_width="@dimen/x126"
+                android:layout_height="@dimen/y72"
+                android:layout_marginRight="@dimen/x48" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y1"
+            android:layout_marginLeft="@dimen/x45"
+            android:background="#E6E6E6" />
+
+        <!--圈声音-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y120"
+            android:background="@color/common_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x48"
+                android:layout_weight="1"
+                android:text="@string/setting_notice_set_cirle_audio"
+                android:textColor="#222222"
+                android:textSize="@dimen/y42" />
+
+            <net.iaround.ui.view.FlagImageView
+                android:id="@+id/fiv_set_circle_audio"
+                android:layout_width="@dimen/x126"
+                android:layout_height="@dimen/y72"
+                android:layout_marginRight="@dimen/x48" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y1"
+            android:layout_marginLeft="@dimen/x45"
+            android:background="#E6E6E6" />
+
+        <!--震动-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y120"
+            android:background="@color/common_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x48"
+                android:layout_weight="1"
+                android:text="@string/setting_notice_set_vibration"
+                android:textColor="#222222"
+                android:textSize="@dimen/y42" />
+
+            <net.iaround.ui.view.FlagImageView
+                android:id="@+id/fiv_set_vibration"
+                android:layout_width="@dimen/x126"
+                android:layout_height="@dimen/y72"
+                android:layout_marginRight="@dimen/x48" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y1"
+            android:layout_marginLeft="@dimen/x45"
+            android:background="#E6E6E6" />
+
+        <!--圈震动-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y120"
+            android:background="@color/common_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x48"
+                android:layout_weight="1"
+                android:text="@string/setting_notice_set_circle_vibration"
+                android:textColor="#222222"
+                android:textSize="@dimen/y42" />
+
+            <net.iaround.ui.view.FlagImageView
+                android:id="@+id/fiv_set_circle_vibration"
+                android:layout_width="@dimen/x126"
+                android:layout_height="@dimen/y72"
+                android:layout_marginRight="@dimen/x48" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y96"
+            android:layout_marginLeft="@dimen/x48"
+            android:layout_marginRight="@dimen/x48"
+            android:gravity="center_vertical"
+            android:text="@string/setting_notice_audio_vibration_tips"
+            android:textColor="#9B9B9B"
+            android:textSize="@dimen/y30" />
+
+        <!--圈消息设置-->
+        <LinearLayout
+            android:id="@+id/ll_circle_msg_setting"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y120"
+            android:background="@color/common_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x48"
+                android:layout_weight="1"
+                android:text="@string/setting_notice_circle_msg_setting"
+                android:textColor="#222222"
+                android:textSize="@dimen/y42" />
+
+            <ImageView
+                android:layout_width="@dimen/x24"
+                android:layout_height="@dimen/y42"
+                android:layout_marginRight="@dimen/x48"
+                android:src="@drawable/user_detail" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y96"
+            android:layout_marginLeft="@dimen/x48"
+            android:layout_marginRight="@dimen/x48"
+            android:gravity="center_vertical"
+            android:text="@string/setting_notice_circle_msg_setting_tips"
+            android:textColor="#9B9B9B"
+            android:textSize="@dimen/y30" />
+
+        <!--动态被评论提醒  隐藏-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y120"
+            android:background="@color/common_white"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x48"
+                android:layout_weight="1"
+                android:text="@string/setting_notice_action_msg_reminder"
+                android:textColor="#222222"
+                android:textSize="@dimen/y42" />
+
+            <net.iaround.ui.view.FlagImageView
+                android:id="@+id/fiv_action_msg_reminder"
+                android:layout_width="@dimen/x126"
+                android:layout_height="@dimen/y72"
+                android:layout_marginRight="@dimen/x48" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y1"
+            android:layout_marginLeft="@dimen/x45"
+            android:background="#E6E6E6"
+            android:visibility="gone"/>
+        <!--收到搭讪提醒-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y120"
+            android:background="@color/common_white"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x48"
+                android:layout_weight="1"
+                android:text="@string/setting_notice_accost_reminder"
+                android:textColor="#222222"
+                android:textSize="@dimen/y42" />
+
+            <net.iaround.ui.view.FlagImageView
+                android:id="@+id/fiv_accost_reminder"
+                android:layout_width="@dimen/x126"
+                android:layout_height="@dimen/y72"
+                android:layout_marginRight="@dimen/x48" />
+        </LinearLayout>
+
+        <!--隐藏私聊正文提示-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y96"
+            android:layout_marginLeft="@dimen/x48"
+            android:layout_marginRight="@dimen/x48"
+            android:gravity="center_vertical"
+            android:text="@string/setting_notice_hide_chat_text_tips1"
+            android:visibility="gone"
+            android:textColor="#9B9B9B"
+            android:textSize="@dimen/y30" />
+
+    </LinearLayout>
+
+
+</ScrollView>

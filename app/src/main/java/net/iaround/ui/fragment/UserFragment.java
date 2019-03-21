@@ -112,6 +112,7 @@ public class UserFragment extends LazyLoadFragment implements UserContract.View,
     private UserTitleView userTitleView;//称号
     private ImageView mCbDisturb;
     private TextView tvDisturbStatus;
+    private View lineApplyQualification;
 
     private EditText et_test_url;
 
@@ -178,6 +179,7 @@ public class UserFragment extends LazyLoadFragment implements UserContract.View,
         llSetting = findView(R.id.ll_setting);
         tvUserVip = findView(R.id.tv_user_vip);
         llApplyQualification = findView(R.id.ll_apply_qualification);
+        lineApplyQualification = findView(R.id.line_apply_qualification);
         llOrderList = findView(R.id.ll_order_list);
         mLlVoiceNoDisturb = findView(R.id.ll_voice_no_disturb);
         tvApplyQualification = findView(R.id.tv_apply_qualification);
@@ -220,10 +222,19 @@ public class UserFragment extends LazyLoadFragment implements UserContract.View,
             }
 
         }
-        if (me.getGameUserType() == 1) {
-            tvApplyQualification.setText(R.string.my_qualification);
-        } else {
-            tvApplyQualification.setText(R.string.user_fragment_apply_qualification);
+        //是否显示语言相关模块
+        int isShowVoice = SharedPreferenceUtil.getInstance(getContext()).getInt(SharedPreferenceUtil.VOICE_IS_SHOW);
+        if(isShowVoice == 1){//显示
+            lineApplyQualification.setVisibility(View.VISIBLE);
+            llApplyQualification.setVisibility(View.VISIBLE);
+            if (me.getGameUserType() == 1) {
+                tvApplyQualification.setText(R.string.my_qualification);
+            } else {
+                tvApplyQualification.setText(R.string.user_fragment_apply_qualification);
+            }
+        }else {
+            lineApplyQualification.setVisibility(View.GONE);
+            llApplyQualification.setVisibility(View.GONE);
         }
         privateDataReq();
         if (isChange) {

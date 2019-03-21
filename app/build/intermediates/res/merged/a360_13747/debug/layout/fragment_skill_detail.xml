@@ -1,0 +1,767 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_view_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="net.iaround.ui.skill.skilllist.SkillListActivity">
+
+    <include
+        android:id="@+id/skill_detail_title_bar"
+        layout="@layout/title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/skill_detail_title_bar"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingBottom="75dp">
+
+            <RelativeLayout
+                android:id="@+id/head_rl"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+                <net.iaround.ui.view.HeadPhotoView
+                    android:id="@+id/iv_user_head"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:id="@+id/tv_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/baseLine_orientation"
+                    android:layout_toEndOf="@id/iv_user_head"
+                    android:layout_toRightOf="@+id/iv_user_head"
+                    android:textColor="@color/country_group"
+                    android:textSize="14sp"
+                    tools:text="也许会是" />
+
+                <View
+                    android:id="@+id/baseLine_orientation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.5dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:id="@+id/tv_diamond_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/baseLine_orientation"
+                    android:layout_toEndOf="@id/iv_user_head"
+                    android:layout_toRightOf="@id/iv_user_head"
+                    android:textColor="@color/gray_text_color"
+                    android:textSize="12sp"
+                    tools:text="钻石：666" />
+
+                <TextView
+                    android:id="@+id/tv_gold_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/baseLine_orientation"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toEndOf="@id/tv_diamond_num"
+                    android:layout_toRightOf="@id/tv_diamond_num"
+                    android:textColor="@color/gray_text_color"
+                    android:textSize="12sp"
+                    tools:text="金币200" />
+
+                <TextView
+                    android:id="@+id/tv_star_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/baseLine_orientation"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toEndOf="@id/tv_gold_num"
+                    android:layout_toRightOf="@id/tv_gold_num"
+                    android:textColor="@color/gray_text_color"
+                    android:textSize="12sp"
+                    tools:text="星星200" />
+
+                <Button
+                    android:id="@+id/btn_charge"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/touch_bg_red"
+                    android:text="@string/user_wallet_recharge_title"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:background="@color/chat_bg" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/skill_icon"
+                    android:layout_width="102dp"
+                    android:layout_height="102dp"
+                    android:layout_marginTop="11dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/skill_icon_first"
+                    android:layout_width="76dp"
+                    android:layout_height="76dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginBottom="21dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/skill_icon"
+                    app:layout_constraintHorizontal_bias="0.523"
+                    app:layout_constraintLeft_toLeftOf="@+id/skill_icon"
+                    app:layout_constraintRight_toRightOf="@+id/skill_icon" />
+
+                <TextView
+                    android:id="@+id/skill_name_icon_below"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="3dp"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/skill_icon"
+                    app:layout_constraintLeft_toLeftOf="@+id/skill_icon"
+                    tools:text="菊花残" />
+
+                <TextView
+                    android:id="@+id/skill_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginBottom="2dp"
+                    android:textColor="@color/country_group"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline3"
+                    app:layout_constraintLeft_toRightOf="@+id/skill_icon"
+                    tools:text="菊花残" />
+
+                <TextView
+                    android:id="@+id/tv_skill_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginBottom="1dp"
+                    android:textColor="@color/login_btn"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline3"
+                    app:layout_constraintLeft_toRightOf="@+id/skill_name"
+                    tools:text="LV.55" />
+
+                <net.iaround.ui.view.RatingBarView
+                    android:id="@+id/ratingBarView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    app:layout_constraintLeft_toLeftOf="@+id/skill_name"
+                    app:layout_constraintTop_toTopOf="@+id/guideline3"
+                    app:paddingSpace="4dp"
+                    app:singelStarSize="16dp" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.52"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="188dp" />
+
+
+            </android.support.constraint.ConstraintLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_current_effect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/current_effect"
+                    android:textColor="@color/country_group"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_current_effect_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_current_effect"
+                    android:layout_alignBottom="@+id/tv_current_effect"
+                    android:layout_toEndOf="@+id/tv_current_effect"
+                    android:layout_toRightOf="@+id/tv_current_effect"
+                    android:textColor="@color/country_group"
+                    android:textSize="12sp"
+                    tools:text="将对方的菊花爆掉，对方的魅力-100。" />
+
+
+                <TextView
+                    android:id="@+id/tv_update_effect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_update_effect_desc"
+                    android:layout_alignBottom="@+id/tv_update_effect_desc"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/update_effect"
+                    android:textColor="@color/country_group"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_update_effect_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_current_effect_desc"
+                    android:layout_marginTop="9dp"
+                    android:layout_toEndOf="@+id/tv_update_effect"
+                    android:layout_toRightOf="@+id/tv_update_effect"
+                    android:textColor="@color/country_group"
+                    android:textSize="12sp"
+                    tools:text="将对方的菊花爆掉，对方的魅力-100。" />
+
+                <RelativeLayout
+                    android:id="@+id/proficiency_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_update_effect_desc"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/tv_proficiency"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/proficiency"
+                        android:textColor="@color/country_group"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_proficiency_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/tv_proficiency"
+                        android:layout_toRightOf="@+id/tv_proficiency"
+                        android:text="@string/proficiency_desc"
+                        android:textColor="@color/country_group"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <ProgressBar
+                    android:id="@+id/pb_proficiency"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="9dp"
+                    android:layout_below="@+id/proficiency_rl"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/shape_progressbar_bg"
+                    android:max="100"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:progressDrawable="@drawable/progress_bar_circle_radius_to_right" />
+
+
+                <View
+                    android:id="@+id/seat_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/pb_proficiency"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/encounter_base_info_line" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_update_destory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/update_expend"
+                    android:textColor="@color/country_group"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/moon_gold_rl"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:id="@+id/iv_prop"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/moon_gold" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/prop_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:layout_marginLeft="2dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_moon_gold_expend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/country_group"
+                        android:textSize="12sp"
+                        tools:text="5/12" />
+
+                    <TextView
+                        android:id="@+id/tv_moon_gold_successful"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/country_group"
+                        android:textSize="12sp"
+                        tools:text="成功率15%" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/moon_silver_rl"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:layout_marginLeft="5dp"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:id="@+id/iv_prop1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/moon_silver" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_moon_silver_expend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:textColor="@color/country_group"
+                    android:textSize="12sp"
+                    tools:text="5/12" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/btn_get_moon"
+                    android:layout_width="90dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/circle_skill_detail_button_half"
+                    android:gravity="start|center_vertical"
+                    android:maxWidth="100dp"
+                    android:text="@string/get_props"
+                    android:textColor="@color/red"
+                    android:textSize="9sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_service_charge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/service_charge"
+                    android:textColor="@color/country_group"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/diamond_charge_rl"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:id="@+id/iv_prop2"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/icon_diamond" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/service_charge_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:layout_marginLeft="2dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_diamond_charge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/country_group"
+                        android:textSize="12sp"
+                        tools:text="X200" />
+
+                    <TextView
+                        android:id="@+id/tv_diamond_successful"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/country_group"
+                        android:textSize="12sp"
+                        tools:text="成功率15%" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/gold_charge_rl"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:layout_marginLeft="2dp"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:id="@+id/iv_prop3"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/icon_gold" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_gold_charge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:textColor="@color/country_group"
+                    android:textSize="12sp"
+                    tools:text="X500" />
+
+
+                <RelativeLayout
+                    android:id="@+id/star_charge_rl"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:layout_marginLeft="2dp"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/icon_star" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:layout_marginLeft="2dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_star_charge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/country_group"
+                        android:textSize="12sp"
+                        tools:text="X200" />
+
+                    <TextView
+                        android:id="@+id/tv_star_successful"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/country_group"
+                        android:textSize="12sp"
+                        tools:text="成功率15%gjg" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/encounter_base_info_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_success_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/success_rate1"
+                    android:textColor="@color/country_group"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_success"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/tv_success_title"
+                    android:layout_toRightOf="@+id/tv_success_title"
+                    android:textColor="@color/login_btn"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:text="91%" />
+
+                <Button
+                    android:id="@+id/btn_increase"
+                    android:layout_width="90dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/circle_skill_detail_button_half"
+                    android:gravity="start|center_vertical"
+                    android:maxWidth="100dp"
+                    android:minLines="1"
+                    android:singleLine="true"
+                    android:text="@string/improve_success_rate"
+                    android:textColor="@color/red"
+                    android:textSize="9sp" />
+            </RelativeLayout>
+
+            <net.iaround.ui.view.face.MyGridView
+                android:id="@+id/gv_success_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:horizontalSpacing="0dp"
+                android:numColumns="2"
+                android:verticalSpacing="15dp" />
+
+            <!--<View
+                android:id="@+id/seat_line12"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/encounter_base_info_line"
+                android:layout_marginLeft="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:paddingEnd="0dp"
+                android:paddingStart="23dp"
+                android:paddingRight="0dp"
+                android:paddingLeft="23dp">
+
+                <TextView
+                    android:id="@+id/tv_base_success"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="12sp"
+                    android:drawablePadding="6dp"
+                    android:drawableStart="@drawable/circle_skill_detail_red"
+                    android:textColor="@color/login_btn"
+                    tools:text="基础成功率：52%"
+                    android:drawableLeft="@drawable/circle_skill_detail_red" />
+
+
+                <TextView
+                    android:id="@+id/tv_acer_success"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="6dp"
+                    android:textSize="12sp"
+                    android:drawableStart="@drawable/circle_skill_detail_yellow"
+                    android:textColor="@color/skill_yellow"
+                    android:visibility="gone"
+                    tools:text="元宝升级加成：10%"
+                    tools:visibility="visible"
+                    android:drawableLeft="@drawable/circle_skill_detail_yellow" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingEnd="0dp"
+                android:paddingStart="23dp"
+                android:paddingRight="0dp"
+                android:paddingLeft="23dp">
+
+                <TextView
+                    android:id="@+id/tv_ranking"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="6dp"
+                    android:drawableStart="@drawable/circle_skill_detail_blue"
+                    android:textColor="@color/ranking_charm_charmnumber"
+                    android:visibility="gone"
+                    android:textSize="12sp"
+                    tools:text="排行榜加成: 7%"
+                    tools:visibility="visible"
+                    android:drawableLeft="@drawable/circle_skill_detail_blue" />
+
+
+                <TextView
+                    android:id="@+id/tv_diamond_success_rate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="6dp"
+                    android:drawableStart="@drawable/circle_skill_detail_green"
+                    android:textColor="@color/lable_rest_color"
+                    android:visibility="gone"
+                    tools:text="钻石升级加成：10%"
+                    android:textSize="12sp"
+                    tools:visibility="visible"
+                    android:drawableLeft="@drawable/circle_skill_detail_green" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingEnd="0dp"
+                android:paddingStart="23dp"
+                android:paddingRight="0dp"
+                android:paddingLeft="23dp">
+
+                <TextView
+                    android:id="@+id/tv_recharge_upgrade"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="6dp"
+                    android:drawableStart="@drawable/circle_skill_detail_blue"
+                    android:textColor="@color/ranking_charm_charmnumber"
+                    android:visibility="gone"
+                    android:textSize="12sp"
+                    tools:text="充值升级加成: 7%"
+                    tools:visibility="visible"
+                    android:drawableLeft="@drawable/circle_skill_detail_blue" />
+
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="6dp"
+                    android:drawableStart="@drawable/circle_skill_detail_green"
+                    android:textColor="@color/lable_rest_color"
+                    android:visibility="gone"
+                    tools:text="钻石升级加成：10%"
+                    android:textSize="12sp"
+                    tools:visibility="invisible"
+                    android:drawableLeft="@drawable/circle_skill_detail_green" />
+
+            </LinearLayout>-->
+
+            <View
+                android:id="@+id/seat_line3"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/encounter_base_info_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_update_condition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/update_condition"
+                    android:textColor="@color/country_group"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_person_grade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/tv_update_condition"
+                    android:layout_toRightOf="@+id/tv_update_condition"
+                    android:textColor="@color/login_btn"
+                    android:textSize="14sp"
+                    tools:text="人物等级达到5级" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/touch_bg_red"
+        android:text="@string/group_chat_flat_update_current"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+</RelativeLayout>

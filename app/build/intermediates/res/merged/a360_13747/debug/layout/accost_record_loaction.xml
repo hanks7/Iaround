@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp" >
+
+    <RelativeLayout
+        android:id="@+id/llFlag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/ivTimePoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/gray_point" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/ivTimePoint"
+            android:text="08/02 11:32" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llFlag"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/chat_new_record_friend_bg"
+        android:gravity="center_vertical"
+        android:maxWidth="200dp"
+        android:minHeight="48dp"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/ivLocation"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/chat_media_record_map_logo" />
+
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/z_chat_record_location_text_bg"
+            android:ellipsize="end"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:singleLine="true"
+            android:text="dfdfasdfasdfasdfdfdfdfdf"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+    </FrameLayout>
+
+</RelativeLayout>

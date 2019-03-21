@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusable="true"
+    android:background="@color/userFragment_bg"
+    android:focusableInTouchMode="true">
+
+    <include
+        android:id="@+id/select_country_title"
+        layout="@layout/title_bar" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_below="@+id/select_country_title"
+        android:background="@color/chat_update_divider_of_toolMenu"/>
+    <EditText
+        android:id="@+id/search_query"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/divider"
+        android:layout_marginTop="@dimen/y24"
+        android:layout_marginBottom="@dimen/y24"
+        android:layout_marginLeft="@dimen/x48"
+        android:layout_marginRight="@dimen/x48"
+        android:background="@drawable/edit_country_bg"
+        android:drawableLeft="@drawable/friend_search"
+        android:drawablePadding="6dip"
+        android:hint="@string/search"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/x36"
+        android:paddingRight="@dimen/x36"
+        android:singleLine="true"
+        android:textColor="@color/common_black"
+        android:textColorHint="@color/hint_text_color"
+        android:textSize="15sp" >
+    </EditText>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/search_query" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <net.iaround.ui.view.SectionListView
+                android:id="@+id/section_list_view"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:dividerHeight="0dp"
+                android:divider="@null">
+            </net.iaround.ui.view.SectionListView>
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/list_index"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:paddingTop="10dp"
+            android:background="@color/transparent"/>
+    </FrameLayout>
+
+</RelativeLayout>

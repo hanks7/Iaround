@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- 设置固定填充色 -->
+    <solid android:color="@color/chat_face_bottombar_normal" />
+    <corners android:radius="23dp"/>
+</shape>

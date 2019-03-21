@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="46dp"
+    android:background="@color/common_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/edit_layout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        android:background="@drawable/chat_bar_popular_search"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/chat_bar_popular_search_new"/>
+        <TextView
+            android:id="@+id/edittext_keyword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="@color/c_ffffff"
+            android:textColorHint="@color/chat_update_chatInput_hintTextColor"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:hint="@string/search"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:textColor="@color/c_ffffff"
+            android:textColorHint="@color/chat_update_chatInput_hintTextColor"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</LinearLayout>

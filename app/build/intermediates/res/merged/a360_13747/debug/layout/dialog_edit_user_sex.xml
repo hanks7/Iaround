@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:background="@color/main_bg_color">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_user_sex_setting"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ly_edit_user_sex_man"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/register_next_sex_man"
+                android:textColor="@color/common_black"
+                android:textSize="@dimen/y42"/>
+
+            <CheckBox
+                android:id="@+id/checkbox_man"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/round_check_selector"
+                android:button="@null"
+                android:checked="false"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y1"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="@dimen/x45"
+            android:background="#E6E6E6" />
+
+        <LinearLayout
+            android:id="@+id/ly_edit_user_sex_woman"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/register_next_sex_woman"
+                android:textColor="@color/common_black"
+                android:textSize="@dimen/y42"/>
+
+            <CheckBox
+                android:id="@+id/checkbox_woman"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/round_check_selector"
+                android:layout_marginRight="10dp"
+                android:button="@null"
+                android:checked="false"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y1"
+            android:layout_margin="3dp"
+            android:background="#E6E6E6" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="15sp"
+        android:textColor="#6E7170"
+        android:layout_marginTop="3dp"
+        android:text="@string/edit_user_sex_case"/>
+
+
+    <TextView
+        android:id="@+id/tv_edit_user_sex_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:textColor="#D56073"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="30dp"
+        android:textSize="15sp"
+        android:text="@string/cancel"/>
+
+</LinearLayout>

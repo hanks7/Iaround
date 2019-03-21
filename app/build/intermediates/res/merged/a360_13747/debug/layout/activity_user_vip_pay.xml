@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y78"
+            android:background="#FFF2F4"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="@dimen/x42"
+                android:layout_height="@dimen/y31"
+                android:layout_marginLeft="@dimen/x30"
+                android:src="@drawable/speaker" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x18"
+                android:text="@string/user_vip_pay_speaker"
+                android:textColor="#FF5B7B"
+                android:textSize="@dimen/x36" />
+
+        </LinearLayout>
+
+        <include layout="@layout/activity_user_vip_open_package" />
+
+        <include layout="@layout/activity_user_vip_power" />
+
+        <LinearLayout
+            android:id="@+id/ll_open_pay_help"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y120"
+            android:layout_marginBottom="@dimen/y60"
+            android:layout_marginTop="@dimen/y60"
+            android:background="@color/common_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x72"
+                android:layout_weight="1"
+                android:text="@string/user_vip_open_help"
+                android:textColor="#222222"
+                android:textSize="@dimen/y42" />
+
+            <ImageView
+                android:layout_width="@dimen/x24"
+                android:layout_height="@dimen/y42"
+                android:layout_marginRight="@dimen/x48"
+                android:src="@drawable/user_detail" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_continue_userVipPay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y138"
+            android:background="@color/login_btn"
+            android:text="继续"
+            android:gravity="center"
+            android:textColor="@color/common_white"
+            android:textSize="@dimen/y42"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+</ScrollView>

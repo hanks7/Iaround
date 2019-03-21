@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/activity_basic_style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/userFragment_bg"
+    android:orientation="vertical" >
+    <!--标题-->
+    <include
+        android:id="@+id/activity_title"
+        layout="@layout/title_bar" />
+
+    <!--暂时没有使用-->
+    <TextView
+        android:id="@+id/group_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="11dp"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:text="@string/group_publish_gatherings_tips"
+        android:textColor="@color/c_999999"
+        android:textSize="16sp"
+        android:visibility="gone"/>
+
+    <!--提示文字-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x36"
+        android:layout_marginTop="@dimen/y31"
+        android:layout_marginBottom="@dimen/y30"
+        android:text="@string/group_msg_set_hint"
+        android:textColor="@color/chat_update_gray_text_color"
+        android:textSize="@dimen/y36"/>
+
+    <!--消息展示列表-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/rl_group_set1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y120"
+            android:background="@color/common_white" >
+
+            <TextView
+                android:id="@+id/text_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x48"
+                android:singleLine="true"
+                android:textColor="@color/chat_update_edit_user_value"
+                android:textSize="@dimen/y42" />
+
+            <CheckBox
+                android:id="@+id/check_box_1"
+                android:layout_width="@dimen/x54"
+                android:layout_height="@dimen/y54"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x48"
+                android:background="@drawable/round_check_selector"
+                android:button="@null"
+                android:checked="false" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y1"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/x45"
+                android:background="@color/chat_update_login_btn_select" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_group_set2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y120"
+            android:background="@color/common_white" >
+
+            <TextView
+                android:id="@+id/text_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x48"
+                android:singleLine="true"
+                android:textColor="@color/chat_update_edit_user_value"
+                android:textSize="@dimen/y42" />
+
+            <CheckBox
+                android:id="@+id/check_box_2"
+                android:layout_width="@dimen/x54"
+                android:layout_height="@dimen/y54"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x48"
+                android:background="@drawable/round_check_selector"
+                android:button="@null"
+                android:checked="false" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y1"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/x45"
+                android:background="@color/chat_update_login_btn_select" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_group_set3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y120"
+            android:background="@color/common_white">
+
+            <TextView
+                android:id="@+id/text_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x48"
+                android:singleLine="true"
+                android:textColor="@color/chat_update_edit_user_value"
+                android:textSize="@dimen/y42"/>
+
+            <CheckBox
+                android:id="@+id/check_box_3"
+                android:layout_width="@dimen/x54"
+                android:layout_height="@dimen/y54"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x48"
+                android:background="@drawable/round_check_selector"
+                android:button="@null"
+                android:checked="false" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y1"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/x45"
+                android:visibility="gone"
+                android:background="@color/chat_update_login_btn_select" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

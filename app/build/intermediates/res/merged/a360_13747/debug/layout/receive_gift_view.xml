@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/activity_basic_style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/info_bg_center">
+
+    <include
+        android:id="@+id/actionBar"
+        layout="@layout/x_store_receivegifts_headview" />
+
+    <!--<include layout="@layout/tabar_actionbar_layout"/>-->
+
+    <FrameLayout
+        android:id="@+id/store_gift_classify"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/actionBar"
+        android:background="@color/userFragment_bg"
+        android:orientation="vertical">
+
+        <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+            android:id="@+id/giftContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <net.iaround.ui.view.face.MyGridView
+                    android:id="@+id/store_gift_gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/title_bar_bg"
+                    android:columnWidth="80dp"
+                    android:fadingEdge="none"
+                    android:gravity="center"
+                    android:horizontalSpacing="20dp"
+                    android:listSelector="@drawable/transparent"
+                    android:numColumns="2"
+                    android:overScrollMode="never"
+                    android:paddingLeft="22dp"
+                    android:paddingTop="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingBottom="12dp"
+                    android:scrollbars="none"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="13dp" />
+            </LinearLayout>
+        </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_below="@+id/actionBar"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/hot_list_city_cl"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

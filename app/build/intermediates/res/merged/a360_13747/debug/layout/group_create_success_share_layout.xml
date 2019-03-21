@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include
+        android:id="@+id/share_title"
+        layout="@layout/title_bar" />
+    
+    <ImageView
+        android:id="@+id/main_view"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/group_success_create_share_img" >
+   
+    </ImageView>
+    
+<!--     <TextView -->
+<!--         android:id="@+id/share_tips" -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_marginBottom="6dp" --> 
+<!--         android:layout_marginTop="8dp" -->
+<!--         android:gravity="center_vertical|center_horizontal" -->
+<!--         android:text="@string/success_create_group_content" -->
+<!--         android:textColor="@color/c_b28850" -->
+<!--         android:textSize="15sp" > -->
+  
+<!--     </TextView> -->
+      <TextView
+        android:id="@+id/share_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="8dp"
+        android:padding="15dp"
+        android:gravity="center"
+        android:text="@string/group_create_invite_friend"
+        android:textColor="@color/c_999999"
+        android:textSize="15sp" >
+  
+    </TextView>
+    <Button
+        android:id="@+id/share_button"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/z_store_giftbags_buybtn_selector"
+        android:text="@string/summary_group_invite"
+        android:textColor="@color/c_ffffff"
+        android:textSize="24dp" >
+    </Button>
+
+</LinearLayout>

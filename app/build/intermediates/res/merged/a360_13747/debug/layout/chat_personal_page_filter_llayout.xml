@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="3dp"
+    android:layout_alignParentRight="true"
+    android:background="@drawable/popup_dlg_back"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/chat_infomation_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/normal_trains_pressed_black" >
+
+        <TextView
+            android:id="@+id/chat_infomation_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/iaround_chat_more_friendinfo"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:text="@string/chat_personal_others_info"
+            android:textColor="@color/page_filter_item_text_color"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#ff615955" />
+
+    <TextView
+        android:id="@+id/chat_black_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/normal_trains_pressed_black"
+        android:drawableLeft="@drawable/iaround_chat_more_addblack"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:padding="15dp"
+        android:text="@string/chat_personal_black"
+        android:textColor="@color/page_filter_item_text_color"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#ff615955" />
+
+    <TextView
+        android:id="@+id/chat_report_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/normal_trains_pressed_black"
+        android:drawableLeft="@drawable/iaround_chat_more_report"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:padding="15dp"
+        android:text="@string/chat_personal_black_report"
+        android:textColor="@color/page_filter_item_text_color"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#ff615955" />
+
+    <TextView
+        android:id="@+id/chat_delete_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/normal_trains_pressed_black"
+        android:drawableLeft="@drawable/iaround_chat_more_recyle"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:padding="15dp"
+        android:text="@string/clean_chat_history"
+        android:textColor="@color/page_filter_item_text_color"
+        android:textSize="16sp" />
+
+</LinearLayout>

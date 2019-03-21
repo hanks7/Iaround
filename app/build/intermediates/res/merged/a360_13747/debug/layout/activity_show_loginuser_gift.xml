@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/userFragment_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title_bar" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_below="@+id/title_bar"
+        android:background="@color/chat_update_divider_of_toolMenu" />
+
+    <GridView
+        android:id="@+id/gv_headpics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider"
+        android:horizontalSpacing="@dimen/x3"
+        android:numColumns="4"
+        android:verticalSpacing="@dimen/x3" />
+
+    <TextView
+        android:id="@+id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/divider"
+        android:gravity="center"
+        android:text="@string/space_sent_his_first_gift"
+        android:textColor="@color/chat_update_gray_text_color"
+        android:textSize="@dimen/y36"
+        android:visibility="gone" />
+
+</RelativeLayout>

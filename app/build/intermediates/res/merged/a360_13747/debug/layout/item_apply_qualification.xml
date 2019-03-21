@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_my_qua_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/my_qualification"
+        android:textColor="@color/common_black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_my_qua_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/common_black"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <net.iaround.ui.view.face.MyGridView
+        android:id="@+id/mgv_my_qua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:horizontalSpacing="10dp"
+        android:listSelector="#00000000"
+        android:numColumns="4"
+        android:verticalSpacing="10dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_my_qua_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/my_qua_hint"
+        android:textColor="@color/c_999999"
+        android:textSize="14sp"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/ll_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="35dp"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_register"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:src="@drawable/btn_select"/>
+
+        <TextView
+            android:layout_marginLeft="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_read"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="@string/authentication_protocol"
+            android:textColor="@color/edit_user_tips" />
+    </LinearLayout>
+</LinearLayout>

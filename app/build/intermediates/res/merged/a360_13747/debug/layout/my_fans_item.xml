@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/common_white">
+
+    <RelativeLayout
+        android:id="@+id/list_group_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y232">
+
+        <net.iaround.ui.view.HeadPhotoView
+            android:id="@+id/friend_icon"
+            android:layout_width="@dimen/x200"
+            android:layout_height="@dimen/y200"
+            android:layout_marginBottom="@dimen/y12"
+            android:layout_marginTop="@dimen/y20"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x24" />
+
+        <!--距离和状态-->
+        <LinearLayout
+            android:id="@+id/LinearLayout01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/y44"
+            android:layout_marginRight="@dimen/x48">
+            <TextView
+                android:id="@+id/time_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/chat_update_gray_text_color"
+                android:textSize="@dimen/y30" />
+
+            <TextView
+                android:id="@+id/diatance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/chat_update_gray_text_color"
+                android:textSize="@dimen/y30" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/friend_icon">
+
+            <TextView
+                android:id="@+id/tvNickName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/chat_update_edit_user_value"
+                android:textSize="@dimen/y42" />
+            <RelativeLayout
+                android:id="@+id/rlSexAge"
+                android:layout_width="@dimen/x90"
+                android:layout_height="@dimen/y42"
+                android:layout_marginTop="@dimen/y8"
+                android:layout_below="@+id/tvNickName"
+                android:orientation="horizontal"
+                android:background="@drawable/group_member_age_girl_bg">
+                <ImageView
+                    android:id="@+id/ivSex"
+                    android:layout_width="@dimen/x36"
+                    android:layout_height="@dimen/y42"
+                    android:layout_marginLeft="@dimen/x5"
+                    android:layout_centerVertical="true" />
+                <TextView
+                    android:id="@+id/tvAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/ivSex"
+                    android:layout_marginLeft="@dimen/y2"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/common_white"
+                    android:textSize="@dimen/y30"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/svip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:visibility="gone"
+                android:src="@drawable/z_common_svip_icon" />
+
+            <ImageView
+                android:id="@+id/new_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/svip"
+                android:src="@drawable/z_common_new_flag_img"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/self_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlSexAge"
+                android:layout_marginRight="@dimen/x180"
+                android:layout_marginTop="@dimen/y8"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="@dimen/y42"
+                android:visibility="gone"
+                android:textColor="@color/chat_update_gray_text_color"  />
+        </RelativeLayout>
+            <TextView
+                android:id="@+id/focus"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/y72"
+                android:background="@drawable/z_fans_btn_red_new"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/y36"
+                android:layout_marginRight="@dimen/x48"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:gravity="center"
+                android:text="@string/postbar_concerned_flag_text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/y36" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_marginLeft="@dimen/x264"
+        android:background="@color/chat_update_divider_of_messageItem" />
+
+</LinearLayout>

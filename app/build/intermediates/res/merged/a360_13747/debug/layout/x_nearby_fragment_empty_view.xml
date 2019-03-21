@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <TextView
+        android:id="@+id/empty_text"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:lineSpacingExtra="15dp"
+        android:paddingBottom="60dp"
+        android:paddingTop="60dp"
+        android:text="@string/nearby_user_list_empty_tips"
+        android:textColor="#999999"
+        android:textSize="18dp" />
+
+</RelativeLayout>

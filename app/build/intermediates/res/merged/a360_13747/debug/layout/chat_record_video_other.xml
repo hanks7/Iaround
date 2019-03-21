@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_centerVertical="true"
+        android:button="@drawable/nearby_filter_checkbox_selector"
+        android:visibility="gone" />
+
+    <net.iaround.ui.view.HeadPhotoView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/x120"
+        android:layout_height="@dimen/y120"
+        android:layout_toRightOf="@+id/checkbox"
+        android:layout_marginTop="@dimen/y48"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x24"
+        />
+
+    <LinearLayout
+        android:id="@+id/content_userinfo_ly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/icon"
+        android:orientation="vertical" >
+
+        <include layout="@layout/iaround_chat_userinfo_view" />
+
+        <FrameLayout
+            android:id="@+id/flContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/content"
+                android:layout_width="@dimen/x360"
+                android:layout_height="@dimen/y360"
+                android:scaleType="fitXY"
+                />
+
+            <ImageView
+                android:id="@+id/play"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:src="@drawable/iaround_chat_record_play_video" />
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

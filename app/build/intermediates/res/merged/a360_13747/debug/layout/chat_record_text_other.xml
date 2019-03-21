@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/x30"
+        android:button="@drawable/nearby_filter_checkbox_selector"
+        android:visibility="gone" />
+
+    <!--android:layout_toRightOf="@id/checkbox"-->
+    <net.iaround.ui.view.HeadPhotoView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/x120"
+        android:layout_height="@dimen/y120"
+        android:layout_toRightOf="@+id/checkbox"
+        android:layout_marginRight="@dimen/x24"
+        android:layout_marginLeft="@dimen/x30"
+        />
+
+    <LinearLayout
+        android:id="@+id/content_userinfo_ly"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/icon"
+        android:orientation="vertical" >
+        <include
+            layout="@layout/iaround_chat_userinfo_view" />
+        <net.iaround.ui.comon.RichTextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chat_new_record_friend_bg"
+            android:gravity="center_vertical"
+            android:layout_marginRight="@dimen/x207"
+            android:paddingLeft="@dimen/x45"
+            android:paddingRight="@dimen/x45"
+            android:paddingTop="@dimen/y35"
+            android:paddingBottom="@dimen/y35"
+            android:textColor="@color/chat_update_edit_user_value"
+            android:textSize="@dimen/y42" />
+    </LinearLayout>
+</RelativeLayout>

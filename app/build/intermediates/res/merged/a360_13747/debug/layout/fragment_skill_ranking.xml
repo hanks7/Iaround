@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/ranking_skill_growing_background">
+
+    <ScrollView
+        android:id="@+id/scroll_skill_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                layout="@layout/headview_ranking_charm_fragment"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+
+            <include layout="@layout/fragment_skill_ranking_activie" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp">
+
+            </LinearLayout>
+
+            <include layout="@layout/fragment_skill_ranking_growing" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_user_last_local"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y26"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/y53"
+            android:layout_height="@dimen/y53"
+            android:layout_marginLeft="@dimen/x34"
+            android:src="@drawable/user_info_last_local" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x12"
+            android:text="@string/userinfo_last_location"
+            android:textColor="#222222"
+            android:textSize="@dimen/y42" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x57"
+        android:layout_marginTop="@dimen/y17"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="@dimen/x2"
+            android:layout_height="match_parent"
+            android:background="#EBEBEB" />
+
+        <TextView
+            android:id="@+id/tv_user_last_local"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/y24"
+            android:layout_marginLeft="@dimen/x36"
+            android:layout_marginTop="@dimen/y24"
+            android:layout_weight="1"
+            android:textColor="#9B9B9B"
+            android:textSize="@dimen/y42" />
+
+        <ImageView
+            android:layout_width="@dimen/x24"
+            android:layout_height="@dimen/y42"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x127"
+            android:layout_marginRight="@dimen/y48"
+            android:src="@drawable/user_detail" />
+
+    </LinearLayout>
+
+</LinearLayout>

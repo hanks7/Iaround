@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:background="@color/common_white">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y39"
+        android:layout_marginLeft="@dimen/x48"
+        android:layout_marginBottom="@dimen/y39"
+        android:src="@drawable/publish_dynamic_add"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x18"
+        android:textSize="@dimen/y36"
+        android:textColor="@color/login_btn"
+        android:text="@string/preview_add_bottom"/>
+
+</LinearLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/chat_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/moon_charge_title_bar"
+        layout="@layout/title_bar" />
+
+    <net.iaround.ui.view.WrapperScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:id="@+id/head_rl"
+                android:layout_width="match_parent"
+                android:layout_height="77dp"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/iv_diamond"
+                        android:layout_width="22dp"
+                        android:layout_height="19dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/user_wallet_diamond" />
+
+                    <TextView
+                        android:id="@+id/tv_diamond_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/iv_diamond"
+                        android:text="@string/gift_price_2"
+                        android:textColor="@color/country_group"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_mime_diamond"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/tv_diamond_title"
+                        android:textColor="@color/country_group"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/iv_star"
+                        android:layout_width="22dp"
+                        android:layout_height="19dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_star" />
+
+                    <TextView
+                        android:id="@+id/tv_star_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/iv_star"
+                        android:text="@string/stars_m"
+                        android:textColor="@color/country_group"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_mime_star"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/tv_star_title"
+                        android:textColor="@color/country_group"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/iv_gold"
+                        android:layout_width="22dp"
+                        android:layout_height="19dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/user_wallet_coin" />
+
+                    <TextView
+                        android:id="@+id/tv_gold_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/iv_gold"
+                        android:text="@string/gift_price_1"
+                        android:textColor="@color/country_group"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_mime_gold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/tv_gold_title"
+                        android:textColor="@color/country_group"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/set_line1"
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:layout_below="@+id/head_rl"
+                android:background="@color/chat_bg" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/moon_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/set_line1"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp" />
+            <View
+                android:id="@+id/set_line2"
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:layout_below="@+id/moon_recyclerView"
+                android:background="@color/chat_bg" />
+        </RelativeLayout>
+
+    </net.iaround.ui.view.WrapperScrollView>
+
+    <Button
+        android:id="@+id/btn_charge"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/touch_bg_red_angle"
+        android:text="@string/pay"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>

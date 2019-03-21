@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@color/chat_update_common_white">
+
+        <ImageView
+            android:id="@+id/iv_chat_bar_family_join"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="9dp"
+            android:src="@drawable/chat_bar_family_my_family" />
+
+        <TextView
+            android:id="@+id/tv_chat_bar_family_my_family"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_chat_bar_family_join"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/iv_chat_bar_family_join"
+            android:text="@string/chat_bar_family_join"
+            android:textColor="@color/group_create_bg"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/head_view"
+        layout="@layout/x_pay_buy_title_view" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/foot_text"
+        android:layout_below="@+id/head_view" >
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/message_list"
+            style="@style/double_fill"
+            android:background="@color/white"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:scrollbars="none" />
+
+        <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+            android:id="@+id/llEmpty"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:scrollbars="none"
+             >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:src="@drawable/image_empty" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/content_is_empty"/>
+            </LinearLayout>
+        </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+    </FrameLayout>
+
+    <!--gh 去掉客服电话-->
+    <TextView
+        android:id="@+id/foot_text"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:background="#e3e3e3"
+        android:text="@string/cs_telphone"
+        android:textColor="#999999"
+        android:textSize="14dp" />
+
+</RelativeLayout>

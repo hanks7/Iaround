@@ -1,0 +1,3 @@
+# view AndroidManifest.xml #generated:145
+-keep class net.iaround.BaseApplication { <init>(...); }
+

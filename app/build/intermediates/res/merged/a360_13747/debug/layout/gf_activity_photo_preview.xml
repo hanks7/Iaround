@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gf_title_bar_height"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/gf_title_bar_height"
+            android:layout_height="@dimen/gf_title_bar_height"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_gf_back" />
+
+        <TextView
+            android:id="@+id/tv_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_back"
+            android:text="@string/preview"
+            android:textColor="#4A4A4A"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/tv_choose_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="@string/selected"
+            android:textColor="#4A4A4A"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <cn.finalteam.galleryfinal.widget.GFViewPager
+        android:id="@+id/vp_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_below="@id/titlebar" />
+
+
+    <LinearLayout
+        android:id="@+id/rl_preview_select_item"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:gravity="center_vertical">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/preview_select_item_check"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@color/select_normal"
+            android:src="@drawable/ic_gf_done"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@id/preview_select_item_check"
+            android:textColor="#4A4A4A"
+            android:textSize="16sp"
+            android:text="@string/preview_select"/>
+
+    </LinearLayout>
+
+</LinearLayout>

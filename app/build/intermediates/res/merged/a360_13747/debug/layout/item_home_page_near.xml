@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <RelativeLayout
+        android:layout_width="76dp"
+        android:layout_height="76dp">
+
+        <ImageView
+            android:id="@+id/iv_near_icon"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/login_head" />
+
+        <ImageView
+            android:id="@+id/iv_sex"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/bg_home_sex_girl" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/common_black"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_status_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/home_page_text_color"
+        android:textSize="10sp" />
+
+</LinearLayout>

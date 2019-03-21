@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="iaround" ></dbname>  <!--//数据库的名字-->
+    <version value="3" ></version>  <!--//数据库的版本-->
+    <list>  <!--list里面每一个mapping映射都应数据库里面一张表-->
+        <mapping class="net.iaround.model.database.ErrorMsg" />
+        <mapping class="net.iaround.model.database.Lable" />
+        <mapping class="net.iaround.model.database.RequestFailMsg" />
+        <mapping class="net.iaround.model.database.DynamicTable" />
+    </list>
+</litepal>

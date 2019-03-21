@@ -634,6 +634,7 @@ public class SplashActivity extends BaseActivity implements SplashContract.View,
                 shareDate.putInt(shareDate.SHOWMIGU, bean.showMigu);
                 shareDate.putInt(shareDate.SHOW_MANLIAN, bean.showManlian);
                 shareDate.putInt(shareDate.ACCOMPANY_IS_SHOW, bean.accompanyIsShow);
+                shareDate.putInt(shareDate.VOICE_IS_SHOW, bean.isShowVoice);
 
                 Common.getInstance().setDefaultTab(bean.defaultTab);
                 Common.getInstance().setBlockStatus(bean.relationswitch);

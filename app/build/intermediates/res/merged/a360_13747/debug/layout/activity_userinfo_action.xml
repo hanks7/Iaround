@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<net.iaround.ui.view.InterceptScrollContainerView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_user_action"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y270"
+    android:layout_marginTop="@dimen/y12"
+    android:background="@color/main_bg_color"
+    android:orientation="horizontal"
+    android:padding="@dimen/x36">
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1">
+
+        <GridView
+            android:id="@+id/gv_user_action"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="5" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_dynamic"
+                android:layout_width="@dimen/x174"
+                android:layout_height="@dimen/y174"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x36"
+                android:src="@drawable/dynamic_no_data_icon"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/tv_user_action_empty_tips"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/iv_dynamic"
+                android:layout_marginLeft="@dimen/x36"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:text="@string/userinfo_action_empty_tips"
+                android:textColor="#FF4256"
+                android:textSize="@dimen/y42"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_dynamic_next"
+        android:layout_width="@dimen/x24"
+        android:layout_height="@dimen/y42"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/x78"
+        android:src="@drawable/user_detail" />
+</net.iaround.ui.view.InterceptScrollContainerView>

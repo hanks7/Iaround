@@ -48,7 +48,8 @@ public class InitBean extends BaseServerBean{
     public ActiveUrl address;//所有动态地址
 
     public int defaultTopShow = 1;//新首页页面默认显示那个功能，1 陪玩；2 语音
-    public int accompanyIsShow; //首页内容 0显示附近的人 1显示陪玩
+    public int accompanyIsShow; //首页内容 0显示附近的人和语聊 1显示陪玩和语聊
+    public int isShowVoice; //首页是否显示语聊，0-不显示 1-显示
 
     public class Commentinfo
     {

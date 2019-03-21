@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dip" >
+
+    <ImageView
+        android:id="@+id/transUserIcon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:alpha="0"
+        android:src="@drawable/default_avatar_round_light" />
+
+    <TextView
+        android:id="@+id/transTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawableLeft="@drawable/z_near_down_triangle_img"
+        android:drawablePadding="5dp"
+        android:ellipsize="end"
+        android:maxWidth="180dp"
+        android:paddingLeft="5dp"
+        android:gravity="center"
+        android:paddingRight="5dp"
+        android:singleLine="true"
+        android:text="动态中心"
+        android:textColor="@color/white"
+        android:textSize="17dp" />
+
+    <RelativeLayout
+        android:id="@+id/transMainFunctionRL"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" >
+
+        <ImageView
+            android:id="@+id/transMainFunction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:alpha="0"
+            android:paddingRight="8dp"
+            android:src="@drawable/z_dynamic_messages_list_icon" />
+
+        <TextView
+            android:id="@+id/transRedPoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="6dp"
+            android:alpha="0"
+            android:background="@drawable/message_new_with_number"
+            android:text="9"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/transSubFunction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="left|center_vertical"
+        android:layout_marginRight="14dp"
+        android:layout_toLeftOf="@id/transMainFunctionRL"
+        android:alpha="0"
+        android:src="@drawable/iaround_dynamic_item_icon_normal"
+        android:visibility="visible" />
+
+</RelativeLayout>

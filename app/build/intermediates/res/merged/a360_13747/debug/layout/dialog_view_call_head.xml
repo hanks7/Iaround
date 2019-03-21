@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_dialog_corners_top"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/iv_dialog_title_view1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="9dp"
+                android:src="@drawable/dialog_title_icon"/>
+
+            <TextView
+                android:id="@+id/tv_dialog_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/iv_dialog_title_view1"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="家族召唤"/>
+
+            <ImageView
+                android:id="@+id/iv_dialog_title_view2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_dialog_title"
+                android:layout_marginLeft="9dp"
+                android:src="@drawable/dialog_title_icon"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_recruit_and_call_type"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/dialog_recruit_icon"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

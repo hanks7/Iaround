@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_encounter"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/sv_cencounter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fadingEdge="none"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/view_encounter_basic_info"/>
+                <include layout="@layout/view_encounter_gif"/>
+                <include layout="@layout/view_encounter_like"/>
+                <include layout="@layout/view_encounter_about"/>
+                <include layout="@layout/view_encounter_certification"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <FrameLayout android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/maskView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </FrameLayout>
+    </FrameLayout>
+
+    <View
+        android:id="@+id/item_swipe_left_indicator"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:alpha="0"
+        android:background="@drawable/encounter_header_good_hide" />
+
+    <View
+        android:id="@+id/item_swipe_right_indicator"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="right"
+        android:layout_margin="10dp"
+        android:alpha="0"
+        android:background="@drawable/encounter_header_like_hide" />
+
+
+</RelativeLayout>

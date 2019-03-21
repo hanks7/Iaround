@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/location_pop"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/location_pop_title"
+            android:textColor="#FFF"
+            android:textSize="18dip"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingTop="16dip"
+            android:textColor="#B8B8B8"
+            android:textSize="14dip" />
+    </LinearLayout>
+  
+
+</LinearLayout>

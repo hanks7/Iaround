@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_hometown"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/userFragment_bg">
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title_bar"/>
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_below="@+id/title_bar"
+        android:background="@color/chat_update_divider_of_toolMenu"/>
+    <ListView
+        android:id="@+id/lv_province"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider"
+        android:layout_marginTop="@dimen/y36"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:background="@color/common_white" />
+
+    <ListView
+        android:id="@+id/lv_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:background="@color/common_white"
+        android:visibility="gone"/>
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<item-->
+    <!--android:id="@android:id/background"-->
+    <!--android:drawable="@color/white"-->
+    <!--/>-->
+    <!--<item-->
+    <!--android:id="@android:id/progress"-->
+    <!--android:drawable="@color/progress_bg"-->
+    <!--/>-->
+    <!-- background -->
+    <!--<item-->
+    <!--android:id="@android:id/background"-->
+    <!--android:drawable="@drawable/progress_bg">-->
+    <!--</item>-->
+    <!-- progress -->
+    <item android:id="@android:id/progress">
+        <!--<clip-->
+            <!--android:clipOrientation="horizontal"-->
+            <!--android:gravity="right">-->
+
+        <!--</clip>-->
+        <scale android:scaleWidth="100%"
+             android:scaleGravity="right">
+            <nine-patch android:src="@drawable/progress_bg_going" />
+        </scale>
+    </item>
+</layer-list>

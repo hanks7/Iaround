@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_e7e6ee"
+    android:orientation="vertical" >
+    
+    <include 
+        layout="@layout/title_bar"/>
+    
+    <FrameLayout 
+        android:id="@+id/flContent"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        
+        <com.handmark.pulltorefresh.library.PullToRefreshScrollBarListView
+            xmlns:library="http://schemas.android.com/apk/res/net.iaround"
+            android:id="@+id/ptrslvDynamicContent"
+            style="@style/double_fill"
+            android:layout_weight="1"
+            android:background="#e3e3e3"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:scrollbars="none"
+            android:showDividers="none" />
+
+        <!--android:background="@drawable/comment_flag_bg"-->
+        <TextView 
+            android:id="@+id/tvComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="6dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="@string/review"
+            android:visibility="visible"/>
+       
+    </FrameLayout>
+
+    <!--底部输入框-->
+    <include
+        android:id="@+id/chat_input_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/chat_input_reply" />
+    
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x36"
+        android:layout_marginTop="@dimen/y30"
+        android:text="@string/user_vip_hot_power"
+        android:textColor="#9B9B9B"
+        android:textSize="@dimen/y36" />
+
+    <include layout="@layout/activity_user_vip_hot_power" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x36"
+        android:layout_marginTop="@dimen/y30"
+        android:text="@string/user_vip_more_power"
+        android:textColor="#9B9B9B"
+        android:textSize="@dimen/y36" />
+
+    <ListView
+        android:id="@+id/lv_more_power"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/y30"
+        android:divider="#00000000"
+        android:background="@color/common_white"/>
+
+</LinearLayout>

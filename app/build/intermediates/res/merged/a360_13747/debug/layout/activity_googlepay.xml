@@ -1,0 +1,11 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/activity_basic_style"
+    android:background="@drawable/white" >
+
+    <include
+        android:id="@+id/action_bar"
+        layout="@layout/title_one_text" />
+
+
+</RelativeLayout>

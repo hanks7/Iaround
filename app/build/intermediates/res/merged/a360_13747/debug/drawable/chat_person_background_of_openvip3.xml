@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners android:radius="@dimen/x84"/>
+    <gradient android:startColor="@color/chat_update_background_openvip4"
+        android:endColor="@color/chat_update_background_openvip4" />
+    <solid android:color="@color/chat_update_background_openvip4"/>
+    <!--<padding android:left="@dimen/x346" android:right="@dimen/x346"-->
+        <!--android:top="@dimen/y38" android:bottom="@dimen/y38"/>-->
+</shape>

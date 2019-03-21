@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:iaround="http://schemas.android.com/apk/res/net.iaround"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_white"
+    android:orientation="vertical"
+    tools:ignore="ResAuto">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y36"
+        android:background="@color/bg_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y60"
+        android:layout_marginLeft="@dimen/x130"
+        android:layout_marginTop="@dimen/y105"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_lable_logo"
+            android:layout_width="@dimen/x54"
+            android:layout_height="@dimen/y60" />
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x18"
+            android:text="@string/edit_user_lable"
+            android:textSize="@dimen/y42" />
+
+        <TextView
+            android:id="@+id/tv_selected_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x22"
+            android:textSize="@dimen/y42" />
+    </LinearLayout>
+
+    <net.iaround.ui.view.user.FlowLayout
+        android:id="@+id/fl_lables"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/x130"
+        android:layout_marginRight="@dimen/x130"
+        android:layout_marginTop="@dimen/y150"
+        iaround:horizontal_spacing="@dimen/x30"
+        iaround:vertical_spacing="@dimen/y42" />
+
+</LinearLayout>

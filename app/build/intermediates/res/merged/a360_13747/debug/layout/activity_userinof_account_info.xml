@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y402"
+    android:layout_marginTop="@dimen/y12"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_user_vip"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_user_vip_icon"
+            android:layout_width="@dimen/y122"
+            android:layout_height="@dimen/y122"
+            android:layout_marginLeft="@dimen/x35"
+            android:src="@drawable/user_info_vip" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y122"
+            android:layout_marginLeft="@dimen/x23"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/userinfo_iaround_vip"
+                android:textColor="#222222"
+                android:textSize="@dimen/y42" />
+
+            <TextView
+                android:id="@+id/tv_vip_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y10"
+                android:text="@string/userinfo_open_vip"
+                android:textSize="@dimen/y42" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/iv_user_info_enter"
+            android:layout_width="@dimen/x24"
+            android:layout_height="@dimen/y42"
+            android:layout_marginRight="@dimen/x48"
+            android:src="@drawable/user_detail" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_user_level_info"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_level_pic"
+                android:layout_width="@dimen/y122"
+                android:layout_height="@dimen/y122"
+                android:layout_marginLeft="@dimen/x35"
+                android:layout_marginRight="@dimen/x23"
+                android:src="@drawable/user_info_levle" />
+
+            <LinearLayout
+                android:id="@+id/ll_user_expier_lever"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/y122"
+                android:layout_toRightOf="@+id/iv_level_pic"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/userinfo_expire_level"
+                    android:textColor="#222222"
+                    android:textSize="@dimen/y42" />
+
+                <TextView
+                    android:id="@+id/tv_user_expire_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y10"
+                    android:text="Lv.0"
+                    android:textColor="#9B9B9B"
+                    android:textSize="@dimen/y33" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line_user_info"
+                android:layout_width="@dimen/x2"
+                android:layout_height="@dimen/y90"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/x61"
+                android:background="#EBEBEB"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/ll_user_level"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/y122"
+                android:layout_marginLeft="@dimen/x23"
+                android:layout_toRightOf="@+id/line_user_info"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/userinfo_userlevel"
+                    android:textColor="#222222"
+                    android:textSize="@dimen/y42" />
+
+                <TextView
+                    android:id="@+id/tv_user_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y10"
+                    android:text="Lv.0"
+                    android:textColor="#9B9B9B"
+                    android:textSize="@dimen/y33" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="@dimen/x24"
+                android:layout_height="@dimen/y42"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x48"
+                android:src="@drawable/user_detail" />
+
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</LinearLayout>

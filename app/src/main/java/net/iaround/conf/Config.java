@@ -15,7 +15,7 @@ public class Config {
     public static boolean DEBUG = BuildConfig.DEBUG;
 
     //发布新包时需要修改
-    public final static String APP_VERSION = "7.6.5"; // 软件版本号
+    public final static String APP_VERSION = "7.6.6"; // 软件版本号
     public static boolean isShowGoogleApp = false;   //是否显示Google支付
 
     public final static int PLAT = 1; // android平台

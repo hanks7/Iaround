@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="200dp"
+    android:orientation="vertical" 
+     android:background="@drawable/iaround_share_dialog_whole_shape" >
+    
+    <RelativeLayout
+        android:id="@+id/dialog_content_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="15dp">
+        
+        <ImageView
+            android:id="@+id/dialog_img"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/default_pitcure_small" />
+    
+		<TextView
+		    android:id="@+id/dialog_title"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentTop="true"
+		    android:layout_gravity="left"
+		    android:layout_marginLeft="5dp"
+		    android:layout_toRightOf="@id/dialog_img"
+		    android:text="标题"
+		    android:textColor="@color/black"
+		    android:textSize="16dp" />
+		
+		<TextView
+		    android:id="@+id/dialog_content"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/dialog_title"
+		    android:layout_marginLeft="5dp"
+		    android:layout_marginTop="5dp"
+		    android:layout_toRightOf="@id/dialog_img"
+		    android:ellipsize="end"
+		    android:maxLines="3"
+		    android:text="123小华请吃鸡小华请吃鸡小华请吃鸡小华请吃鸡小华请吃鸡小华请吃鸡小华请吃鸡小华请吃鸡小华请吃鸡小华请吃鸡"
+		    android:textColor="#999999" />
+        
+    </RelativeLayout>
+    
+	<ImageView android:layout_width="fill_parent"
+	    android:layout_height="0dip"
+	    android:background="@drawable/dialog_divider"
+	    android:layout_marginLeft="15dip"
+	    android:layout_marginRight="15dip" />
+
+	<net.iaround.utils.EditTextViewUtil
+	    android:id="@+id/dialog_edit_content"
+	    android:layout_width="fill_parent"
+	    android:layout_height="40dp"
+	    android:layout_gravity="fill_horizontal"
+	    android:layout_marginBottom="8dp"
+	    android:layout_marginLeft="10dip"
+	    android:layout_marginRight="10dip"
+	    android:layout_marginTop="8dp"
+	    android:background="@drawable/iaround_share_editview_shape"
+	    android:textColor="@color/c_333333"
+	    android:textColorHint="#cccccc"
+	    android:hint="@string/share_say_something_text"
+	    android:textSize="14dp" />
+
+	<ImageView android:layout_width="fill_parent"
+	    android:layout_height="1dip"
+	    android:background="@drawable/dialog_divider" />
+	
+	<LinearLayout
+	   	android:id="@+id/dialog_btn_view"
+	    android:layout_width="fill_parent"
+	    android:layout_height="40dp"
+	    android:orientation="horizontal" >
+	    
+	    <TextView
+	        android:id="@+id/dialog_left_btn"
+	        android:layout_width="0dip"
+	        android:layout_height="fill_parent"
+	        android:layout_gravity="center"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:padding="5dp"
+	        android:text="@string/cancel"
+	        android:textColor="#333333"
+	        android:textSize="17dp" />
+	    
+	    <ImageView
+	        android:id="@+id/dialog_btn_devider"
+	        android:layout_width="1dp"
+		    android:layout_height="fill_parent"
+		    android:background="@drawable/dialog_divider" />
+	    
+	    <TextView
+	        android:id="@+id/dialog_right_btn"
+	        android:layout_width="0dip"
+	        android:layout_height="fill_parent"
+	        android:layout_gravity="center"
+	        android:layout_weight="1"	        
+	        android:gravity="center"
+	        android:padding="5dp"
+	        android:text="@string/share"
+	        android:textColor="#333333"
+	        android:textSize="17dp" />
+	    
+	</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/userFragment_bg"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!--圈主，管理员，圈成员-->
+    <TextView
+        android:id="@+id/list_group_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y30"
+        android:layout_marginBottom="@dimen/y30"
+        android:layout_marginLeft="@dimen/x36"
+        android:layout_gravity="left"
+        android:textSize="@dimen/y36"
+        android:textColor="@color/chat_update_gray_text_color"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/list_group_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y240"
+        android:background="@color/common_white">
+
+        <!-- 封停标示 -->
+        <ImageView
+            android:id="@+id/bannedIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dip"
+            android:src="@drawable/banned_small"
+            android:textColor="#ff0000"
+            android:visibility="gone" />
+
+        <!--头像-->
+        <net.iaround.ui.view.HeadPhotoView
+            android:id="@+id/friend_icon"
+            android:layout_width="@dimen/x180"
+            android:layout_height="@dimen/y180"
+            android:layout_marginBottom="@dimen/y15"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x30"
+            android:layout_marginTop="@dimen/y30" />
+
+        <!--转让圈子使用-->
+        <CheckBox
+            android:id="@+id/user_checkbox"
+            android:layout_width="@dimen/x54"
+            android:layout_height="@dimen/y54"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x48"
+            android:background="@drawable/member_checkbox_selector"
+            android:button="@null"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="20dp"
+            android:text="已邀请"
+            android:textColor="#22a4ff"
+            android:visibility="gone" />
+
+        <!--右上角距离-->
+        <LinearLayout
+            android:id="@+id/LinearLayout01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x48"
+            android:layout_marginTop="@dimen/y45"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="@string/current_online"
+                android:textColor="@color/chat_update_gray_text_color"
+                android:textSize="@dimen/y30" />
+
+            <TextView
+                android:id="@+id/tvDot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/point_between_time_and_distance"
+                android:textColor="@color/chat_update_gray_text_color"
+                android:textSize="@dimen/y30" />
+
+            <TextView
+                android:id="@+id/tvDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/chat_update_gray_text_color"
+                android:textSize="@dimen/y30" />
+
+            <!--<ImageView-->
+            <!--android:id="@+id/ImageView01"-->
+            <!--android:layout_width="1dp"-->
+            <!--android:layout_height="15dp"-->
+            <!--android:layout_marginLeft="3dp"-->
+            <!--android:layout_gravity="bottom"-->
+            <!--android:src="@drawable/text_split" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/tvState"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="3dp"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:maxLines="1"-->
+            <!--android:textColor="#a6a6a6"-->
+            <!--android:textSize="12dp"-->
+            <!--android:visibility="gone" />-->
+        </LinearLayout>
+
+        <!--操作按钮-->
+        <FrameLayout
+            android:id="@+id/fl_operating"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="10dp">
+
+            <Button
+                android:id="@+id/btn_operating"
+                android:layout_width="50dp"
+                android:layout_height="24dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="38dp"
+                android:background="@drawable/group_info_join_group_btn"
+                android:gravity="center"
+                android:text="@string/chatbar_memeber_operate"
+                android:textColor="@color/common_white"
+                android:textSize="12sp"
+                android:visibility="gone"
+                tools:text="操作" />
+        </FrameLayout>
+        <!--右上角距离及其他-->
+        <RelativeLayout
+            android:id="@+id/info_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:visibility="gone">
+            <!--暂时不知道干什么用-->
+            <LinearLayout
+                android:id="@+id/tipIcons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
+
+                <!-- 关注标示 -->
+
+                <LinearLayout
+                    android:id="@+id/relationIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+                <!-- 新浪微博标识 -->
+
+                <LinearLayout
+                    android:id="@+id/llWeiboIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/user_charmnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/charmnum_1"
+            android:drawablePadding="1dip"
+            android:gravity="center"
+            android:paddingLeft="3dip"
+            android:paddingRight="3dip"
+            android:textColor="@color/white"
+            android:textSize="9dp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/svip_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/z_common_svip_icon"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/weibos_icon_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/weibos_group_master"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/weibos_icon_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/weibos_facebook"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/weibos_icon_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/weibos_facebook"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/weibos_icon_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/weibos_game"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/weibos_icon_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/weibos_truth_brave"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/weibos_icon_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/weibos_pepper"
+            android:visibility="gone" />
+        <!--昵称，年龄，性别，签名-->
+        <RelativeLayout
+            android:id="@+id/rl_info_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x77"
+            android:layout_toLeftOf="@+id/LinearLayout01"
+            android:layout_toRightOf="@+id/friend_icon">
+            <!--成员昵称-->
+            <net.iaround.ui.view.SearchTextView
+                android:id="@+id/tvNickName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/chat_update_edit_user_value"
+                android:textSize="@dimen/y42" />
+            <!--性别和年龄-->
+            <LinearLayout
+                android:id="@+id/info_center"
+                android:layout_width="30dp"
+                android:layout_height="14dp"
+                android:layout_below="@id/tvNickName"
+                android:layout_marginTop="@dimen/y10"
+                android:background="@drawable/group_member_age_girl_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_sex"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="1dp"
+                    android:src="@drawable/thread_register_woman_select" />
+
+                <TextView
+                    android:id="@+id/tvAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/x8"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/common_white"
+                    android:textSize="@dimen/y30" />
+
+                <!--<LinearLayout-->
+                <!--android:id="@+id/ll_sex_age"-->
+                <!--android:layout_width="@dimen/x90"-->
+                <!--android:layout_height="@dimen/y42"-->
+                <!--android:background="@drawable/group_member_age_girl_bg">-->
+                <!---->
+                <!--</LinearLayout>-->
+
+            </LinearLayout>
+            <!--签名  考虑没有签名的情况-->
+            <TextView
+                android:id="@+id/tvSign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/info_center"
+                android:layout_marginRight="@dimen/x47"
+                android:layout_marginTop="@dimen/y10"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/chat_update_gray_text_color"
+                android:textSize="@dimen/y36"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <!--分割线-->
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/x240"
+            android:background="@color/chat_update_divider_of_messageItem" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/more_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/info_bg_center_selector"
+        android:gravity="center"
+        android:paddingBottom="15dip"
+        android:paddingTop="15dip"
+        android:singleLine="true"
+        android:text="显示更多项"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+    <!--没有内容的空列表提示-->
+    <TextView
+        android:id="@+id/content_empty"
+        style="@style/list_item_subtitle_style"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/y225"
+        android:background="@color/common_white"
+        android:gravity="center"
+        android:text="@string/empty_group_member"
+        android:visibility="gone" />
+
+</LinearLayout>

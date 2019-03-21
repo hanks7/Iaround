@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <!--标题栏-->
+    <!--<include layout="@layout/title_bar" />-->
+
+    <!--注册页面图片-->
+    <ImageView
+        android:id="@+id/ivRegister"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/login_and_register_bg" />
+
+    <ImageView
+        android:layout_width="143dp"
+        android:layout_height="72dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="91dp"
+        android:src="@drawable/register_logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/x90"
+        android:layout_marginRight="@dimen/x90"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="visible">
+        <!--facebook注册-->
+        <LinearLayout
+            android:id="@+id/btn_register_new_abroad_facebook"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/btn_login_bg_facebook"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="24dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/register_new_facebook" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register_new_facebook"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!--qq注册-->
+        <LinearLayout
+            android:id="@+id/btn_register_new_abroad_qq"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/btn_login_bg_qq"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="24dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/register_new_qq" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register_new_qq"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+        <!--微信注册-->
+        <LinearLayout
+            android:id="@+id/btn_register_new_abroad_wechat"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_login_bg_wechat"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="24dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/register_new_wechat" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register_new_wechat"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_old_user_login1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_login_old_user"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/login_with_id"
+                android:textColor="@color/common_white"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginBottom="14dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/login_old_user_icon" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

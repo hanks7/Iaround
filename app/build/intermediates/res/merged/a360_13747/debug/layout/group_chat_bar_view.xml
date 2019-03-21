@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/groupChat"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/activity_basic_style"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="@color/userFragment_bg"
+        android:alpha="1">
+
+        <net.iaround.ui.chat.ChatPersionPullDownView
+            android:id="@+id/chatting_pull_down_view"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/chatRecordList"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="#00000000"
+                android:divider="@drawable/listview_divider_transparent"
+                android:dividerHeight="20dp"
+                android:fadingEdge="none"
+                android:footerDividersEnabled="true"
+                android:listSelector="@drawable/chat_room_record_list_item_bg"
+                android:scrollbars="none"
+                android:stackFromBottom="true" />
+        </net.iaround.ui.chat.ChatPersionPullDownView>
+        //发送语音
+        <include
+            android:id="@+id/chat_audio_layout"
+            layout="@layout/chat_audio_view"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/fontNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/unseeNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/z_msg_unsee_num"
+            android:gravity="center_vertical"
+            android:paddingLeft="9dp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <!--底部输入框-->
+    <LinearLayout
+        android:id="@+id/ll_quick_sendmsg_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingRight="20dp"
+        android:gravity="right|bottom"
+        android:paddingBottom="11dp"
+        android:alpha="1"
+        android:background="@color/userFragment_bg"
+        tools:visibility="visible"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/btn_send_1"
+            android:layout_width="65dp"
+            android:layout_height="33dp"
+            android:background="@drawable/group_chat_view_bg"
+            android:gravity="center"
+            android:text="@string/chat_bar_quick_kou1"
+            android:clickable="true"
+            android:textColor="#4095FF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/btn_send_2"
+            android:layout_width="65dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/group_chat_view_bg"
+            android:gravity="center"
+            android:text="@string/chat_bar_quick_kou2"
+            android:textColor="#FFAD40"
+            android:clickable="true"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/chat_input_layout"
+        layout="@layout/chat_input_bar" />
+    <LinearLayout
+        android:id="@+id/llMoreHandle"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/ivRepeater"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/z_chat_repeater_icon" />
+
+        <ImageView
+            android:id="@+id/ivDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/z_chat_delete_icon" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="30dp"
+    android:padding="10dp" >
+
+    <RelativeLayout
+        android:id="@+id/llFlag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp" >
+
+        <ImageView
+            android:id="@+id/ivTimePoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/gray_point" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/ivTimePoint"
+            android:text="@string/all_video_chat_will_delete" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llFlag"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chat_new_record_myself_bg"
+            android:gravity="center_vertical"
+            android:maxWidth="200dp"
+            android:minHeight="41dp"
+            android:minWidth="80dp"
+            android:paddingBottom="9dp"
+            android:paddingLeft="23dp"
+            android:paddingRight="9dp"
+            android:paddingTop="9dp"
+            android:textColor="@color/c_ffffff"
+            android:textSize="14sp" />
+        
+    </LinearLayout>
+
+</RelativeLayout>
