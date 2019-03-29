@@ -83,7 +83,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 
 
-public class Near1Fragment extends Fragment implements OnClickListener, MLocationListener, HttpCallBack, PagerSelectNear {
+public class Near1Fragment extends LazyLoadBaseFragment implements OnClickListener, MLocationListener, HttpCallBack, PagerSelectNear {
     private final String TAG = "Near1Fragment";
 
     private final String SP_CATCH = "near_focus_data";
@@ -158,31 +158,54 @@ public class Near1Fragment extends Fragment implements OnClickListener, MLocatio
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        CommonFunction.log(TAG,"onCreateView() into");
-        return inflateAndSetupView(inflater, container, savedInstanceState);
-    }
-
-    private View inflateAndSetupView(LayoutInflater inflater, ViewGroup container,
-                                     Bundle savedInstanceState) {
-        View view = LayoutInflater.from(mActivity).inflate(R.layout.main_nearby_view, null, false);
-        emptyView = inflater.inflate(R.layout.no_data_view, null);
-        initViews(view);
-        initData();
-        setListeners();
-        initAnimation();
-
-        return view;
+    protected int setContentView() {
+        return R.layout.main_nearby_view;
     }
 
     @Override
-    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
+    protected boolean lazyLoad() {
+        initData();
+        setListeners();
+        initAnimation();
+        return false;
+    }
+
+    @Override
+    protected void init(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         if (!EventBus.getDefault().isRegistered(this)) {
             EventBus.getDefault().register(this);
         }
+//        View view = LayoutInflater.from(mActivity).inflate(R.layout.main_nearby_view, null, false);
+        emptyView = inflater.inflate(R.layout.no_data_view, null);
+        initViews(getContentView());
     }
+
+//    @Override
+//    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+//                             Bundle savedInstanceState) {
+//        CommonFunction.log(TAG,"onCreateView() into");
+//        return inflateAndSetupView(inflater, container, savedInstanceState);
+//    }
+//
+//    private View inflateAndSetupView(LayoutInflater inflater, ViewGroup container,
+//                                     Bundle savedInstanceState) {
+//        View view = LayoutInflater.from(mActivity).inflate(R.layout.main_nearby_view, null, false);
+//        emptyView = inflater.inflate(R.layout.no_data_view, null);
+//        initViews(view);
+//        initData();
+//        setListeners();
+//        initAnimation();
+//
+//        return view;
+//    }
+//
+//    @Override
+//    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+//        super.onViewCreated(view, savedInstanceState);
+//        if (!EventBus.getDefault().isRegistered(this)) {
+//            EventBus.getDefault().register(this);
+//        }
+//    }
 
     private void initViews(View view) {
 //        mIvLeft = (ImageView) view.findViewById(R.id.iv_left);
@@ -279,7 +302,7 @@ public class Near1Fragment extends Fragment implements OnClickListener, MLocatio
 
     @IAroundAD
     private void initAdData(){
-        if(BuildConfig.showAdvert==true) {
+        if(BuildConfig.showAdvert==true && CommonFunction.updateAdCount(TAG)) {
             net.iaround.ui.dynamic.thirdadvert.ThridAdServiceCenter.getInstance().loadAdDatas();
         }
     }
@@ -607,7 +630,7 @@ public class Near1Fragment extends Fragment implements OnClickListener, MLocatio
 
                 if (isloadBuff == 2 & mCurPage < 2){
                     String advert = SharedPreferenceUtil.getInstance(getActivity()).getString(SharedPreferenceUtil.START_PAGE_AD_TYPE_CONTROL);
-                    if (!TextUtils.isEmpty(advert)) {
+                    if (!TextUtils.isEmpty(advert) && CommonFunction.updateAdCount(TAG)) {
                         String[] spilt = advert.split(":");
                         if (spilt.length >= 2 && !TextUtils.isEmpty(spilt[1])) {
                             String[] nearByAd = spilt[1].split(",");
@@ -704,7 +727,7 @@ public class Near1Fragment extends Fragment implements OnClickListener, MLocatio
 
     @IAroundAD
     private void loadAdDatas(){
-        if(BuildConfig.showAdvert==true) {
+        if(BuildConfig.showAdvert==true && CommonFunction.updateAdCount(TAG)) {
             try {
                 net.iaround.ui.dynamic.thirdadvert.ThridAdServiceCenter.getInstance().loadAdDatas();
             } catch (Throwable t) {

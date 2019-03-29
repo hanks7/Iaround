@@ -2640,5 +2640,6 @@
     <string name="close_audio_chat_for_chat_bar">当前正在语音通话，进入聊吧语音通话会断开，是否继续？</string>
     <string name="close_audio_chat_for_record">当前正在语音通话，录制音频语音通话会断开，是否继续？</string>
     <string name="audio_chat_authenticated_user">语音聊天认证用户</string>
+    <string name="substitute_charge">代充后台</string>
 
 </resources>

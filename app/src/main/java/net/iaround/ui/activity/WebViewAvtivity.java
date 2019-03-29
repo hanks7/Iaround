@@ -65,6 +65,7 @@ import net.iaround.tools.DownLoadAPKThread;
 import net.iaround.tools.GsonUtil;
 import net.iaround.tools.InnerJump;
 import net.iaround.tools.PathUtil;
+import net.iaround.tools.PhoneInfoUtil;
 import net.iaround.tools.SharedPreferenceUtil;
 import net.iaround.ui.chat.ChatPersonal;
 import net.iaround.ui.datamodel.User;
@@ -155,7 +156,7 @@ public class WebViewAvtivity extends TitleActivity implements ShareActionListene
         }
 
         if (url.contains("gamechat_userdetail/details.html") || url.contains("gamchat_orders/orderDetails.html") || url.contains("gamchat_orders/comment.html")
-                || url.contains("gamchat_orders/orderFrom.html")) {
+                || url.contains("gamchat_orders/orderFrom.html") || url.contains("topUp")) {
             mLlTitle.setVisibility(View.GONE);
         }
 

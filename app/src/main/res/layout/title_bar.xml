@@ -13,7 +13,7 @@
                 android:id="@+id/fl_left"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:paddingRight="@dimen/x60">
+                android:paddingRight="@dimen/x44">
 
                 <ImageView
                     android:id="@+id/iv_left"
@@ -38,7 +38,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_toRightOf="@+id/fl_left"
-                android:layout_marginLeft="5dp"
+                android:layout_marginLeft="11dp"
                 android:textColor="@color/title_text"
                 android:gravity="center_vertical"
                 android:textSize="@dimen/y50"

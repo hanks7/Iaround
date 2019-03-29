@@ -67,7 +67,7 @@ public class ChatBarFragment extends LazyLoadBaseFragment implements View.OnClic
     /**
      * 排行榜
      */
-    private RankingFragment rankingFragment;
+//    private RankingFragment rankingFragment;
 
     /**
      * 点击创建圈子按钮请求码
@@ -157,10 +157,11 @@ public class ChatBarFragment extends LazyLoadBaseFragment implements View.OnClic
                     mBtnCreateChatBar.setVisibility(View.VISIBLE);
                     //统计
                     Statistics.onPageClick(Statistics.PAGE_CHAT_MINE);
-                } else if(position == 2){//排行榜
-                    mBtnCreateChatBar.setVisibility(View.GONE);
-
                 }
+//                else if(position == 2){//排行榜
+//                    mBtnCreateChatBar.setVisibility(View.GONE);
+//
+//                }
             }
 
             @Override
@@ -173,8 +174,7 @@ public class ChatBarFragment extends LazyLoadBaseFragment implements View.OnClic
     private void initData() {
         titles = new String[]{
                 mContext.getResources().getString(R.string.chat_bar_hot),
-                mContext.getResources().getString(R.string.chat_bar_family),
-                mContext.getResources().getString(R.string.rank_tab_text)
+                mContext.getResources().getString(R.string.chat_bar_family)
         };
 
         ChatBarAdapter chatBarAdapter = new ChatBarAdapter(getChildFragmentManager());
@@ -318,12 +318,13 @@ public class ChatBarFragment extends LazyLoadBaseFragment implements View.OnClic
                     return chatBarFamilyFragment = new ChatBarFamilyFragment();
                 }
                 return chatBarFamilyFragment;
-            } else if(position == 2){
-                if(rankingFragment == null){
-                    return rankingFragment = new RankingFragment();
-                }
-                return rankingFragment;
             }
+//            else if(position == 2){
+//                if(rankingFragment == null){
+//                    return rankingFragment = new RankingFragment();
+//                }
+//                return rankingFragment;
+//            }
             return null;
         }
 

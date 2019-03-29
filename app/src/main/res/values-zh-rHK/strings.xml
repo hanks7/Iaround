@@ -2614,5 +2614,6 @@
     <string name="close_audio_chat_for_chat_bar">當前正在語音通話，進入聊吧語音通話會斷開，是否繼續？</string>
     <string name="close_audio_chat_for_record">當前正在語音通話，錄製音頻語音通話會斷開，是否繼續？</string>
     <string name="audio_chat_authenticated_user">語音聊天認證用戶</string>
+    <string name="substitute_charge">代充後臺</string>
 
 </resources>

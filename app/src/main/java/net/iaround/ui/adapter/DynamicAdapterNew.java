@@ -32,6 +32,7 @@ import java.util.ArrayList;
  * @Description: 动态列表的适配器
  */
 public class DynamicAdapterNew extends BaseAdapter {
+    private static final String TAG = "DynamicAdapterNew";
 
     private Context mContext;
     private ArrayList<DynamicCenterListItemBean> dynamicsList;//动态列表
@@ -75,7 +76,7 @@ public class DynamicAdapterNew extends BaseAdapter {
 
     @IAroundAD
     private void initThirdAd(){
-        if(BuildConfig.showAdvert==true) {
+        if(BuildConfig.showAdvert==true && CommonFunction.updateAdCount(TAG)) {
             nativeADDataRef = net.iaround.ui.dynamic.thirdadvert.ThridAdServiceCenter.getInstance().getNextAdData();
         }
     }
@@ -290,7 +291,7 @@ public class DynamicAdapterNew extends BaseAdapter {
 
     @IAroundAD
     private void initThridAdData(){
-        if(BuildConfig.showAdvert==true) {
+        if(BuildConfig.showAdvert==true && CommonFunction.updateAdCount(TAG)) {
             if (isChange) {
                 nativeADDataRef = net.iaround.ui.dynamic.thirdadvert.ThridAdServiceCenter.getInstance().getNextAdData();
             }

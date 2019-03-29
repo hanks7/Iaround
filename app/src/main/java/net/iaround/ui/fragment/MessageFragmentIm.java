@@ -444,8 +444,9 @@ public class MessageFragmentIm extends Fragment implements HttpCallBack, MainFra
     }
 
     private void initView() {
-        mMessagesView.findViewById(R.id.iv_left).setVisibility(View.GONE);
+        mMessagesView.findViewById(R.id.fl_left).setVisibility(View.GONE);
         mTitleText = (TextView) mMessagesView.findViewById(R.id.tv_title);
+        mTitleText.setTextSize(24);
         mIvRight_2 = (ImageView) mMessagesView.findViewById(R.id.iv_right);
 
         mIvRight_2.setVisibility(View.VISIBLE);

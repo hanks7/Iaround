@@ -2,9 +2,12 @@
 package net.iaround.tools;
 
 
+import android.bluetooth.BluetoothAdapter;
 import android.content.Context;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
+import android.hardware.Sensor;
+import android.hardware.SensorManager;
 import android.net.ConnectivityManager;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
@@ -252,7 +255,6 @@ public class PhoneInfoUtil {
     /**
      * 获取当前系统语言
      *
-     * @param context
      * @return
      * @time 2011-8-8 上午11:57:15
      * @author:linyg
@@ -652,4 +654,51 @@ public class PhoneInfoUtil {
         return versionName;
     }
 
+    /**
+     * 是否为模拟器
+     *
+     * @return true-是模拟器
+     */
+    public boolean isPhoneEmulator() {
+        if(isHasBlueTooth() && isHasLightSensorManager()){
+            return false;
+        }
+        return true;
+    }
+
+    /**
+     * 是否有蓝牙
+     *
+     * @return true-有蓝牙
+     */
+    public boolean isHasBlueTooth() {
+        BluetoothAdapter ba = BluetoothAdapter.getDefaultAdapter();
+        if (ba == null) {
+            return false;
+        } else {// 如果有蓝牙不一定是有效的。获取蓝牙名称，若为null 则默认为模拟器
+            String name = ba.getName();
+            if (TextUtils.isEmpty(name)) {
+                return false;
+            } else {
+                return true;
+            }
+        }
+
+    }
+
+    /**
+     * 是否有光感传感器
+     *
+     * @return true-有光感传感器
+     */
+    public boolean isHasLightSensorManager() {
+        SensorManager sensorManager = (SensorManager) context.getSystemService(context.SENSOR_SERVICE);
+        Sensor sensor8 = sensorManager.getDefaultSensor(Sensor.TYPE_LIGHT); //光
+        if (null == sensor8) {
+            return false;
+        } else {
+            return true;
+        }
+
+    }
 }

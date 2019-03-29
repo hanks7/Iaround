@@ -2,6 +2,7 @@ package net.iaround.ui.fragment;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.res.Resources;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -44,9 +45,11 @@ public class HomeContainerFragment extends LazyLoadBaseFragment {
 
     private VoiceFragment mVoiceFragment;
 
+    private DynamicCenterFragment mDynamicCenterFragment;
+
     private List<Fragment> fragmentList;
 
-    private String[] titles;
+    private ArrayList<String> titles = new ArrayList<>();
 
     private LinearLayout mLlRight;
 
@@ -83,13 +86,17 @@ public class HomeContainerFragment extends LazyLoadBaseFragment {
         if (fragmentList == null) {
             fragmentList = new ArrayList<>();
         }
+        Resources res = mContext.getResources();
         final int showWhat = SharedPreferenceUtil.getInstance(mContext).getInt(SharedPreferenceUtil.ACCOMPANY_IS_SHOW);
         int isShowVoice = SharedPreferenceUtil.getInstance(mContext).getInt(SharedPreferenceUtil.VOICE_IS_SHOW);
         if (showWhat == 1) {
             if(isShowVoice == 1){
-                titles = BaseApplication.appContext.getResources().getStringArray(R.array.home_container_title);
+//                titles = BaseApplication.appContext.getResources().getStringArray(R.array.home_container_title);
+                titles.add(res.getString(R.string.play_with_you));
+                titles.add(res.getString(R.string.chat_sound));
             }else {
-                titles = new String[]{mContext.getResources().getString(R.string.play_with_you)};
+//                titles = new String[]{mContext.getResources().getString(R.string.play_with_you)};
+                titles.add(res.getString(R.string.play_with_you));
             }
             if (mHomePageFragment == null) {
                 mHomePageFragment = new HomePageFragment();
@@ -98,9 +105,12 @@ public class HomeContainerFragment extends LazyLoadBaseFragment {
 
         } else {
             if(isShowVoice == 1){//显示语聊
-                titles = new String[]{mContext.getResources().getString(R.string.near_fragment), mContext.getResources().getString(R.string.chat_sound)};
+//                titles = new String[]{mContext.getResources().getString(R.string.near_fragment), mContext.getResources().getString(R.string.chat_sound)};
+                titles.add(res.getString(R.string.near_fragment));
+                titles.add(res.getString(R.string.chat_sound));
             }else {
-                titles = new String[]{mContext.getResources().getString(R.string.near_fragment)};
+//                titles = new String[]{mContext.getResources().getString(R.string.near_fragment)};
+                titles.add(res.getString(R.string.near_fragment));
             }
             if (mNear1Fragment == null) {
                 mNear1Fragment = new Near1Fragment();
@@ -115,22 +125,29 @@ public class HomeContainerFragment extends LazyLoadBaseFragment {
             fragmentList.add(mVoiceFragment);
         }
 
+        titles.add(res.getString(R.string.dynamic_tab_text));
+        if(mDynamicCenterFragment == null){
+            mDynamicCenterFragment = new DynamicCenterFragment();
+        }
+        fragmentList.add(mDynamicCenterFragment);
 
+        String[] strings = new String[titles.size()];
+        titles.toArray(strings);
 
-        BaseFragmentPagerAdapter baseFragmentPagerAdapter = new BaseFragmentPagerAdapter(getChildFragmentManager(), fragmentList, titles, mContext);
+        BaseFragmentPagerAdapter baseFragmentPagerAdapter = new BaseFragmentPagerAdapter(getChildFragmentManager(), fragmentList, strings, mContext);
         mViewPager.setAdapter(baseFragmentPagerAdapter);
 
         CommonNavigator commonNavigator = new CommonNavigator(mContext);
         commonNavigator.setAdapter(new CommonNavigatorAdapter() {
             @Override
             public int getCount() {
-                return titles == null ? 0 : titles.length;
+                return titles == null ? 0 : titles.size();
             }
 
             @Override
             public IPagerTitleView getTitleView(Context context, final int index) {
                 SimplePagerTitleView simplePagerTitleView = new ScaleTransitionPagerTitleView(context);
-                simplePagerTitleView.setText(titles[index]);
+                simplePagerTitleView.setText(titles.get(index));
                 simplePagerTitleView.setTextSize(24);
                 simplePagerTitleView.setNormalColor(Color.parseColor("#333333"));
                 simplePagerTitleView.setSelectedColor(Color.parseColor("#FF4064"));

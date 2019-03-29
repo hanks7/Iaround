@@ -3,6 +3,7 @@ package net.iaround.ui.fragment;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -29,6 +30,8 @@ import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.IPagerInd
 import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.IPagerTitleView;
 import net.lucode.hackware.magicindicator.buildins.commonnavigator.indicators.LinePagerIndicator;
 import net.lucode.hackware.magicindicator.buildins.commonnavigator.titles.ClipPagerTitleView;
+import net.lucode.hackware.magicindicator.buildins.commonnavigator.titles.ScaleTransitionPagerTitleView;
+import net.lucode.hackware.magicindicator.buildins.commonnavigator.titles.SimplePagerTitleView;
 
 /**
  * 排行榜数据
@@ -97,26 +100,39 @@ public class RankingFragment extends LazyLoadBaseFragment implements View.OnClic
 
             @Override
             public IPagerTitleView getTitleView(Context context, final int index) {
-                ClipPagerTitleView clipPagerTitleView = new ClipPagerTitleView(context);
-                clipPagerTitleView.setText(title[index]);
-                clipPagerTitleView.setTextSize(UIUtil.dip2px(context, 14));
-                clipPagerTitleView.setTextColor(Color.parseColor("#333333"));
-                clipPagerTitleView.setClipColor(Color.parseColor("#FF4064"));
-                clipPagerTitleView.setOnClickListener(new View.OnClickListener() {
+//                ClipPagerTitleView clipPagerTitleView = new ClipPagerTitleView(context);
+//                clipPagerTitleView.setText(title[index]);
+//                clipPagerTitleView.setTextSize(UIUtil.dip2px(context, 14));
+//                clipPagerTitleView.setTextColor(Color.parseColor("#333333"));
+//                clipPagerTitleView.setClipColor(Color.parseColor("#FF4064"));
+//                clipPagerTitleView.setOnClickListener(new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View v) {
+//                        viewPager.setCurrentItem(index);
+//                    }
+//                });
+//                return clipPagerTitleView;
+                SimplePagerTitleView simplePagerTitleView = new ScaleTransitionPagerTitleView(context);
+                simplePagerTitleView.setText(title[index]);
+                simplePagerTitleView.setTextSize(24);
+                simplePagerTitleView.setNormalColor(Color.parseColor("#333333"));
+                simplePagerTitleView.setSelectedColor(Color.parseColor("#FF4064"));
+                simplePagerTitleView.setTypeface(Typeface.defaultFromStyle(Typeface.BOLD));//加粗
+                simplePagerTitleView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         viewPager.setCurrentItem(index);
                     }
                 });
-                return clipPagerTitleView;
+                return simplePagerTitleView;
             }
 
             @Override
             public IPagerIndicator getIndicator(Context context) {
-                LinePagerIndicator linePagerIndicator = new LinePagerIndicator(context);
-                linePagerIndicator.setMode(LinePagerIndicator.MODE_WRAP_CONTENT);
-                linePagerIndicator.setColors(Color.parseColor("#FF4064"));
-                return linePagerIndicator;
+//                LinePagerIndicator linePagerIndicator = new LinePagerIndicator(context);
+//                linePagerIndicator.setMode(LinePagerIndicator.MODE_WRAP_CONTENT);
+//                linePagerIndicator.setColors(Color.parseColor("#FF4064"));
+                return null;
             }
         });
         mMagicIndicator.setNavigator(commonNavigator);

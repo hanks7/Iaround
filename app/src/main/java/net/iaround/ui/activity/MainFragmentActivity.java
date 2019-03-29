@@ -76,6 +76,7 @@ import net.iaround.ui.dynamic.DynamicMessagesActivity;
 import net.iaround.ui.fragment.ChatBarFragment;
 import net.iaround.ui.fragment.HomeContainerFragment;
 import net.iaround.ui.fragment.MessageFragmentIm;
+import net.iaround.ui.fragment.RankingFragment;
 import net.iaround.ui.fragment.UserFragment;
 import net.iaround.ui.group.activity.GroupChatTopicActivity;
 import net.iaround.ui.view.DragPointView;
@@ -134,7 +135,7 @@ public class MainFragmentActivity extends BaseFragmentActivity implements MainCo
 
 
     private ImageView tabNear;
-    //    private ImageView tabDynamic;
+    private ImageView tabRank;
     private ImageView tabLive;
     private ImageView tabMsg;
     private ImageView tabFind;
@@ -150,10 +151,10 @@ public class MainFragmentActivity extends BaseFragmentActivity implements MainCo
      * 首页
      */
     private HomeContainerFragment tab1Fragement;
-//    /**
-//     * 排行榜 移到聊吧模块
-//     */
-//    private RankingFragment tab2Fragement;
+    /**
+     * 排行榜
+     */
+    private RankingFragment tab2Fragement;
     /**
      * 消息
      */
@@ -212,7 +213,7 @@ public class MainFragmentActivity extends BaseFragmentActivity implements MainCo
         setContentView(R.layout.activity_main_fragment);
         tabNear = (ImageView) findViewById(R.id.near_tab_icon);
         tabLive = (ImageView) findViewById(R.id.live_main_tab_icon);
-//        tabDynamic = (ImageView) findViewById(R.id.dynamic_tab_icon);
+        tabRank = (ImageView) findViewById(R.id.rank_tab_icon);
         tabMsg = (ImageView) findViewById(R.id.msg_tab_icon);
         tabFind = (ImageView) findViewById(R.id.find_tab_img);
         tabChatBar = (ImageView) findViewById(R.id.chat_bar_tab_icon);
@@ -240,7 +241,7 @@ public class MainFragmentActivity extends BaseFragmentActivity implements MainCo
         }
 
         findViewById(R.id.rl_home_page).setOnClickListener(this);
-//        findViewById(R.id.dynamicCenter_ly).setOnClickListener(this);
+        findViewById(R.id.rl_rank).setOnClickListener(this);
         findViewById(R.id.live_main_ly).setOnClickListener(this);
         findViewById(R.id.messages_ly).setOnClickListener(this);
         findViewById(R.id.find_ly).setOnClickListener(this);
@@ -375,10 +376,10 @@ public class MainFragmentActivity extends BaseFragmentActivity implements MainCo
                 case 3:
                     findViewById(R.id.messages_ly).performClick();
                     break;
-//                case 4:
-//                    findViewById(R.id.dynamicCenter_ly).performClick();
-//                    break;
                 case 4:
+                    findViewById(R.id.rl_rank).performClick();
+                    break;
+                case 5:
                     findViewById(R.id.find_ly).performClick();
                     break;
             }
@@ -396,7 +397,7 @@ public class MainFragmentActivity extends BaseFragmentActivity implements MainCo
         int id = view.getId();
         if (id == R.id.rl_home_page) {//首页
             tabNear.setImageResource(R.drawable.z_main_near_sel);
-//            tabDynamic.setImageResource(R.drawable.z_main_rank);
+            tabRank.setImageResource(R.drawable.z_main_rank);
             tabMsg.setImageResource(R.drawable.z_main_msg);
             tabFind.setImageResource(R.drawable.z_main_find);
             tabLive.setImageResource(R.drawable.z_main_live);
@@ -410,7 +411,7 @@ public class MainFragmentActivity extends BaseFragmentActivity implements MainCo
 //            }
         } else if (id == R.id.chat_bar_ly) {//聊吧
             tabNear.setImageResource(R.drawable.z_main_near);
-//            tabDynamic.setImageResource(R.drawable.z_main_rank);
+            tabRank.setImageResource(R.drawable.z_main_rank);
             tabMsg.setImageResource(R.drawable.z_main_msg);
             tabFind.setImageResource(R.drawable.z_main_find);
             tabLive.setImageResource(R.drawable.z_main_live);
@@ -424,7 +425,7 @@ public class MainFragmentActivity extends BaseFragmentActivity implements MainCo
             }
         } else if (id == R.id.messages_ly) {//消息
             tabNear.setImageResource(R.drawable.z_main_near);
-//            tabDynamic.setImageResource(R.drawable.z_main_rank);
+            tabRank.setImageResource(R.drawable.z_main_rank);
             tabMsg.setImageResource(R.drawable.z_main_msg_sel);
             tabFind.setImageResource(R.drawable.z_main_find);
             tabLive.setImageResource(R.drawable.z_main_live);
@@ -462,9 +463,23 @@ public class MainFragmentActivity extends BaseFragmentActivity implements MainCo
             }
             //统计
             Statistics.onPageClick(Statistics.PAGE_MESSAGE);
+        } else if (id == R.id.rl_rank) {//排行榜
+
+            tabNear.setImageResource(R.drawable.z_main_near);
+            tabRank.setImageResource(R.drawable.z_main_rank_sel);
+            tabMsg.setImageResource(R.drawable.z_main_msg);
+            tabFind.setImageResource(R.drawable.z_main_find);
+            tabLive.setImageResource(R.drawable.z_main_live);
+            tabChatBar.setImageResource(R.drawable.z_main_chat_bar);
+            setSelected(3);
+            mViewPager.setCurrentItem(3, false);
+            if(tab2Fragement!=null) {
+                PagerSelectRanking pagerSelectRanking = tab2Fragement;
+                pagerSelectRanking.onRankingSelected();
+            }
         } else if (id == R.id.find_ly) {//个人
             tabNear.setImageResource(R.drawable.z_main_near);
-//            tabDynamic.setImageResource(R.drawable.z_main_rank);
+            tabRank.setImageResource(R.drawable.z_main_rank);
             tabMsg.setImageResource(R.drawable.z_main_msg);
             tabFind.setImageResource(R.drawable.z_main_find_sel);
             tabLive.setImageResource(R.drawable.z_main_live);
@@ -473,27 +488,12 @@ public class MainFragmentActivity extends BaseFragmentActivity implements MainCo
                 setSelected(1);
                 mViewPager.setCurrentItem(1, false);
             } else {
-                setSelected(3);
-                mViewPager.setCurrentItem(3, false);
+                setSelected(4);
+                mViewPager.setCurrentItem(4, false);
             }
             //统计
             Statistics.onPageClick(Statistics.PAGE_USER);
         }
-//        else if (id == R.id.dynamicCenter_ly) {//排行榜
-//
-//            tabNear.setImageResource(R.drawable.z_main_near);
-//            tabDynamic.setImageResource(R.drawable.z_main_rank_sel);
-//            tabMsg.setImageResource(R.drawable.z_main_msg);
-//            tabFind.setImageResource(R.drawable.z_main_find);
-//            tabLive.setImageResource(R.drawable.z_main_live);
-//            tabChatBar.setImageResource(R.drawable.z_main_chat_bar);
-//            setSelected(2);
-//            mViewPager.setCurrentItem(2, false);
-//            if(tab2Fragement!=null) {
-//                PagerSelectRanking pagerSelectRanking = tab2Fragement;
-//                pagerSelectRanking.onRankingSelected();
-//            }
-//        }
     }
 
 
@@ -938,18 +938,17 @@ public class MainFragmentActivity extends BaseFragmentActivity implements MainCo
                         tab3Fragement = new MessageFragmentIm();
                     }
                     return tab3Fragement;
+                }  else if (position == 3) {
+                    if (tab2Fragement == null) {
+                        tab2Fragement = new RankingFragment();
+                    }
+                    return tab2Fragement;
                 } else {
                     if (tab4Fragement == null) {
                         tab4Fragement = new UserFragment();
                     }
                     return tab4Fragement;
                 }
-//                else if (position == 2) {
-//                    if (tab2Fragement == null) {
-//                        tab2Fragement = new RankingFragment();
-//                    }
-//                    return tab2Fragement;
-//                }
             }
         }
 
@@ -958,7 +957,7 @@ public class MainFragmentActivity extends BaseFragmentActivity implements MainCo
             if (mAnchorVersion == true) {
                 return 2;
             }
-            return 4;
+            return 5;
         }
     }
 

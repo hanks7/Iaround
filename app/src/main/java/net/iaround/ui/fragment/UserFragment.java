@@ -98,6 +98,7 @@ public class UserFragment extends LazyLoadFragment implements UserContract.View,
     private LinearLayout llApplyQualification;
     private LinearLayout llOrderList;
     private LinearLayout mLlVoiceNoDisturb;
+    private LinearLayout mLlSubstituteCharge;
     private TextView tvApplyQualification;
     private TextView tvUserVip;
     private TextView tvVisitorExtra;
@@ -113,6 +114,7 @@ public class UserFragment extends LazyLoadFragment implements UserContract.View,
     private ImageView mCbDisturb;
     private TextView tvDisturbStatus;
     private View lineApplyQualification;
+    private View lineOrderList;;
 
     private EditText et_test_url;
 
@@ -181,7 +183,9 @@ public class UserFragment extends LazyLoadFragment implements UserContract.View,
         llApplyQualification = findView(R.id.ll_apply_qualification);
         lineApplyQualification = findView(R.id.line_apply_qualification);
         llOrderList = findView(R.id.ll_order_list);
+        lineOrderList = findView(R.id.line_order_list);
         mLlVoiceNoDisturb = findView(R.id.ll_voice_no_disturb);
+        mLlSubstituteCharge = findView(R.id.ll_substitute_charge);
         tvApplyQualification = findView(R.id.tv_apply_qualification);
         mCbDisturb = findView(R.id.cb_disturb);
         userAddLay = findView(R.id.user_add_lay);
@@ -227,6 +231,8 @@ public class UserFragment extends LazyLoadFragment implements UserContract.View,
         if(isShowVoice == 1){//显示
             lineApplyQualification.setVisibility(View.VISIBLE);
             llApplyQualification.setVisibility(View.VISIBLE);
+            llOrderList.setVisibility(View.VISIBLE);
+            lineOrderList.setVisibility(View.VISIBLE);
             if (me.getGameUserType() == 1) {
                 tvApplyQualification.setText(R.string.my_qualification);
             } else {
@@ -235,6 +241,8 @@ public class UserFragment extends LazyLoadFragment implements UserContract.View,
         }else {
             lineApplyQualification.setVisibility(View.GONE);
             llApplyQualification.setVisibility(View.GONE);
+            llOrderList.setVisibility(View.GONE);
+            lineOrderList.setVisibility(View.GONE);
         }
         privateDataReq();
         if (isChange) {
@@ -274,6 +282,7 @@ public class UserFragment extends LazyLoadFragment implements UserContract.View,
         llSetting.setOnClickListener(this);
         llApplyQualification.setOnClickListener(this);
         llOrderList.setOnClickListener(this);
+        mLlSubstituteCharge.setOnClickListener(this);
         mCbDisturb.setOnClickListener(this);
         if (Config.DEBUG) {
             findView(R.id.ll_setting_1).setVisibility(View.VISIBLE);
@@ -463,6 +472,9 @@ public class UserFragment extends LazyLoadFragment implements UserContract.View,
                         }
                     }
                 });
+                break;
+            case R.id.ll_substitute_charge://代充后台入口
+                InnerJump.Jump(getActivity(), "http://notice.iaround.com/topUp/index.html", true);
                 break;
         }
     }

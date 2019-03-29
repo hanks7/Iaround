@@ -7,6 +7,7 @@ import android.util.Log;
 
 import com.igexin.sdk.GTIntentService;
 import com.igexin.sdk.message.GTCmdMessage;
+import com.igexin.sdk.message.GTNotificationMessage;
 import com.igexin.sdk.message.GTTransmitMessage;
 import com.peng.one.push.OnePush;
 import com.peng.one.push.OneRepeater;
@@ -97,6 +98,13 @@ public class GeTuiReceiverService extends GTIntentService {
     }
 
 
+    @Override
+    public void onNotificationMessageArrived(Context context, GTNotificationMessage gtNotificationMessage) {
 
+    }
 
+    @Override
+    public void onNotificationMessageClicked(Context context, GTNotificationMessage gtNotificationMessage) {
+
+    }
 }

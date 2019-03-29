@@ -83,7 +83,7 @@ import java.util.Map;
  * @注意 在动态中心, DynamicItemBean实体中, 不使用ShareInfo和SyncInfo的数据[点赞数量, 是否点赞和评论数量],
  * 所以要在动态详情的操作的数据要同步出来
  */
-public class DynamicCenterFragment extends Fragment implements
+public class DynamicCenterFragment extends LazyLoadBaseFragment implements
         OnClickListener, HttpCallBack, MainFragmentActivity.PagerSelectDynamic {
 
     public static DynamicCenterFragment instant;
@@ -163,34 +163,60 @@ public class DynamicCenterFragment extends Fragment implements
     }
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    protected int setContentView() {
+        return R.layout.activity_dynamic_center;
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        instant = this;
-
-        mBaseView = View.inflate(mContext, R.layout.activity_dynamic_center, null);
-
-        mIsNoticeShowed = SharedPreferenceUtil.getInstance(mContext).getBoolean(SharedPreferenceUtil.DYNAMIC_TOP_GUIDE_KEY, false);
-
-        initView();
+    protected boolean lazyLoad() {
         initData();
         initAnimation();
-
-        CommonFunction.log(TAG, "onCreateView DynamicCenterFragment");
-
-        return mBaseView;
+        return false;
     }
 
     @Override
-    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
+    protected void init(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         if (!EventBus.getDefault().isRegistered(this)) {
             EventBus.getDefault().register(this);
         }
+        instant = this;
+        mIsNoticeShowed = SharedPreferenceUtil.getInstance(mContext).getBoolean(SharedPreferenceUtil.DYNAMIC_TOP_GUIDE_KEY, false);
+
+        initView(getContentView());
+
+
+        CommonFunction.log(TAG, "onCreateView DynamicCenterFragment");
     }
+
+//    @Override
+//    public void onCreate(Bundle savedInstanceState) {
+//        super.onCreate(savedInstanceState);
+//    }
+//
+//    @Override
+//    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+//        instant = this;
+//
+//        mBaseView = View.inflate(mContext, R.layout.activity_dynamic_center, null);
+//
+//        mIsNoticeShowed = SharedPreferenceUtil.getInstance(mContext).getBoolean(SharedPreferenceUtil.DYNAMIC_TOP_GUIDE_KEY, false);
+//
+//        initView();
+//        initData();
+//        initAnimation();
+//
+//        CommonFunction.log(TAG, "onCreateView DynamicCenterFragment");
+//
+//        return mBaseView;
+//    }
+//
+//    @Override
+//    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+//        super.onViewCreated(view, savedInstanceState);
+//        if (!EventBus.getDefault().isRegistered(this)) {
+//            EventBus.getDefault().register(this);
+//        }
+//    }
 
     @Override
     public void onAttach(Activity activity) {
@@ -419,7 +445,7 @@ public class DynamicCenterFragment extends Fragment implements
 
         if (page < 2) {
             String advert = SharedPreferenceUtil.getInstance(getActivity()).getString(SharedPreferenceUtil.START_PAGE_AD_TYPE_CONTROL);
-            if (!TextUtils.isEmpty(advert)) {
+            if (!TextUtils.isEmpty(advert) && CommonFunction.updateAdCount(TAG)) {
                 String[] spilt = advert.split(":");
                 if (spilt.length >= 3 && !TextUtils.isEmpty(spilt[2])) {
                     String[] nearByAd = spilt[2].split(",");
@@ -472,7 +498,7 @@ public class DynamicCenterFragment extends Fragment implements
     @Override
     public void onViewStateRestored(Bundle savedInstanceState) {
         super.onViewStateRestored(savedInstanceState);
-        initView();
+        initView(getContentView());
     }
 
 
@@ -517,25 +543,25 @@ public class DynamicCenterFragment extends Fragment implements
     }
 
     // 初始化布局
-    private void initView() {
-        ivPublish = (ImageView) mBaseView.findViewById(R.id.ivPublish);
+    private void initView(View view) {
+        ivPublish = (ImageView) view.findViewById(R.id.ivPublish);
         ivPublish.setOnClickListener(this);
 
-        rlFailTipsBar = (RelativeLayout) mBaseView.findViewById(R.id.rlFailTipsBar);
+        rlFailTipsBar = (RelativeLayout) view.findViewById(R.id.rlFailTipsBar);
         rlFailTipsBar.setOnClickListener(sendFailLayoutClickListener);
         rlFailTipsBar.bringToFront();
 
-        ptrlvContent = (PullToRefreshListView) mBaseView.findViewById(R.id.ptrlvContent);
+        ptrlvContent = (PullToRefreshListView) view.findViewById(R.id.ptrlvContent);
 
         ptrlvContent.setMode(Mode.BOTH);
         ptrlvContent.setPullToRefreshOverScrollEnabled(false);// 禁止滚动过头
         ptrlvContent.getRefreshableView().setFastScrollEnabled(false);
         ptrlvContent.setOnRefreshListener(mOnRefreshListener);
 
-        mEmptyView = (PullToRefreshScrollView) mBaseView.findViewById(R.id.empty);
+        mEmptyView = (PullToRefreshScrollView) view.findViewById(R.id.empty);
 
         mEmptyView.setMode(PullToRefreshBase.Mode.PULL_FROM_START);
-        mTvEmptyText = (TextView) mBaseView.findViewById(R.id.tv_empty_text);
+        mTvEmptyText = (TextView) view.findViewById(R.id.tv_empty_text);
         mEmptyView.setMode(Mode.PULL_FROM_START);
 
         setListener();

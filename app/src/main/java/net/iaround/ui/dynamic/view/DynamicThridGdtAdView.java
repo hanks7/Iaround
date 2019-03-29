@@ -90,8 +90,8 @@ public class DynamicThridGdtAdView extends RelativeLayout {
 
     public void refreshView(NativeADDataRef nativeADDataRef) {
         CommonFunction.log(TAG, "刷新广告详情显示");
-        if (nativeADDataRef != null) {
-
+        if (lyPoster!=null && nativeADDataRef != null) {
+            lyPoster.setVisibility(GONE);
             final NativeADDataRef adItem = nativeADDataRef;
 
             int defalutImage = R.drawable.default_avatar_round;
@@ -177,8 +177,9 @@ public class DynamicThridGdtAdView extends RelativeLayout {
                     super.onAdLoadFailed(inMobiNative, inMobiAdRequestStatus);
                     CommonFunction.log("Other", "Dynamic onAdLoadFailed");
                     //YC
-                    NativeADDataRef nativeADDataRef = ThridAdServiceCenter.getInstance().getNextAdData();
-                    refreshView(nativeADDataRef);
+//                    NativeADDataRef nativeADDataRef = ThridAdServiceCenter.getInstance().getNextAdData();
+//                    refreshView(nativeADDataRef);
+                    DynamicThridGdtAdView.this.removeAllViews();
                 }
 
                 @Override

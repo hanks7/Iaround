@@ -2634,5 +2634,6 @@
     <string name="close_audio_chat_for_chat_bar">Enter group, voice call will be disconnected, do you want to continue?</string>
     <string name="close_audio_chat_for_record">Recording audio, voice call will be disconnected, do you want to continue?</string>
     <string name="audio_chat_authenticated_user">Voice authentication user</string>
+    <string name="substitute_charge">代充后台</string>
 
 </resources>

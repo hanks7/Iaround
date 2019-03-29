@@ -190,15 +190,15 @@
         </RelativeLayout>
 
         <!--排行榜-->
-        <!--<RelativeLayout
-            android:id="@+id/dynamicCenter_ly"
+        <RelativeLayout
+            android:id="@+id/rl_rank"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:clipChildren="false">
 
             <ImageView
-                android:id="@+id/dynamic_tab_icon"
+                android:id="@+id/rank_tab_icon"
                 android:layout_width="@dimen/x84"
                 android:layout_height="@dimen/x84"
                 android:layout_marginTop="4dp"
@@ -209,39 +209,12 @@
                 android:id="@+id/dynamic_tab_text"
                 android:layout_width="wrap_content"
                 android:layout_height="12dp"
-                android:layout_below="@id/dynamic_tab_icon"
+                android:layout_below="@id/rank_tab_icon"
                 android:layout_gravity="center_horizontal"
                 gitv:gticon="@drawable/z_main_rank"
                 gitv:gttext_size="@dimen/y36"
                 gitv:gttext_str="@string/rank_tab_text" />
-
-            <TextView
-                android:id="@+id/badge1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignRight="@id/dynamic_tab_icon"
-                android:layout_alignTop="@id/dynamic_tab_icon"
-                android:background="@drawable/message_new_with_number"
-                android:layout_marginLeft="15dp"
-                android:paddingTop="1dp"
-                android:paddingBottom="1dp"
-                android:paddingLeft="3dp"
-                android:paddingRight="3dp"
-                android:text="1"
-                android:gravity="center"
-                android:textColor="@color/common_white"
-                android:textSize="10sp"
-                android:visibility="invisible"/>
-
-            <ImageView
-                android:id="@+id/iv_badge1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignRight="@id/dynamic_tab_icon"
-                android:layout_alignTop="@id/dynamic_tab_icon"
-                android:src="@drawable/side_bar_counter_back"
-                android:visibility="invisible" />
-        </RelativeLayout>-->
+        </RelativeLayout>
 
         <!--直播-->
         <RelativeLayout

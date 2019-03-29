@@ -49,8 +49,7 @@
                     android:id="@+id/tv_empty_text"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="@string/content_is_empty" />
+                    android:gravity="center" />
             </LinearLayout>
         </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
 

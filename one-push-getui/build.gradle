@@ -43,4 +43,5 @@ dependencies {
     implementation rootProject.ext.dependencies.supportV4
     testImplementation 'junit:junit:4.12'
     api project(':one-push-core')
+    implementation files('libs/GetuiSDK2.13.1.0.jar')
 }

@@ -466,7 +466,7 @@ public class PublishDynamicActivity extends BaseFragmentActivity implements
         displayPublishBtn();
         layout.buildSDImage(llFirstRow, imageUrlList);
 
-        svContent.postInvalidate();
+//        svContent.postInvalidate();
 
         layout.setImageListenter(new DynamicImageLayout.ImageListenter() {
             @Override
@@ -880,7 +880,7 @@ public class PublishDynamicActivity extends BaseFragmentActivity implements
                         for (int i = 0; i < list.size(); i++) {
                             rotaingImage(list.get(i));
                         }
-                        mHandler.sendEmptyMessage(UPDATE_IMAGE_LAYOUT_FALG);
+                        mHandler.sendEmptyMessageDelayed(UPDATE_IMAGE_LAYOUT_FALG,100);
                     }
                 }).start();
             }

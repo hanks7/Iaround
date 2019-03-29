@@ -1877,7 +1877,9 @@ public class LoginHttpProtocol {
                 data.putString("type", String.valueOf(TYPE_FACEBOOK));
                 data.putString("nickname", (String) hashMap.get("name"));
                 String gender = (String) hashMap.get("gender");
-                data.putString("gender", gender.substring(0, 1));
+                if(!TextUtils.isEmpty(gender) && gender.length() > 0){
+                    data.putString("gender", gender.substring(0, 1));
+                }
                 if (hashMap.containsKey("birthday") && ((String) hashMap.get("birthday")).contains("/")) {
                     String[] birthStrings = ((String) hashMap.get("birthday")).split("/");
                     data.putString("birthday", birthStrings[2] + "-" + birthStrings[0] + "-" + birthStrings[1]);
